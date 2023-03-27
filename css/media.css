@@ -1,0 +1,1142 @@
+@media(max-width:575.98px) {
+    .main{
+        height: 60px;
+    }
+    .lang {
+        display: none;
+        margin-top: 30px
+    }
+    .lang ul li {
+        width: 100%;
+        text-align: left;
+        background-color: #fff;
+        margin-right: 0;
+        padding-left: 15px
+    }
+    .lang ul li a {
+        color: #000
+    }
+    .main-box{
+        left: 5%;
+        width: 88%;
+    }
+    .main-box h4{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .main-box p{
+        margin-bottom: 24px;
+        font-size: 12px;
+    }
+    .main-box a{
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+    .flip-card{
+        width: 100%;
+        height: 260px;
+    }
+    .flip-card-back{
+        height: 260px;
+    }
+    .changeto li{
+        font-size: 12px;
+    }
+    .changeto h2{
+        font-size: 26px;
+    }
+    .why-choose{
+        font-size: 16px;
+    }
+    .box-text h4{
+        font-size: 18px;
+    }
+    .box-text p{
+        font-size: 12px;
+    }
+    .line-box{
+        height: auto;
+        margin-top: 30px;
+    }
+    .small-round{
+        width: 174px;
+        height: 178px;
+    }
+    .services-text a{
+        font-size: 20px;
+    }
+    .services-text{
+        width: 160px;
+    }
+    .main-round img{
+        width: 165px!important;
+        height: 170px;
+    }
+    /* #owl-demon img{
+        height: 350px;
+    } */
+    #owl-demon .owl-prev, #owl-demon .owl-next, #owl-demon .controls{
+        padding: 6px 12px!important;
+    }
+    #owl-demon .owl-prev{
+        left: 0;
+    }
+    #owl-demon .owl-next{
+        left: 28%;
+    }
+    .controls{
+        padding: 9px 12px!important;
+        left: 17%;
+    }
+    .title-side h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .main-title h2{
+        font-size: 28px;
+    }
+    .why-choose{
+        padding: 0px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 20px;
+    }
+    .contact-us h2{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .compnay-content h4{
+        font-size: 16px;
+        padding-top: 10px;
+        color: #fff;
+    }
+    .compnay-content p{
+        font-size: 12px;
+        padding-bottom: 6px;
+    }
+    .compnay-content li, .compnay-contents li{
+        font-size: 14px;
+    }
+    .compnay-content img, .compnay-contents img{
+        margin-right: 6px;
+    }
+    .title-compnay h2{
+        font-size: 24px;
+    }
+    .margintop{
+        margin-top: 60px;
+    }
+    .flip-text h4{
+        font-size: 34px;
+    }
+    .flip-text {
+        top: 16px;
+        left: 48%;
+    }
+    .fill{
+        font-size: 20px;
+    }
+    .in-put{
+        font-size: 14px;
+        line-height: 16px;
+        background-color: #1c1c1c;
+    }
+    .submit-btn{
+        font-size: 16px;
+        line-height: 16px;
+        padding: 10px 26px;
+    }
+    .footer-sec li{
+        font-size: 12px;
+    }
+    .footer-sec li a{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-sec li i{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .footer-sec p{
+        font-size: 14px;
+    }
+    .logo{
+        width: 120px;
+    }
+    .footer-copyright p{
+        font-size: 12px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+    .main{
+        height: 60px;
+    }
+    .lang {
+        display: none;
+        margin-top: 30px
+    }
+    .lang ul li {
+        width: 100%;
+        text-align: left;
+        background-color: #fff;
+        margin-right: 0;
+        padding-left: 15px
+    }
+    .lang ul li a {
+        color: #000
+    }
+    .main-box{
+        left: 5%;
+        width: 88%;
+    }
+    .main-box h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .main-box p{
+        margin-bottom: 24px;
+        font-size: 16px;
+    }
+    .main-box a{
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+    .changeto li{
+        font-size: 12px;
+    }
+    .changeto h2{
+        font-size: 26px;
+    }
+    .why-choose{
+        font-size: 16px;
+    }
+    .box-text h4{
+        font-size: 18px;
+    }
+    .box-text p{
+        font-size: 12px;
+    }
+    .line-box{
+        height: auto;
+        margin-top: 30px;
+    }
+    .small-round{
+        width: 80px;
+        height: 80px;
+    }
+    .services-text a{
+        font-size: 12px;
+    }
+    .services-text{
+        width: 85px;
+    }
+    .main-round img {
+        width: 75px!important;
+        height: 75px;
+    }
+    #owl-demon img{
+        height: 350px;
+    }
+    #owl-demon .owl-prev, #owl-demon .owl-next, #owl-demon .controls{
+        padding: 6px 12px!important;
+    }
+    #owl-demon .owl-prev{
+        left: 0;
+    }
+    #owl-demon .owl-next{
+        left: 15%;
+    }
+    .controls{
+        padding: 9px 12px!important;
+        left: 10%;
+    }
+    .title-side h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .main-title h2{
+        font-size: 28px;
+    }
+    .why-choose{
+        padding: 0px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 20px;
+    }
+    .contact-us h2{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .compnay-content h4{
+        font-size: 16px;
+        padding-top: 10px;
+        color: #fff;
+    }
+    .compnay-content p{
+        font-size: 12px;
+        padding-bottom: 6px;
+    }
+    .compnay-content li, .compnay-contents li{
+        font-size: 14px;
+    }
+    .compnay-content img, .compnay-contents img{
+        margin-right: 6px;
+    }
+    .title-compnay h2{
+        font-size: 24px;
+    }
+    .margintop{
+        margin-top: 40px;
+    }
+    .flip-text h4{
+        font-size: 34px;
+    }
+    .flip-text {
+        top: 16px;
+        left: 48%;
+    }
+    .fill{
+        font-size: 20px;
+    }
+    .in-put{
+        font-size: 14px;
+        line-height: 16px;
+        background-color: #000;
+    }
+    .submit-btn{
+        font-size: 16px;
+        line-height: 16px;
+        padding: 10px 26px;
+    }
+    .footer-sec li{
+        font-size: 12px;
+    }
+    .footer-sec li a{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-sec li i{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .footer-sec p{
+        font-size: 14px;
+    }
+    .logo{
+        width: 120px;
+    }
+    .footer-copyright p{
+        font-size: 12px;
+    }
+    .review-text{
+        padding: 5px;
+    }
+    .review-text p{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .btn-review{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .main{
+        height: 60px;
+    }
+    .lang {
+        display: none;
+        margin-top: 30px
+    }
+    .lang ul li {
+        width: 100%;
+        text-align: left;
+        background-color: #fff;
+        margin-right: 0;
+        padding-left: 15px
+    }
+    .lang ul li a {
+        color: #000
+    }
+    .main-box{
+        left: 5%;
+        width: 88%;
+    }
+    .main-box h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .main-box p{
+        margin-bottom: 24px;
+        font-size: 16px;
+    }
+    .main-box a{
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+    .changeto li{
+        font-size: 10px;
+    }
+    .changeto h2{
+        font-size: 24px;
+    }
+    .why-choose{
+        font-size: 16px;
+    }
+    .box-text h4{
+        font-size: 18px;
+    }
+    .box-text p{
+        font-size: 12px;
+    }
+    .line-box{
+        height: auto;
+        margin-top: 30px;
+    }
+    .small-round{
+        width: 80px;
+        height: 80px;
+    }
+    .services-text a{
+        font-size: 12px;
+    }
+    .services-text{
+        width: 85px;
+    }
+    .main-round img {
+        width: 75px!important;
+        height: 75px;
+    }
+    #owl-demon img{
+        height: 350px;
+    }
+    #owl-demon .owl-prev, #owl-demon .owl-next, #owl-demon .controls{
+        padding: 6px 12px!important;
+    }
+    #owl-demon .owl-prev{
+        left: 15px;
+    }
+    #owl-demon .owl-next{
+        left: 14%;
+    }
+    .controls{
+        padding: 9px 12px!important;
+        left: 10%;
+    }
+    .title-side h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .main-title h2{
+        font-size: 28px;
+    }
+    .why-choose{
+        padding: 0px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 20px;
+    }
+    .contact-us h2{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .compnay-content h4{
+        font-size: 16px;
+        padding-top: 10px;
+        color: #fff;
+    }
+    .compnay-content p{
+        font-size: 12px;
+        padding-bottom: 6px;
+    }
+    .compnay-content li, .compnay-contents li{
+        font-size: 14px;
+    }
+    .compnay-content img, .compnay-contents img{
+        margin-right: 6px;
+    }
+    .title-compnay h2{
+        font-size: 24px;
+    }
+    .margintop{
+        margin-top: 40px;
+    }
+    .flip-text h4{
+        font-size: 34px;
+    }
+    .flip-text {
+        top: 16px;
+        left: 48%;
+    }
+    .fill{
+        font-size: 20px;
+    }
+    .in-put{
+        font-size: 14px;
+        line-height: 16px;
+        background-color: #000;
+    }
+    .submit-btn{
+        font-size: 16px;
+        line-height: 16px;
+        padding: 10px 26px;
+    }
+    .footer-sec li{
+        font-size: 12px;
+    }
+    .footer-sec li a{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-sec li i{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .footer-sec p{
+        font-size: 14px;
+    }
+    .logo{
+        width: 120px;
+    }
+    .footer-copyright p{
+        font-size: 12px;
+    }
+    .review-text{
+        padding: 5px;
+    }
+    .review-text p{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .btn-review{
+        font-size: 14px;
+    }
+    .flip-card{
+        width: 100%;
+        height: 330px;
+    }
+    .flip-card-back{
+        height: 330px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .box-text p{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .cardd {
+        min-width: 45vw;
+        max-width: 50vw;
+    }
+}
+
+@media screen and (min-width:908px) {
+    .cardd {
+        max-width: 50vw;
+    }
+
+    .actived {
+        transform: translateY(-20px);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .cardSection {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+    }
+
+    .cardd {
+        min-width: 26vw;
+        min-height: 60vh;
+        font-size: small;
+    }
+}
+
+@media (max-width: 575px){
+    .newthing {
+        font-size: 16px!important;
+        height: 40px;
+        width: 40px;
+    }
+    .video-btn a {
+        left: 53%;
+    }
+}
+
+
+/* Takshak Media*/
+
+@media (max-width:575px){
+    .background-imgs{
+        padding: 30px;
+    }
+    .takshak-title h1{
+        font-size: 20px;
+    }
+    .takshak-title h2{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .btn-readmore{
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    .Services h2{
+        font-size: 22px;
+        margin-bottom: 34px;
+    }
+    .coach-box-1{
+        margin-top: 30px;
+    }
+    .coach-box-1 span{
+        padding: 6px 7px;
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    .coach-box-1 h2{
+        width: 100%;
+        margin-top: 12px;
+        font-size: 26px;
+    }
+    .coach-box-1 p{
+        font-size: 14px;
+    }   
+    .coach-img img{
+        width: 50%;
+    }
+    .go-top i{
+        padding: 9px 10px;
+        bottom: 6px;
+        font-size: 18px;
+    }
+    .go-top{
+       right: 8%; 
+    }
+    .reasons-box h4{
+        font-size: 26px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .reasons-box li{
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+    .content-business h5{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .content-business p{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .Services p{
+        font-size: 14px;
+    }
+    #owl-instass .owl-prev{
+        left: 35%;
+    }
+    #owl-instass .owl-next{
+        left: 50%;
+    }
+    figure.effect-oscar h2{
+        margin: 10px 0px 5px 0px;
+        font-size: 16px;
+    }
+    .effect-oscar p{
+        font-size:50%;
+    }
+    figure.effect-oscar figcaption{
+        padding: 2rem;
+    }
+    .coach-box span{
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+    .video-content{
+        padding: 16px;
+    }
+    .video-content h4{
+        font-size: 16px;
+    }
+    .video-content a{
+        font-size: 14px;
+    }
+    .fix-height{
+        height: 260px;
+    }
+    .carded-content li{
+        font-size: 14px;
+        padding: 6px;
+    }
+    .carded-content li i {
+        font-size: 14px;
+        margin-right: 2px;
+    }
+    .carded-content h4{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .price-course span{
+        font-size: 14px;
+    }
+    .price-course p{
+        font-size: 20px;
+    }
+    .carded-content a{
+        font-size: 14px;
+    }
+    .main-carded{
+        margin-top: 10px;
+    }
+    .review-box h4{
+        font-size: 18px;
+        top: 64%;
+        left: 20px;
+    }
+    .review-box p{
+        top: 80%;
+        left: 20px;
+        font-size: 16px;
+    }
+    .agency-design p{
+        font-size: 14px;
+    }
+    .coach-box h2{
+        font-size: 22px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+    #owl-review .owl-prev, #owl-instas .owl-prev, #owl-review-2 .owl-prev, #owl-placement-1 .owl-prev {
+        left: 43%;
+    }
+    .background-imgs{
+        padding: 30px;
+    }
+    .takshak-title h1{
+        font-size: 20px;
+    }
+    .takshak-title h2{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .btn-readmore{
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    .Services h2{
+        font-size: 22px;
+        margin-bottom: 34px;
+    }
+    .coach-box-1{
+        margin-top: 30px;
+    }
+    .coach-box-1 span{
+        padding: 6px 7px;
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    .coach-box-1 h2{
+        width: 100%;
+        margin-top: 12px;
+        font-size: 26px;
+    }
+    .coach-box-1 p{
+        font-size: 14px;
+    }   
+    .coach-img img{
+        width: 50%;
+    }
+    .go-top i{
+        padding: 9px 10px;
+        bottom: 6px;
+        font-size: 18px;
+    }
+    .go-top{
+       right: 8%; 
+    }
+    .reasons-box h4{
+        font-size: 26px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .reasons-box li{
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+    .content-business h5{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .content-business p{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .Services p{
+        font-size: 14px;
+    }
+    #owl-instass .owl-prev{
+        left: 35%;
+    }
+    #owl-instass .owl-next{
+        left: 50%;
+    }
+    figure.effect-oscar h2{
+        margin: 10px 0px 5px 0px;
+        font-size: 16px;
+    }
+    .effect-oscar p{
+        font-size:50%;
+    }
+    figure.effect-oscar figcaption{
+        padding: 2rem;
+    }
+    .coach-box span{
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+    .video-content{
+        padding: 16px;
+    }
+    .video-content h4{
+        font-size: 16px;
+    }
+    .video-content a{
+        font-size: 14px;
+    }
+    .fix-height{
+        height: 450px;
+    }
+    .carded-content li{
+        font-size: 14px;
+        padding: 6px;
+    }
+    .carded-content li i {
+        font-size: 14px;
+        margin-right: 2px;
+    }
+    .carded-content h4{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .price-course span{
+        font-size: 14px;
+    }
+    .price-course p{
+        font-size: 20px;
+    }
+    .carded-content a{
+        font-size: 14px;
+    }
+    .main-carded{
+        margin-top: 10px;
+    }
+    .review-box h4{
+        font-size: 28px;
+        top: 64%;
+        left: 20px;
+    }
+    .review-box p{
+        top: 80%;
+        left: 20px;
+        font-size: 21px;
+    }
+    .agency-design p{
+        font-size: 14px;
+    }
+    .coach-box h2{
+        font-size: 22px;
+    }
+    .content-service h4{
+        font-size: 28px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    #owl-review .owl-prev, #owl-instas .owl-prev, #owl-review-2 .owl-prev, #owl-placement-1 .owl-prev {
+        left: 43%;
+    }
+    .background-imgs{
+        padding: 30px;
+    }
+    .takshak-title h1{
+        font-size: 20px;
+    }
+    .takshak-title h2{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .btn-readmore{
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    .Services h2{
+        font-size: 22px;
+        margin-bottom: 34px;
+    }
+    .coach-box-1{
+        margin-top: 30px;
+    }
+    .coach-box-1 span{
+        padding: 6px 7px;
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    .coach-box-1 h2{
+        width: 100%;
+        margin-top: 12px;
+        font-size: 26px;
+    }
+    .coach-box-1 p{
+        font-size: 14px;
+    }   
+    .coach-img img{
+        width: 50%;
+    }
+    .go-top i{
+        padding: 9px 10px;
+        bottom: 6px;
+        font-size: 18px;
+    }
+    .go-top{
+       right: 8%; 
+    }
+    .reasons-box h4{
+        font-size: 26px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .reasons-box li{
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+    .content-business h5{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .content-business p{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .Services p{
+        font-size: 14px;
+    }
+    #owl-instass .owl-prev{
+        left: 35%;
+    }
+    #owl-instass .owl-next{
+        left: 50%;
+    }
+    figure.effect-oscar h2{
+        margin: 10px 0px 5px 0px;
+        font-size: 16px;
+    }
+    .effect-oscar p{
+        font-size:50%;
+    }
+    figure.effect-oscar figcaption{
+        padding: 2rem;
+    }
+    .coach-box span{
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+    .video-content{
+        padding: 16px;
+    }
+    .video-content h4{
+        font-size: 16px;
+    }
+    .video-content a{
+        font-size: 14px;
+    }
+    .fix-height{
+        height: 450px;
+    }
+    .carded-content li{
+        font-size: 14px;
+        padding: 6px;
+    }
+    .carded-content li i {
+        font-size: 14px;
+        margin-right: 2px;
+    }
+    .carded-content h4{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .price-course span{
+        font-size: 14px;
+    }
+    .price-course p{
+        font-size: 20px;
+    }
+    .carded-content a{
+        font-size: 14px;
+    }
+    .main-carded{
+        margin-top: 10px;
+    }
+    .review-box h4{
+        font-size: 28px;
+        top: 64%;
+        left: 20px;
+    }
+    .review-box p{
+        top: 80%;
+        left: 20px;
+        font-size: 21px;
+    }
+    .agency-design p{
+        font-size: 14px;
+    }
+    .coach-box h2{
+        font-size: 22px;
+    }
+    .content-service h4{
+        font-size: 28px;
+    }
+}
+
+/* takshak media close  */
+
+/* fitit media */
+
+@media (max-width:575px){
+    .fitit-box h1{
+        font-size: 24px;
+    }
+    .fitit-box p{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    .theme-btn{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .coach-box-services{
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .heading-text h2{
+        font-size: 24px;
+    }
+    #owl-review-1 .owl-next{
+        left: 48%;
+    }
+    #owl-review-1 .owl-prev{
+        left: 34%;
+    }
+    .course-box h4{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .course-box p{
+        font-size: 14px;
+    }
+    .course-price h4{
+        font-size: 18px;
+    }
+    .course-price a{
+        font-size: 16px;
+        padding: 4px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .fitit-box h1{
+        font-size: 24px;
+    }
+    .fitit-box p{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    .theme-btn{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .coach-box-services{
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .heading-text h2{
+        font-size: 24px;
+    }
+    #owl-review-1 .owl-next{
+        left: 51%;
+    }
+    #owl-review-1 .owl-prev{
+        left: 41%;
+    }
+    .course-box h4{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .course-box p{
+        font-size: 14px;
+    }
+    .course-price h4{
+        font-size: 18px;
+    }
+    .course-price a{
+        font-size: 16px;
+        padding: 4px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .fitit-box h1{
+        font-size: 24px;
+    }
+    .fitit-box p{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    .theme-btn{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .coach-box-services{
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .heading-text h2{
+        font-size: 24px;
+    }
+    #owl-review-1 .owl-next{
+        left: 51%;
+    }
+    #owl-review-1 .owl-prev{
+        left: 41%;
+    }
+    .course-box h4{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .course-box p{
+        font-size: 14px;
+    }
+    .course-price h4{
+        font-size: 18px;
+    }
+    .course-price a{
+        font-size: 16px;
+        padding: 4px;
+    }
+}

@@ -1,0 +1,1848 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fit IT | Digital Marketing Agency | SEO | PPC | Social Media Marketing | Web Design & Development</title>
+    <meta name="Description"
+        content="Fit IT is a leading digital marketing agency that specializes in SEO, PPC, social media marketing, content marketing, web design, and web development. Our team of experts delivers exceptional results for businesses of all sizes.">
+    <meta name="keywords"
+        content="digital marketing, SEO, PPC, social media marketing, content marketing, web design, web development">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/logos/GCS-logo.webp">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/core@1.0.0-beta10/dist/css/tabler-flags.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/popup-form-style.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/gcs.css">
+    <link rel="stylesheet" type="text/css" href="./css/media.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl-style.css">
+    <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="./plugins/toastr/toastr.min.css">
+    <script src="./plugins/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="./js/lazy-load.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
+
+    <script type="text/javascript">
+        function openside() {
+            document.getElementById('demo').style.width = '100%';
+        }
+
+        function sideclose() {
+            document.getElementById('demo').style.width = '0px';
+        }
+
+        $(document).ready(function () {
+            $("#owl-insta").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                navigation: true,
+                loop: false,
+                items: 6,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                pagination: true,
+            });
+            $("#owl-instas").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                navigation: true,
+                loop: false,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                pagination: true,
+            });
+            $("#owl-review-1, #owl-review-2").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: false,
+                items: 4,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-course, #owl-course-1").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: false,
+                items: 5,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-demo1").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: false,
+                loop: false,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-demo2").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: false,
+                loop: false,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-active").owlCarousel({
+                autoPlay: false, //Set AutoPlay to 3 seconds
+                navigation: true,
+                items: 3,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [979, 1],
+                pagination: false,
+            });
+        })
+    </script>
+    <script type="text/javascript">
+        /*---------------------Drop down----------------------*/
+        $(document).ready(function () {
+            $('.ddmenu > a').click(function () {
+                $(this).parent().siblings().find('ul').fadeOut(500);
+                $(this).next('ul').stop(true, false, true).fadeToggle(500);
+                return false;
+            });
+        });
+
+        /*---------------------End----------------------*/
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var owl = $('#owl-demon');
+            owl.owlCarousel({
+                loop: false,
+                autoplay: true,
+                items: 1,
+                dots: false,
+                autoplaySpeed: 1000,
+                autoplayTimeout: 3000,
+                animateOut: 'fadeOut',
+                nav: true,
+                autoplayHoverPause: true
+            });
+
+            owl.trigger('refresh.owl.carousel');
+
+            $('.showhide').click(function () {
+
+                $(this).toggleClass('fa-pause',
+                    function () {
+                        owl.trigger('stop.owl.autoplay', [2000]);
+                    });
+
+                $(this).toggleClass('fa-play',
+                    function () {
+                        owl.trigger('play.owl.autoplay', [2000]);
+                    });
+            });
+        });
+        $(document).ready(function () {
+            $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
+            $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+        });
+
+    </script>
+    <script>
+        $(function () {
+            //Scroll event
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop();
+                if (scrolled > 200) $('.go-top').fadeIn('slow');
+                if (scrolled < 200) $('.go-top').fadeOut('slow');
+            });
+
+            //Click event
+            $('.go-top').click(function () {
+                $("html, body").animate({ scrollTop: "0" }, 500);
+            });
+        });
+    </script>
+</head>
+<header>
+    <div class="go-top">
+        <p class="go-top-text"><i class="fas fa-arrow-up"></i></p>
+    </div>
+    <a class="float-button" target="_blank"
+        href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about FitIT service">
+        <i class="fab fa-whatsapp"></i>
+        <span>Massage<span>
+    </a>
+    <div class="container-fluid main p-0 m-0">
+        <div class="d-lg-block d-none log">
+            <a href="/">
+                <div>
+                    <img src="./images/logos/fitit-logo.png" width="200%" alt="Fg Group">
+                </div>
+            </a>
+        </div>
+        <div class="d-lg-none d-sm-block t0 log1">
+            <a href="/">
+                <div>
+                    <img src="./images/logos/fitit-logo.png" width="200%" alt="Fg Group">
+                </div>
+            </a>
+        </div>
+        <div class="lang">
+            <ul>
+                <li>
+                    <a href="./index.html" class="">
+                        <p class="m-0">Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./digital-marketing-agency.html">
+                        <p class="m-0 active">FitIT</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./business-consulting-services.html">
+                        <p class="m-0">Takshak</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="m-0">AtoZ Finance</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="side" id="demo">
+            <span class="closebtn" onclick="sideclose()">&times</span>
+            <a href="/" style="margin-top: 50px;"><img class="lazy" data-src="./images/logos/fitit-logo.png"
+                    width="35%"></a>
+            <a href="./index.html">Home</a>
+            <a href="./digital-marketing-agency.html">FitIT</a>
+            <a href="./business-consulting-services.html">Takshak</a>
+            <a href="javascript:void(0);">AtoZ Finance</a>
+            <ul class="mobileUserInfo aa">
+            </ul>
+        </div>
+        <span class="d-lg-none d-sm-block btnn" style="cursor: pointer; font-size: 20px; color: black;"
+            onclick="openside()">&#9776;</span>
+        <div class="login d-lg-block d-none">
+            <ul>
+                <li style="font-size: 18px;" class="ddmenu userInfo"></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<body>
+    <section style="margin-top: 100px;">
+        <div class="container-fluid">
+            <div class="container pt-md-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+                        <div class="fitit-box">
+                            <h1>Welcome to Fit IT</h1>
+                            <p>A leading digital marketing agency that specializes in helping businesses of all sizes to
+                                achieve their online goals. Our team of experienced professionals combines creativity,
+                                technical know-how, and data-driven strategies to deliver exceptional results for our
+                                clients.
+                            </p>
+                            <div class="btn-box banner-btn mt-md-3 mt-2">
+                                <a class="theme-btn style-two">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 image-column d-none d-md-block">
+                        <div class="image-box boximg">
+                            <figure class="image image-1">
+                                <img src="./images/fitit/ser-5.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="margintop bg-dark">
+        <div class="container-fluid py-md-5 py-3">
+            <div class="container pb-md-5">
+                <div class="col-md-12 text-center px-0 px-md-3">
+                    <div class="heading-text">
+                        <h2 class="text-center">Our Services</h2>
+                    </div>
+                    <ul class="d-flex justify-content-center mt-md-3">
+                        <li class="coach-box-services Services-box-1 services-select-active">MARKETING GURU</li>
+                        <li class="coach-box-services Services-box-2">INDIVIDUAL SERVICES</li>
+                    </ul>
+                </div>
+                <!-- Services-1 -->
+                <div class="row mt-lg-4 mt-md-3 Services-1 mb-5 mb-md-0">
+                    <div id="owl-review-1" class="owl-carousel owl-theme owl-common">
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/ser-3.png"
+                                                alt="WEBSITE DEVLOPMENT & WEBSITE DESIGN" class="img-fluid">
+                                            <h4 class="text-white">Website Development and Website Design</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Website Development and Website Design</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>UP TO 100 PAGES</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/managment-skills.png" alt="" class="img-fluid">
+                                            <h4 class="text-white">Social media account marketing and handling</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Social media account marketing and handling</h4>
+                                            <ul class="d-flex justify-content-center">
+                                                <li><i class="fab fa-facebook"></i></li>
+                                                <li><i class="fab fa-linkedin-in"></i></li>
+                                                <li><i class="fab fa-instagram"></i></li>
+                                                <li><i class="fab fa-youtube"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/online-plan.png" alt="Social Media Marketing"
+                                                class="img-fluid">
+                                            <h4 class="text-white mt-5">Paid Advertisement </h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Paid Advertisement</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>META</p>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>GOOGAL ADS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/content-writing.png" alt="Content Marketing"
+                                                class="img-fluid">
+                                            <h4 class="text-white mt-5">Content Writing </h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Content Writing</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>AD COPY & VIDEO
+                                                SCRIPT</p>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>AD SCRIPT & BLOGS</p>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>CAPTION & ARTICALS
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/shoot.png" alt="Content Marketing"
+                                                class="img-fluid">
+                                            <h4 class="text-white mt-5">Content Shoot</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Content Shoot</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>Photo Shoot</p>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>Video Shoot</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/video-edit.png" alt="Content Edit"
+                                                class="img-fluid">
+                                            <h4 class="text-white mt-5">Content Edit</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Content Edit</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>Photo Edit</p>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>15 Reels Video + 3
+                                                Major Video for youtube</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/account-img.png"
+                                                alt="Google my business profile Maintain" class="img-fluid">
+                                            <h4 class="text-white mt-5">Google my business profile Maintain</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Google my business profile Maintain</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/pr-events.png" alt="PR Activities & Events"
+                                                class="img-fluid">
+                                            <h4 class="text-white mt-5">PR Activities & Events</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">PR Activities & Events</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/fees.png" alt="Our Fees" class="img-fluid">
+                                            <h4 class="text-white mt-5">Our Fees</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Our Fees</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>Monthly : ₹25,200/-
+                                            </p>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>Yearly : ₹2,49,000/-
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services-2 -->
+                <div class="row mt-5 mt-lg-4 mt-md-3 Services-2 mb-5 mb-md-0">
+                    <div id="owl-review-2" class="owl-carousel owl-theme owl-common">
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/shoot.png" alt="Content Marketing"
+                                                class="img-fluid">
+                                            <h4 class="text-white mt-5">Professional Logo Design</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Professional Logo Design</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>2 LOGO OPTION</p>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>2 TIME REVISED</p>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>4 COLOUR OPTION</p>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>FEES : ₹1999 ONLY
+                                                LOGO & ₹2999 LOGO WITH ANIMATION</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/social-media.png"
+                                                alt="Social Media Handling & Marketing" class="img-fluid">
+                                            <h4 class="text-white mt-5">Social Media Handling & Marketing</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">Social Media Handling & Marketing</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>Fees: ₹ 4999/- Month
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/graphic-post.png" alt="Content Marketing"
+                                                class="img-fluid">
+                                            <h4 class="text-white mt-5">SOCIAL GRAPHIC POST PACKAGE</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">SOCIAL GRAPHIC POST PACKAGE</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>FEES : ₹7200 | 30
+                                                Post per Bundle</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="flip-card-fitit" tabIndex="0">
+                                <div class="flip-card-inner-fitit">
+                                    <div class="flip-card-front-fitit">
+                                        <div class="">
+                                            <img src="./images/fitit/webdevlopment.png"
+                                                alt="WEBSITE DEVELOPMENT AND DESIGNING" class="img-fluid">
+                                            <h4 class="text-white mt-5">WEBSITE DEVELOPMENT AND DESIGNING</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back-fitit">
+                                        <div>
+                                            <h4 class="">WEBSITE DEVELOPMENT AND DESIGNING</h4>
+                                            <p><i class="fas fa-long-arrow-alt-right mr-2"></i>₹9999/- | 5-10 Web
+                                                Pages</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-md-0 bg-dark pt-4 pt-md-0">
+        <div class="container-fluid pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <div class="coach-box">
+                            <span>Testimonial</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-md-4 mt-3">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="video-card">
+                            <div class="video-img">
+                                <div class="ply1 black-before">
+                                    <img class="" data-src="images/banner/banner-4.webp" width="100%"
+                                        style="border-radius: 10px 10px 0px 0px;" alt="client journey"
+                                        src="images/banner/banner-4.webp">
+                                    <div class="video-btn">
+                                        <a href="https://youtu.be/m_GpoDeW1QU" data-flashy-type="video" class="custom">
+                                            <span class="newthing"><i class="fas fa-play"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-content">
+                                <h4>Chirag Pandey (FGIIT Manager)</h4>
+                                <a href="https://youtu.be/m_GpoDeW1QU" data-flashy-type="video" class="custom"><i
+                                        class="fas fa-play mr-1"></i> Watch Video</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="video-card mt-3 mt-md-0">
+                            <div class="video-img">
+                                <div class="ply1 black-before">
+                                    <img class="" data-src="./images/review/review-video-3.webp" width="100%"
+                                        style="border-radius: 10px 10px 0px 0px;" alt="client journey"
+                                        src="./images/review/review-video-3.webp">
+                                    <div class="video-btn">
+                                        <a href="https://youtu.be/2-49dtoYAv8" data-flashy-type="video" class="custom">
+                                            <span class="newthing"><i class="fas fa-play"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-content">
+                                <h4>Pavan Rana (Stallone Manager)</h4>
+                                <a href="https://youtu.be/2-49dtoYAv8" data-flashy-type="video" class="custom"><i
+                                        class="fas fa-play mr-1"></i> Watch Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="margintop">
+        <div class="container-fluid">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="coach-box text-center">
+                            <div class="">
+                                <span>Digital Team</span>
+                            </div>
+                            <h2 class="w-100">No matter how brilliant your mind or strategy. if you're playing a solo game, you'll always lose out to a team.</h2>
+                        </div>
+                        <div id="owl-active" class="owl-carousel owl-theme mt-4">
+                            <div class="item mx-2 mx-md-4">
+                                <div class="box-coach shadow-sm p-4">
+                                    <div class="image-wrapper mb-3">
+                                        <img class="img-fluid" src="./images/takshak/coach-2.png" alt="Owner">
+                                    </div>
+                                    <div class="box-desc">
+                                        <h5>Gautam Jani</h5>
+                                        <p>Owner</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mx-2 mx-md-4">
+                                <div class="box-coach shadow-sm p-4">
+                                    <div class="image-wrapper mb-3">
+                                        <img class="img-fluid" src="./images/takshak/coach-1.png" alt="Owner">
+                                    </div>
+                                    <div class="box-desc">
+                                        <h5>Dr. Chintan Shinde</h5>
+                                        <p>Management Expert</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mx-2 mx-md-4">
+                                <div class="box-coach shadow-sm p-4">
+                                    <div class="image-wrapper mb-3">
+                                        <img class="img-fluid" src="./images/takshak/coach-2.png" alt="Owner">
+                                    </div>
+                                    <div class="box-desc">
+                                        <h5>Rozal Gohil</h5>
+                                        <p>Digital Marketing Specialist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mx-2 mx-md-4">
+                                <div class="box-coach shadow-sm p-4">
+                                    <div class="image-wrapper mb-3">
+                                        <img class="img-fluid" src="./images/fitit/team-1.png" alt="Owner">
+                                    </div>
+                                    <div class="box-desc">
+                                        <h5>Harshad Dave</h5>
+                                        <p>Video Grapher & Editor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mx-2 mx-md-4">
+                                <div class="box-coach shadow-sm p-4">
+                                    <div class="image-wrapper mb-3">
+                                        <img class="img-fluid" src="./images/takshak/coach-2.png" alt="Owner">
+                                    </div>
+                                    <div class="box-desc">
+                                        <h5>Yash Sangani</h5>
+                                        <p>Graphic Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mx-2 mx-md-4">
+                                <div class="box-coach shadow-sm p-4">
+                                    <div class="image-wrapper mb-3">
+                                        <img class="img-fluid" src="./images/fitit/team-2.png" alt="Owner">
+                                    </div>
+                                    <div class="box-desc">
+                                        <h5>Divyesh Baraiya</h5>
+                                        <p>Web Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="margintop">
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <div class="coach-box">
+                            <div class="">
+                                <span>Digital Courses</span>
+                            </div>
+                            <h2 class="w-100">Python Programming Course Topic covered</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block">
+                    <div id="owl-course" class="owl-carousel owl-theme">
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/recorded-plan.png" style="width:100%"
+                                            alt="Introduction & Installation"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Introduction & Installation</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class="text-center"><img src="/images/fitit/overview.png"
+                                            style="width:84%" class="m-auto" alt="Overview"></div>
+                                    <div class="pt-md-1 content-service text-center">
+                                        <h4 class="">Overview</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class="text-center"><img src="/images/fitit/opreters.png" style="width:100%"
+                                            class="pt-5" alt="Operators"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Operators</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/ifelse.png" style="width:100%" class="pt-3"
+                                            alt="Conditional Statements"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Conditional & Control Statements</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/data-base.png" style="width:100%" class="pt-5 m-auto"
+                                            alt="Lists (Collection Of Data)"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Lists (Collection Of Data)</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/tupel.png" class="pt-5" style="width:100%"
+                                            alt="Tuples"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Tuples</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/set-strings.png" style="width:100%"
+                                            alt="Dictionary, Sets, Strings"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Dictionary, Sets, Strings</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/function.png" style="width:100%"
+                                            class="pt-5" alt="Functions and Module"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Functions and Module</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/Exception-Handling.png" class="pt-2"
+                                            style="width:100%" alt="Exception Handling"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Exception Handling</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/file-handling.png" class="m-auto"
+                                            style="width:75%" alt="File Handling"></div>
+                                    <div class="content-service text-center">
+                                        <h4>File Handling</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-md-none">
+                    <div id="owl-demo1" class="owl-carousel owl-theme">
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/recorded-plan.png" style="width:100%"
+                                            alt="Introduction & Installation"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Introduction & Installation</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class="text-center"><img src="/images/fitit/overview.png"
+                                            style="width:84%" class="m-auto" alt="Overview"></div>
+                                    <div class="pt-md-1 content-service text-center">
+                                        <h4 class="">Overview</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class="text-center"><img src="/images/fitit/opreters.png" style="width:100%"
+                                            class="pt-5" alt="Operators"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Operators</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/ifelse.png" style="width:100%" class="pt-3"
+                                            alt="Conditional Statements"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Conditional & Control Statements</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/data-base.png" style="width:100%" class="pt-5 m-auto"
+                                            alt="Lists (Collection Of Data)"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Lists (Collection Of Data)</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/tupel.png" class="pt-5" style="width:100%"
+                                            alt="Tuples"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Tuples</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/set-strings.png" style="width:100%"
+                                            alt="Dictionary, Sets, Strings"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Dictionary, Sets, Strings</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/function.png" style="width:100%"
+                                            class="pt-5" alt="Functions and Module"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Functions and Module</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/Exception-Handling.png" class="pt-2"
+                                            style="width:100%" alt="Exception Handling"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Exception Handling</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/file-handling.png" class="m-auto"
+                                            style="width:75%" alt="File Handling"></div>
+                                    <div class="content-service text-center">
+                                        <h4>File Handling</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-md-4">
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <div class="coach-box-1">
+                            <h2 class="w-100">Select Best Path For you</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-md-4">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="main-carded">
+                            <div class="carded-up">
+                                <div class="carded-icon text-center">
+                                    <img src="./images/takshak/recorded-plan.png" alt="Online Classes"
+                                        class="img-fluid mt-4">
+                                </div>
+                            </div>
+                            <div class="carded-content">
+                                <h4 class="text-center mt-md-3">Recorded Sessions</h4>
+                                <ul class="mt-2 mt-md-3">
+                                    <li><i class="fas fa-book"></i> Enjoy Book Material</li>
+                                    <li><i class="fas fa-tasks"></i> Give Exam And Project Over App</li>
+                                    <li><i class="fas fa-video"></i> Recorded Lecture Videos</li>
+                                    <li><i class="fas fa-certificate"></i> Receive Your E-certificate</li>
+                                    <li><i class="fas fa-comments"></i> Team Chat Support</li>
+                                </ul>
+                                <div class="price-course mt-md-5 pt-md-1">
+                                    <p>₹ 599 /- <span>Including GST</span></p>
+                                </div>
+                                <div class="text-center mb-md-2">
+                                    <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                        data-target="#exampleModalCenter">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-carded">
+                            <div class="carded-up">
+                                <div class="carded-icon text-center">
+                                    <img src="./images/takshak/online-plan.png" alt="Online Classes"
+                                        class="img-fluid mt-4">
+                                </div>
+                            </div>
+                            <div class="carded-content">
+                                <h4 class="text-center mt-md-3">Online Classes</h4>
+                                <ul class="mt-2 mt-md-3">
+                                    <li><i class="fas fa-clock"></i> 2 Months</li>
+                                    <li><i class="fas fa-book"></i> Enjoy Book Material</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Zoom Classes</li>
+                                    <li><i class="fas fa-tasks"></i> Case Study Based Project</li>
+                                    <li><i class="fas fa-video"></i> Recorded Sessions Are Included</li>
+                                    <li><i class="fas fa-credit-card"></i>EMI Option Available</li>
+                                </ul>
+                                <div class="price-course">
+                                    <p>₹ 15,300 /- <span>Including GST</span></p>
+                                </div>
+                                <div class="text-center">
+                                    <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                        data-target="#exampleModalCenter">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="margintop">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <div class="coach-box">
+                            <div class="">
+                                <span>Digital Courses</span>
+                            </div>
+                            <h2 class="w-100">Digital Marketing Course Topic covered</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block">
+                    <div id="owl-course-1" class="owl-carousel owl-theme">
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/social-media.png" style="width:100%"
+                                            alt="Social Media Marketing"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Social Media Marketing</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class="text-center"><img src="/images/fitit/content-writing.png"
+                                            style="width:100%" class="pt-3" alt="Content Creation"></div>
+                                    <div class="pt-md-1 content-service text-center">
+                                        <h4 class="">Content Creation</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class="text-center"><img src="/images/fitit/webdevlopment.png" style="width:65%"
+                                            class="m-auto" alt="Web Design & Development"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Web Design & Development</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/video-edit.png" style="width:65%" class="m-auto"
+                                            alt="Video Editing & Graphic Designing"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Video Editing & Graphic Designing</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/fb-ads.png" style="width:65%" class="m-auto"
+                                            alt="Facebook Paid Ads"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Facebook Paid Ads</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/account-img.png" class="m-auto" style="width:65%"
+                                            alt="Google Ads"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Google Ads</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/seo.png" style="width:65%"
+                                            alt="SEO"></div>
+                                    <div class="content-service text-center">
+                                        <h4>SEO</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-md-none">
+                    <div id="owl-demo2" class="owl-carousel owl-theme">
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/social-media.png" style="width:100%"
+                                            alt="Social Media Marketing"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Social Media Marketing</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class="text-center"><img src="/images/fitit/content-writing.png"
+                                            style="width:100%" class="pt-3" alt="Content Creation"></div>
+                                    <div class="pt-md-1 content-service text-center">
+                                        <h4 class="">Content Creation</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class="text-center"><img src="/images/fitit/webdevlopment.png" style="width:65%"
+                                            class="m-auto" alt="Web Design & Development"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Web Design & Development</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/video-edit.png" style="width:65%" class="m-auto"
+                                            alt="Video Editing & Graphic Designing"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Video Editing & Graphic Designing</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/fb-ads.png" style="width:65%" class="m-auto"
+                                            alt="Facebook Paid Ads"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Facebook Paid Ads</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/account-img.png" class="m-auto" style="width:65%"
+                                            alt="Google Ads"></div>
+                                    <div class="content-service text-center">
+                                        <h4>Google Ads</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item m-1">
+                            <div class="card-box card-style-1 text-start sub-hover">
+                                <div class="inner-service fix-height">
+                                    <div class=""><img src="/images/fitit/seo.png" style="width:65%"
+                                            alt="SEO"></div>
+                                    <div class="content-service text-center">
+                                        <h4>SEO</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-md-4">
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <div class="coach-box-1">
+                            <h2 class="w-100">Select Best Path For you</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-md-4">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div class="main-carded">
+                            <div class="carded-up">
+                                <div class="carded-icon text-center">
+                                    <img src="./images/takshak/recorded-plan.png" alt="Online Classes"
+                                        class="img-fluid mt-4">
+                                </div>
+                            </div>
+                            <div class="carded-content">
+                                <h4 class="text-center mt-md-3">Recorded Sessions</h4>
+                                <ul class="mt-2 mt-md-3">
+                                    <li><i class="fas fa-book"></i> Enjoy Book Material</li>
+                                    <li><i class="fas fa-tasks"></i> Give Exam And Project Over App</li>
+                                    <li><i class="fas fa-video"></i> Recorded Lecture Videos</li>
+                                    <li><i class="fas fa-certificate"></i> Receive Your E-certificate</li>
+                                    <li><i class="fas fa-comments"></i> Team Chat Support</li>
+                                </ul>
+                                <div class="price-course mt-md-5 pt-md-1">
+                                    <p>₹ 599 /- <span>Including GST</span></p>
+                                </div>
+                                <div class="text-center mb-md-2">
+                                    <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                        data-target="#exampleModalCenter">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-carded">
+                            <div class="carded-up">
+                                <div class="carded-icon text-center">
+                                    <img src="./images/takshak/online-plan.png" alt="Online Classes"
+                                        class="img-fluid mt-4">
+                                </div>
+                            </div>
+                            <div class="carded-content">
+                                <h4 class="text-center mt-md-3">Online Classes</h4>
+                                <ul class="mt-2 mt-md-3">
+                                    <li><i class="fas fa-clock"></i> 2 Months</li>
+                                    <li><i class="fas fa-book"></i> Enjoy Book Material</li>
+                                    <li><i class="fas fa-chalkboard-teacher"></i> Zoom Classes</li>
+                                    <li><i class="fas fa-tasks"></i> Case Study Based Project</li>
+                                    <li><i class="fas fa-video"></i> Recorded Sessions Are Included</li>
+                                    <li><i class="fas fa-credit-card"></i>EMI Option Available</li>
+                                </ul>
+                                <div class="price-course">
+                                    <p>₹ 15,300 /- <span>Including GST</span></p>
+                                </div>
+                                <div class="text-center">
+                                    <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                        data-target="#exampleModalCenter">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="margintop">
+        <div class="container-fluid bg-dark py-4 py-md-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <div class="coach-box">
+                            <div class="d-none d-md-block">
+                                <span>Our Approach</span>
+                            </div>
+                            <h2 class="w-100">Topic Be covered in course</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-md-4">
+                    <div class="col-md-6">
+                        <div>
+                            <img src="./images/fitit/our-approch.png" class="img-fluid" alt="Our Approach">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="approach d-none d-md-block">
+                            <p>
+                                <span>At Fit IT,</span> we believe that every business is unique and requires a
+                                customized
+                                digital marketing strategy. That's why we take a data-driven approach to understand your
+                                business, your audience, and your goals. We then create a customized strategy that
+                                addresses
+                                your specific needs and objectives.
+                                Our team of experts works closely with you to execute the strategy and achieve the
+                                desired
+                                results.We also provide regular reports and updates to ensure that you are informed of
+                                the
+                                progress and performance of your campaigns.
+                            </p>
+                            <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                data-target="#exampleModalCenter">Know More</a>
+                        </div>
+                        <div class="approach d-block d-md-none">
+                            <p>
+                                <span>At Fit IT,</span> we believe that every business is unique and requires a
+                                customized
+                                digital marketing strategy. That's why we take a data-driven approach to understand your
+                                business, your audience, and your goals.
+                            </p>
+                            <p class="moretext5">
+                                We then create a customized strategy that
+                                addresses
+                                your specific needs and objectives.
+                                Our team of experts works closely with you to execute the strategy and achieve the
+                                desired
+                                results.We also provide regular reports and updates to ensure that you are informed of
+                                the
+                                progress and performance of your campaigns.
+                            </p>
+                            <div class="mt-md-3">
+                                <a href="javascript:void(0);" class="about-btn moreless-button5"
+                                    style="color: #000!important;">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="margintop">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <div class="coach-box">
+                            <div class="">
+                                <span>Why Choose Fit IT?</span>
+                            </div>
+                            <h2 class="w-100 d-none d-md-block" style="font-size: 18px;">There are many reasons why
+                                businesses choose Fit
+                                IT as their digital marketing agency. Here
+                                are a few:</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-md-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="about-box">
+                            <div class="media-icon">
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="about-box-content">
+                                <h2>Expertise</h2>
+                                <p class="">
+                                    Our team of professionals has years of experience in digital marketing, and we stay
+                                    up-to-date
+                                </p>
+                                <p class="moretext">
+                                    with the latest trends and
+                                    techniques.
+                                </p>
+                            </div>
+                            <div class="mt-md-3 mt-4">
+                                <a href="javascript:void(0);" class="about-btn moreless-button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="about-box">
+                            <div class="media-icon">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <div class="about-box-content">
+                                <h2>Customization</h2>
+                                <p class="">
+                                    We don't believe in a one-size-fits-all approach. We customize
+                                    our strategies to meet
+                                </p>
+                                <p class="moretext1">
+                                    your specific needs and objectives.
+                                </p>
+                            </div>
+                            <div class="mt-md-3 mt-4">
+                                <a href="javascript:void(0);" class="about-btn moreless-button1">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="about-box">
+                            <div class="media-icon">
+                                <i class="far fa-paper-plane"></i>
+                            </div>
+                            <div class="about-box-content">
+                                <h2>Results-driven</h2>
+                                <p class="mb-md-5">We are committed to delivering results that help you achieve your
+                                    business goals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="about-box">
+                            <div class="media-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="about-box-content">
+                                <h2>Transparency</h2>
+                                <p class="">
+                                    We believe in being transparent with our clients. We provide regular reports and
+                                </p>
+                                <p class="moretext2">
+                                    updates
+                                    to ensure that you are informed of the progress and performance of your campaigns.
+                                </p>
+                            </div>
+                            <div class="mt-md-3 mt-4">
+                                <a href="javascript:void(0);" class="about-btn moreless-button2">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="margintop">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 text-center">
+                        <div class="coach-box">
+                            <div class="">
+                                <span>Student Review</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-md-5">
+                    <div class="col-md-6">
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="./images/fitit/divyesh-patel.webp" class="img-fluid" />
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Divyesh Patel</strong>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment">
+                                <p>It is I Divyesh Patel who started the journey of digital
+                                    marketing at the time of covid-19 because I didn't get enough </p>
+                                <p class="moretext4">
+                                    clients due to the
+                                    lockdown. I was from the non-technical field so initially capturing all this
+                                    information was very difficult. Now I got 3-4 clients each week from google
+                                    location, and 2-3 from Instagram and I also set an online appointment segment so
+                                    anyone can book my appointment as per my preferred time and place. I
+                                    recommend this course to each and every person who wants
+                                    to grow in his career and especially belongs to the health and fitness industry.
+                                </p>
+                                <div class="mt-md-1 mt-4">
+                                    <a href="javascript:void(0);" class="about-btn moreless-button4">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="./images/fitit/debug-review-3.webp" class="img-fluid" />
+                                    </div>
+                                    <div class="name-user">
+                                        <strong></strong>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment">
+                                <p>One of the BEST institute. Lots to learn from the professional coach ANIRUDH KHURANA.
+                                    This place
+                                    offers more than expected. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="./images/fitit/debug-review.webp" class="img-fluid" />
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Desai Shubham</strong>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment">
+                                <p>Helpful guidance
+                                    I would like to thank you for the helpful guidance provided by the Anirudh sir. I am
+                                    happy with
+                                    my </p>
+                                <p class="moretext3">
+                                    tutor who is very efficient and shared his knowledge and experience with me.
+                                </p>
+                                <div class="mt-md-1 mt-4">
+                                    <a href="javascript:void(0);" class="about-btn moreless-button3">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="./images/fitit/debug-review-2.webp" class="img-fluid" />
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Aditya Jaiswal</strong>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment">
+                                <p>Best place to upgrade and learn new skills to excel in Software Industry. Highly
+                                    recommended for
+                                    exponential growth. 💯</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="margintop">
+        <div class="bg-full-bd"
+            style="background-image: url(./images/gcs/contact-us.webp);background-attachment: local;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="contact-us">
+                            <h2>Contact Us For <br> More Details</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <div class="contact-us-form">
+                            <div class="mb-4">
+                                <h4 class="fill">Fill The Form :-</h4>
+                            </div>
+                            <form action="">
+                                <div>
+                                    <input type="text" placeholder="Name" class="form-control in-put">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Email" class="form-control in-put">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Enter your city" class="form-control in-put">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Business/company/Organization"
+                                        class="form-control in-put">
+                                </div>
+                                <div>
+                                    <input type="number" placeholder="Mobile" class="form-control in-put">
+                                </div>
+                                <div>
+                                    <textarea name="massages" placeholder="Massages" class="in-put"></textarea>
+                                </div>
+                                <button type="button" class="submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-sec">
+                        <div class="logo d-none d-md-block">
+                            <img src="./images/logos/GCS-logo.webp" alt="GCS" class="img-fluid" width="180px">
+                        </div>
+                        <div class="logo d-block d-md-none">
+                            <img src="./images/logos/GCS-logo.webp" alt="GCS" class="img-fluid">
+                        </div>
+                        <p>Gomzi Consulting Services (GCS) is a leading group managing diverse businesses,
+                            offering customized solutions for growth and profitability.</p>
+                        <ul class="mt-4">
+                            <li><a href="tel:9773174522"><i class="fas fa-phone-alt"></i> +91 97731 74522</a></li>
+                            <li><a href="mailto:gomziconsultingservices@gmail.com"><i class="fas fa-envelope"></i>
+                                    gomziconsultingservices@gmail.com</a></li>
+                            <li><a href="javascript:void(0);"><i class="fas fa-map-marker-alt"></i> G-306, Sovereign
+                                    Shoppers, Anand Mahal
+                                    Rd,
+                                    beside Sindhu Seva Samiti School, Adajan Gam,
+                                    Surat, Gujarat 395009</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mt-md-5 mt-3">
+                    <div class="footer-test ml-lg-4">
+                        <p>Links</p>
+                        <ul class="mt-4">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./digital-marketing-agency.html">FitIT</a></li>
+                            <li><a href="./business-consulting-services.html">Takshak</a></li>
+                            <li><a href="javascript:void(0);">A to Z Finance</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-md-5 mt-3">
+                    <div class="footer-test ml-lg-4">
+                        <p>Information</p>
+                        <ul class="mt-4">
+                            <li><a href="javascript:void(0);">Terms & Condition</a></li>
+                            <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0);">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-md-5 mt-3 p-0">
+                    <div class="footer-test mr-md-3 ml-3 ml-md-0">
+                        <p>Social Media</p>
+                        <div class="f_social_icon mt-md-4 mt-3">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="https://www.instagram.com/takshakmanagementconsultant/"
+                                class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="col-md-12 p-0">
+        <div class="footer-copyright">
+            <p>© 2023-2024 <span class="ml-2">All Rights Reserved</span></p>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="wrapper-thing">
+                    <h2>coming soon<span class="dot">.</span></h2>
+                    <p>Sent Massage on Instagram</p>
+                    <div class="icons-thing">
+                        <a href="javascript:void(0);"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/takshakmanagementconsultant/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./plugins/bootstrap/bootstrap.min.js"></script>
+    <link href="./css/effect.css" rel="stylesheet">
+    <script src="./js/main.js"></script>
+    <link href="./css/flashy.min.css" rel="stylesheet">
+    <script src="./js/jquery.flashy.min.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
+    <script>;
+
+        $('.moreless-button').click(function () {
+            $('.moretext').slideToggle();
+            if ($('.moreless-button').text() == "Read more") {
+                $(this).text("Read less");
+            } else {
+                $(this).text("Read more");
+            }
+        });
+
+        $('.moreless-button1').click(function () {
+            $('.moretext1').slideToggle();
+            if ($('.moreless-button1').text() == "Read more") {
+                $(this).text("Read less")
+            } else {
+                $(this).text("Read more")
+            }
+        });
+
+        $('.moreless-button2').click(function () {
+            $('.moretext2').slideToggle();
+            if ($('.moreless-button2').text() == "Read more") {
+                $(this).text("Read less")
+            } else {
+                $(this).text("Read more")
+            }
+        });
+
+        $('.moreless-button3').click(function () {
+            $('.moretext3').slideToggle();
+            if ($('.moreless-button3').text() == "Read more") {
+                $(this).text("Read less")
+            } else {
+                $(this).text("Read more")
+            }
+        });
+
+        $('.moreless-button4').click(function () {
+            $('.moretext4').slideToggle();
+            if ($('.moreless-button4').text() == "Read more") {
+                $(this).text("Read less")
+            } else {
+                $(this).text("Read more")
+            }
+        });
+
+        $('.moreless-button5').click(function () {
+            $('.moretext5').slideToggle();
+            if ($('.moreless-button5').text() == "Read more") {
+                $(this).text("Read less")
+            } else {
+                $(this).text("Read more")
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".Services-box-1").click(function () {
+                $(".Services-box-1").addClass("services-select-active");
+                $(".Services-box-2").removeClass("services-select-active");
+                $(".Services-1").show();
+                $(".Services-2, .Services-3").hide();
+            });
+            $(".Services-box-2").click(function () {
+                $(".Services-box-2").addClass("services-select-active");
+                $(".Services-box-1").removeClass("services-select-active");
+                $(".Services-2").show();
+                $(".Services-1").hide();
+            });
+
+        });
+    </script>
+    <script>
+        $('.owl-common').owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".content-box-1").click(function () {
+                $(".content-box-1").addClass("compnay-select-active");
+                $(".content-box-2, .content-box-3, .content-box-4 ").removeClass("compnay-select-active");
+                $(".content-1").show();
+                $(".content-2, .content-3, .content-4 ").hide();
+            });
+            $(".content-box-2").click(function () {
+                $(".content-box-2").addClass("compnay-select-active");
+                $(".content-box-1, .content-box-3, .content-box-4 ").removeClass("compnay-select-active");
+                $(".content-2").show();
+                $(".content-1, .content-3, .content-4 ").hide();
+            });
+            $(".content-box-3").click(function () {
+                $(".content-box-3").addClass("compnay-select-active");
+                $(".content-box-2, .content-box-1, .content-box-4 ").removeClass("compnay-select-active");
+                $(".content-3").show();
+                $(".content-2, .content-1, .content-4 ").hide();
+            });
+            $(".content-box-4").click(function () {
+                $(".content-box-4").addClass("compnay-select-active");
+                $(".content-box-2, .content-box-3, .content-box-1 ").removeClass("compnay-select-active");
+                $(".content-4").show();
+                $(".content-2, .content-3, .content-1").hide();
+            });
+        });
+
+        // number count for stats, using jQuery animate
+        $('.counting').each(function () {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            $({ countNum: $this.text() }).animate({
+                countNum: countTo
+            },
+                {
+                    duration: 6000,
+                    easing: 'linear',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>
