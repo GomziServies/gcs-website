@@ -2103,6 +2103,7 @@ figure.effect-oscar:hover img {
     border-radius: 45px;
     font-size: 18px;
     letter-spacing: 1px;
+    cursor: pointer;
     margin: 10px;
 }
 .services-select-active {
@@ -2110,7 +2111,7 @@ figure.effect-oscar:hover img {
 }
 
 .coach-box-services:hover{
-    background: #dc7124;
+    background: #ff6b00;
     color: rgb(255, 255, 255);
     transition: 0.4s;
 }
@@ -2476,4 +2477,28 @@ figure.effect-oscar:hover img {
 .box-desc p{
     font-size: 20px;
     font-weight: 700;
+}
+.select-btn{
+    background-color: transparent;
+    border: 1px solid #FF7511;
+    color: #FF7511;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 16px;
+    padding: 5px 8px;
+    font-weight: 600;
+}
+.select-btn-active{
+    background-color:#FF7511;
+    border: 1px solid transparent;
+    color: #000;
+}
+.select-btn:hover{
+    background-color:#FF7511;
+    border: 1px solid transparent;
+    color: #000;
+}
+#recorded-price, #recorded-price-1{
+    display: none;
 }

@@ -1053,6 +1053,12 @@
         font-size: 16px;
         padding: 4px;
     }
+    .box-desc h5{
+        font-size: 20px;
+    }
+    .box-desc p{
+        font-size: 16px;
+    }
 }
 
 @media (min-width:576px) and (max-width:767px) {
