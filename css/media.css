@@ -34,7 +34,7 @@
     }
     .flip-card{
         width: 100%;
-        height: 260px;
+        height: 360px;
     }
     .flip-card-back{
         height: 260px;
@@ -82,11 +82,11 @@
         left: 0;
     }
     #owl-demon .owl-next{
-        left: 28%;
+        left: 20%;
     }
     .controls{
         padding: 9px 12px!important;
-        left: 17%;
+        left: 13%;
     }
     .title-side h2{
         font-size: 24px;
@@ -166,6 +166,10 @@
     }
     .footer-copyright p{
         font-size: 12px;
+    }
+    .btn-review{
+        font-size: 14px;
+        padding: 4px 6px;
     }
 }
 
@@ -340,6 +344,7 @@
     }
     .btn-review{
         font-size: 14px;
+        padding: 4px 6px;
     }
 }
 
@@ -1034,10 +1039,10 @@
         font-size: 24px;
     }
     #owl-review-1 .owl-next{
-        left: 48%;
+        left: 52%;
     }
     #owl-review-1 .owl-prev{
-        left: 34%;
+        left: 39%;
     }
     .course-box h4{
         font-size: 20px;

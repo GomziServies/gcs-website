@@ -442,11 +442,10 @@ li{
 .btn-review{
     color: #000;
     font-size: 18px;
+    background-color: #FF8024;
     font-weight: 600;
-    background: -webkit-linear-gradient(315deg, rgba(255,183,116,1) 0%, rgba(255,128,11,1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    border-radius: 5px;
+    padding: 6px 10px;
 }
 
 .why-choose{
