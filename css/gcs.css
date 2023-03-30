@@ -1149,7 +1149,9 @@ button:focus{
 .service-width img{
   width: 66%!important;
 }
-.moretext, .moretext1, .moretext2, .moretext3, .moretext4, .moretext5, .moretext6, .moretext7, .moretext8, .moretext9, .moretext10 {
+.moretext, .moretext1, .moretext2, .moretext3, .moretext4, .moretext5, .moretext6, .moretext7, .moretext8, .moretext9, .moretext10,
+.moretext, .moretext11, .moretext12, .moretext13, .moretext14, .moretext15, .moretext16, .moretext17, .moretext18, .moretext19, .moretext20,
+.moretext, .moretext21, .moretext22 {
   display: none;
 }
 
@@ -2500,4 +2502,39 @@ figure.effect-oscar:hover img {
 }
 #online-price, #online-price-1{
     display: none;
+}
+
+.privacy-policy{
+    margin-top: 120px;
+}
+
+.privacy-policy h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.privacy-policy p{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #9f9f9f;
+}
+
+.inprivacy h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffb47d;
+    margin-top: 40px;
+}
+
+.inprivacy p{
+    color: #c9c9c9;
+}
+
+.inprivacy li{
+    font-size: 18px;
+    color: #ffff;
+    font-weight: 600;
+    padding-top: 5px;
+    list-style: circle;
 }
