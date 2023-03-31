@@ -685,6 +685,13 @@ li{
   }
   .flip-card-back {
     background: #EE7015;
+    background: linear-gradient(to right, #ff702d, #ffa255);
+    background: -moz-linear-gradient(to right, #ff702d, #ffa255); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff702d), color-stop(100%, #ffa255)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(to right, #ff702d, #ffa255); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(to right, #ff702d, #ffa255); /* Opera 11.10+ */
+    background: -ms-linear-gradient(to right, #ff702d, #ffa255); /* IE10+ */
+    background: linear-gradient(to right, #ff702d, #ffa255); /* W3C */
     height: 442px;
     padding: 10px;
     color: white;
@@ -709,6 +716,13 @@ li{
     font-weight: 600;
     font-size: 52px;
     background: linear-gradient(84.43deg, #FF7511 31.24%, rgba(255, 117, 17, 0) 148.56%);
+    background: linear-gradient(84.43deg, #FF7511 31.24%, rgba(255, 117, 17, 0) 148.56%);
+    background: -moz-linear-gradient(84.43deg, #FF7511 31.24%, rgba(255, 117, 17, 0) 148.56%); /* FF3.6+ */
+    background: -webkit-gradient(84.43deg, #FF7511 31.24%, rgba(255, 117, 17, 0) 148.56%); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(84.43deg, #FF7511 31.24%, rgba(255, 117, 17, 0) 148.56%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(84.43deg, #FF7511 31.24%, rgba(255, 117, 17, 0) 148.56%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(84.43deg, #FF7511 31.24%, rgba(255, 117, 17, 0) 148.56%); /* IE10+ */
+    background: linear-gradient(84.43deg, #FF7511 31.24%, rgba(255, 117, 17, 0) 148.56%); /* W3C */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -2193,6 +2207,12 @@ figure.effect-oscar:hover img {
   
   .flip-card-back-fitit {
     background: linear-gradient(to right, #ff702d, #ffa255);
+    background: -moz-linear-gradient(to right, #ff702d, #ffa255); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff702d), color-stop(100%, #ffa255)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(to right, #ff702d, #ffa255); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(to right, #ff702d, #ffa255); /* Opera 11.10+ */
+    background: -ms-linear-gradient(to right, #ff702d, #ffa255); /* IE10+ */
+    background: linear-gradient(to right, #ff702d, #ffa255); /* W3C */
     border-radius: 10px;
     color: white;
     padding: 10px;
