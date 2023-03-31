@@ -1064,6 +1064,17 @@
     .box-desc p{
         font-size: 16px;
     }
+    #owl-review .owl-prev, #owl-instas .owl-prev, #owl-review-2 .owl-prev, #owl-placement-1 .owl-prev {
+        left: 37%;
+    }
+    .owl-dots {
+        position: absolute;
+        left: 22%;
+        bottom: -35px;
+    }
+    #owl-review .owl-next, #owl-instas .owl-next, #owl-review-2 .owl-next, #owl-placement-1 .owl-next{
+        left: 52%;
+    }
 }
 
 @media (min-width:576px) and (max-width:767px) {

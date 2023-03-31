@@ -13,10 +13,8 @@
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto&family=Ubuntu&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/@tabler/core@1.0.0-beta10/dist/css/tabler-flags.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/popup-form-style.css">
-    <link rel="stylesheet" type="text/css" href="./plugins/sweetalert2/sweetalert2.min.css">
     <link rel="stylesheet" type="text/css" href="./css/gcs.css">
     <link rel="stylesheet" type="text/css" href="./css/media.css">
     <link rel="stylesheet" type="text/css" href="./css/owl-style.css">
@@ -24,16 +22,12 @@
     <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="./css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="./css/owl.theme.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./js/owl.carousel.js"></script>
-    <link rel="stylesheet" type="text/css" href="./plugins/toastr/toastr.min.css">
-    <script src="./plugins/toastr/toastr.min.js"></script>
     <script type="text/javascript" src="./js/lazy-load.js"></script>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
 
     <script type="text/javascript">
         function openside() {
@@ -43,79 +37,6 @@
         function sideclose() {
             document.getElementById('demo').style.width = '0px';
         }
-
-        $(document).ready(function () {
-            $("#owl-insta").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                navigation: true,
-                loop: false,
-                items: 6,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                pagination: true,
-            });
-            $("#owl-instas").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                navigation: true,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                pagination: true,
-            });
-            $("#owl-review-1, #owl-review-2").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: true,
-                loop: false,
-                items: 4,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-course, #owl-course-1").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: true,
-                loop: false,
-                items: 5,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-demo1").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: false,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-demo2").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: false,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-active").owlCarousel({
-                autoPlay: false, //Set AutoPlay to 3 seconds
-                navigation: true,
-                items: 3,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [979, 1],
-                pagination: false,
-            });
-            $("#owl-active-1").owlCarousel({
-                autoPlay: false, //Set AutoPlay to 3 seconds
-                nav: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [979, 1],
-                pagination: false,
-            });
-        })
     </script>
     <script type="text/javascript">
         /*---------------------Drop down----------------------*/
@@ -129,42 +50,84 @@
 
         /*---------------------End----------------------*/
     </script>
-
     <script>
         $(document).ready(function () {
-            var owl = $('#owl-demon');
-            owl.owlCarousel({
-                loop: false,
-                autoplay: true,
+            $("#owl-insta").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                navigation: true,
+                loop: true,
+                items: 6,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                pagination: true,
+            });
+            $("#owl-instas").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                navigation: true,
+                loop: true,
                 items: 1,
-                dots: false,
-                autoplaySpeed: 1000,
-                autoplayTimeout: 3000,
-                animateOut: 'fadeOut',
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                pagination: true,
+            });
+            $("#owl-review-1, #owl-review-2").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
                 nav: true,
-                autoplayHoverPause: true
+                loop: true,
+                items: 4,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
             });
-
-            owl.trigger('refresh.owl.carousel');
-
-            $('.showhide').click(function () {
-
-                $(this).toggleClass('fa-pause',
-                    function () {
-                        owl.trigger('stop.owl.autoplay', [2000]);
-                    });
-
-                $(this).toggleClass('fa-play',
-                    function () {
-                        owl.trigger('play.owl.autoplay', [2000]);
-                    });
+            $("#owl-course, #owl-course-1").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 5,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
             });
-        });
+            $("#owl-demo1").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: false,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-demo2").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: false,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-active").owlCarousel({
+                autoPlay: true, //Set AutoPlay to 3 seconds
+                navigation: true,
+                items: 3,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [979, 1],
+                pagination: true,
+            });
+            $("#owl-active-1").owlCarousel({
+                autoPlay: false, //Set AutoPlay to 3 seconds
+                nav: false,
+                items: 1,
+                loop: true,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [979, 1],
+                pagination: true,
+            });
+        })
         $(document).ready(function () {
             $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
             $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
         });
-
     </script>
     <script>
         $(function () {
@@ -267,6 +230,7 @@
                             <div class="btn-box banner-btn mt-md-3 mt-2">
                                 <a class="theme-btn style-two" data-toggle="modal"
                                 data-target="#exampleModalCenter">Learn More</a>
+                                <a href="./pdf/FITIT-PACKAGE.pdf" class="theme-btn style-two" download>Download PDF</a>
                             </div>
                         </div>
                     </div>
@@ -538,6 +502,7 @@
                             </p>
                             <a href="javascript:void(0);" class="btn" data-toggle="modal"
                                 data-target="#exampleModalCenter">Know More</a>
+                            <a href="./pdf/FITIT-PACKAGE.pdf" class="btn" download>Download PDF</a>
                         </div>
                         <div class="approach d-block d-md-none">
                             <p>
@@ -557,8 +522,9 @@
                                 progress and performance of your campaigns.
                             </p>
                             <div class="mt-md-3">
-                                <a href="javascript:void(0);" class="about-btn moreless-button5"
+                                <a href="javascript:void(0);" class="mt-1 about-btn moreless-button5"
                                     style="color: #000!important;">Read more</a>
+                                <a href="./pdf/FITIT-PACKAGE.pdf" class="mt-1 about-btn" style="border-radius: 5px; color: #000!important;" download>Download PDF</a>
                             </div>
                         </div>
                     </div>
@@ -672,8 +638,8 @@
                     </div>
                 </div>
                 <div class="row mt-md-4 mt-3">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-4">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
                         <div class="video-card">
                             <div class="video-img">
                                 <div class="ply1 black-before">
@@ -694,32 +660,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="video-card mt-3 mt-md-0">
-                            <div class="video-img">
-                                <div class="ply1 black-before">
-                                    <img class="" data-src="./images/review/review-video-3.webp" width="100%"
-                                        style="border-radius: 10px 10px 0px 0px;" alt="client journey"
-                                        src="./images/review/review-video-3.webp">
-                                    <div class="video-btn">
-                                        <a href="https://youtu.be/2-49dtoYAv8" data-flashy-type="video" class="custom">
-                                            <span class="newthing"><i class="fas fa-play"></i></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="video-content">
-                                <h4>Pavan Rana (Stallon Manager)</h4>
-                                <a href="https://youtu.be/2-49dtoYAv8" data-flashy-type="video" class="custom"><i
-                                        class="fas fa-play mr-1"></i> Watch Video</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-dark">
+    <section class="bg-dark d-none d-md-block">
         <div class="container-fluid py-md-5 py-3">
             <div class="container pb-md-5">
                 <div class="col-md-12 text-center px-0 px-md-3">
@@ -733,7 +678,7 @@
                 </div>
                 <!-- Services-1 -->
                 <div class="row mt-lg-4 mt-md-3 Services-1 mb-5 mb-md-0">
-                    <div id="owl-review-1" class="owl-carousel owl-theme owl-common">
+                    <div id="owl-review-1" class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="flip-card-fitit" tabIndex="0">
                                 <div class="flip-card-inner-fitit">
@@ -921,7 +866,7 @@
                 </div>
                 <!-- Services-2 -->
                 <div class="row mt-5 mt-lg-4 mt-md-3 Services-2 mb-5 mb-md-0">
-                    <div id="owl-review-2" class="owl-carousel owl-theme owl-common">
+                    <div id="owl-review-2" class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="flip-card-fitit" tabIndex="0">
                                 <div class="flip-card-inner-fitit">
@@ -1004,6 +949,121 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark d-block d-md-none">
+        <div class="container-fluid py-md-5 py-3">
+            <div class="container pb-md-5">
+                <div class="col-md-12 text-center px-0 px-md-3">
+                    <div class="heading-text">
+                        <h2 class="text-center">Our Services</h2>
+                    </div>
+                    <ul class="d-flex justify-content-center mt-md-3">
+                        <li class="coach-box-services Services-box-3 services-select-active">MARKETING GURU</li>
+                        <li class="coach-box-services Services-box-4">INDIVIDUAL SERVICES</li>
+                    </ul>
+                </div>
+                <div class="col-md-7" id="marketing-services">
+                    <div class="agency-design">
+                        <div class="details-line compnay-selects mt-3">
+                            <details open>
+                                <summary>Website Development and Website Design</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>UP TO 100 PAGES</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Social media account marketing and handling</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>Facebook, Instagram, whatsapp, Youtube and Google my Business</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Paid Advertisement </summary>
+                                <div class="compnay-content content-1">
+                                    <h5>Meta</h5>
+                                    <h5>Google Ads</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Content Writing</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>Ad Copy & Video Scripts</h5>
+                                    <h5>Ad Scripts & Blogs</h5>
+                                    <h5>Caption & Articles</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Content Shoot</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>Video Shoot</h5>
+                                    <h5>Photo Shoot</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Content Edit</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>Photo Edit</h5>
+                                    <h5>15 Reels And 3 Major Video</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>GMB Maintain</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>Google my business profile Maintain</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Pr Activities and Events</summary>
+                            </details>
+                            <details>
+                                <summary>Our Fees</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>Monthly :- ₹ 25,000/-</h5>
+                                    <h5>Yearly :- ₹2,49,000</h5>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7" id="mobile-services" style="display: none;">
+                    <div class="agency-design">
+                        <div class="details-line compnay-selects mt-3">
+                            <details open>
+                                <summary>Professional Logo Design</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>2 Logo Option</h5>
+                                    <h5>2 Times Revised</h5>
+                                    <h5>4 Color Option</h5>
+                                    <h5>Fees:- Only Logo ₹1,999/- and </h5>
+                                    <h5>₹2,999/- Logo with Animation</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Social media account marketing and handling</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>Facebook, Instagram, whatsapp, Youtube and Google my Business</h5>
+                                    <h5>Fees:- ₹4,999/- Monthly</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Social Graphic Post Package </summary>
+                                <div class="compnay-content content-1">
+                                    <h5>30 Post Per Bundle</h5>
+                                    <h5>Fees:- ₹7,200/-</h5>
+                                </div>
+                            </details>
+                            <details>
+                                <summary>Website development and Designing</summary>
+                                <div class="compnay-content content-1">
+                                    <h5>5 to 10 Web Pages</h5>
+                                    <h5>Fees:- ₹9,999/-</h5>
+                                </div>
+                            </details>
                         </div>
                     </div>
                 </div>
@@ -1427,15 +1487,12 @@
         </div>
     </div>
 
+    <script src="./js/jquery.flashy.min.js"></script>
     <script src="./plugins/bootstrap/bootstrap.min.js"></script>
     <link href="./css/effect.css" rel="stylesheet">
     <script src="./js/main.js"></script>
     <link href="./css/flashy.min.css" rel="stylesheet">
-    <script src="./js/jquery.flashy.min.js"></script>
 
-    <script>
-        AOS.init()
-    </script>
     <script>;
         $(document).ready(function () {
             $("#online-btn").click(function () {
@@ -1533,25 +1590,20 @@
                 $(".Services-1").hide();
             });
 
+            $(".Services-box-3").click(function () {
+                $(".Services-box-3").addClass("services-select-active");
+                $(".Services-box-4").removeClass("services-select-active");
+                $("#marketing-services").show();
+                $("#mobile-services").hide();
+            });
+            $(".Services-box-4").click(function () {
+                $(".Services-box-4").addClass("services-select-active");
+                $(".Services-box-3").removeClass("services-select-active");
+                $("#mobile-services").show();
+                $("#marketing-services").hide();
+            });
+
         });
-    </script>
-    <script>
-        $('.owl-common').owlCarousel({
-            loop: false,
-            margin: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        })
     </script>
     <script>
         $(document).ready(function () {
@@ -1579,26 +1631,6 @@
                 $(".content-4").show();
                 $(".content-2, .content-3, .content-1").hide();
             });
-        });
-
-        // number count for stats, using jQuery animate
-        $('.counting').each(function () {
-            var $this = $(this),
-                countTo = $this.attr('data-count');
-            $({ countNum: $this.text() }).animate({
-                countNum: countTo
-            },
-                {
-                    duration: 6000,
-                    easing: 'linear',
-                    step: function () {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function () {
-                        $this.text(this.countNum);
-                        //alert('finished');
-                    }
-                });
         });
     </script>
 </body>

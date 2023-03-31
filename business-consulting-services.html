@@ -32,6 +32,7 @@
     <link rel="stylesheet" type="text/css" href="./plugins/toastr/toastr.min.css">
     <script src="./plugins/toastr/toastr.min.js"></script>
     <script type="text/javascript" src="./js/lazy-load.js"></script>
+
     <script type="text/javascript">
         function openside() {
             document.getElementById('demo').style.width = '100%';
@@ -40,109 +41,8 @@
         function sideclose() {
             document.getElementById('demo').style.width = '0px';
         }
-
-        $(document).ready(function () {
-            $("#owl-insta").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                navigation: true,
-                loop: false,
-                items: 6,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                pagination: true,
-            });
-            $("#owl-instas").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                navigation: true,
-                loop: false,
-                items: 4,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                pagination: true,
-            });
-            $("#owl-instass").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav:true,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                pagination: true,
-            });
-            $("#owl-instasss").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                navigation: true,
-                loop: false,
-                items: 3,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                pagination: true,
-            });
-            $("#owl-review").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: true,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-course").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: true,
-                loop: false,
-                items: 5,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-placement").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: false,
-                loop: false,
-                items: 3,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-review-1").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: true,
-                loop: false,
-                items: 3,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-demo1").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: false,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-review-2").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: true,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-placement-1").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: true,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-        })
     </script>
+
     <script type="text/javascript">
         /*---------------------Drop down----------------------*/
         $(document).ready(function () {
@@ -158,40 +58,112 @@
 
     <script>
         $(document).ready(function () {
-            var owl = $('#owl-demon');
-            owl.owlCarousel({
+            $("#owl-insta").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                navigation: true,
                 loop: true,
-                autoplay: true,
-                items: 1,
-                dots: false,
-                autoplaySpeed: 1000,
-                autoplayTimeout: 3000,
-                animateOut: 'fadeOut',
-                nav: true,
-                autoplayHoverPause: true
+                items: 6,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                pagination: false,
             });
-
-            owl.trigger('refresh.owl.carousel');
-
-            $('.showhide').click(function () {
-
-                $(this).toggleClass('fa-pause',
-                    function () {
-                        owl.trigger('stop.owl.autoplay', [2000]);
-                    });
-
-                $(this).toggleClass('fa-play',
-                    function () {
-                        owl.trigger('play.owl.autoplay', [2000]);
-                    });
+            $("#owl-instas").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav:true,
+                dots: false,
+                loop: true,
+                items: 4,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+            });
+            $("#owl-instass").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                pagination: true,
+            });
+            $("#owl-instasss").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                navigation: true,
+                loop: true,
+                items: 3,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                pagination: true,
+            });
+            $("#owl-review").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-course").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 5,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-placement").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: false,
+                loop: true,
+                items: 3,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-review-1").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                navigator:true,
+                loop: true,
+                items: 3,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: true,
+            });
+            $("#owl-demo1").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: false,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-review-2").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-placement-1").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
             });
         });
         $(document).ready(function () {
             $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
             $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
         });
-
     </script>
+
     <script>
         $(function () {
             //Scroll event
@@ -212,7 +184,8 @@
     <div class="go-top">
         <p class="go-top-text"><i class="fas fa-arrow-up"></i></p>
     </div>
-    <a class="float-button" target="_blank" href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about Takshak Management service">
+    <a class="float-button" target="_blank"
+        href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about Takshak Management service">
         <i class="fab fa-whatsapp"></i>
         <span>Message<span>
     </a>
@@ -286,7 +259,8 @@
                             <div class="takshak-title">
                                 <h1><span>Welcome to</span><br> Takshak Management Consultants</h1>
                                 <h2>Your One-Stop Solution for Management Consulting Services</h2>
-                                <a href="javascript:void(0);" class="btn-readmore btn">Know More</a>
+                                <a href="javascript:void(0);" class="btn-readmore btn" data-toggle="modal"
+                                    data-target="#exampleModalCenter">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -414,12 +388,14 @@
                                 focus, and a willingness to learn from failures and successes.</p>
 
                             <h5 class="mt-md-3"><b>2.Precise Strategies</b></h5>
-                            <p class="mt-1 mt-md-3">The ideal business mindset is one that balances perseverance, agility,
+                            <p class="mt-1 mt-md-3">The ideal business mindset is one that balances perseverance,
+                                agility,
                                 innovation, strategy, precision, customer-centricity, and a commitment to learning from
                                 both victories and setbacks.</p>
 
                             <h5 class="mt-md-3"><b>3.Polish Operational Excellence</b></h5>
-                            <p class="mt-1 mt-md-3">To polish operational excellence in business, one can focus on improving
+                            <p class="mt-1 mt-md-3">To polish operational excellence in business, one can focus on
+                                improving
                                 processes, increasing efficiency, reducing waste, enhancing quality, promoting teamwork,
                                 fostering a culture of continuous improvement, utilizing technology, and regularly
                                 measuring and analyzing performance metrics.</p>
@@ -428,7 +404,8 @@
                     <div class="col-md-6 order-md-2 order-1">
                         <div class="text-center">
                             <img src="./images/takshak/business-3ps.png" class="img-fluid d-none d-md-block" alt="3 Ps">
-                            <img src="./images/takshak/business-3ps.png" class="d-block d-md-none" width="100%" alt="3 Ps">
+                            <img src="./images/takshak/business-3ps.png" class="d-block d-md-none" width="100%"
+                                alt="3 Ps">
                         </div>
                     </div>
                 </div>
@@ -452,8 +429,9 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 text-center">
                         <div class="Services">
-                            <h2 class="mb-1 mb-md-4">Business Development Services</h2>
-                            <p class="d-none d-md-block">At Takshak Management Consultants, we offer a wide range of consulting services to help
+                            <h2 class="mb-1 mb-md-4 d-none d-md-block">Business Development Services</h2>
+                            <p class="d-none d-md-block">At Takshak Management Consultants, we offer a wide range of
+                                consulting services to help
                                 businesses achieve their goals. Our services include:</p>
                         </div>
                     </div>
@@ -577,18 +555,22 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/main-counslting.png" style="width:95%" class="m-auto" alt="Legal consultant "></div>
+                                        <div class=""><img src="/images/takshak/main-counslting.png" style="width:95%"
+                                                class="m-auto" alt="Legal consultant "></div>
                                         <div class="content-service">
                                             <h4>Legal consultant </h4>
                                             <p class="">
-                                                provides a wide variety of legal expertise ranging from improve organizations profitability and efficiency, advise
+                                                provides a wide variety of legal expertise ranging from improve
+                                                organizations profitability and efficiency, advise
                                             </p>
                                             <p class="moretext11">
-                                                   solutions for client development strategies, marketing and productivity, consult on legal and program issues to actively manage risks, analyze problems and develop solutions.
-                                              </p>
-                                              <div class="mt-2">
+                                                solutions for client development strategies, marketing and productivity,
+                                                consult on legal and program issues to actively manage risks, analyze
+                                                problems and develop solutions.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button11" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -596,18 +578,22 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class=""><img src="./images/fitit/social-media.png" style="width:100%" alt="Social media consultant"></div>
+                                        <div class=""><img src="./images/fitit/social-media.png" style="width:100%"
+                                                alt="Social media consultant"></div>
                                         <div class="content-service">
                                             <h4>Social media consultant</h4>
                                             <p class="">
-                                                we  helps brands and businesses leverage social media and social media
+                                                we helps brands and businesses leverage social media and social media
                                             </p>
                                             <p class="moretext12">
-                                                strategy in general. It involves planning, developing, and improving a brand's social media presence through digital marketing techniques. In addition, managing crises and budget to align with the brand's objectives.
-                                              </p>
-                                              <div class="mt-2">
+                                                strategy in general. It involves planning, developing, and improving a
+                                                brand's social media presence through digital marketing techniques. In
+                                                addition, managing crises and budget to align with the brand's
+                                                objectives.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button12" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -615,18 +601,21 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/ser-4.png" style="width:95%" alt="Sales consultant"></div>
+                                        <div class=""><img src="/images/takshak/ser-4.png" style="width:95%"
+                                                alt="Sales consultant"></div>
                                         <div class="content-service">
                                             <h4>Sales consultant </h4>
                                             <p class="">
-                                                Responsible for developing and maintaining the client base of the organization.
+                                                Responsible for developing and maintaining the client base of the
+                                                organization.
                                             </p>
                                             <p class="moretext14">
-                                                also we  create sales strategies and techniques to increase the client base and maintain the client interaction records of the company.
-                                              </p>
-                                              <div class="mt-2">
+                                                also we create sales strategies and techniques to increase the client
+                                                base and maintain the client interaction records of the company.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button14" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -634,18 +623,21 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/main-counslting.png" style="width:90%" class="m-auto" alt="Wellness/Fitness consultant"></div>
+                                        <div class=""><img src="/images/takshak/main-counslting.png" style="width:90%"
+                                                class="m-auto" alt="Wellness/Fitness consultant"></div>
                                         <div class="content-service">
                                             <h4>Wellness/Fitness consultant</h4>
                                             <p class="">
-                                                helping people achieve their health and fitness goals. we  work with individuals, 
+                                                helping people achieve their health and fitness goals. we work with
+                                                individuals,
                                             </p>
                                             <p class="moretext15">
-                                                groups, and organizations to design exercise programs  & scientific reserach based diet that meet their specific needs.
-                                              </p>
-                                              <div class="mt-2">
+                                                groups, and organizations to design exercise programs & scientific
+                                                reserach based diet that meet their specific needs.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button15" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -653,18 +645,22 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class=""><img src="/images/atoz/introduction-img.png" style="width:85%" alt="Growth Marketing consultant"></div>
+                                        <div class=""><img src="/images/atoz/introduction-img.png" style="width:85%"
+                                                alt="Growth Marketing consultant"></div>
                                         <div class="content-service">
                                             <h4>Growth Marketing consultant</h4>
                                             <p class="">
-                                                helps a company achieve sustainable growth with a well-planned and executable
+                                                helps a company achieve sustainable growth with a well-planned and
+                                                executable
                                             </p>
                                             <p class="moretext16">
-                                                business growth strategy. Not only can they achieve increased sales, but they can also increase growth capacities by leveraging their expertise and helping build an infrastructure to support growth.
-                                              </p>
-                                              <div class="mt-2">
+                                                business growth strategy. Not only can they achieve increased sales, but
+                                                they can also increase growth capacities by leveraging their expertise
+                                                and helping build an infrastructure to support growth.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button16" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -672,18 +668,21 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/complines.png" style="width:85%" class="m-auto" alt="Career coaching consultancy"></div>
+                                        <div class=""><img src="/images/takshak/complines.png" style="width:85%"
+                                                class="m-auto" alt="Career coaching consultancy"></div>
                                         <div class="content-service pt-0">
                                             <h4>Career coaching consultancy</h4>
                                             <p class="">
-                                                Career Coaching Consultancy Advice about training, employment options and 
+                                                Career Coaching Consultancy Advice about training, employment options
+                                                and
                                             </p>
                                             <p class="moretext17">
-                                                career progression to professionals and career changers. also provide guidance to people making decisions about their career.
-                                              </p>
-                                              <div class="mt-2">
+                                                career progression to professionals and career changers. also provide
+                                                guidance to people making decisions about their career.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button17" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -691,18 +690,20 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class="text-center"><img src="./images/fitit/pr-events.png" style="width:65%" alt="PR consultancy" class="m-auto"></div>
+                                        <div class="text-center"><img src="./images/fitit/pr-events.png"
+                                                style="width:65%" alt="PR consultancy" class="m-auto"></div>
                                         <div class="content-service">
                                             <h4>PR consultancy</h4>
                                             <p class="">
-                                                include writing, for example press releases, public speaking, organizing events and more.
+                                                include writing, for example press releases, public speaking, organizing
+                                                events and more.
                                             </p>
                                             <p class="moretext18">
                                                 Public relations consultants handle the public image of a company.
-                                              </p>
-                                              <div class="mt-2">
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button18" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -710,18 +711,21 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class="text-center"><img src="./images/fitit/managment-skills.png" style="width:70%" alt="Leadership consulting" class="m-auto" ></div>
+                                        <div class="text-center"><img src="./images/fitit/managment-skills.png"
+                                                style="width:70%" alt="Leadership consulting" class="m-auto"></div>
                                         <div class="content-service pt-0">
                                             <h4 class="">Leadership consulting</h4>
                                             <p class="">
                                                 can assess the current state of the organization and provide guidance on
                                             </p>
                                             <p class="moretext19">
-                                                how to improve leadership skills within the organization. This may include developing a leadership development plan, providing training for high potentials, or facilitating discussions on leadership principles.
-                                              </p>
-                                              <div class="mt-2">
+                                                how to improve leadership skills within the organization. This may
+                                                include developing a leadership development plan, providing training for
+                                                high potentials, or facilitating discussions on leadership principles.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button19" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -729,18 +733,23 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class=""><img src="./images/fitit/video-edit.png" style="width:70%" alt="Product development consulting/ Brand image" class="m-auto" ></div>
+                                        <div class=""><img src="./images/fitit/video-edit.png" style="width:70%"
+                                                alt="Product development consulting/ Brand image" class="m-auto"></div>
                                         <div class="content-service pt-0">
                                             <h4>Product development consulting/ Brand image</h4>
                                             <p class="">
                                                 committed to helping clients develop products that fit
                                             </p>
                                             <p class="moretext20">
-                                                market needs, produce attractive margins, provide platforms for add-on offerings, and enhance the reputation of brands for future business growth. Our work in product development includes developing, defining, and implementing strategies that help clients make lasting improvements to their innovation and business performance.
-                                              </p>
-                                              <div class="mt-2">
+                                                market needs, produce attractive margins, provide platforms for add-on
+                                                offerings, and enhance the reputation of brands for future business
+                                                growth. Our work in product development includes developing, defining,
+                                                and implementing strategies that help clients make lasting improvements
+                                                to their innovation and business performance.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button20" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -748,18 +757,22 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class=""><img src="./images/fitit/webdevlopment.png" style="width:65%" alt="Design consultant" class="m-auto" ></div>
+                                        <div class=""><img src="./images/fitit/webdevlopment.png" style="width:65%"
+                                                alt="Design consultant" class="m-auto"></div>
                                         <div class="content-service">
                                             <h4>Design consultant</h4>
                                             <p class="">
-                                                function in the fields of interior design, fashion design, or graphic design.
+                                                function in the fields of interior design, fashion design, or graphic
+                                                design.
                                             </p>
                                             <p class="moretext21">
-                                                They could help clients utilize their living space by creating design plans, selecting color themes and styles, arranging furniture, or fixing lighting and other fixtures.
-                                              </p>
-                                              <div class="mt-2">
+                                                They could help clients utilize their living space by creating design
+                                                plans, selecting color themes and styles, arranging furniture, or fixing
+                                                lighting and other fixtures.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button21" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -767,18 +780,21 @@
                             <div class="item mx-2">
                                 <div class="card-box card-style-1 text-start">
                                     <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/complines.png" style="width:95%" alt="Compliance consulting"></div>
+                                        <div class=""><img src="/images/takshak/complines.png" style="width:95%"
+                                                alt="Compliance consulting"></div>
                                         <div class="content-service">
                                             <h4>Compliance consulting</h4>
                                             <p class="">
-                                                compliance consulting can be defined as expert-driven consulting services aimed at 
+                                                compliance consulting can be defined as expert-driven consulting
+                                                services aimed at
                                             </p>
                                             <p class="moretext22">
-                                                assisting businesses to identify, better manage and mitigate various IT and enterprise compliance risks.
-                                              </p>
-                                              <div class="mt-2">
+                                                assisting businesses to identify, better manage and mitigate various IT
+                                                and enterprise compliance risks.
+                                            </p>
+                                            <div class="mt-2">
                                                 <a class="moreless-button22" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -786,319 +802,183 @@
                         </div>
                     </div>
                     <div class="d-block d-md-none">
-                        <div id="owl-instass" class="owl-carousel owl-theme">
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/ser-4.png" style="width:95%" alt="Strategic Consulting"></div>
-                                        <div class="content-service">
-                                            <h4>Strategic Consulting</h4>
-                                            <p class="">
-                                                Our team of experts can help you develop a strategic plan to achieve your business
-                                            </p>
-                                            <p class="moretext6">
-                                                goals. We can assist you in identifying growth opportunities, improving operational efficiency, and enhancing customer experience.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button6" href="javascript:void(0);">Read more</a>
-                                              </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-md-7">
+                            <div class="coach-box">
+                                <span style="font-size: 16px;">What we Provide ?</span>
+                                <h2 class="w-100">Business Development Services </h2>
                             </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/ser-1.png" class="img-fluid" alt="Operations Consulting"></div>
-                                        <div class="content-service">
-                                            <h4>Operations Consulting</h4>
-                                            <p class="">
-                                                We provide a range of services to help you streamline your operations, 
-                                                
-                                            </p>
-                                            <p class="moretext7">
-                                                reduce costs, and improve productivity. Our 
-                                                consultants can help you with process improvement, supply chain management, and more.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button7" href="javascript:void(0);">Read more</a>
-                                              </div>
+                            <div class="agency-design">
+                                <p>
+                                    At Takshak Management Consultants, we offer a wide range of consulting services to
+                                    help
+                                    businesses achieve their goals. Our services include:
+                                </p>
+                                <div class="details-line compnay-selects mt-3">
+                                    <details>
+                                        <summary>Strategic Consulting</summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>Our team of experts can help you develop a strategic plan to achieve
+                                                your business goals. We can assist you in identifying growth
+                                                opportunities, improving
+                                                operational efficiency, and enhancing customer experience.</h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class="service-width"><img src="/images/takshak/ser-2.png" class="m-auto" alt="Financial Consulting"></div>
-                                        <div class="content-service">
-                                            <h4>Financial Consulting</h4>
-                                            <p class="">
-                                                Our financial experts can help you optimize your financial resources, manage risks 
-                                            </p>
-                                            <p class="moretext8">
-                                                profits. We can assist you in financial planning, budgeting, forecasting, and more.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button8" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Operations Consulting</summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>We provide a range of services to help you streamline your operations,
+                                                reduce costs, and improve productivity. Our
+                                                consultants can help you with process improvement, supply chain
+                                                management, and more.</h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class="service-width"><img src="/images/takshak/ser-3.png" class="m-auto" alt="Marketing Consulting"></div>
-                                        <div class="content-service">
-                                            <h4>Marketing Consulting</h4>
-                                            <p class="">
-                                                Our marketing consultants can help you develop a marketing strategy that aligns
-                                            </p>
-                                            <p class="moretext9">
-                                                with your business goals. We can assist you in market research, branding, advertising, and more.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button9" href="javascript:void(0);">Read More</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Financial Consulting</summary>
+                                        <div class="compnay-content content-1">
+                                            <h5> Our financial experts can help you optimize your financial resources,
+                                                manage risks, and maximize profits. We can assist you in financial
+                                                planning,
+                                                budgeting,
+                                                forecasting, and more.</h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/ser-5.png" style="width:90%" alt="Financial Consulting"></div>
-                                        <div class="content-service">
-                                            <h4>Technology Consulting</h4>
-                                            <p class="">
-                                                Our technology experts can help you leverage the latest technologies to improve 
-                                            </p>
-                                            <p class="moretext10">
-                                                your business processes and gain a competitive edge. We can assist you in IT strategy development, software selection, implementation, and more.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button10" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Marketing Consulting</summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>Our marketing consultants can help you develop a marketing strategy that
+                                                aligns with your business goals. We can assist you in market research,
+                                                branding,
+                                                advertising, and more.</h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/main-counslting.png" style="width:95%" class="m-auto" alt="Legal consultant "></div>
-                                        <div class="content-service">
-                                            <h4>Legal consultant </h4>
-                                            <p class="">
-                                                provides a wide variety of legal expertise ranging from improve organizations profitability and efficiency, advise
-                                            </p>
-                                            <p class="moretext23" style="display: none;">
-                                                   solutions for client development strategies, marketing and productivity, consult on legal and program issues to actively manage risks, analyze problems and develop solutions.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button23" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Technology Consulting</summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>Our technology experts can help you leverage the latest technologies to
+                                                improve your business processes and gain a competitive edge. We can
+                                                assist you
+                                                in IT strategy development, software selection, implementation, and
+                                                more.</h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="./images/fitit/social-media.png" style="width:100%" alt="Social media consultant"></div>
-                                        <div class="content-service">
-                                            <h4>Social media consultant</h4>
-                                            <p class="">
-                                                we  helps brands and businesses leverage social media and social media
-                                            </p>
-                                            <p class="moretext24" style="display: none;">
-                                                strategy in general. It involves planning, developing, and improving a brand's social media presence through digital marketing techniques. In addition, managing crises and budget to align with the brand's objectives.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button24" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Legal consultant </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>provides a wide variety of legal expertise ranging from improve
+                                                organizations profitability and efficiency, advise
+                                                solutions for client development strategies, marketing and productivity,
+                                                consult on legal and program issues to actively manage risks, analyze
+                                                problems and develop solutions.
+                                            </h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/ser-4.png" style="width:95%" alt="Sales consultant"></div>
-                                        <div class="content-service">
-                                            <h4>Sales consultant </h4>
-                                            <p class="">
-                                                Responsible for developing and maintaining the client base of the organization.
-                                            </p>
-                                            <p class="moretext26" style="display: none;">
-                                                also we  create sales strategies and techniques to increase the client base and maintain the client interaction records of the company.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button26" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Social media consultant </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5> we helps brands and businesses leverage social media and social media
+                                                strategy in general. It involves planning, developing, and improving a
+                                                brand's social media presence through digital marketing techniques. In
+                                                addition, managing crises and budget to align with the brand's
+                                                objectives.
+                                            </h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/main-counslting.png" style="width:90%" class="m-auto" alt="Wellness/Fitness consultant"></div>
-                                        <div class="content-service">
-                                            <h4>Wellness/Fitness consultant</h4>
-                                            <p class="">
-                                                helping people achieve their health and fitness goals. we  work with individuals, 
-                                            </p>
-                                            <p class="moretext27" style="display: none;">
-                                                groups, and organizations to design exercise programs  & scientific reserach based diet that meet their specific needs.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button27" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Sales Consultant </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5> Responsible for developing and maintaining the client base of the
+                                                organization. also we create sales strategies and techniques to increase
+                                                the client base and maintain the client interaction records of the
+                                                company.
+                                            </h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="/images/atoz/introduction-img.png" style="width:85%" alt="Growth Marketing consultant"></div>
-                                        <div class="content-service">
-                                            <h4>Growth Marketing consultant</h4>
-                                            <p class="">
-                                                helps a company achieve sustainable growth with a well-planned and executable
-                                            </p>
-                                            <p class="moretext28" style="display: none;">
-                                                business growth strategy. Not only can they achieve increased sales, but they can also increase growth capacities by leveraging their expertise and helping build an infrastructure to support growth.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button28" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Wellness/ Fitness Consultant </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5> helping people achieve their health and fitness goals. we work with
+                                                individuals, groups, and organizations to design exercise programs &
+                                                scientific research based diet that meet their specific needs.
+                                            </h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/complines.png" style="width:85%" class="m-auto" alt="Career coaching consultancy"></div>
-                                        <div class="content-service pt-0">
-                                            <h4>Career coaching consultancy</h4>
-                                            <p class="">
-                                                Career Coaching Consultancy Advice about training, employment options and 
-                                            </p>
-                                            <p class="moretext29" style="display: none;">
-                                                career progression to professionals and career changers. also provide guidance to people making decisions about their career.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button29" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>growth Marketing Consultant </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>helps a company achieve sustainable growth with a well-planned and
+                                                executable business growth strategy. Not only can they achieve increased
+                                                sales, but they can also increase growth capacities by leveraging their
+                                                expertise and helping build an infrastructure to support growth.
+                                            </h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class="text-center"><img src="./images/fitit/pr-events.png" style="width:65%" alt="PR consultancy" class="m-auto"></div>
-                                        <div class="content-service">
-                                            <h4>PR consultancy</h4>
-                                            <p class="">
-                                                include writing, for example press releases, public speaking, organizing events and more.
-                                            </p>
-                                            <p class="moretext30" style="display: none;">
-                                                Public relations consultants handle the public image of a company.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button30" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Career Coaching Consultancy </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>Advice about training, employment options and career progression to
+                                                professionals and career changers. also provide guidance to people
+                                                making decisions about their career.
+                                            </h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class="text-center"><img src="./images/fitit/managment-skills.png" style="width:70%" alt="Leadership consulting" class="m-auto" ></div>
-                                        <div class="content-service pt-0">
-                                            <h4 class="">Leadership consulting</h4>
-                                            <p class="">
-                                                can assess the current state of the organization and provide guidance on
-                                            </p>
-                                            <p class="moretext31" style="display: none;">
-                                                how to improve leadership skills within the organization. This may include developing a leadership development plan, providing training for high potentials, or facilitating discussions on leadership principles.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button31" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>PR Consultancy </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>include writing, for example press releases, public speaking, organizing
+                                                events and more. Public relations consultants handle the public image of
+                                                a company.
+                                            </h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="./images/fitit/video-edit.png" style="width:70%" alt="Product development consulting/ Brand image" class="m-auto" ></div>
-                                        <div class="content-service pt-0">
-                                            <h4>Product development consulting/ Brand image</h4>
-                                            <p class="">
-                                                committed to helping clients develop products that fit
-                                            </p>
-                                            <p class="moretext32" style="display: none;">
-                                                market needs, produce attractive margins, provide platforms for add-on offerings, and enhance the reputation of brands for future business growth. Our work in product development includes developing, defining, and implementing strategies that help clients make lasting improvements to their innovation and business performance.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button32" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Leadership Consulting </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>can assess the current state of the organization and provide guidance on
+                                                how to improve leadership skills within the organization. This may
+                                                include developing a leadership development plan, providing training for
+                                                high potentials, or facilitating discussions on leadership principles.
+                                            </h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="./images/fitit/webdevlopment.png" style="width:65%" alt="Design consultant" class="m-auto" ></div>
-                                        <div class="content-service">
-                                            <h4>Design consultant</h4>
-                                            <p class="">
-                                                function in the fields of interior design, fashion design, or graphic design.
-                                            </p>
-                                            <p class="moretext33" style="display: none;">
-                                                They could help clients utilize their living space by creating design plans, selecting color themes and styles, arranging furniture, or fixing lighting and other fixtures.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button33" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Product Development consulting/ Brand image </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>committed to helping clients develop products that fit market needs,
+                                                produce attractive margins, provide platforms for add-on offerings, and
+                                                enhance the reputation of brands for future business growth. Our work in
+                                                product development includes developing, defining, and implementing
+                                                strategies that help clients make lasting improvements to their
+                                                innovation and business performance.
+                                            </h5>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item mx-2">
-                                <div class="card-box card-style-1 text-start">
-                                    <div class="inner-service">
-                                        <div class=""><img src="/images/takshak/complines.png" style="width:95%" alt="Compliance consulting"></div>
-                                        <div class="content-service">
-                                            <h4>Compliance consulting</h4>
-                                            <p class="">
-                                                compliance consulting can be defined as expert-driven consulting services aimed at 
-                                            </p>
-                                            <p class="moretext34" style="display: none;">
-                                                assisting businesses to identify, better manage and mitigate various IT and enterprise compliance risks.
-                                              </p>
-                                              <div class="mt-2">
-                                                <a class="moreless-button34" href="javascript:void(0);">Read more</a>
-                                              </div>
+                                    </details>
+                                    <details>
+                                        <summary>Design Consultant </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>function in the fields of interior design, fashion design, or graphic
+                                                design. They could help clients utilize their living space by creating
+                                                design plans, selecting color themes and styles, arranging furniture, or
+                                                fixing lighting and other fixtures.
+                                            </h5>
                                         </div>
-                                    </div>
+                                    </details>
+                                    <details>
+                                        <summary>Compliance consulting </summary>
+                                        <div class="compnay-content content-1">
+                                            <h5>compliance consulting can be defined as expert-driven consulting
+                                                services aimed at assisting businesses to identify, better manage and
+                                                mitigate various IT and enterprise compliance risks.
+                                            </h5>
+                                        </div>
+                                    </details>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pt-5 pt-md-0 mt-3 mt-md-3">
+                <div class="pt-5 pt-md-0 mt-3 mt-md-5">
                     <div class="col-md-12 mt-md-5">
-                        <div class="Services text-center">
+                        <div class="Services text-center pt-md-4">
                             <h2>Glimpse of our Project</h2>
                         </div>
                     </div>
@@ -1169,7 +1049,8 @@
                                     <img src="./images/review/takshak-review-5.jpg" alt="Communication" />
                                     <figcaption>
                                         <h2>Communication</h2>
-                                        <p>Communication is your ticket to success , if you pay attention and learn to do it
+                                        <p>Communication is your ticket to success , if you pay attention and learn to
+                                            do it
                                             effectively.</p>
                                         <a href="javascript:void(0);">View more</a>
                                     </figcaption>
@@ -1191,7 +1072,8 @@
                                     <img src="./images/review/takshak-review-4.jpg" alt="listening" />
                                     <figcaption>
                                         <h2>listening</h2>
-                                        <p>One of the most sincere forms of respect is actually listening to what another
+                                        <p>One of the most sincere forms of respect is actually listening to what
+                                            another
                                             has to say.</p>
                                         <a href="javascript:void(0);">View more</a>
                                     </figcaption>
@@ -1202,7 +1084,8 @@
                                     <img src="./images/review/takshak-review-11.jpg" alt="Development" />
                                     <figcaption>
                                         <h2>Staff Development</h2>
-                                        <p>You Don't build a business you build people and then people build the business</p>
+                                        <p>You Don't build a business you build people and then people build the
+                                            business</p>
                                         <a href="javascript:void(0);">View more</a>
                                     </figcaption>
                                 </figure>
@@ -1222,7 +1105,8 @@
                                     <img src="./images/review/takshak-review-10.png" alt="success" />
                                     <figcaption>
                                         <h2>success</h2>
-                                        <p>there are no secrets to success. it is the result of preparation, hard work, and
+                                        <p>there are no secrets to success. it is the result of preparation, hard work,
+                                            and
                                             learning from failure.</p>
                                         <a href="javascript:void(0);">View more</a>
                                     </figcaption>
@@ -1297,7 +1181,8 @@
                                     <img src="./images/review/takshak-review-5.jpg" alt="Communication" />
                                     <figcaption>
                                         <h2>Communication</h2>
-                                        <p>Communication is your ticket to success , if you pay attention and learn to do it
+                                        <p>Communication is your ticket to success , if you pay attention and learn to
+                                            do it
                                             effectively.</p>
                                         <a href="javascript:void(0);">View more</a>
                                     </figcaption>
@@ -1319,7 +1204,8 @@
                                     <img src="./images/review/takshak-review-4.jpg" alt="listening" />
                                     <figcaption>
                                         <h2>listening</h2>
-                                        <p>One of the most sincere forms of respect is actually listening to what another
+                                        <p>One of the most sincere forms of respect is actually listening to what
+                                            another
                                             has to say.</p>
                                         <a href="javascript:void(0);">View more</a>
                                     </figcaption>
@@ -1330,7 +1216,8 @@
                                     <img src="./images/review/takshak-review-11.jpg" alt="Development" />
                                     <figcaption>
                                         <h2>Staff Development</h2>
-                                        <p>You Don't build a business you build people and then people build the business</p>
+                                        <p>You Don't build a business you build people and then people build the
+                                            business</p>
                                         <a href="javascript:void(0);">View more</a>
                                     </figcaption>
                                 </figure>
@@ -1350,7 +1237,8 @@
                                     <img src="./images/review/takshak-review-10.png" alt="success" />
                                     <figcaption>
                                         <h2>success</h2>
-                                        <p>there are no secrets to success. it is the result of preparation, hard work, and
+                                        <p>there are no secrets to success. it is the result of preparation, hard work,
+                                            and
                                             learning from failure.</p>
                                         <a href="javascript:void(0);">View more</a>
                                     </figcaption>
@@ -1362,7 +1250,7 @@
             </div>
         </div>
     </section>
-    <section class="mt-md-0 mt-5">
+    <section class="mt-md-5 mt-5">
         <div class="container-fluid">
             <div class="container">
                 <div class="row justify-content-center">
@@ -1425,8 +1313,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-7 text-center">
-                        <div class="coach-box">
-                            <div class="d-none d-md-block">
+                        <div class="coach-box d-none d-md-block">
+                            <div class="">
                                 <span>Diploma in Business Management Course</span>
                             </div>
                             <h2 class="w-100">Topic Be covered in course</h2>
@@ -1493,8 +1381,8 @@
                         <div class="item m-3">
                             <div class="card-box card-style-1 text-start sub-hover">
                                 <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/behavior.png" style="width:65%" class="m-auto"
-                                            alt="Strategic Consulting"></div>
+                                    <div class=""><img src="/images/takshak/behavior.png" style="width:65%"
+                                            class="m-auto" alt="Strategic Consulting"></div>
                                     <div class="content-service text-center">
                                         <h4>Organization Behavior</h4>
                                     </div>
@@ -1526,8 +1414,8 @@
                         <div class="item m-3">
                             <div class="card-box card-style-1 text-start sub-hover">
                                 <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/Personality-Development.png" style="width:65%"
-                                            class="m-auto" alt="Strategic Consulting"></div>
+                                    <div class=""><img src="/images/takshak/Personality-Development.png"
+                                            style="width:65%" class="m-auto" alt="Strategic Consulting"></div>
                                     <div class="content-service text-center">
                                         <h4>Personality Development</h4>
                                     </div>
@@ -1535,122 +1423,6 @@
                             </div>
                         </div>
                         <div class="item m-3">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/Organization-Ethics.png" class="m-auto"
-                                            style="width:65%" alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Organization Ethics</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-block d-md-none">
-                    <div id="owl-demo1" class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/ser-4.png" style="width:100%"
-                                            alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Introduction of management</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class="text-center"><img src="/images/takshak/ser-3.png" style="width:65%"
-                                            class="m-auto" alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Introduction of Marketing Management</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class="text-center d-none d-md-block"><img src="/images/takshak/managment-skills.png"
-                                            style="width:84%" alt="Strategic Consulting"></div>
-                                    <div class="text-center d-md-none d-block"><img src="/images/takshak/managment-skills.png"
-                                        style="width:65%" alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Management Skills </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/ser-2.png" style="width:65%" class="m-auto"
-                                            alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Introduction of Finance Management</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/hr-img.png" style="width:95%"
-                                            alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Human Resource Management</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/behavior.png" style="width:65%" class="m-auto"
-                                            alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Organization Behavior</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/Service-Management.png" style="width:95%"
-                                            alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Service Management</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/Strategic-Management.png" style="width:100%"
-                                            alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Strategic Management</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="card-box card-style-1 text-start sub-hover">
-                                <div class="inner-service fix-height">
-                                    <div class=""><img src="/images/takshak/Personality-Development.png" style="width:65%"
-                                            class="m-auto" alt="Strategic Consulting"></div>
-                                    <div class="content-service text-center">
-                                        <h4>Personality Development</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
                             <div class="card-box card-style-1 text-start sub-hover">
                                 <div class="inner-service fix-height">
                                     <div class=""><img src="/images/takshak/Organization-Ethics.png" class="m-auto"
@@ -1667,96 +1439,169 @@
         </div>
     </section>
     <section class="bg-dark">
-        <div class="container-fluid py-5">
+        <div class="container-fluid py-md-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-7 text-center">
                         <div class="coach-box-1">
-                            <h2 class="w-100">Select Best Path For you</h2>
+                            <h2 class="w-100 d-none d-md-block">Select Best Path For you</h2>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-md-4">
-                    <div class="col-md-4">
-                        <div class="main-carded">
-                            <div class="carded-up">
-                                <div class="carded-icon text-center">
-                                    <img src="./images/takshak/recorded-plan.png" alt="Online Classes"
-                                        class="img-fluid mt-4">
+                <div class="d-none d-md-block">
+                    <div class="row mt-md-4">
+                        <div class="col-md-4">
+                            <div class="main-carded">
+                                <div class="carded-up">
+                                    <div class="carded-icon text-center">
+                                        <img src="./images/takshak/recorded-plan.png" alt="Online Classes"
+                                            class="img-fluid mt-4">
+                                    </div>
+                                </div>
+                                <div class="carded-content">
+                                    <h4 class="text-center mt-md-3">Recorded Sessions</h4>
+                                    <ul class="mt-2 mt-md-3">
+                                        <li><i class="fas fa-book"></i> Enjoy Book Material</li>
+                                        <li><i class="fas fa-tasks"></i> Case Study Based Project</li>
+                                        <li><i class="fas fa-video"></i> Recorded Lecture Videos</li>
+                                        <li><i class="fas fa-certificate"></i> Receive Your E-certificate</li>
+                                        <li><i class="fas fa-comments"></i> Team Chat Support</li>
+                                    </ul>
+                                    <div class="price-course mt-md-5 pt-md-2">
+                                        <p>₹ 299 /- <span>Including GST</span></p>
+                                    </div>
+                                    <div class="text-center mb-md-2">
+                                        <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                            data-target="#exampleModalCenter">Enroll Now</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carded-content">
-                                <h4 class="text-center mt-md-3">Recorded Sessions</h4>
-                                <ul class="mt-2 mt-md-3">
-                                    <li><i class="fas fa-book"></i> Enjoy Book Material</li>
-                                    <li><i class="fas fa-tasks"></i> Case Study Based Project</li>
-                                    <li><i class="fas fa-video"></i> Recorded Lecture Videos</li>
-                                    <li><i class="fas fa-certificate"></i> Receive Your E-certificate</li>
-                                    <li><i class="fas fa-comments"></i> Team Chat Support</li>
-                                </ul>
-                                <div class="price-course mt-md-5 pt-md-2">
-                                    <p>₹ 299 /- <span>Including GST</span></p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="main-carded">
+                                <div class="carded-up">
+                                    <div class="carded-icon text-center">
+                                        <img src="./images/takshak/online-plan.png" alt="Online Classes"
+                                            class="img-fluid mt-4">
+                                    </div>
                                 </div>
-                                <div class="text-center mb-md-2">
-                                    <a href="javascript:void(0);" class="btn" data-toggle="modal"
-                                        data-target="#exampleModalCenter">Enroll Now</a>
+                                <div class="carded-content">
+                                    <h4 class="text-center mt-md-3">Online Classes</h4>
+                                    <ul class="mt-2 mt-md-3">
+                                        <li><i class="fas fa-clock"></i> 1.5 Month</li>
+                                        <li><i class="fas fa-book"></i> Enjoy Book Material</li>
+                                        <li><i class="fas fa-chalkboard-teacher"></i> Zoom Classes</li>
+                                        <li><i class="fas fa-tasks"></i> Case Study Based Project</li>
+                                        <li><i class="fas fa-video"></i> Recorded Sessions Are Included</li>
+                                        <li><i class="fas fa-file"></i> Certified From NSDC</li>
+                                    </ul>
+                                    <div class="price-course">
+                                        <p>₹ 4,999 /- <span>Including GST</span></p>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                            data-target="#exampleModalCenter">Enroll Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="main-carded">
+                                <div class="carded-up">
+                                    <div class="carded-icon text-center">
+                                        <img src="./images/takshak/offline-plan.png" alt="offline Classes"
+                                            class="img-fluid mt-1">
+                                    </div>
+                                </div>
+                                <div class="carded-content">
+                                    <h4 class="text-center mt-md-3">Offline Classes</h4>
+                                    <ul class="mt-2 mt-md-3">
+                                        <li><i class="fas fa-clock"></i> 1.5 Month</li>
+                                        <li><i class="fas fa-book"></i> Enjoy Book Material</li>
+                                        <li><i class="fas fa-chalkboard-teacher"></i> Offline Classes</li>
+                                        <li><i class="fas fa-tasks"></i> Case Study Based Project</li>
+                                        <li><i class="fas fa-video"></i> Recorded Sessions Are Included</li>
+                                        <li><i class="fas fa-file"></i> Certified From NSDC</li>
+                                    </ul>
+                                    <div class="price-course">
+                                        <p>₹ 9,999 /- <span>Including GST</span></p>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                            data-target="#exampleModalCenter">Enroll Now</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="main-carded">
-                            <div class="carded-up">
-                                <div class="carded-icon text-center">
-                                    <img src="./images/takshak/online-plan.png" alt="Online Classes"
-                                        class="img-fluid mt-4">
-                                </div>
-                            </div>
-                            <div class="carded-content">
-                                <h4 class="text-center mt-md-3">Online Classes</h4>
-                                <ul class="mt-2 mt-md-3">
-                                    <li><i class="fas fa-clock"></i> 1.5 Month</li>
-                                    <li><i class="fas fa-book"></i> Enjoy Book Material</li>
-                                    <li><i class="fas fa-chalkboard-teacher"></i> Zoom Classes</li>
-                                    <li><i class="fas fa-tasks"></i> Case Study Based Project</li>
-                                    <li><i class="fas fa-video"></i> Recorded Sessions Are Included</li>
-                                    <li><i class="fas fa-file"></i> Certified From NSDC</li>
-                                </ul>
-                                <div class="price-course">
-                                    <p>₹ 4,999 /- <span>Including GST</span></p>
-                                </div>
-                                <div class="text-center">
-                                    <a href="javascript:void(0);" class="btn" data-toggle="modal"
-                                        data-target="#exampleModalCenter">Enroll Now</a>
-                                </div>
+                </div>
+                <div class="d-block d-md-none">
+                    <div class="row mt-md-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="">
+                                <img class="" src="./images/takshak/bg-coach.webp" width="100%"
+                                    style="border-radius: 10px;">
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="main-carded">
-                            <div class="carded-up">
-                                <div class="carded-icon text-center">
-                                    <img src="./images/takshak/offline-plan.png" alt="offline Classes"
-                                        class="img-fluid mt-1">
+                        <div class="col-lg-6">
+                            <div class="course-box">
+                                <h4>Diploma in Business Management Course</h4>
+                                <div class="d-block d-md-flex">
+                                    <p><b>Duration</b> :- 1.5 month</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="">Syllabus :-</p>
+                                    </div>
+                                    <div class="col-sm-7 mt-md-0 mt-2">
+                                        <ul class="mb-0 mb-mb-2">
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Introduction of management</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Management Skills</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Introduction of Marketing Management</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Introduction of Finance Management</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Human Resource Management</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <ul class="">
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Organization Behavior</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Service Management</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Strategic Management</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Personality Development</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Organization Ethics</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carded-content">
-                                <h4 class="text-center mt-md-3">Offline Classes</h4>
-                                <ul class="mt-2 mt-md-3">
-                                    <li><i class="fas fa-clock"></i> 1.5 Month</li>
-                                    <li><i class="fas fa-book"></i> Enjoy Book Material</li>
-                                    <li><i class="fas fa-chalkboard-teacher"></i> Offline Classes</li>
-                                    <li><i class="fas fa-tasks"></i> Case Study Based Project</li>
-                                    <li><i class="fas fa-video"></i> Recorded Sessions Are Included</li>
-                                    <li><i class="fas fa-file"></i> Certified From NSDC</li>
-                                </ul>
-                                <div class="price-course">
-                                    <p>₹ 9,999 /- <span>Including GST</span></p>
-                                </div>
-                                <div class="text-center">
-                                    <a href="javascript:void(0);" class="btn" data-toggle="modal"
-                                        data-target="#exampleModalCenter">Enroll Now</a>
-                                </div>
+                            <p class="mt-md-1">Two Mode Available for study</p>
+                            <p class="ml-0 my-2 mt-md-1"><button class="select-btn select-btn-active"
+                                    id="recorded-btn">Recorded</button><button class="select-btn ml-2"
+                                    id="online-btn">Online</button><button class="select-btn ml-2"
+                                    id="offline-btn">Offline</button></p>
+                            <div class="course-price mt-md-3" id="recorded-price">
+                                <h4>₹ 299/- <span>+ 18%</span></h4>
+                                <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                    data-target="#exampleModalCenter">Enroll Now</a>
+                            </div>
+                            <div class="course-price mt-md-3" id="online-price">
+                                <h4>₹ 4,999/- <span>+ 18%</span></h4>
+                                <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                    data-target="#exampleModalCenter">Enroll Now</a>
+                            </div>
+                            <div class="course-price mt-md-3" id="offline-price" style="display: none;">
+                                <h4>₹ 9,999/- <span>+ 18%</span></h4>
+                                <a href="javascript:void(0);" class="btn" data-toggle="modal"
+                                    data-target="#exampleModalCenter">Enroll Now</a>
                             </div>
                         </div>
                     </div>
@@ -1777,8 +1622,7 @@
                                         style="border-radius: 10px;" alt="client journey"
                                         src="./images/takshak/demo-lecture.jpg">
                                     <div class="video-btn">
-                                        <a href="https://youtu.be/FpVP__GXKxU" data-flashy-type="video"
-                                            class="custom">
+                                        <a href="https://youtu.be/FpVP__GXKxU" data-flashy-type="video" class="custom">
                                             <span class="newthing"><i class="fas fa-play"></i></span>
                                         </a>
                                     </div>
@@ -1792,8 +1636,7 @@
                                         style="border-radius: 10px;" alt="client journey"
                                         src="./images/takshak/demo-lecture-1.jpg">
                                     <div class="video-btn">
-                                        <a href="https://youtu.be/P0psmewgWgI" data-flashy-type="video"
-                                            class="custom">
+                                        <a href="https://youtu.be/P0psmewgWgI" data-flashy-type="video" class="custom">
                                             <span class="newthing"><i class="fas fa-play"></i></span>
                                         </a>
                                     </div>
@@ -1819,7 +1662,6 @@
             </div>
         </div>
     </section>
-    
     <section class="bg-dark">
         <div class="container-fluid py-md-5">
             <div class="container">
@@ -1853,9 +1695,9 @@
             <div class="container pb-md-5">
                 <div class="col-md-12 mb-md-4">
                     <div class="coach-box text-center">
-                       <div class="d-none d-md-block">
+                        <div class="d-none d-md-block">
                             <span>Our Business Course Spartans</span>
-                       </div>
+                        </div>
                         <h2 class="d-block d-md-none w-100">Our Business Course Spartans</h2>
                     </div>
                 </div>
@@ -1904,7 +1746,7 @@
                     </div>
                 </div>
                 <div class="d-block d-md-none pb-5 py-md-0">
-                    <div id="owl-review-2" class="owl-carousel owl-theme">
+                    <div id="owl-review-2" class="owl-carousel owl-theme mb-5">
                         <div class="item m-3">
                             <div class="review-box">
                                 <img src="./images/review/certificate-1.jpg" style="border-radius: 10px;"
@@ -2030,11 +1872,12 @@
                 <div class="mt-md-5 pt-md-5">
                     <div class="coach-box text-center">
                         <!-- <span>Human Resource Agency</span> -->
-                       <div class="d-none d-md-block">
-                        <span class="w-100"><i class="fas fa-trophy" style="color: #fff;"></i> Students Victory of
-                            Placement <i class="fas fa-trophy" style="color: #fff;"></i></span>
-                       </div>
-                        <h2 class="w-100 d-block d-md-none"><i class="fas fa-trophy" style="color: #fff;"></i> Students Victory <i class="fas fa-trophy" style="color: #fff;"> </i>of
+                        <div class="d-none d-md-block">
+                            <span class="w-100"><i class="fas fa-trophy" style="color: #fff;"></i> Students Victory of
+                                Placement <i class="fas fa-trophy" style="color: #fff;"></i></span>
+                        </div>
+                        <h2 class="w-100 d-block d-md-none"><i class="fas fa-trophy" style="color: #fff;"></i> Students
+                            Victory <i class="fas fa-trophy" style="color: #fff;"> </i>of
                             Placement </i></h2>
                     </div>
                     <div class="mt-md-5 d-none d-md-block">
@@ -2409,10 +2252,12 @@
                     <div class="footer-test mr-md-3 ml-3 ml-md-0">
                         <p>Social Media</p>
                         <div class="f_social_icon mt-md-4 mt-3">
-                            <a href="https://www.facebook.com/profile.php?id=100090828098705" class="fab fa-facebook"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100090828098705"
+                                class="fab fa-facebook"></a>
                             <a href="https://www.instagram.com/takshakmanagementconsultant/"
                                 class="fab fa-instagram"></a>
-                            <a href="https://www.youtube.com/@TakshakManagementConsultant/featured" class="fab fa-youtube"></a>
+                            <a href="https://www.youtube.com/@TakshakManagementConsultant/featured"
+                                class="fab fa-youtube"></a>
                         </div>
                     </div>
                 </div>
@@ -2434,9 +2279,10 @@
                     <p style="word-spacing: normal;">Call Us Now</p>
                     <div class="icons-thing">
                         <a href="tel:9773174522" class="text-dark"><i class="fas fa-phone-alt"></i> <span
-                            class="d-none d-md-block">+91 97731 74522</span></a>
+                                class="d-none d-md-block">+91 97731 74522</span></a>
                         <a class="text-dark" target="_blank"
-                        href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about Takshak Management"><i class="fab fa-whatsapp"></i><span class="d-none d-md-block">Message<span></a>
+                            href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about Takshak Management"><i
+                                class="fab fa-whatsapp"></i><span class="d-none d-md-block">Message<span></a>
                     </div>
                 </div>
             </div>
@@ -2451,6 +2297,28 @@
 
     <script>
         AOS.init()
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#online-btn").click(function () {
+                $("#online-btn").addClass("select-btn-active");
+                $("#recorded-btn, #offline-btn").removeClass("select-btn-active");
+                $("#online-price").show();
+                $("#recorded-price, #offline-price").hide();
+            });
+            $("#recorded-btn").click(function () {
+                $("#recorded-btn").addClass("select-btn-active");
+                $("#online-btn, #offline-btn").removeClass("select-btn-active");
+                $("#recorded-price").show();
+                $("#online-price, #offline-price").hide();
+            });
+            $("#offline-btn").click(function () {
+                $("#offline-btn").addClass("select-btn-active");
+                $("#recorded-btn, #online-btn").removeClass("select-btn-active");
+                $("#offline-price").show();
+                $("#recorded-price, #online-price").hide();
+            });
+        });
     </script>
     <script>
         $('.moreless-button').click(function () {
@@ -2663,96 +2531,6 @@
         $('.moreless-button24').click(function () {
             $('.moretext24').slideToggle();
             if ($('.moreless-button24').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-
-        $('.moreless-button25').click(function () {
-            $('.moretext25').slideToggle();
-            if ($('.moreless-button25').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-
-        $('.moreless-button26').click(function () {
-            $('.moretext26').slideToggle();
-            if ($('.moreless-button26').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-
-        $('.moreless-button27').click(function () {
-            $('.moretext27').slideToggle();
-            if ($('.moreless-button27').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-
-        $('.moreless-button28').click(function () {
-            $('.moretext28').slideToggle();
-            if ($('.moreless-button28').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-
-        $('.moreless-button29').click(function () {
-            $('.moretext29').slideToggle();
-            if ($('.moreless-button29').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-
-        $('.moreless-button30').click(function () {
-            $('.moretext30').slideToggle();
-            if ($('.moreless-button30').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-
-        $('.moreless-button31').click(function () {
-            $('.moretext31').slideToggle();
-            if ($('.moreless-button31').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-
-        $('.moreless-button32').click(function () {
-            $('.moretext32').slideToggle();
-            if ($('.moreless-button32').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-        
-        $('.moreless-button33').click(function () {
-            $('.moretext33').slideToggle();
-            if ($('.moreless-button33').text() == "Read more") {
-                $(this).text("Read less")
-            } else {
-                $(this).text("Read more")
-            }
-        });
-
-        $('.moreless-button34').click(function () {
-            $('.moretext34').slideToggle();
-            if ($('.moreless-button34').text() == "Read more") {
                 $(this).text("Read less")
             } else {
                 $(this).text("Read more")

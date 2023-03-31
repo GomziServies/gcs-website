@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://unpkg.com/@tabler/core@1.0.0-beta10/dist/css/tabler-flags.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/popup-form-style.css">
-    <link rel="stylesheet" type="text/css" type="text/css" href="./plugins/sweetalert2/sweetalert2.min.css">
     <link rel="stylesheet" type="text/css" href="./css/gcs.css">
     <link rel="stylesheet" type="text/css" href="./css/media.css">
     <link rel="stylesheet" type="text/css" href="./css/owl-style.css">
@@ -22,14 +21,11 @@
     <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="./css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="./css/owl.theme.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script>
     <script type="text/javascript" src="./js/popper.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./js/owl.carousel.js"></script>
-    <link rel="stylesheet" type="text/css" href="./plugins/toastr/toastr.min.css">
-    <script src="./plugins/toastr/toastr.min.js"></script>
     <script type="text/javascript" src="./js/lazy-load.js"></script>
     <script type="text/javascript">
         function openside() {
@@ -39,36 +35,6 @@
         function sideclose() {
             document.getElementById('demo').style.width = '0px';
         }
-
-        $(document).ready(function(){
-            $("#owl-insta").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                navigation: true,
-                loop: false,
-                items: 6,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                pagination: true,
-            });
-            $("#owl-instas").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: true,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-            $("#owl-review").owlCarousel({
-                autoPlay: 5000, //Set AutoPlay to 5 seconds
-                nav: true,
-                loop: false,
-                items: 1,
-                itemsDesktop: [1199, 1],
-                itemsDesktopSmall: [576, 1],
-                dots: false,
-            });
-        })
     </script>   
     <script type="text/javascript">
         /*---------------------Drop down----------------------*/
@@ -81,6 +47,37 @@
         });
 
         /*---------------------End----------------------*/
+    </script>
+    <script>
+         $(document).ready(function(){
+            $("#owl-insta").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                navigation: true,
+                loop: true,
+                items: 6,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                pagination: true
+            });
+            $("#owl-instas").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+            $("#owl-review").owlCarousel({
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                nav: true,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
+        })
     </script>
     <script>
         $(function () {
@@ -794,9 +791,6 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div>
-                                    <a href="#" class="btn btn-company">Read More</a>
-                                </div>
                             </div>
                             <div class="compnay-content pl-4 content-2">
                                 <h4>Looking for the best IT services?</h4>
@@ -896,55 +890,89 @@
         <div class="container-fluid py-5" style="background-color: #000000;">
             <div class="container">
                 <div class="title-compnay text-center mb-4">
-                    <h2>Our  Vision Mission</h2>
+                    <h2>Our Vision Mission</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 mt-4">
-                        <div class="flip-card" tabIndex="0">
-                            <div class="flip-card-inner p-0"  style="background-color: #000;">
-                                <div class="flip-card-front">
-                                    <div class="tochange">
-                                        <img src="./images/gcs/side-1.webp" alt="Vision" class="img-fluid">
+                <div class="d-none d-md-block">
+                    <div class="row">
+                        <div class="col-md-6 mt-4">
+                            <div class="flip-card" tabIndex="0">
+                                <div class="flip-card-inner p-0"  style="background-color: #000;">
+                                    <div class="flip-card-front">
+                                        <div class="tochange">
+                                            <img src="./images/gcs/side-1.webp" alt="Vision" class="img-fluid">
+                                        </div>
+                                        <div class="flip-text">
+                                            <h4>Vision</h4>
+                                        </div>
                                     </div>
-                                    <div class="flip-text">
-                                        <h4>Vision</h4>
+                                    <div class="flip-card-back">
+                                        <div class="changeto">
+                                            <h2 class="p-md-3 my-0">Vision</h2>
+                                            <ul>
+                                                <li>
+                                                    Become the most prominent consultancies (management, Finance & IT) firm regionally and globally, as well as the trusted advisor to
+                                                    entrepreneurs and organizations that are seeking to take the next steps in their development
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="flip-card-back">
-                                    <div class="changeto">
-                                        <h2 class="p-md-3 my-0">Vision</h2>
-                                        <ul>
-                                            <li>
-                                                Become the most prominent consultancies (management, Finance & IT) firm regionally and globally, as well as the trusted advisor to
-                                                entrepreneurs and organizations that are seeking to take the next steps in their development
-                                            </li>
-                                        </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <div class="flip-card" tabIndex="0">
+                                <div class="flip-card-inner p-0"  style="background-color: #000;">
+                                    <div class="flip-card-front">
+                                        <div class="tochange">
+                                            <img src="./images/gcs/side-2.webp" alt="Vision" class="img-fluid">
+                                        </div>
+                                        <div class="flip-text">
+                                            <h4>Mission</h4>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="changeto">
+                                            <h2 class="p-md-3 my-0">Mission</h2>
+                                            <ul>
+                                                <li>
+                                                    Provide you with realistic and executable recommendations to help you make the best 
+                                                    decisions for the successful growth of your business and its  expansion.
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4">
-                        <div class="flip-card" tabIndex="0">
-                            <div class="flip-card-inner p-0"  style="background-color: #000;">
-                                <div class="flip-card-front">
-                                    <div class="tochange">
-                                        <img src="./images/gcs/side-2.webp" alt="Vision" class="img-fluid">
-                                    </div>
-                                    <div class="flip-text">
+                </div>
+                <div class="d-block d-md-none">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="vision-mission">
+                                <div class="img-vision">
+                                    <img src="./images/icons/mission.png" alt="mission" width="50%" class="img-fluid">
+                                </div>
+                                <div class="vision-mission-content">
+                                    <div class="">
                                         <h4>Mission</h4>
                                     </div>
+                                    <p>Become the most prominent consultancies (management, Finance & IT) firm regionally and globally, as well as the trusted advisor to
+                                        entrepreneurs and organizations that are seeking to take the next steps in their development</p>
                                 </div>
-                                <div class="flip-card-back">
-                                    <div class="changeto">
-                                        <h2 class="p-md-3 my-0">Mission</h2>
-                                        <ul>
-                                            <li>
-                                                Provide you with realistic and executable recommendations to help you make the best 
-                                                decisions for the successful growth of your business and its  expansion.
-                                            </li>
-                                        </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <div class="vision-mission">
+                                <div class="img-vision">
+                                    <img src="./images/icons/Vision.png" alt="Vision" width="50%" class="img-fluid">
+                                </div>
+                                <div class="vision-mission-content">
+                                    <div class="">
+                                        <h4>Vision</h4>
                                     </div>
+                                    <p>Provide you with realistic and executable recommendations to help you make the best 
+                                        decisions for the successful growth of your business and its  expansion.</p>
                                 </div>
                             </div>
                         </div>
@@ -953,41 +981,6 @@
             </div>
         </div>
     </section>
-    <!-- <section class="margintop">
-        <div id="counter-stats" class="wow fadeInRight bg-full-bd" data-wow-duration="1.4s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-center">
-                            <h2>Happy Client</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 stats">
-                        <div class="row align-items-center">
-                            <div class="col-md-4 text-right">
-                                <img src="./images/icons/rate.webp" alt="Like" class="img-fluid">
-                            </div>
-                            <div class="col-md-8">
-                                <span class="counting" data-count="1000">0</span><i class="fas fa-plus" style="font-weight: bold;color: #fff;font-size: 33px;"></i>
-                                <h5>Satisfied Customer</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 stats">
-                        <div class="row align-items-center">
-                            <div class="col-md-4 text-right">
-                                <img src="./images/icons/customer-service.webp" alt="Like" class="img-fluid">
-                            </div>
-                            <div class="col-md-8">
-                                <span class="counting" data-count="100">0</span><i class="fas fa-plus" style="font-weight: bold;color: #fff;font-size: 33px;"></i>
-                                <h5>Satisfaction Rate</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
     <section class="margintop">
          <div class="bg-full-bd" style="background-image: url(./images/gcs/contact-us.webp);background-attachment: local;">
             <div class="container">
@@ -1087,17 +1080,13 @@
         </div>
     </div>
 
-    <script src="./js/owl.carousel.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery.flashy.min.js"></script>
     <script src="./plugins/bootstrap/bootstrap.min.js"></script>
     <link href="./css/effect.css" rel="stylesheet">
     <script src="./js/main.js"></script>
     <link href="./css/flashy.min.css" rel="stylesheet">
-    <script src="./js/jquery.flashy.min.js"></script>
+    <script src="./js/owl.carousel.js"></script>
 
-    <script>
-        AOS.init()
-    </script>
     <script>
 
         $(document).ready(function () {
@@ -1137,26 +1126,6 @@
                 $(".content-6").show();
                 $(".content-2, .content-3, .content-1, .content-5, .content-4").hide();
             });
-        });
-
-        // number count for stats, using jQuery animate
-        $('.counting').each(function() {
-          var $this = $(this),
-              countTo = $this.attr('data-count');
-          $({ countNum: $this.text()}).animate({
-            countNum: countTo
-          },
-          {
-            duration: 6000,
-            easing:'linear',
-            step: function() {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function() {
-              $this.text(this.countNum);
-              //alert('finished');
-            }
-          });  
         });
     </script>
 </body>
