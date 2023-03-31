@@ -622,6 +622,9 @@ li{
     width: 450px;
     height: 450px;
     perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -o-perspective: 1000px;
+    -moz-perspective: 1000px;
   }
   
   .flip-card-inner {
@@ -636,6 +639,12 @@ li{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+    -o-transform-style: preserve-3d;
+    -o-transition: -o-transform 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: -moz-transform 1s;
   }
   
   .flip-card:focus {
@@ -645,6 +654,9 @@ li{
   .flip-card:hover .flip-card-inner,
   .flip-card:focus .flip-card-inner{
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
   }
   
   .flip-card-front,
@@ -664,12 +676,12 @@ li{
     padding: 16px;
   }
   .flip-card-front h2{
-        color: #fff;
-        font-size: 36px;
-        font-family: Nunito, sans-serif;
-        margin-bottom: 20px;
-        font-weight: 700;
-        text-transform: capitalize !important;
+    color: #fff;
+    font-size: 36px;
+    font-family: Nunito, sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: capitalize !important;
   }
   .flip-card-back {
     background: #EE7015;
@@ -677,6 +689,9 @@ li{
     padding: 10px;
     color: white;
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     z-index: 1;
     display: flex;
     border-radius: 10px;
@@ -2129,6 +2144,9 @@ figure.effect-oscar:hover img {
     height: 400px;
     perspective: 1000px;
     margin: auto;
+    -webkit-perspective: 1000px;
+    -o-perspective: 1000px;
+    -moz-perspective: 1000px;
   }
   
   .flip-card-inner-fitit {
@@ -2150,6 +2168,9 @@ figure.effect-oscar:hover img {
   .flip-card-fitit:hover .flip-card-inner-fitit,
   .flip-card-fitit:focus .flip-card-inner-fitit{
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
   }
   
   .flip-card-front-fitit,
@@ -2176,6 +2197,9 @@ figure.effect-oscar:hover img {
     color: white;
     padding: 10px;
     transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -2538,3 +2562,18 @@ figure.effect-oscar:hover img {
     padding-top: 5px;
     list-style: circle;
 }
+
+@keyframes open {
+    0% {
+      opacity: 0;
+      transform: translateY(-1vw);
+    }
+    100% {
+      opacity: 1;
+      margin-left: 0px
+    }
+  }
+  
+  details[open] summary~* {
+    animation: open .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
