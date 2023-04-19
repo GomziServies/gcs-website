@@ -121,7 +121,7 @@ details[open] summary~* {
     width: 100%;
     position: absolute;
     z-index: 99;
-    left: 80%;
+    left: 75%;
     top: 60%;
     transform: translate(-50%, -50%)
 }
@@ -2643,3 +2643,87 @@ figure.effect-oscar:hover img {
   .vision-mission:hover{
     background-color: #575757;
   }
+
+/* blog css  */
+.blog-heading{
+    margin-top: 90px;
+}
+
+.blog-heading h1{
+  font-size: 36px;
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.blog-style p{
+  color: #ddd;
+  margin-top: 15px;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.blog-style h2{
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+.blog-style h4{
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+.blog-side{
+  background-color: #303030;
+  padding: 16px;
+  border-radius: 10px;
+}
+.blog-side h4{
+  font-weight: 700;
+}
+
+.blog-side a{
+  font-size: 16px;
+  color: #fff;
+}
+
+
+/* course page css  */
+.meal a {
+    justify-content: center;
+    font-size: 16px;
+    border: none;
+    background-color: #f07f06;
+    font-weight: 600;
+    font-family: Nunito, sans-serif;
+    border: 2px solid transparent!important;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 12px;
+}
+
+.meal a:hover{
+    background-color: #000;
+    border: 2px solid #f07f06!important;
+}
+
+.new-li i{
+    color: #f07f06;
+}
+
+.new-li li{
+    color: #a5a5a5;
+    padding: 5px;
+}
+
+.tabata h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
