@@ -1015,6 +1015,7 @@
 
 /* takshak media close  */
 
+
 /* fitit media */
 
 @media (max-width:575px){
@@ -1074,6 +1075,29 @@
     }
     #owl-review .owl-next, #owl-instas .owl-next, #owl-review-2 .owl-next, #owl-placement-1 .owl-next{
         left: 52%;
+    }
+
+    .new-h2{
+        font-size: 20px;
+    }
+
+    .course-p p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .course-li li{
+        font-size: 14px;
+    }
+
+    .tabata h1{
+        margin-top: 10px;
+        font-size: 26px;
+    }
+
+    .off h2{
+        font-size: 20px;
+        line-height: normal;
     }
 }
 
