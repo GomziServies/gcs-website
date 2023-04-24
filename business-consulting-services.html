@@ -32,6 +32,8 @@
     <link rel="stylesheet" type="text/css" href="./plugins/toastr/toastr.min.css">
     <script src="./plugins/toastr/toastr.min.js"></script>
     <script type="text/javascript" src="./js/lazy-load.js"></script>
+    <script src="../plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
 
     <script type="text/javascript">
         function openside() {
@@ -268,8 +270,7 @@
                             <div class="takshak-title">
                                 <h1><span>Welcome to</span><br> Takshak Management Consultants</h1>
                                 <h2>Your One-Stop Solution for Management Consulting Services</h2>
-                                <a href="javascript:void(0);" class="btn-readmore btn" data-toggle="modal"
-                                    data-target="#exampleModalCenter">Know More</a>
+                                <a href="./services/takshak-management-consultants-business-management-services.html" class="btn-readmore btn">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -1479,7 +1480,7 @@
                                         <p>₹ 299 /- <span>Including GST</span></p>
                                     </div>
                                     <div class="text-center mb-md-2">
-                                        <a href="./courses/recorded-diploma-in-business-management-course.html" class="btn">Enroll Now</a>
+                                        <a href="./courses/recorded-diploma-in-business-management-course.html" class="btn">Know More</a>
                                     </div>
                                 </div>
                             </div>
@@ -1505,7 +1506,7 @@
                                         <p>₹ 4,999 /- <span>Including GST</span></p>
                                     </div>
                                     <div class="text-center">
-                                        <a href="./courses/online-diploma-in-business-management.html" class="btn">Enroll Now</a>
+                                        <a href="./courses/online-diploma-in-business-management.html" class="btn">Know More</a>
                                     </div>
                                 </div>
                             </div>
@@ -1642,7 +1643,6 @@
             </div>
         </div>
     </section>
-
     <section class="bg-dark">
         <div class="container-fluid py-md-5">
             <div class="container">
@@ -1839,8 +1839,7 @@
                             </div>
                         </div>
                         <div class="mt-md-4 carded-content">
-                            <a href="javascript:void(0);" class="btn" data-toggle="modal"
-                                data-target="#exampleModalCenter">Know More</a>
+                            <a href="./services/human-resource-agency-services.html" class="btn">Know More</a>
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -2191,27 +2190,28 @@
                             <div class="mb-4">
                                 <h4 class="fill">Fill The Form :-</h4>
                             </div>
-                            <form action="">
+                            <form id="myForm">
                                 <div>
-                                    <input type="text" placeholder="Name" class="form-control in-put">
+                                    <input type="text" name="name" placeholder="Name" class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Email" class="form-control in-put">
+                                    <input type="email" name="email" placeholder="Email" class="form-control in-put" required>
+                                </div>
+                                <input type="hidden" name="subject" value="takshak">
+                                <div>
+                                    <input type="number" name="mobile" placeholder="Mobile" class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Enter your city" class="form-control in-put">
+                                    <input type="city" name="city" placeholder="Enter your city" class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <input type="text" placeholder="Business/company/Organization"
-                                        class="form-control in-put">
+                                    <input type="company" name="company" placeholder="Business/company/Organization"
+                                        class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <input type="number" placeholder="Mobile" class="form-control in-put">
+                                    <textarea name="messages" type="messages" placeholder="Messages" class="in-put" required></textarea>
                                 </div>
-                                <div>
-                                    <textarea name="massages" placeholder="Massages" class="in-put"></textarea>
-                                </div>
-                                <button type="button" class="submit-btn">Submit</button>
+                                <button type="submit" class="submit-btn">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -2312,6 +2312,13 @@
     <script src="./js/main.js"></script>
     <link href="./css/flashy.min.css" rel="stylesheet">
     <script src="./js/jquery.flashy.min.js"></script>
+    <script src="../js/sweetalert2.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', submitForm); 
+    </script>
 
     <script>
         AOS.init()
