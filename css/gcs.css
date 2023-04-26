@@ -2900,3 +2900,14 @@ figure.effect-oscar:hover img {
     font-weight: 500;
     color: #c7c7c7;
 }
+
+.approach a {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #FF7511;
+    color: #000;
+    border: 2px solid transparent;
+    transition: .4s;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
