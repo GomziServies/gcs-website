@@ -1,8 +1,6 @@
-let HOST = 'http://localhost:8002';
+// let HOST = 'http://localhost:8002';
 
-if (['gcsconsultant.com', 'https://gcsconsultant.com'].includes(window.location.hostname)) {
-  HOST = 'https://api.gcsconsultant.in';
-} else {
+if (['gcsconsultant.com', 'www.gcsconsultant.com'].includes(window.location.hostname)) {
   HOST = 'https://admin.gcsconsultant.com';
 }
 
