@@ -9,43 +9,63 @@
 
 <url>
   <loc>https://gcsconsultant.com/</loc>
-  <lastmod>2023-03-31T12:10:52+00:00</lastmod>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://gcsconsultant.com/index.html</loc>
-  <lastmod>2023-03-31T12:10:52+00:00</lastmod>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gcsconsultant.com/digital-marketing-agency.html</loc>
-  <lastmod>2023-03-31T12:07:57+00:00</lastmod>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gcsconsultant.com/business-consulting-services.html</loc>
-  <lastmod>2023-03-31T12:07:57+00:00</lastmod>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gcsconsultant.com/financial-advisory-services.html</loc>
-  <lastmod>2023-04-02T07:06:23+00:00</lastmod>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/blog/invest-with-confidence-empower-yourself-with-our-stock-market-course.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gcsconsultant.com/term-and-conditions.html</loc>
-  <lastmod>2023-03-31T05:02:32+00:00</lastmod>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/return-refund.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/cancellation-policy.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gcsconsultant.com/privacy-policy.html</loc>
-  <lastmod>2023-03-31T05:02:32+00:00</lastmod>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://gcsconsultant.com/about-us.html</loc>
-  <lastmod>2023-03-31T05:02:32+00:00</lastmod>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/services/marketing-guru-services.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://gcsconsultant.com/pdf/FITIT-PACKAGE.pdf</loc>
@@ -53,8 +73,63 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://gcsconsultant.com/courses/recorded-digital-marketing-course.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/courses/online-digital-marketing-course.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/services/takshak-management-consultants-business-management-services.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/courses/recorded-diploma-in-business-management-course.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/courses/online-diploma-in-business-management.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/courses/offline-diploma-in-business-management.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/services/human-resource-agency-services.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/blog/managing-business-challenges-how-management-consulting-services-can-help-you-succeed.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/services/financial-advisory-services-for-a-secure-future.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://gcsconsultant.com/pdf/A2Z-pdf.pdf</loc>
   <lastmod>2023-03-29T10:48:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/courses/online-stock-market-101-course.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://gcsconsultant.com/courses/recorded-stock-market-101-course.html</loc>
+  <lastmod>2023-05-02T04:54:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
