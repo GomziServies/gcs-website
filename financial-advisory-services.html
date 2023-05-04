@@ -713,8 +713,7 @@
                             </p>
                         </div>
                         <div class="mt-md-4 mt-3 carded-content">
-                            <a href="javascript:void(0);" class="btn" data-toggle="modal"
-                            data-target="#exampleModalCenter">Enroll Now</a>
+                            <a href="./courses/recorded-stock-market-101-course.html" class="btn">Enroll Now</a>
                             <a href="./pdf/A2Z-pdf.pdf" class="btn" download>Download PDF</a>
                         </div>
                     </div>
@@ -1126,25 +1125,39 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="wrapper-thing">
-                    <h2>Coming Soon<span class="dot">.</span></h2>
-                    <p style="word-spacing: normal;">Call Us Now</p>
-                    <div class="icons-thing">
-                        <a href="tel:9773174522" class="text-dark"><i class="fas fa-phone-alt"></i> <span
-                                class="d-none d-md-block">+91 97731 74522</span></a>
-                        <a class="text-dark" target="_blank"
-                            href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about AtoZ Finance"><i
-                                class="fab fa-whatsapp"></i><span class="d-none d-md-block">Message<span></a>
+    <div class="modal fade mt-4" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content black-form">
+                <div class="modal-header text-center border-0">
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="text-center">
+                        <h5><b>Stock Market 101 Workshop</b></h5>
+                    </div>
+                    <ul class="p-0 new-li main-section main-section-1">
+                        <li class="ml-0" ><i class="fas fa-chalkboard-teacher"></i> <span>Time :</span>
+                            02PM-06PM</li>
+                        <li class="mt-2 ml-0 mb-3"><i class="fas fa-calendar-alt"></i> <span>Date :</span> 07-05-2023
+                        </li>
+                    </ul>
+                    <div class="text-center pb-md-3">
+                        <p class="mb-2">Enhance your financial knowledge with A2Z Finance's hands-on workshops! Our...</p>
+                        <p class="mb-2" style="color: #ff8024;"><b>Register Ending Soon</b></p>
+                        <div class="timer">
+                            <span id="days"></span>
+                            <span id="hours"></span>
+                            <span id="minutes"></span>
+                            <span id="seconds"></span>
+                        </div>
                     </div>
                 </div>
+                <a href="/workshop/stock-market-workshop.html" class="btn btn-know">Know More</a>
             </div>
         </div>
     </div>
-
     <script src="./plugins/bootstrap/bootstrap.min.js"></script>
     <link href="./css/effect.css" rel="stylesheet">
     <script src="./js/main.js"></script>
@@ -1156,6 +1169,11 @@
     <script>
         const form = document.getElementById('myForm');
         form.addEventListener('submit', submitForm); 
+    </script>
+    <script>
+        setTimeout(function() {
+            $('#myModal').modal();
+        }, 4000);
     </script>
     <script>
         AOS.init()
@@ -1306,6 +1324,41 @@
         });
 
     </script>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("May 7, 2023 00:00:00").getTime();
+    
+            // Update the countdown every 1 second
+            var x = setInterval(function () {
+    
+                // Get today's date and time
+                var now = new Date().getTime();
+    
+                // Find the distance between now and the countdown date
+                var distance = countDownDate - now;
+    
+                // Calculate the days, hours, minutes, and seconds remaining
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                // Display the countdown in the UI
+                document.getElementById("days").innerHTML = days + "d";
+                document.getElementById("hours").innerHTML = hours + "h";
+                document.getElementById("minutes").innerHTML = minutes + "m";
+                document.getElementById("seconds").innerHTML = seconds + "s";
+    
+                // If the countdown is finished, display a message
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("days").innerHTML = "EXPIRED";
+                    document.getElementById("hours").innerHTML = "";
+                    document.getElementById("minutes").innerHTML = "";
+                    document.getElementById("seconds").innerHTML = "";
+                }
+            }, 1000); // 1 second = 1,000 milliseconds
+        </script>
 </body>
 
 </html>

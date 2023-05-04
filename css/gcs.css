@@ -3046,3 +3046,36 @@ figure.effect-oscar:hover img {
 .workshop2 h5{
     color: #ff8024;
 }
+
+.black-form{
+    background-color: #000;
+}
+
+.black-form h5{
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.black-form .timer span {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    background-color: #525252;
+    border-radius: 5px;
+    width: 55px;
+}
+
+.btn-know{
+    background-color: #ff8024;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 0px 0px 14px 14px;
+}
+
+.btn-know:hover{
+    background-color: #000;
+    border: 2px solid #ff8024;
+    color: #ff8024;
+}
