@@ -1,4 +1,7 @@
 @media(max-width:575.98px) {
+    #owl-demon img{
+        opacity: .3;
+    }
     .main{
         height: 60px;
     }
@@ -17,16 +20,22 @@
         color: #000
     }
     .main-box{
+        top: 45%;
         left: 5%;
         width: 88%;
+    }
+    .float-button{
+        bottom: 15%;
     }
     .main-box h4{
         font-size: 18px;
         margin-bottom: 10px;
+        font-weight: 600;
     }
     .main-box p{
         margin-bottom: 24px;
         font-size: 14px;
+        font-weight: 500;
     }
     .main-box a{
         font-size: 14px;
