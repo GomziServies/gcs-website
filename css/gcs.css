@@ -2841,7 +2841,7 @@ figure.effect-oscar:hover img {
 
 .screen {
 	display: block;
-	width: 300px;
+	width: 100%;
 	height: 350px;
 	overflow: hidden;
 	position: relative;
@@ -2851,7 +2851,7 @@ figure.effect-oscar:hover img {
 }
 
 .screen img {
-	bottom: -1200px;
+	bottom: -990px;
 	width: 100%;
 	height: auto;
 	position: absolute;
@@ -2864,7 +2864,9 @@ figure.effect-oscar:hover img {
 	-o-transition: top 11s;
 	transition: bottom 11s;
 }
-
+.screen-eyeto img{
+    bottom: -580px;
+}
 .screen:hover img {
   bottom: 0;
   -webkit-transition: all 11s;
