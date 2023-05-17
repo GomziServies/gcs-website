@@ -2925,7 +2925,7 @@ figure.effect-oscar:hover img {
     font-weight: 600;
     font-family: Nunito, sans-serif;
     border: 2px solid transparent !important;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #fff;
     padding: 8px 12px;
 }
