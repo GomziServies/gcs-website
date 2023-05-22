@@ -16,7 +16,7 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/popup-form-style.css">
-    <link rel="stylesheet" type="text/css" type="text/css" href="./plugins/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" type="text/css" href="../plugins/sweetalert2/sweetalert2.min.css">
     <link rel="stylesheet" type="text/css" href="../css/gcs.css">
     <link rel="stylesheet" type="text/css" href="../css/media.css">
     <link rel="stylesheet" type="text/css" href="../css/owl-style.css">
@@ -73,7 +73,7 @@
                 itemsDesktopSmall: [576, 1],
                 pagination: true,
             });
-            $("#owl-review-1, #owl-review-2").owlCarousel({
+            $("#owl-review-1").owlCarousel({
                 autoPlay: 5000, //Set AutoPlay to 5 seconds
                 nav: true,
                 loop: true,
@@ -107,12 +107,12 @@
                 items: 1,
                 itemsDesktop: [1199, 1],
                 itemsDesktopSmall: [576, 1],
-                dots: false,
+                dots: true,
             });
             $("#owl-active").owlCarousel({
                 autoPlay: true, //Set AutoPlay to 3 seconds
                 navigation: true,
-                items: 3,
+                items: 1,
                 itemsDesktop: [1199, 1],
                 itemsDesktopSmall: [979, 1],
                 pagination: true,
@@ -166,6 +166,25 @@
 
         gtag('config', 'G-WX8P2R5E4Y');
     </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '793714741985467');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=793714741985467&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <header>
     <div class="go-top">
@@ -176,16 +195,21 @@
         <i class="fab fa-whatsapp"></i>
         <span>Message<span>
     </a>
+    <!-- <a class="float-button-1"
+        href="tel:+919773174522">
+        <i class="fas fa-phone-alt"></i>
+        <span>Contact Us Now<span>
+    </a> -->
     <div class="container-fluid main p-0 m-0">
         <div class="d-lg-block d-none log">
-            <a href="/">
+            <a href="../digital-marketing-agency.html">
                 <div>
                     <img src="../images/logos/fitit-logo.png" width="200%" alt="Fg Group">
                 </div>
             </a>
         </div>
         <div class="d-lg-none d-sm-block t0 log1">
-            <a href="/">
+            <a href="../digital-marketing-agency.html">
                 <div>
                     <img src="../images/logos/fitit-logo.png" width="160%" alt="Fg Group">
                 </div>
@@ -217,7 +241,7 @@
         </div>
         <div class="side" id="demo">
             <span class="closebtn" onclick="sideclose()">&times</span>
-            <a href="/" style="margin-top: 50px;"><img class="lazy" data-src="./images/logos/fitit-logo.png"
+            <a href="/" style="margin-top: 50px;"><img class="lazy" data-src="../images/logos/fitit-logo.png"
                     width="35%"></a>
             <a href="../index.html">Home</a>
             <a href="../digital-marketing-agency.html">FitIT</a>
@@ -240,7 +264,7 @@
     <section class="margintop">
         <div class="container-fluid px-0">
             <div class="">
-                <div class="background-imgs" style="background-image: url(/images/mix-img/marketing-guru.png);">
+                <div class="background-imgs" style="background-image: url(../images/mix-img/marketing-guru.png);">
                     <div class="row justify-content-center">
                         <div class="col-md-10 col-12 text-center">
                             <div class="takshak-title">
@@ -271,9 +295,9 @@
                     <div class="col-md-6">
                         <div class="video-img">
                             <div class="ply1 black-before">
-                                <img class="" data-src="/images/mix-img/marketing-services.webp" width="100%"
+                                <img class="lazy" data-src="../images/mix-img/marketing-services.webp" width="100%"
                                     style="border-radius: 10px 10px 0px 0px;" alt="client journey"
-                                    src="/images/mix-img/marketing-services.webp">
+                                    src="../images/mix-img/marketing-services.webp">
                                 <div class="video-btn">
                                     <a href="https://youtu.be/WmgDfR8Q_Ic" data-flashy-type="video" class="custom">
                                         <span class="newthing"><i class="fas fa-play"></i></span>
@@ -322,8 +346,8 @@
                                 <div class="flip-card-inner-fitit">
                                     <div class="flip-card-front-fitit">
                                         <div class="">
-                                            <img src="/images/fitit/ser-3.png" alt="WEBSITE DEVLOPMENT & WEBSITE DESIGN"
-                                                class="img-fluid">
+                                            <img src="../images/fitit/ser-3.webp" data-src="../images/fitit/ser-3.webp" width="100%" alt="WEBSITE DEVLOPMENT & WEBSITE DESIGN"
+                                                class="lazy">
                                             <h4 class="text-white">Website Development and Website Design</h4>
                                         </div>
                                     </div>
@@ -341,7 +365,7 @@
                                 <div class="flip-card-inner-fitit">
                                     <div class="flip-card-front-fitit">
                                         <div class="">
-                                            <img src="/images/fitit/managment-skills.png" alt="" class="img-fluid">
+                                            <img src="../images/fitit/managment-skills.webp" width="100%" data-src="../images/fitit/managment-skills.webp" alt="Social media account marketing and handling" class="lazy">
                                             <h4 class="text-white">Social media account marketing and handling</h4>
                                         </div>
                                     </div>
@@ -364,8 +388,8 @@
                                 <div class="flip-card-inner-fitit">
                                     <div class="flip-card-front-fitit">
                                         <div class="">
-                                            <img src="/images/fitit/online-plan.png" alt="Social Media Marketing"
-                                                class="img-fluid">
+                                            <img src="../images/fitit/online-plan.webp" data-src="../images/fitit/online-plan.webp" alt="Social Media Marketing"
+                                                class="lazy">
                                             <h4 class="text-white mt-5">Paid Advertisement </h4>
                                         </div>
                                     </div>
@@ -384,8 +408,8 @@
                                 <div class="flip-card-inner-fitit">
                                     <div class="flip-card-front-fitit">
                                         <div class="">
-                                            <img src="/images/fitit/content-writing.png" alt="Content Marketing"
-                                                class="img-fluid">
+                                            <img src="../images/fitit/content-writing.webp" width="100%" data-src="../images/fitit/content-writing.webp" alt="Content Marketing"
+                                                class="lazy">
                                             <h4 class="text-white mt-5">Content Writing </h4>
                                         </div>
                                     </div>
@@ -407,8 +431,8 @@
                                 <div class="flip-card-inner-fitit">
                                     <div class="flip-card-front-fitit">
                                         <div class="">
-                                            <img src="/images/fitit/shoot.png" alt="Content Marketing"
-                                                class="img-fluid">
+                                            <img src="../images/fitit/shoot.webp" data-src="../images/fitit/shoot.webp" alt="Content Marketing"
+                                                class="lazy">
                                             <h4 class="text-white mt-5">Content Shoot</h4>
                                         </div>
                                     </div>
@@ -427,8 +451,8 @@
                                 <div class="flip-card-inner-fitit">
                                     <div class="flip-card-front-fitit">
                                         <div class="">
-                                            <img src="/images/fitit/video-edit.png" alt="Content Edit"
-                                                class="img-fluid">
+                                            <img src="../images/fitit/video-edit.webp" data-src="../images/fitit/video-edit.webp" width="100%" alt="Content Edit"
+                                                class="lazy">
                                             <h4 class="text-white mt-5">Content Edit</h4>
                                         </div>
                                     </div>
@@ -448,8 +472,8 @@
                                 <div class="flip-card-inner-fitit">
                                     <div class="flip-card-front-fitit">
                                         <div class="">
-                                            <img src="/images/fitit/account-img.png"
-                                                alt="Google my business profile Maintain" class="img-fluid">
+                                            <img src="../images/fitit/account-img.webp" width="100%" data-src="../images/fitit/account-img.webp"
+                                                alt="Google my business profile Maintain" class="lazy">
                                             <h4 class="text-white mt-5">Google my business profile Maintain</h4>
                                         </div>
                                     </div>
@@ -466,8 +490,8 @@
                                 <div class="flip-card-inner-fitit">
                                     <div class="flip-card-front-fitit">
                                         <div class="">
-                                            <img src="/images/fitit/pr-events.png" alt="PR Activities & Events"
-                                                class="img-fluid">
+                                            <img src="../images/fitit/pr-events.webp" data-src="../images/fitit/pr-events.webp" width="100%" alt="PR Activities & Events"
+                                                class="lazy">
                                             <h4 class="text-white mt-5">PR Activities & Events</h4>
                                         </div>
                                     </div>
@@ -484,7 +508,7 @@
                                 <div class="flip-card-inner-fitit">
                                     <div class="flip-card-front-fitit">
                                         <div class="">
-                                            <img src="/images/fitit/fees.png" alt="Our Fees" class="img-fluid">
+                                            <img src="../images/fitit/fees.webp" data-src="../images/fitit/fees.webp" width="100%" alt="Our Fees" class="lazy">
                                             <h4 class="text-white mt-5">Our Fees</h4>
                                         </div>
                                     </div>
@@ -596,8 +620,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/takshak/coach-2.png"
-                                                data-src="/images/takshak/coach-2.png" width="100%" alt="Owner">
+                                            <img class="lazy" src="../images/takshak/coach-2.png"
+                                                data-src="../images/takshak/coach-2.png" width="100%" alt="Owner">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Gautam Jani</h5>
@@ -608,8 +632,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-4.png"
-                                                data-src="/images/fitit/team-4.png" width="100%"
+                                            <img class="lazy" src="../images/fitit/team-4.webp"
+                                                data-src="../images/fitit/team-4.webp" width="100%"
                                                 alt="Full Stack Developer">
                                         </div>
                                         <div class="box-desc">
@@ -621,8 +645,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" data-src="/images/fitit/team-5.png"
-                                                src="/images/fitit/team-5.png" width="100%" alt="Full Stack Developer">
+                                            <img class="lazy" data-src="../images/fitit/team-5.webp"
+                                                src="../images/fitit/team-5.webp" width="100%" alt="Full Stack Developer">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Jenil Narola</h5>
@@ -633,8 +657,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" data-src="/images/fitit/team-3.png" width="100%"
-                                                src="/images/fitit/team-3.png" alt="Digital Marketing Specialist">
+                                            <img class="lazy" data-src="../images/fitit/team-3.webp" width="100%"
+                                                src="../images/fitit/team-3.webp" alt="Digital Marketing Specialist">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Rozal Gohil</h5>
@@ -645,8 +669,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" data-src="/images/fitit/team-1.png" width="100%"
-                                                src="/images/fitit/team-1.png" alt="Video Grapher & Editor">
+                                            <img class="lazy" data-src="../images/fitit/team-1.webp" width="100%"
+                                                src="../images/fitit/team-1.webp" alt="Video Grapher & Editor">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Harshad Dave</h5>
@@ -657,8 +681,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="img-fluid" src="/images/fitit/team-6.png"
-                                                data-src="/images/fitit/team-6.png" width="100%" alt="Graphic Designer">
+                                            <img class="img-fluid" src="../images/fitit/team-6.webp"
+                                                data-src="../images/fitit/team-6.webp" width="100%" alt="Graphic Designer">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Yash Sangani</h5>
@@ -669,8 +693,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-2.png"
-                                                data-src="/images/fitit/team-2.png" width="100%" alt="Web Developer">
+                                            <img class="lazy" src="../images/fitit/team-2.webp"
+                                                data-src="../images/fitit/team-2.webp" width="100%" alt="Web Developer">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Divyesh Baraiya</h5>
@@ -681,8 +705,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-7.png"
-                                                data-src="/images/fitit/team-7.png" width="100%"
+                                            <img class="lazy" src="../images/fitit/team-7.webp"
+                                                data-src="../images/fitit/team-7.webp" width="100%"
                                                 alt="Junior Video Editor">
                                         </div>
                                         <div class="box-desc">
@@ -694,8 +718,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-8.png"
-                                                data-src="/images/fitit/team-8.png" width="100%"
+                                            <img class="lazy" src="../images/fitit/team-8.webp"
+                                                data-src="../images/fitit/team-8.webp" width="100%"
                                                 alt="Junior Video Editor">
                                         </div>
                                         <div class="box-desc">
@@ -711,8 +735,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/takshak/coach-2.png"
-                                                data-src="/images/takshak/coach-2.png" width="100%" alt="Owner">
+                                            <img class="lazy" src="../images/takshak/coach-2.png"
+                                                data-src="../images/takshak/coach-2.png" width="100%" alt="Owner">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Gautam Jani</h5>
@@ -723,8 +747,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-4.png"
-                                                data-src="/images/fitit/team-4.png" width="100%"
+                                            <img class="lazy" src="../images/fitit/team-4.webp"
+                                                data-src="../images/fitit/team-4.webp" width="100%"
                                                 alt="Full Stack Developer">
                                         </div>
                                         <div class="box-desc">
@@ -736,8 +760,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-5.png"
-                                                data-src="/images/fitit/team-5.png" width="100%"
+                                            <img class="lazy" src="../images/fitit/team-5.webp"
+                                                data-src="../images/fitit/team-5.webp" width="100%"
                                                 alt="Full Stack Developer">
                                         </div>
                                         <div class="box-desc">
@@ -749,8 +773,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-3.png"
-                                                data-src="/images/fitit/team-3.png" width="100%"
+                                            <img class="lazy" src="../images/fitit/team-3.webp"
+                                                data-src="../images/fitit/team-3.webp" width="100%"
                                                 alt="Digital Marketing Specialist">
                                         </div>
                                         <div class="box-desc">
@@ -762,8 +786,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-1.png"
-                                                data-src="/images/fitit/team-1.png" width="100%"
+                                            <img class="lazy" src="../images/fitit/team-1.webp"
+                                                data-src="../images/fitit/team-1.webp" width="100%"
                                                 alt="Video Grapher & Editor">
                                         </div>
                                         <div class="box-desc">
@@ -775,8 +799,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-6.png"
-                                                data-src="/images/fitit/team-6.png" width="100%" alt="Graphic Designer">
+                                            <img class="lazy" src="../images/fitit/team-6.webp"
+                                                data-src="../images/fitit/team-6.webp" width="100%" alt="Graphic Designer">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Yash Sangani</h5>
@@ -787,8 +811,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-2.png"
-                                                data-src="/images/fitit/team-2.png" width="100%" alt="Owner">
+                                            <img class="lazy" src="../images/fitit/team-2.webp"
+                                                data-src="../images/fitit/team-2.webp" width="100%" alt="Owner">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Divyesh Baraiya</h5>
@@ -799,8 +823,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-7.png"
-                                                data-src="/images/fitit/team-7.png" width="100%" alt="Owner">
+                                            <img class="lazy" src="../images/fitit/team-7.webp"
+                                                data-src="../images/fitit/team-7.webp" width="100%" alt="Owner">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Suresh Pagi</h5>
@@ -811,8 +835,8 @@
                                 <div class="item mx-2 mx-md-4">
                                     <div class="box-coach shadow-sm p-4">
                                         <div class="image-wrapper mb-3">
-                                            <img class="lazy" src="/images/fitit/team-8.png"
-                                                data-src="/images/fitit/team-8.png" width="100%" alt="Owner">
+                                            <img class="lazy" src="../images/fitit/team-8.webp"
+                                                data-src="../images/fitit/team-8.webp" width="100%" alt="Owner">
                                         </div>
                                         <div class="box-desc">
                                             <h5>Vedant Makani</h5>
@@ -838,66 +862,124 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-lg-2">
                         <div class="d-none d-md-block">
-                            <img src="/images/mix-img/website-devlopment.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
+                            <img src="../images/mix-img/website-devlopment.webp" width="100%" data-src="../images/mix-img/website-devlopment.webp" style="border-radius: 10px;"
+                                class="lazy" alt="Website Development and Website Design">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-1">
                         <div class="coach-box ">
                             <h2 class="w-100">Website Development and Website Design</h2>
                         </div>
-                        <div class="approach">
-                            <p class="mb-0">
-                                Our website development and website design services offer a comprehensive
-                                solution to your online presence. We focus on creating visually appealing,
-                                user-friendly websites that deliver results. Our team of experienced
-                            </p>
-                            <p class="moretextweb d-lg-block"> developers
-                                and designers work closely with you to understand your business needs and goals,
-                                ensuring that the end result reflects your brand's personality and values. From basic
-                                static sites to dynamic e-commerce platforms, we provide customized solutions that
-                                enhance
-                                your online presence and improve user experience. Trust us to take your website to the
-                                next level.
-                            </p>
-                            <div class="mt-3 d-block d-lg-none">
-                                <a class="readmore-web">Read more</a>
+                        <div class="d-block d-md-none">
+                            <div class="approach">
+                                <p class="mb-0">
+                                    Our website development and website design services offer a comprehensive
+                                    solution to your online presence. We focus on creating visually appealing,
+                                    user-friendly websites that deliver results. Our team of experienced
+                                </p>
+                                <p class="moretextweb" style="display: none;"> 
+                                    developers and designers work closely with you to understand your business needs and goals,
+                                    ensuring that the end result reflects your brand's personality and values. From basic
+                                    static sites to dynamic e-commerce platforms, we provide customized solutions that
+                                    enhance
+                                    your online presence and improve user experience. Trust us to take your website to the
+                                    next level.
+                                </p>
+                                <div class="mt-3 d-block d-md-none">
+                                    <div class="d-flex">
+                                        <a class="readmore-web">Read more</a>
+                                        <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <div class="approach">
+                                <p class="mb-0">
+                                    Our website development and website design services offer a comprehensive
+                                    solution to your online presence. We focus on creating visually appealing,
+                                    user-friendly websites that deliver results. Our team of experienced and 
+                                    designers work closely with you to understand your business needs and goals,
+                                    ensuring that the end result reflects your brand's personality and values. From basic
+                                    static sites to dynamic e-commerce platforms, we provide customized solutions that enhance
+                                    your online presence and improve user experience. Trust us to take your website to the
+                                    next level.
+                                </p>
+                                <div class="course-price mt-md-3 d-none d-md-block">
+                                    <a href="tel:+919773174522" class="btn">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="text-center my-md-4">
+                        <h2 class="d-none d-md-block">Our Projects</h2>
+                        <h2 class="d-block d-md-none mt-5" style="font-size: 20px; font-weight: 600;">Our Projects</h2>
+                    </div>
+                </div>
+                <div class="d-none d-md-block">
+                    <div class="row">
+                        <div class="col-md-3 mt-4 mt-md-0">
+                            <div class="screen">
+                                <a href="https://stallon.in" class="">
+                                    <img src="../images/mix-img/stallon-website.webp">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4 mt-md-0">
+                            <div class="screen">
+                                <a href="https://gcsconsultant.com/" class="">
+                                    <img src="../images/mix-img/gcs-website.webp">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4 mt-md-0">
+                            <div class="screen">
+                                <a href="https://fggroup.in/" class="">
+                                    <img src="../images/mix-img/fggroup-website.webp">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4 mt-md-0">
+                            <div class="screen screen-eyeto">
+                                <a href="https://eyetoeye.in/" class="">
+                                    <img src="../images/mix-img/eyetoeye-website.webp">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="text-center my-md-4 my-3">
-                        <h2>Our Projects</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 mt-4 mt-md-0">
-                        <div class="screen">
-                            <a href="https://stallon.in" class="">
-                                <img src="/images/mix-img/stallon-website.webp">
-                            </a>
+                <div class="d-block d-md-none">
+                    <div id="owl-review-2" class="owl-carousel owl-theme mt-4">
+                        <div class="item mx-2 mx-md-4">
+                            <div class="screen">
+                                <a href="https://stallon.in" class="">
+                                    <img src="../images/mix-img/stallon-website.webp">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 mt-4 mt-md-0">
-                        <div class="screen">
-                            <a href="https://gcsconsultant.com/" class="">
-                                <img src="/images/mix-img/gcs-website.webp">
-                            </a>
+                        <div class="item mx-2 mx-md-4">
+                            <div class="screen">
+                                <a href="https://fggroup.in/" class="">
+                                    <img src="../images/mix-img/fggroup-website.webp">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 mt-4 mt-md-0">
-                        <div class="screen">
-                            <a href="https://fggroup.in/" class="">
-                                <img src="/images/mix-img/fggroup-website.webp">
-                            </a>
+                        <div class="item mx-2 mx-md-4">
+                            <div class="screen">
+                                <a href="https://gcsconsultant.com/" class="">
+                                    <img src="../images/mix-img/gcs-website.webp">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 mt-4 mt-md-0">
-                        <div class="screen screen-eyeto">
-                            <a href="https://eyetoeye.in/" class="">
-                                <img src="/images/mix-img/eyetoeye-website.webp">
-                            </a>
+                        <div class="item mx-2 mx-md-4">
+                            <div class="screen screen-eyeto">
+                                <a href="https://eyetoeye.in/" class="">
+                                    <img src="../images/mix-img/eyetoeye-website.webp">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -910,71 +992,137 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-2 order-md-1">
                         <div class="d-none d-md-block">
-                            <img src="../images/fitit/social-media.png" class="img-fluid" alt="Our Approach">
+                            <img src="../images/fitit/social-media.webp" data-src="../images/fitit/social-media.webp" width="100%" class="lazy" alt="Social media account marketing and handling">
                         </div>
                     </div>
                     <div class="col-md-6 order-md-2 order-1">
                         <div class="coach-box">
                             <h2 class="w-100">Social media account marketing and handling</h2>
                         </div>
-                        <div class="approach">
-                            <p class="mb-0">
-                                Looking to boost your social media presence and engage with your audience
-                                effectively? Our social media account marketing and handling services are here
-                                to help! Our team
-                            </p>
-                            <p class="moretext-web1 d-lg-block">
-                                of experts will work with you to create engaging content, manage
-                                your accounts, and track performance metrics to ensure you're making the most of
-                                your social media presence. With years of experience and a proven track record of
-                                success, we're the partner you need to take your social media marketing to the next
-                                level.
-                            </p>
-                            <div class="mt-3 d-block d-lg-none">
-                                <a class="readmore-web1">Read more</a>
+                        <div class="d-block d-md-none">
+                            <div class="approach">
+                                <p class="mb-0">
+                                    Looking to boost your social media presence and engage with your audience
+                                    effectively? Our social media account marketing and handling services are here
+                                    to help! Our team of experts will
+                                </p>
+                                <p class="moretext-web1" style="display: none;">
+                                    work with you to create engaging content, manage
+                                    your accounts, and track performance metrics to ensure you're making the most of
+                                    your social media presence. With years of experience and a proven track record of
+                                    success, we're the partner you need to take your social media marketing to the next
+                                    level.
+                                </p>
+                                <div class="mt-3">
+                                    <div class="mt-3 d-block d-md-none">
+                                        <div class="d-flex">
+                                            <a class="readmore-web1">Read more</a>
+                                            <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <div class="approach">
+                                <p class="mb-0">
+                                    Looking to boost your social media presence and engage with your audience
+                                    effectively? Our social media account marketing and handling services are here
+                                    to help! Our team of experts will work with you to create engaging content, manage
+                                    your accounts, and track performance metrics to ensure you're making the most of
+                                    your social media presence. With years of experience and a proven track record of
+                                    success, we're the partner you need to take your social media marketing to the next
+                                    level.
+                                </p>
+                                <div class="course-price mt-md-3 d-none d-md-block">
+                                    <a href="tel:+919773174522" class="btn">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12 mt-md-5">
                     <div class="text-center">
-                        <h2 class="mb-0 mt-3">Our Clients</h2>
+                        <h2 class="d-none d-md-block">Our Clients</h2>
+                        <h2 class="d-block d-md-none mt-5" style="font-size: 20px; font-weight: 600;">Our Clients</h2>
                     </div>
-                    <div class="row justify-content-around">
-                        <div class="text-center">
-                            <div class="logo-box">
-                                <img src="../images/mix-img/gomzi.webp" class="img-fluid" alt="Logos">
-                                <p>FitnessWithGomzi</p>
+                    <div class="d-none d-md-block">
+                        <div class="row justify-content-around">
+                            <div class="text-center">
+                                <div class="logo-box">
+                                    <img src="../images/mix-img/gomzi.webp" data-src="../images/mix-img/gomzi.webp" width="95%" class="lazy" alt="Logos">
+                                    <p>FitnessWithGomzi</p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="logo-box">
+                                    <img src="../images/mix-img/fgiit.webp" data-src="../images/mix-img/fgiit.webp" width="100%" class="lazy" alt="Logos">
+                                    <p>FGIIT</p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="logo-box">
+                                    <img src="../images/mix-img/stallon.webp" data-src="../images/mix-img/stallon.webp" width="100%" class="lazy" alt="Logos">
+                                    <p>Stallon</p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="logo-box">
+                                    <img src="../images/mix-img/atoz.webp" data-src="../images/mix-img/atoz.webp" width="100%" class="lazy" alt="Logos">
+                                    <p>AtoZ Finance</p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="logo-box">
+                                    <img src="../images/mix-img/takshak.webp" data-src="../images/mix-img/takshak.webp" width="80%" class="lazy" alt="Logos">
+                                    <p>Takshak Management</p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="logo-box">
+                                    <img src="../images/mix-img/subodh.webp" data-src="../images/mix-img/subodh.webp" width="95%" class="lazy" alt="Logos">
+                                    <p>Subodh's Urology</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <div class="logo-box">
-                                <img src="../images/mix-img/fgiit.webp" class="img-fluid" alt="Logos">
-                                <p>FGIIT</p>
+                    </div>
+                    <div class="d-block d-md-none">
+                        <div id="owl-demo2" class="owl-carousel owl-theme mt-4">
+                            <div class="item mx-2 mx-md-4">
+                                <div class="logo-box text-center">
+                                    <img src="../images/mix-img/gomzi.webp" data-src="../images/mix-img/gomzi.webp" width="65%" class="lazy" alt="Logos">
+                                    <p>FitnessWithGomzi</p>
+                                </div>
+                                <div class="logo-box text-center">
+                                    <img src="../images/mix-img/fgiit.webp" data-src="../images/mix-img/fgiit.webp" width="65%" class="lazy" alt="Logos">
+                                    <p>FGIIT</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <div class="logo-box">
-                                <img src="../images/mix-img/stallon.webp" class="img-fluid" alt="Logos">
-                                <p>Stallon</p>
+                            <div class="item mx-2 mx-md-4">
+                                <div class="logo-box text-center">
+                                    <img src="../images/mix-img/stallon.webp" data-src="../images/mix-img/stallon.webp" width="65%" class="lazy" alt="Logos">
+                                    <p>Stallon</p>
+                                </div>
+                                <div class="logo-box text-center">
+                                    <img src="../images/logos/atoz-logo.png" data-src="../images/logos/atoz-logo.png" width="65%" class="lazy" alt="Logos">
+                                    <p>AtoZ Finance</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <div class="logo-box">
-                                <img src="../images/mix-img/atoz.webp" class="img-fluid" alt="Logos">
-                                <p>AtoZ Finance</p>
+                            <div class="item mx-2 mx-md-4">
+                                <div class="logo-box text-center">
+                                    <img src="../images/logos/takshak-logo-white.png" data-src="../images/logos/takshak-logo-white.png" width="65%" class="lazy" alt="Logos">
+                                    <p>Takshak Management</p>
+                                </div>
+                                <div class="logo-box text-center">
+                                    <img src="../images/mix-img/subodh.webp" data-src="../images/mix-img/subodh.webp" width="65%" class="lazy" alt="Logos">
+                                    <p>Subodh's Urology</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <div class="logo-box">
-                                <img src="../images/mix-img/takshak.webp" class="img-fluid" alt="Logos">
-                                <p>Takshak Management</p>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <div class="logo-box">
-                                <img src="../images/mix-img/subodh.webp" class="img-fluid" alt="Logos">
-                                <p>Subodh's Urology</p>
+                            <div class="item mx-2 mx-md-4">
+                                <div class="logo-box text-center">
+                                    <img src="../images/logos/spinex.webp" data-src="../images/logos/spinex.webp" width="65%" class="lazy" alt="Logos">
+                                    <p>spinex Global</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -988,8 +1136,8 @@
                 <div class="row align-items-center ">
                     <div class="col-md-6 order-lg-2 order-md-1 d-none d-md-block">
                         <div class="d-none d-md-block">
-                            <img src="../images/mix-img/facebook-ads.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
+                            <img src="../images/mix-img/facebook-ads.webp" width="100%" data-src="../images/mix-img/facebook-ads.webp" style="border-radius: 10px;"
+                                class="img-fluid" alt="Paid Advertisement META & GOOGLE ADS">
                         </div>
                     </div>
                     <div class="col-md-6 order-md-2 order-lg-1  d-none d-md-block">
@@ -1009,6 +1157,9 @@
                                 Contact
                                 us today and let us help you boost your online presence!
                             </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1018,8 +1169,8 @@
                             <div class="coach-box">
                                 <h2 class="w-100">Paid Advertisement META & GOOGLE ADS</h2>
                             </div>
-                            <img src="../images/mix-img/facebook-ads.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
+                            <img src="../images/mix-img/facebook-ads.webp" width="100%" data-src="../images/mix-img/facebook-ads.webp" style="border-radius: 10px;"
+                                class="lazy" alt="Paid Advertisement META & GOOGLE ADS">
                         </div>
                     </div>
                     <div class="col-md-6 order-md-2 order-1">
@@ -1036,7 +1187,10 @@
                                 us today and let us help you boost your online presence!
                             </p>
                             <div class="mt-3 d-block d-md-none">
-                                <a class="readmore-button">Read more</a>
+                                <div class="d-flex">
+                                    <a class="readmore-button">Read more</a>
+                                    <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1050,8 +1204,8 @@
                 <div class="row align-items-center">
                     <div class=" col-md-6 order-lg-1 d-none d-md-block">
                         <div class="d-none d-md-block">
-                            <img src="../images/mix-img/content-writer.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
+                            <img src="../images/mix-img/content-writer.webp" width="100%" data-src="../images/mix-img/content-writer.webp" style="border-radius: 10px;"
+                                class="lazy" alt="Content writing">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-2  d-none d-md-block">
@@ -1068,6 +1222,9 @@
                                 originality of the content, it is essential to use plagiarism-checking tools to identify
                                 any potential issues.
                             </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1077,8 +1234,8 @@
                             <div class="coach-box">
                                 <h2 class="w-100"> Content writing</h2>
                             </div>
-                            <img src="../images/mix-img/content-writer.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
+                            <img src="../images/mix-img/content-writer.webp" width="100%" data-src="../images/mix-img/content-writer.webp"  style="border-radius: 10px;"
+                                class="lazy" alt="Our Approach">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-1">
@@ -1095,7 +1252,10 @@
                                 originality of the content, it is essential to use plagiarism-checking tools to identify
                                 any potential issues.</p>
                             <div class="mt-3 d-block d-md-none">
-                                <a class="readmore-button1">Read more</a>
+                                <div class="d-flex">
+                                    <a class="readmore-button1">Read more</a>
+                                    <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1109,8 +1269,8 @@
                 <div class="row align-items-center ">
                     <div class="col-md-6 order-lg-2 d-none d-md-block">
                         <div class="d-none d-md-block">
-                            <img src="../images/banner/banner-2.webp" class="img-fluid" style="border-radius: 10px;"
-                                alt="Our Approach">
+                            <img src="../images/banner/banner-2.webp" width="100%" data-src="../images/banner/banner-2.webp" class="lazy" style="border-radius: 10px;"
+                                alt="Content Shoot">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-1  d-none d-md-block">
@@ -1130,6 +1290,9 @@
                                 experience in your industry to ensure the best possible results. Always check for
                                 plagiarism in any content produced to ensure its originality.
                             </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1139,8 +1302,8 @@
                             <div class="coach-box">
                                 <h2 class="w-100">Content Shoot</h2>
                             </div>
-                            <img src="../images/banner/banner-2.webp" class="img-fluid" style="border-radius: 10px;"
-                                alt="Our Approach">
+                            <img src="../images/banner/banner-2.webp" data-src="../images/banner/banner-2.webp" class="lazy" width="100%" style="border-radius: 10px;"
+                                alt="Content Shoot">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-1">
@@ -1157,7 +1320,10 @@
                                 experience in your industry to ensure the best possible results. Always check for
                                 plagiarism in any content produced to ensure its originality.</p>
                             <div class="mt-3 d-block d-md-none">
-                                <a class="readmore-button2">Read more</a>
+                                <div class="d-flex">
+                                    <a class="readmore-button2">Read more</a>
+                                    <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1171,7 +1337,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-lg-1  d-none d-md-block">
                         <div class="d-none d-md-block">
-                            <img src="../images/mix-img/video-edit.webp" class="img-fluid" alt="Our Approach">
+                            <img src="../images/mix-img/video-edit.webp" data-src="../images/mix-img/video-edit.webp" width="100%" class="lazy" alt="Content Edit">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-2  d-none d-md-block">
@@ -1191,7 +1357,9 @@
                                 us to
                                 bring your ideas to life through our expert editing skills.
                             </p>
-                            </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1201,7 +1369,7 @@
                             <div class="coach-box">
                                 <h2 class="w-100">Content Edit</h2>
                             </div>
-                            <img src="../images/mix-img/video-edit.webp" class="img-fluid" alt="Our Approach">
+                            <img src="../images/mix-img/video-edit.webp" data-src="../images/mix-img/video-edit.webp" width="100%" class="lazy" alt="Our Approach">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-2">
@@ -1217,7 +1385,10 @@
                                 bring your ideas to life through our expert editing skills.
                             </p>
                             <div class="mt-3 d-block d-md-none">
-                                <a class="readmore-button3">Read more</a>
+                                <div class="d-flex">
+                                    <a class="readmore-button3">Read more</a>
+                                    <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1231,7 +1402,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-lg-2 d-none d-md-block">
                         <div class="d-none d-md-block">
-                            <img src="../images/mix-img/gmb-profiles.png" class="img-fluid"
+                            <img src="../images/mix-img/gmb-profiles.png" data-src="../images/mix-img/gmb-profiles.png" width="100%" class="lazy"
                             alt="Google my business profile Maintain" style="border-radius: 10px;">
                         </div>
                     </div>
@@ -1249,6 +1420,9 @@
                                 creating content for your profile. Engage with your customers by posting updates and
                                 showcasing your products or services.
                             </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1258,8 +1432,8 @@
                             <div class="coach-box">
                                 <h2 class="w-100">Google my business profile Maintain</h2>
                             </div>
-                            <img src="../images/mix-img/gmb-profiles.png" class="img-fluid"
-                                    alt="Google my business profile Maintain" style="border-radius: 10px;">
+                            <img src="../images/mix-img/gmb-profiles.png" data-src="../images/mix-img/gmb-profiles.png" class="lazy"
+                                    alt="Google my business profile Maintain" width="100%" style="border-radius: 10px;">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-2">
@@ -1272,8 +1446,11 @@
                                 business. To maintain credibility, use original language and avoid plagiarism when
                                 creating content for your profile. Engage with your customers by posting updates and
                                 showcasing your products or services.</p>
-                            <div class="mt-3 d-block d-md-none ">
-                                <a class="readmore-button4">Read more</a>
+                            <div class="mt-3 d-block d-md-none">
+                                <div class="d-flex">
+                                    <a class="readmore-button4">Read more</a>
+                                    <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1287,8 +1464,8 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-lg-1">
                         <div class="d-none d-md-block">
-                            <img src="https://www.usnews.com/dims4/USNEWS/21b8f95/2147483647/crop/2000x1334+0+0/resize/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F33%2Fcd%2F58cf2eda41f7900bc231e5874612%2F200212-collegecosts-stock.jpg"
-                                style="border-radius: 10px;" class="img-fluid" alt="Our Approach">
+                            <img src="../images/fitit/Our-Fees.webp" data-src="../images/fitit/Our-Fees.webp"
+                                style="border-radius: 10px;" class="lazy" width="100%" alt="Our Fees">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-2">
@@ -1297,8 +1474,7 @@
                         </div>
                         <div class="approach">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, fugit commodi quidem
-                                nisi pariatur, optio recusandae.
+                                Transparent, competitive fees tailored to your needs. Contact us for a personalized quote and discuss your project.
                             </p>
                             <div class="coach-box d-none d-md-block">
                                 <div>
@@ -1442,7 +1618,7 @@
                             <div class="box-top">
                                 <div class="profile">
                                     <div class="profile-img">
-                                        <img src="/images/fitit/team-1.png" class="img-fluid">
+                                        <img src="../images/fitit/team-1.webp" class="img-fluid">
                                     </div>
                                     <div class="name-user">
                                         <strong>Harshad Dave</strong>
@@ -1475,7 +1651,7 @@
                             <div class="box-top">
                                 <div class="profile">
                                     <div class="profile-img">
-                                        <img src="/images/review/google-2.png" class="img-fluid">
+                                        <img src="../images/review/google-2.png" class="img-fluid">
                                     </div>
                                     <div class="name-user">
                                         <strong>CHAUHAN SHAILESH</strong>
@@ -1502,7 +1678,7 @@
                             <div class="box-top">
                                 <div class="profile">
                                     <div class="profile-img">
-                                        <img src="/images/review/google-1.png" class="img-fluid">
+                                        <img src="../images/review/google-1.png" class="img-fluid">
                                     </div>
                                     <div class="name-user">
                                         <strong>Chirag Chillz</strong>
@@ -1560,7 +1736,7 @@
     </section>
     <section class="margintop">
         <div class="bg-full-bd"
-            style="background-image: url(/images/gcs/contact-us.webp);background-attachment: local;">
+            style="background-image: url(../images/gcs/contact-us.webp);background-attachment: local;">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-5">

@@ -148,8 +148,8 @@
             //Scroll event
             $(window).scroll(function () {
                 var scrolled = $(window).scrollTop();
-                if (scrolled > 200) $('.go-top').fadeIn('slow');
-                if (scrolled < 200) $('.go-top').fadeOut('slow');
+                if (scrolled > 200) $('.go-top, .float-button-1').fadeIn('slow');
+                if (scrolled < 200) $('.go-top, .float-button-1').fadeOut('slow');
             });
 
             //Click event
@@ -167,6 +167,25 @@
 
         gtag('config', 'G-WX8P2R5E4Y');
     </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '793714741985467');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=793714741985467&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <header>
     <div class="go-top">
@@ -177,6 +196,11 @@
         <i class="fab fa-whatsapp"></i>
         <span>Message<span>
     </a>
+    <!-- <a class="float-button-1"
+        href="tel:+919773174522">
+        <i class="fas fa-phone-alt"></i>
+        <span>Contact Us Now<span>
+    </a> -->
     <div class="container-fluid main p-0 m-0">
         <div class="d-lg-block d-none log">
             <a href="/">
@@ -218,7 +242,7 @@
         </div>
         <div class="side" id="demo">
             <span class="closebtn" onclick="sideclose()">&times</span>
-            <a href="/" style="margin-top: 50px;"><img class="lazy" data-src="./images/logos/atoz-logo.png"
+            <a href="/" style="margin-top: 50px;"><img class="lazy" data-src="../images/logos/atoz-logo.png"
                     width="35%"></a>
             <a href="../index.html">Home</a>
             <a href="../digital-marketing-agency.html">FitIT</a>
@@ -298,12 +322,13 @@
                                 financial future.
                                 We help on following services,
                             </p>
-                            <ul class="mt-md-2">
-                                <li>1. Insurance Planning</li>
-                                <li>2. Investment planning </li>
-                                <li>3. Retirement Planning</li>
-                                <li>4. Tax Planning</li>
-                                <li>5. Estate Planning</li>
+                            <ul class="mt-md-2 mt-3">
+                                <li>1. 3% to 4% Monthly Returns</li>
+                                <li>2. Insurance Planning</li>
+                                <li>3. Investment planning </li>
+                                <li>4. Retirement Planning</li>
+                                <li>5. Tax Planning</li>
+                                <li>6. Estate Planning</li>
                             </ul>
                         </div>
                     </div>
@@ -318,6 +343,50 @@
                     <div class="reasons-box">
                         <h4><span style="color: #ff8024;">Our </span> Services</h4>
                         <div class="gcs-line"></div>
+                    </div>
+                </div>
+                <div class="row mt-md-5 mt-4">
+                    <div class="col-md-6 order-2 order-md-1 d-none d-md-block">
+                        <div>
+                            <img src="../images/mix-img/monthly-returns.webp" style="border-radius: 10px;"
+                                class="img-fluid" alt="Our Approach">
+                        </div>
+                    </div>
+                    <div class="col-md-6  order-md-2 order-1 d-md-block d-none">
+                        <div class="coach-box">
+                            <h2 class="w-100">Mastering Option Trading: Unlocking 3% to 4% Monthly Returns with Ease</h2>
+                        </div>
+                        <div class="d-block d-md-none">
+                            <img src="../images/mix-img/monthly-returns.webp" style="border-radius: 10px;"
+                                class="img-fluid" alt="Our Approach">
+                        </div>
+                        <div class="approach mt-3 mt-md-0">
+                            <p class="d-md-block d-none">
+                                At our institution, we implement highly effective option trading strategies to empower our students. With our structured and reliable approach, they can effortlessly achieve consistent monthly returns of 3% to 4%. The impressive results speak for themselves, providing our students with financial confidence and success.
+                            </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  order-md-2 order-1 d-lg-none">
+                        <div class="coach-box">
+                            <h2 class="w-100">Mastering Option Trading: Unlocking 3% to 4% Monthly Returns with Ease</h2>
+                        </div>
+                        <div class="d-block d-md-none">
+                            <img src="../images/mix-img/monthly-returns.webp" style="border-radius: 10px;"
+                                class="img-fluid" alt="Our Approach">
+                        </div>
+                        <div class="approach mt-3 mt-md-0">
+                            <p class="mb-0">
+                                At our institution, we implement highly effective option trading strategies to empower our students. With our structured and reliable approach, they can effortlessly achieve consistent monthly returns of 3% to 4%. The impressive results speak for themselves, providing our students with financial confidence and success.
+                            </p>
+                            <div class="mt-3 d-block d-md-none">
+                                <div class="d-flex">
+                                    <a href="tel:+919773174522" class="btn">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row align-items-center mt-md-5 mt-4">
@@ -344,8 +413,11 @@
                                 your unique insurance needs and help you select the right policies from our trusted
                                 partners. Our commitment to providing reliable financial planning services ensures that
                                 you have peace of mind knowing that you are adequately covered for any unexpected
-                                events. Contact us today to learn more about our insurance planning services.
+                                events. Contact us today to learn more about our insurance planning services.for Information
                             </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                         <div class="col-md-6 order-lg-1 d-block d-md-none">
                             <div class="coach-box d-none d-md-block">
@@ -369,7 +441,10 @@
                                     events. Contact us today to learn more about our insurance planning services.
                                 </p>
                                 <div class="mt-3 d-block d-md-none">
-                                    <a class="readmore-button">Read more</a>
+                                    <div class="d-flex">
+                                        <a class="readmore-button">Read more</a>
+                                        <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -405,6 +480,9 @@
                                 A2Z Finance, you can feel confident that your investments are well-planned and aligned
                                 with your financial goals.
                             </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-1 d-block d-md-none">
@@ -425,7 +503,10 @@
                                 with your financial goals.
                             </p>
                             <div class="mt-3 d-block d-md-none">
-                                <a class="readmore-button1">Read more</a>
+                                <div class="d-flex">
+                                    <a class="readmore-button1">Read more</a>
+                                    <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -462,6 +543,9 @@
                                 solutions to ensure a comfortable retirement. With a2z Finance, you can rest assured
                                 that your retirement planning needs are in good hands.
                             </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-1 d-block d-md-none">
@@ -486,7 +570,10 @@
                                 that your retirement planning needs are in good hands.
                             </p>
                             <div class="mt-3 d-block d-md-none">
-                                <a class="readmore-button2">Read more</a>
+                                <div class="d-flex">
+                                    <a class="readmore-button2">Read more</a>
+                                    <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -523,6 +610,9 @@
                                 that your taxes are being handled with care and expertise, allowing you to focus on
                                 achieving your financial objectives.
                             </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6  order-md-2 order-1 d-lg-none">
@@ -549,7 +639,10 @@
                                 achieving your financial objectives.
                             </p>
                             <div class="mt-3 d-block d-md-none">
-                                <a class="readmore-button3">Read more</a>
+                                <div class="d-flex">
+                                    <a class="readmore-button3">Read more</a>
+                                    <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -584,6 +677,9 @@
                                 mind by minimizing taxes and maximizing wealth transfer. Trust us to help secure your
                                 financial future through effective estate planning.
                             </p>
+                            <div class="course-price mt-md-3 d-none d-md-block">
+                                <a href="tel:+919773174522" class="btn">Contact Us</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6  order-md-1 order-1 d-lg-none">
@@ -607,7 +703,10 @@
                                 financial future through effective estate planning.
                             </p>
                             <div class="mt-3 d-block d-md-none">
-                                <a class="readmore-button4">Read more</a>
+                                <div class="d-flex">
+                                    <a class="readmore-button4">Read more</a>
+                                    <a href="tel:+919773174522" class="btn ml-3">Contact Us</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -788,7 +887,11 @@
                             <h2 class="w-100">Invest with Confidence Empower Yourself with our Stock Market Course</h2>
                         </div>
                         <div class="agency-design">
-                            <p>
+                            <div class="d-block d-md-none">
+                                <img src="../images/blog/atoz/atoz-main-img.jpg" alt="HR Agency" class="img-fluid"
+                                    style="border-radius: 10px;">
+                            </div>
+                            <p class="mt-3">
                                 Are you interested in investing in the stock market but feel overwhelmed by the
                                 complexities of the financial world? Don't worry, our Stock Market Course is here to
                                 empower you with the knowledge and skills you need to invest with confidence. In this

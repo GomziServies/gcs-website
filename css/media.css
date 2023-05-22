@@ -1,4 +1,11 @@
 @media(max-width:575.98px) {
+    .forh h3{
+        font-size: 20px;
+    }
+    .float-button-1{
+        bottom: 3%;
+        left: 10px;
+    }
     #owl-demon img{
         opacity: .3;
     }
