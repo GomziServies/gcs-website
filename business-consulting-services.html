@@ -195,7 +195,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -331,7 +331,8 @@
                         </div>
                         <div class="col-md-5 text-center order-1 order-md-2">
                             <div class="coach-img">
-                                <img src="./images/takshak/coach.png" data-src="./images/takshak/coach.png" class="lazy" alt="coach">
+                                <img src="./images/takshak/coach.png" data-src="./images/takshak/coach.png" class="lazy"
+                                    alt="coach">
                             </div>
                             <div>
                                 <img src="./images/takshak/sign-coach.png" alt="sign coach" width="60%" class="mt-md-3">
@@ -394,7 +395,8 @@
                                         class="img-fluid mr-2"> customize business models and metrics</li>
                             </ul>
                             <div class="course-price mt-md-4 mt-2">
-                                <a href="./services/takshak-management-consultants-business-management-services.html" class="btn">Know More</a>
+                                <a href="./services/takshak-management-consultants-business-management-services.html"
+                                    class="btn">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -433,7 +435,9 @@
                                 fostering a culture of continuous improvement, utilizing technology, and regularly
                                 measuring and analyzing performance metrics.</p>
                             <div class="mt-md-3 mt-2">
-                                <p><b>For More detail <a href="./services/takshak-management-consultants-business-management-services.html" class="">Click Here</a></b></p>
+                                <p><b>For More detail <a
+                                            href="./services/takshak-management-consultants-business-management-services.html"
+                                            class="">Click Here</a></b></p>
                             </div>
                         </div>
                     </div>
@@ -1439,8 +1443,8 @@
                         <div class="item m-3">
                             <div class="card-box card-style-1 text-start sub-hover">
                                 <div class="inner-service fix-height">
-                                    <div class=""><img src="./images/takshak/Strategic-Management.png" style="width:100%"
-                                            alt="Strategic Consulting"></div>
+                                    <div class=""><img src="./images/takshak/Strategic-Management.png"
+                                            style="width:100%" alt="Strategic Consulting"></div>
                                     <div class="content-service text-center">
                                         <h4>Strategic Management</h4>
                                     </div>
@@ -2389,8 +2393,9 @@
             <p>© 2023-2024 <span class="ml-2">All Rights Reserved</span></p>
         </div>
     </div>
+
     <!-- Modal -->
-    <div class="modal fade mt-4" id="myModal">
+    <!-- <div class="modal fade mt-4" id="myModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content black-form">
                 <div class="modal-header text-center border-0">
@@ -2423,7 +2428,7 @@
                 <a href="./workshop/personality-development-workshop.html" class="btn btn-know">Know More</a>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="./plugins/bootstrap/bootstrap.min.js"></script>
     <link href="./css/effect.css" rel="stylesheet">
@@ -2435,13 +2440,15 @@
 
     <script>
         const form = document.getElementById('myForm');
-        form.addEventListener('submit', submitForm); 
+        form.addEventListener('submit', submitForm);
     </script>
-    <!-- <script>
-        setTimeout(function() {
+
+    <script>
+        setTimeout(function () {
             $('#myModal').modal();
-        }, 12000);
-    </script> -->
+        }, 1000);
+    </script>
+
     <script>
         AOS.init()
     </script>
