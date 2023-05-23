@@ -1,4 +1,4 @@
-// let HOST = 'http://localhost:8002';
+// let HOST = 'http://localhost:88';
 
 if (['gcsconsultant.com', 'www.gcsconsultant.com'].includes(window.location.hostname)) {
   HOST = 'https://admin.gcsconsultant.com';
@@ -19,27 +19,28 @@ function submitForm(event) {
     },
     body: new URLSearchParams(formData).toString()
   })
-  .then(response => {
-    if (response.ok) {
-      Swal.fire({
-        icon: 'success',
-        title: 'Thanks you for contact us',
-        text: 'We will contact you soon.'
+    .then(response => {
+      if (response.ok) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Thanks you for contact us',
+          text: 'We will contact you soon.'
+        })
+        $('#myModal').modal('hide');
+        event.target.reset();
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Invalid Email',
+          text: 'Please enter valid email'
+        })
+      }
     })
-    event.target.reset();
-    } else {
+    .catch(error => {
       Swal.fire({
         icon: 'error',
-        title: 'Invalid Email',
-        text: 'Please enter valid email'
-    })
-    }
-  })
-  .catch(error => {
-    Swal.fire({
-      icon: 'error',
-      title: 'An error occurred while sending your message',
-    })
-    console.error(error);
-  });
+        title: 'An error occurred while sending your message',
+      })
+      console.error(error);
+    });
 }
