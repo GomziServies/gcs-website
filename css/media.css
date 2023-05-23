@@ -6,6 +6,9 @@
         bottom: 3%;
         left: 10px;
     }
+    #owl-demo2 .owl-dots{
+        left: 35%;
+    }
     #owl-demon img{
         opacity: .3;
     }
