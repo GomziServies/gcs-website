@@ -26,8 +26,8 @@ function submitForm(event) {
           title: 'Thanks you for contact us',
           text: 'We will contact you soon.'
         })
-        $('#myModal').modal('hide');
         event.target.reset();
+        $('#myModal').modal('hide');
       } else {
         Swal.fire({
           icon: 'error',
