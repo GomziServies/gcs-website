@@ -189,7 +189,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -1609,17 +1609,21 @@
                             </div>
                             <form id="myForm">
                                 <div>
-                                    <input type="text" name="name" placeholder="Name" id="name" class="form-control in-put" required>
+                                    <input type="text" name="name" placeholder="Name" id="name"
+                                        class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <input type="email" name="email" placeholder="Email" id="email" class="form-control in-put" required>
+                                    <input type="email" name="email" placeholder="Email" id="email"
+                                        class="form-control in-put" required>
                                 </div>
                                 <input type="hidden" name="subject" id="subject" value="GCS">
                                 <div>
-                                    <input type="number" name="mobile" placeholder="Mobile" id="mobile" class="form-control in-put" required>
+                                    <input type="number" name="mobile" placeholder="Mobile" id="mobile"
+                                        class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <textarea name="messages" type="messages" placeholder="Messages" id="messages" class="in-put" required></textarea>
+                                    <textarea name="messages" type="messages" placeholder="Messages" id="messages"
+                                        class="in-put" required></textarea>
                                 </div>
                                 <button type="submit" class="submit-btn">Submit</button>
                             </form>
@@ -1721,8 +1725,8 @@
     <link href="../css/effect.css" rel="stylesheet">
     <script src="../js/main.js"></script>
     <link href="../css/flashy.min.css" rel="stylesheet">
-    <script src="/js/sweetalert2.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="../js/sweetalert2.js"></script>
+    <script src="../js/app.js"></script>
 
     <script>
         const form = document.getElementById('myForm');

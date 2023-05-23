@@ -171,7 +171,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -259,7 +259,8 @@
     <section class="margintop">
         <div class="container-fluid px-0">
             <div class="">
-                <div class="background-imgs" style="background-image: url(../images/mix-img/Human-Resource-agency.webp);">
+                <div class="background-imgs"
+                    style="background-image: url(../images/mix-img/Human-Resource-agency.webp);">
                     <div class="row justify-content-center">
                         <div class="col-md-10 col-12 text-center">
                             <div class="takshak-title">
@@ -288,7 +289,7 @@
                 <div class="row align-items-center mt-md-4">
                     <div class="col-md-6">
                         <div>
-                            <img src="../images/fitit/our-approch.png" class="img-fluid" alt="Our Approach">
+                            <img src="../images/fitit/our-approch.webp" class="img-fluid" alt="Our Approach">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -327,8 +328,8 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 order-lg-2 d-none d-md-block">
                         <div>
-                            <img src="../images/mix-img/Training-development-programme.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Training & development programme">
+                            <img src="../images/mix-img/Training-development-programme.webp"
+                                style="border-radius: 10px;" class="img-fluid" alt="Training & development programme">
                         </div>
                     </div>
                     <div class="col-md-6 order-lg-1">
@@ -336,8 +337,8 @@
                             <h2 class="w-100">Training & development programme</h2>
                         </div>
                         <div class="d-block d-md-none">
-                            <img src="../images/mix-img/Training-development-programme.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Training & development programme">
+                            <img src="../images/mix-img/Training-development-programme.webp"
+                                style="border-radius: 10px;" class="img-fluid" alt="Training & development programme">
                         </div>
                         <div class="approach">
                             <p>
@@ -854,17 +855,21 @@
                             </div>
                             <form id="myForm">
                                 <div>
-                                    <input type="text" name="name" placeholder="Name" id="name" class="form-control in-put" required>
+                                    <input type="text" name="name" placeholder="Name" id="name"
+                                        class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <input type="email" name="email" placeholder="Email" id="email" class="form-control in-put" required>
+                                    <input type="email" name="email" placeholder="Email" id="email"
+                                        class="form-control in-put" required>
                                 </div>
                                 <input type="hidden" name="subject" id="subject" value="GCS">
                                 <div>
-                                    <input type="number" name="mobile" placeholder="Mobile" id="mobile" class="form-control in-put" required>
+                                    <input type="number" name="mobile" placeholder="Mobile" id="mobile"
+                                        class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <textarea name="messages" type="messages" placeholder="Messages" id="messages" class="in-put" required></textarea>
+                                    <textarea name="messages" type="messages" placeholder="Messages" id="messages"
+                                        class="in-put" required></textarea>
                                 </div>
                                 <button type="submit" class="submit-btn">Submit</button>
                             </form>
@@ -967,7 +972,7 @@
     <script src="../js/main.js"></script>
     <link href="../css/flashy.min.css" rel="stylesheet">
     <script src="../js/sweetalert2.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
 
     <script>
         const form = document.getElementById('myForm');
