@@ -222,7 +222,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -786,7 +786,8 @@
                         </div>
                         <p class="mt-md-1 mt-3">Two Mode Available for study</p>
                         <p class="ml-0 my-2 mt-md-1"><button class="select-btn" id="recorded-btn-1">Recorded</button>
-                            <button class="select-btn select-btn-active" id="online-btn-1">Online</button></p>
+                            <button class="select-btn select-btn-active" id="online-btn-1">Online</button>
+                        </p>
                         <div class="course-price mt-md-3" id="online-price-1" style="display: block;">
                             <h4 class="">₹ 499/- <span>+ 18%</span></h4>
                             <a href="./courses/online-stock-market-101-course.html" class="btn">Enroll Now</a>
@@ -1059,8 +1060,8 @@
                 <div class="row mt-md-5 mt-4 align-items-center">
                     <div class="col-md-6">
                         <div class="">
-                            <img src="./images/blog/atoz/atoz-blog-thumbanail.png" alt="The Roadmap to Financial Freedom"
-                                class="img-fluid" style="border-radius: 10px;">
+                            <img src="./images/blog/atoz/atoz-blog-thumbanail.png"
+                                alt="The Roadmap to Financial Freedom" class="img-fluid" style="border-radius: 10px;">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -1196,7 +1197,7 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade mt-4" id="myModal">
+    <!-- <div class="modal fade mt-4" id="myModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content black-form">
                 <div class="modal-header text-center border-0">
@@ -1229,6 +1230,42 @@
                 <a href="/workshop/stock-market-workshop.html" class="btn btn-know">Know More</a>
             </div>
         </div>
+    </div> -->
+    <!-- modal -->
+    <div class="modal fade mt-4" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content black-form">
+                <div class="modal-header text-center border-0">
+                    <div class="text-center">
+                        <img src="./images/icons/telegram-icon.webp" class="img-fluid ml-4" width="30%"
+                            alt="Telegram Logo">
+                    </div>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="text-center">
+                        <h5><b>Join us on Telegram</b></h5>
+                    </div>
+                    <ul class="new-li main-section main-section-1">
+                        <li>Get Free Tips</li>
+                        <li>Options Strategy For Free</li>
+                        <li>Everyday Something New To Learn</li>
+                    </ul>
+                    <div class="text-center pb-md-3">
+                        <p class="mb-2" style="color: #ff8024;"><b>Free Membership Ending Soon</b></p>
+                        <div class="timer">
+                            <span id="days">00</span>
+                            <span id="hours"></span>
+                            <span id="minutes"></span>
+                            <span id="seconds"></span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://t.me/A2Zfinanceofficial" class="btn btn-know">Join Now</a>
+            </div>
+        </div>
     </div>
     <script src="./plugins/bootstrap/bootstrap.min.js"></script>
     <link href="./css/effect.css" rel="stylesheet">
@@ -1242,11 +1279,11 @@
         const form = document.getElementById('myForm');
         form.addEventListener('submit', submitForm); 
     </script>
-    <!-- <script>
-        setTimeout(function() {
+    <script>
+        setTimeout(function () {
             $('#myModal').modal();
-        }, 12000);
-    </script> -->
+        }, 25000);
+    </script>
     <script>
         AOS.init()
     </script>
@@ -1397,39 +1434,48 @@
 
     </script>
     <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("June 7, 2023 00:00:00").getTime();
+        // Set the initial countdown time to 1 hour and 15 minutes (75 minutes)
+        var countDownTime = 75 * 60 * 1000;
 
-        // Update the countdown every 1 second
-        var x = setInterval(function () {
+        // Function to start the countdown
+        function startCountdown() {
+            // Set the date we're counting down to
+            var countDownDate = new Date().getTime() + countDownTime;
 
-            // Get today's date and time
-            var now = new Date().getTime();
+            // Update the countdown every 1 second
+            var x = setInterval(function () {
 
-            // Find the distance between now and the countdown date
-            var distance = countDownDate - now;
+                // Get today's date and time
+                var now = new Date().getTime();
 
-            // Calculate the days, hours, minutes, and seconds remaining
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Find the distance between now and the countdown date
+                var distance = countDownDate - now;
 
-            // Display the countdown in the UI
-            document.getElementById("days").innerHTML = days + "d";
-            document.getElementById("hours").innerHTML = hours + "h";
-            document.getElementById("minutes").innerHTML = minutes + "m";
-            document.getElementById("seconds").innerHTML = seconds + "s";
+                // Calculate the hours, minutes, and seconds remaining
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // If the countdown is finished, display a message
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("days").innerHTML = "EXPIRED";
-                document.getElementById("hours").innerHTML = "";
-                document.getElementById("minutes").innerHTML = "";
-                document.getElementById("seconds").innerHTML = "";
-            }
-        }, 1000); // 1 second = 1,000 milliseconds
+                // Display the countdown in the UI
+                document.getElementById("hours").innerHTML = hours + "h";
+                document.getElementById("minutes").innerHTML = minutes + "m";
+                document.getElementById("seconds").innerHTML = seconds + "s";
+
+                // If the countdown is finished, reset to 1 hour and 15 minutes
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("hours").innerHTML = "";
+                    document.getElementById("minutes").innerHTML = "";
+                    document.getElementById("seconds").innerHTML = "";
+
+                    // Restart the countdown
+                    startCountdown();
+                }
+            }, 1000); // 1 second = 1,000 milliseconds
+        }
+
+        // Start the countdown
+        startCountdown();
     </script>
 </body>
 
