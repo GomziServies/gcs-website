@@ -2008,8 +2008,32 @@
                                 class="form-control in-put" required>
                         </div>
                         <div>
-                            <textarea name="messages" type="messages" placeholder="Messages" id="messages"
-                                class="in-put" required></textarea>
+                            <select name="services" id="" class="form-control in-put">
+                                <option value="Select Services" hidden>Select Services</option>
+                                <option value="professional Logo design">Professional logo Design</option>
+                                <option value="Social graphic post package">Social Graphic Post Package</option>
+                                <option value="Website design and Development">Website design and Development</option>
+                                <option value="Social media marketing">Social media marketing and handling</option>
+                                <option value=" Paid Advertisement">Paid Advertisement</option>
+                                <option value="Content Writing">Content Writing</option>
+                                <option value="Content Shoot">Content Shoot</option>
+                                <option value="Content Edit">Content Edit</option>
+                                <option value="GMB Maintain">Google My Business Profile Maintain</option>
+                                <option value="all Services">All Services</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="budget" id="" class="form-control in-put">
+                                <option value="Budget" hidden>Select Budget</option>
+                                <option value="Below ₹10000">Below ₹10,000/-</option>
+                                <option value="₹10000-₹50000">₹10,000/- to ₹50,000/-</option>
+                                <option value="₹50000-1 lakh">upto ₹50,000/- to 1 lakh</option>
+                                <option value="1 lakh">upto 1 lakh</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea name="messages" type="messages" placeholder="Remark" class="in-put"
+                                required></textarea>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="submit-btn btn">Submit</button>
@@ -2040,7 +2064,7 @@
     <script>
         setTimeout(function () {
             $('#myModal').modal();
-        }, 30000);
+        }, 22000);
     </script>
 
     <script>;
