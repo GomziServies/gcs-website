@@ -1083,14 +1083,24 @@ details[open] summary ~ * {
 #owl-review-2 .owl-prev,
 #owl-review-2 .owl-next,
 #owl-placement-1 .owl-prev,
-#owl-placement-1 .owl-next,
+#owl-placement-1 .owl-next {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  bottom: -45px;
+  padding: 6px 10px !important;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #ff8024;
+}
+
 #owl-testimonial .owl-prev,
 #owl-testimonial .owl-next {
   font-size: 18px;
   color: #fff;
   position: absolute;
-  bottom: -45px;
-  padding: 3px 10px !important;
+  bottom: -60px;
+  padding: 6px 10px !important;
   background: transparent;
   border-radius: 50%;
   border: 2px solid #ff8024;
@@ -1112,7 +1122,7 @@ details[open] summary ~ * {
   left: 50%;
 }
 
-#owl-testimonial .owl-next{
+#owl-testimonial .owl-next {
   left: 52%;
 }
 
