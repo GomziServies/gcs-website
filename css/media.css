@@ -194,6 +194,10 @@
     font-size: 14px;
     padding: 4px 6px;
   }
+
+  .testimonial-box-fitit{
+    padding-top: 60px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -614,7 +618,7 @@
     padding: 30px;
   }
   .takshak-title h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .takshak-title h2 {
     font-size: 16px;

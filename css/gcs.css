@@ -1083,7 +1083,9 @@ details[open] summary ~ * {
 #owl-review-2 .owl-prev,
 #owl-review-2 .owl-next,
 #owl-placement-1 .owl-prev,
-#owl-placement-1 .owl-next {
+#owl-placement-1 .owl-next,
+#owl-testimonial .owl-prev,
+#owl-testimonial .owl-next {
   font-size: 18px;
   color: #fff;
   position: absolute;
@@ -1097,20 +1099,30 @@ details[open] summary ~ * {
 #owl-review .owl-prev,
 #owl-instas .owl-prev,
 #owl-review-2 .owl-prev,
-#owl-placement-1 .owl-prev {
+#owl-placement-1 .owl-prev,
+#owl-testimonial .owl-prev {
   left: 46%;
 }
 
 #owl-review .owl-next,
 #owl-instas .owl-next,
 #owl-review-2 .owl-next,
-#owl-placement-1 .owl-next {
+#owl-placement-1 .owl-next,
+#owl-testimonial .owl-next {
   left: 50%;
+}
+
+#owl-testimonial .owl-next{
+  left: 52%;
+}
+
+#owl-testimonial .owl-prev {
+  left: 42%;
 }
 
 #owl-course .owl-prev,
 #owl-course-1 .owl-prev {
-  left: 45%;
+  left: 44%;
 }
 
 #owl-course .owl-next,
@@ -1145,7 +1157,7 @@ button:focus {
   font-size: 60px;
   font-family: "Nexa Black", Sans-serif;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #fff;
 }
 
@@ -1155,7 +1167,7 @@ button:focus {
   color: #fff;
   font-weight: 700;
   font-family: "Plus Jakarta Sans";
-  margin-bottom: 30px;
+  margin-bottom: 14px;
 }
 
 .takshak-title span {
@@ -2534,10 +2546,16 @@ figure.effect-oscar:hover img {
   font-weight: 600;
 }
 
+.approach-1 p span {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 600;
+}
+
 .approach p {
-  font-size: 18px;
+  font-size: 17px;
   color: #b4b4b4;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .approach a {
@@ -2642,6 +2660,7 @@ figure.effect-oscar:hover img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  margin-left: -3px;
 }
 
 .profile {

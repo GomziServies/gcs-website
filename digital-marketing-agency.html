@@ -126,6 +126,15 @@
                 itemsDesktopSmall: [979, 1],
                 pagination: true,
             });
+            $("#owl-testimonial").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                nav: true,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
         })
         $(document).ready(function () {
             $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
@@ -530,25 +539,14 @@
         </div>
     </section>
     <section class="bg-dark">
-        <div class="container-fluid bg-dark py-4 py-md-5">
+        <div class="container-fluid py-4 py-md-5">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-7 text-center">
-                        <div class="coach-box">
-                            <div class="d-none d-md-block">
-                                <span>Our Approach</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center mt-md-4">
+                <div class="row mt-md-3 align-items-center">
                     <div class="col-md-6">
-                        <div>
-                            <img src="./images/fitit/our-approch.webp" class="img-fluid" alt="Our Approach">
+                        <div class="coach-box mb-3 ">
+                            <span style="font-size: 16px;">Our Approach</span>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="approach d-none d-md-block">
+                        <div class="agency-design approach-1">
                             <p>
                                 <span>At Fit IT,</span> we believe that every business is unique and requires a
                                 customized
@@ -562,32 +560,17 @@
                                 the
                                 progress and performance of your campaigns.
                             </p>
-                            <a href="./services/marketing-guru-services.html" class="btn">Know More</a>
+                        </div>
+                        <div class="mt-md-4 mt-3 carded-content">
+                            <a href="./services/marketing-guru-services.html" class="btn">Know
+                                More</a>
                             <a href="./pdf/FITIT-PACKAGE.pdf" class="btn" download>Download PDF</a>
                         </div>
-                        <div class="approach d-block d-md-none">
-                            <p>
-                                <span>At Fit IT,</span> we believe that every business is unique and requires a
-                                customized
-                                digital marketing strategy. That's why we take a data-driven approach to understand your
-                                business, your audience, and your goals.
-                            </p>
-                            <p class="moretext5">
-                                We then create a customized strategy that
-                                addresses
-                                your specific needs and objectives.
-                                Our team of experts works closely with you to execute the strategy and achieve the
-                                desired
-                                results.We also provide regular reports and updates to ensure that you are informed of
-                                the
-                                progress and performance of your campaigns.
-                            </p>
-                            <div class="mt-md-3">
-                                <a href="javascript:void(0);" class="mt-1 about-btn moreless-button5"
-                                    style="color: #000!important;">Read more</a>
-                                <a href="./pdf/FITIT-PACKAGE.pdf" class="mt-1 about-btn"
-                                    style="border-radius: 5px; color: #000!important;" download>Download PDF</a>
-                            </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="d-none d-md-block">
+                            <img src="./images/banner/baner.webp" alt="HR Agency" class="img-fluid"
+                                style="border-radius: 10px;">
                         </div>
                     </div>
                 </div>
@@ -690,9 +673,9 @@
             </div>
         </div>
     </section>
-    <section class="bg-dark pt-md-5 pt-4">
-        <div class="container-fluid pb-5">
-            <div class="container">
+    <section class="bg-dark pt-md-5 pt-4 pt-md-0">
+        <div class="container-fluid">
+            <div class="container pb-lg-5">
                 <div class="row justify-content-center">
                     <div class="col-md-7 text-center">
                         <div class="coach-box">
@@ -701,25 +684,123 @@
                     </div>
                 </div>
                 <div class="row mt-md-4 mt-3">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                        <div class="video-card">
-                            <div class="video-img">
-                                <div class="ply1 black-before">
-                                    <img class="" data-src="images/banner/banner-4.webp" width="100%"
-                                        style="border-radius: 10px 10px 0px 0px;" alt="client journey"
-                                        src="images/banner/banner-4.webp">
-                                    <div class="video-btn">
-                                        <a href="https://youtu.be/m_GpoDeW1QU" data-flashy-type="video" class="custom">
-                                            <span class="newthing"><i class="fas fa-play"></i></span>
-                                        </a>
+                    <div class="col-md-6 order-2 testimonial-box-fitit">
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="./images/fitit/debug-review-3.webp" class="img-fluid">
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Harsh bhootra</strong>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment">
+                                <p>"One of the BEST institute. Lots to learn from the professional coach ANIRUDH
+                                    KHURANA. This place offers more than expected.</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-box">
+                            <div class="box-top">
+                                <div class="profile">
+                                    <div class="profile-img">
+                                        <img src="./images/fitit/debug-review.webp" class="img-fluid">
+                                    </div>
+                                    <div class="name-user">
+                                        <strong>Desai Shubham</strong>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="client-comment mb-md-3">
+                                <p>Helpful guidance I would like to thank you for the helpful guidance provided by the
+                                    Anirudh sir. I am happy with my tutor who is very efficient and shared his knowledge
+                                    and experience with me.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-1">
+                        <div id="owl-testimonial" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="video-card mt-3 mt-md-0">
+                                    <div class="video-img">
+                                        <div class="ply1 black-before">
+                                            <img class="" data-src="images/banner/banner-4.webp" width="100%"
+                                                style="border-radius: 10px 10px 0px 0px;" alt="client journey"
+                                                src="images/banner/banner-4.webp">
+                                            <div class="video-btn">
+                                                <a href="https://youtu.be/m_GpoDeW1QU" data-flashy-type="video"
+                                                    class="custom">
+                                                    <span class="newthing"><i class="fas fa-play"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-content">
+                                        <h4>Chirag Pandey (FGIIT Manager)</h4>
+                                        <a href="https://youtu.be/m_GpoDeW1QU" data-flashy-type="video"
+                                            class="custom"><i class="fas fa-play mr-1"></i> Watch Video</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="video-content">
-                                <h4>Chirag Pandey (FGIIT Manager)</h4>
-                                <a href="https://youtu.be/m_GpoDeW1QU" data-flashy-type="video" class="custom"><i
-                                        class="fas fa-play mr-1"></i> Watch Video</a>
+                            <div class="item">
+                                <div class="video-card mt-3 mt-md-0">
+                                    <div class="video-img">
+                                        <div class="ply1 black-before">
+                                            <img class="" data-src="images/banner/banner-4.webp" width="100%"
+                                                style="border-radius: 10px 10px 0px 0px;" alt="client journey"
+                                                src="images/banner/banner-4.webp">
+                                            <div class="video-btn">
+                                                <a href="https://youtube.com/5krZoURCpuE" data-flashy-type="video"
+                                                    class="custom">
+                                                    <span class="newthing"><i class="fas fa-play"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-content">
+                                        <h4>Kaushik Jadhav (Personal Trainer)</h4>
+                                        <a href="https://youtube.com/5krZoURCpuE" data-flashy-type="video"
+                                            class="custom"><i class="fas fa-play mr-1"></i> Watch Video</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="video-card mt-3 mt-md-0">
+                                    <div class="video-img">
+                                        <div class="ply1 black-before">
+                                            <img class="" data-src="images/banner/banner-4.webp" width="100%"
+                                                style="border-radius: 10px 10px 0px 0px;" alt="client journey"
+                                                src="images/banner/banner-4.webp">
+                                            <div class="video-btn">
+                                                <a href="https://youtube.com/r_AqNN4ijGI;" data-flashy-type="video"
+                                                    class="custom">
+                                                    <span class="newthing"><i class="fas fa-play"></i></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="video-content">
+                                        <h4>Satish Nishad (Personal Trainer)</h4>
+                                        <a href="https://youtube.com/r_AqNN4ijGI;" data-flashy-type="video"
+                                            class="custom"><i class="fas fa-play mr-1"></i> Watch Video</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1251,11 +1332,11 @@
                                 id="online-btn">Online</button></p> -->
                         <div class="course-price mt-md-3" id="recorded-price">
                             <h4>₹ 499/- <span>+ 18%</span></h4>
-                            <a href="javascript:void(0);" class="btn">Enroll Now</a>
+                            <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about Fitit" class="btn">Enroll Now</a>
                         </div>
                         <div class="course-price mt-md-3" id="online-price">
                             <h4>₹ 4,999/- <span>+ 18%</span></h4>
-                            <a href="javascript:void(0);" class="btn">Enroll Now</a>
+                            <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about Fitit" class="btn">Enroll Now</a>
                         </div>
                     </div>
                 </div>
