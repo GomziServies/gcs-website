@@ -3792,3 +3792,38 @@ figure.effect-oscar:hover img {
   font-size: 16px;
   color: #474747;
 }
+.price p {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: normal;
+  font-family: Roboto, sans-serif;
+  text-transform: capitalize !important;
+  color: #dfdfdf;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.p1 {
+  font-size: 16px !important;
+  color: red !important;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-decoration: none !important;
+  opacity: 1 !important;
+  margin-left: 20px !important;
+}
+
+.tabataa h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.tabataa p {
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+html {
+  scroll-behavior: smooth;
+}

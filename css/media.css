@@ -1,4 +1,10 @@
 @media (max-width: 575.98px) {
+  .tabataa h2 {
+    margin-top: 10px;
+  }
+  .price p {
+    font-size: 24px;
+  }
   .forh h3 {
     font-size: 20px;
   }
@@ -195,7 +201,7 @@
     padding: 4px 6px;
   }
 
-  .testimonial-box-fitit{
+  .testimonial-box-fitit {
     padding-top: 60px;
   }
 }

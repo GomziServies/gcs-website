@@ -10,7 +10,8 @@
     <link rel="icon" type="image/png" href="./images/logos/gcs-logo-normal.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto&family=Ubuntu&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/@tabler/core@1.0.0-beta10/dist/css/tabler-flags.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/popup-form-style.css">
@@ -38,7 +39,7 @@
         function sideclose() {
             document.getElementById('demo').style.width = '0px';
         }
-    </script>   
+    </script>
     <script type="text/javascript">
         /*---------------------Drop down----------------------*/
         $(document).ready(function () {
@@ -52,7 +53,7 @@
         /*---------------------End----------------------*/
     </script>
     <script>
-         $(document).ready(function(){
+        $(document).ready(function () {
             $("#owl-insta").owlCarousel({
                 autoPlay: 5000, //Set AutoPlay to 5 seconds
                 navigation: true,
@@ -98,76 +99,77 @@
         });
     </script>
 
-<script>
-    $(document).ready(function(){
-      var owl = $('#owl-demon');
-      owl.owlCarousel({
-          loop: true,
-          autoplay: true,
-          items: 1,
-          dots: false,
-          autoplaySpeed: 1000,
-          autoplayTimeout: 3000,
-          animateOut: 'fadeOut',
-          nav: true,
-          autoplayHoverPause:true
-      });
-  
-      owl.trigger('refresh.owl.carousel');
-      
-      $('.showhide').click(function() {
-
-            $(this).toggleClass('fa-pause',
-            function(){
-                owl.trigger('stop.owl.autoplay',[2000]);
+    <script>
+        $(document).ready(function () {
+            var owl = $('#owl-demon');
+            owl.owlCarousel({
+                loop: true,
+                autoplay: true,
+                items: 1,
+                dots: false,
+                autoplaySpeed: 1000,
+                autoplayTimeout: 3000,
+                animateOut: 'fadeOut',
+                nav: true,
+                autoplayHoverPause: true
             });
 
-            $(this).toggleClass('fa-play',
-            function(){
-                owl.trigger('play.owl.autoplay',[2000]);
+            owl.trigger('refresh.owl.carousel');
+
+            $('.showhide').click(function () {
+
+                $(this).toggleClass('fa-pause',
+                    function () {
+                        owl.trigger('stop.owl.autoplay', [2000]);
+                    });
+
+                $(this).toggleClass('fa-play',
+                    function () {
+                        owl.trigger('play.owl.autoplay', [2000]);
+                    });
             });
         });
-    }); 
-    $(document).ready(function () {
-        $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
-        $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
-    });
+        $(document).ready(function () {
+            $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
+            $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+        });
 
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WX8P2R5E4Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX8P2R5E4Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-WX8P2R5E4Y');
-</script>
-<!-- Meta Pixel Code -->
-<script>
-    !function (f, b, e, v, n, t, s) {
-        if (f.fbq) return; n = f.fbq = function () {
-            n.callMethod ?
-            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-        n.queue = []; t = b.createElement(e); t.async = !0;
-        t.src = v; s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '793714741985467');
-    fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=793714741985467&ev=PageView&noscript=1" /></noscript>
-<!-- End Meta Pixel Code -->
+        gtag('config', 'G-WX8P2R5E4Y');
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '793714741985467');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=793714741985467&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <header>
     <div class="go-top">
         <p class="go-top-text"><i class="fas fa-arrow-up"></i></p>
     </div>
-    <a class="float-button" target="_blank" href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about GCS Consulting service">
+    <a class="float-button" target="_blank"
+        href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about GCS Consulting service">
         <i class="fab fa-whatsapp"></i>
         <span>Message<span>
     </a>
@@ -238,57 +240,72 @@
                 <div id="owl-demon" class="owl-carousel owl-theme">
                     <div class="item mx-md-3">
                         <div class="main-item">
-                            <img src="./images/banner/baner.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-none d-md-block">
-                            <img src="./images/banner/mobile-baner.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-block d-md-none">
+                            <img src="./images/banner/baner.webp" alt="certi" width="100%" style="border-radius: 10px;"
+                                class="d-none d-md-block">
+                            <img src="./images/banner/mobile-baner.webp" alt="certi" width="100%"
+                                style="border-radius: 10px;" class="d-block d-md-none">
                             <div class="main-box">
                                 <h4>Let's Connect</h4>
-                                <p>Meetings are where ideas are born, collaboration happens, and progress is made. Let's connect and make things happen.</p>
+                                <p>Meetings are where ideas are born, collaboration happens, and progress is made. Let's
+                                    connect and make things happen.</p>
                                 <a href="javascript:void(0);">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <div class="item mx-md-3">
                         <div class="main-item">
-                            <img src="./images/banner/baner-1.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-none d-md-block">
-                            <img src="./images/banner/mobile-baner-1.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-block d-md-none">
-                        <div class="main-box">
-                            <h4>Behind the Scenes: Showcasing Your Business through Office Photos</h4>
-                            <p>Office photos are more than just pictures of desks and chairs. They capture the heart of your business and its culture.</p>
-                            <a href="javascript:void(0);">Learn More</a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="item mx-md-3">
-                        <div class="main-item">
-                            <img src="./images/banner/banner-3.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-none d-md-block">
-                            <img src="./images/banner/mobile-baner-3.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-block d-md-none">
-                        <div class="main-box">
-                            <h4>Empowering You to Thrive</h4>
-                            <p>Through counseling, we work together to uncover your strengths, overcome challenges, and create a meaningful life you deserve.</p>
-                            <a href="javascript:void(0);">Learn More</a>
-                        </div>
+                            <img src="./images/banner/baner-1.webp" alt="certi" width="100%"
+                                style="border-radius: 10px;" class="d-none d-md-block">
+                            <img src="./images/banner/mobile-baner-1.webp" alt="certi" width="100%"
+                                style="border-radius: 10px;" class="d-block d-md-none">
+                            <div class="main-box">
+                                <h4>Behind the Scenes: Showcasing Your Business through Office Photos</h4>
+                                <p>Office photos are more than just pictures of desks and chairs. They capture the heart
+                                    of your business and its culture.</p>
+                                <a href="javascript:void(0);">Learn More</a>
+                            </div>
                         </div>
                     </div>
                     <div class="item mx-md-3">
                         <div class="main-item">
-                            <img src="./images/banner/banner-2.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-none d-md-block">
-                            <img src="./images/banner/mobile-baner-2.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-block d-md-none">
-                        <div class="main-box">
-                            <h4>Capturing Your Business</h4>
-                            <p>A successful business shoot captures more than just images. It tells your story, showcases your brand, and inspires your audience.</p>
-                            <a href="javascript:void(0);">Learn More</a>
-                        </div>
+                            <img src="./images/banner/banner-3.webp" alt="certi" width="100%"
+                                style="border-radius: 10px;" class="d-none d-md-block">
+                            <img src="./images/banner/mobile-baner-3.webp" alt="certi" width="100%"
+                                style="border-radius: 10px;" class="d-block d-md-none">
+                            <div class="main-box">
+                                <h4>Empowering You to Thrive</h4>
+                                <p>Through counseling, we work together to uncover your strengths, overcome challenges,
+                                    and create a meaningful life you deserve.</p>
+                                <a href="javascript:void(0);">Learn More</a>
+                            </div>
                         </div>
                     </div>
                     <div class="item mx-md-3">
                         <div class="main-item">
-                            <img src="./images/banner/banner-4.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-none d-md-block">
-                            <img src="./images/banner/mobile-baner-4.webp" alt="certi" width="100%" style="border-radius: 10px;" class="d-block d-md-none">
-                        <div class="main-box">
-                            <h4>Our Client's Success</h4>
-                            <p>Our happy clients are a testament to the quality of our service, commitment to excellence, and dedication to their success.</p>
-                            <a href="javascript:void(0);">Learn More</a>
+                            <img src="./images/banner/banner-2.webp" alt="certi" width="100%"
+                                style="border-radius: 10px;" class="d-none d-md-block">
+                            <img src="./images/banner/mobile-baner-2.webp" alt="certi" width="100%"
+                                style="border-radius: 10px;" class="d-block d-md-none">
+                            <div class="main-box">
+                                <h4>Capturing Your Business</h4>
+                                <p>A successful business shoot captures more than just images. It tells your story,
+                                    showcases your brand, and inspires your audience.</p>
+                                <a href="javascript:void(0);">Learn More</a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="item mx-md-3">
+                        <div class="main-item">
+                            <img src="./images/banner/banner-4.webp" alt="certi" width="100%"
+                                style="border-radius: 10px;" class="d-none d-md-block">
+                            <img src="./images/banner/mobile-baner-4.webp" alt="certi" width="100%"
+                                style="border-radius: 10px;" class="d-block d-md-none">
+                            <div class="main-box">
+                                <h4>Our Client's Success</h4>
+                                <p>Our happy clients are a testament to the quality of our service, commitment to
+                                    excellence, and dedication to their success.</p>
+                                <a href="javascript:void(0);">Learn More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -310,7 +327,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img data-src="./images/gcs/Business-Management.webp" src="./images/gcs/Business-Management.webp" alt="Business Management" class="lazy" width="100%">
+                                        <img data-src="./images/gcs/Business-Management.webp"
+                                            src="./images/gcs/Business-Management.webp" alt="Business Management"
+                                            class="lazy" width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -322,7 +341,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img src="./images/gcs/IT Services.webp" data-src="./images/gcs/IT Services.webp" alt="IT Services" class="lazy" width="100%">
+                                        <img src="./images/gcs/IT Services.webp"
+                                            data-src="./images/gcs/IT Services.webp" alt="IT Services" class="lazy"
+                                            width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -334,7 +355,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img data-src="./images/gcs/Marketing-Services.webp" src="./images/gcs/Marketing-Services.webp" alt="Marketing Services" class="lazy" width="100%" >
+                                        <img data-src="./images/gcs/Marketing-Services.webp"
+                                            src="./images/gcs/Marketing-Services.webp" alt="Marketing Services"
+                                            class="lazy" width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -346,7 +369,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img data-src="./images/gcs/digital-soultaion.png" src="./images/gcs/digital-soultaion.png" alt="Digital Marketing" class="lazy" width="100%">
+                                        <img data-src="./images/gcs/digital-soultaion.png"
+                                            src="./images/gcs/digital-soultaion.png" alt="Digital Marketing"
+                                            class="lazy" width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -358,7 +383,8 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img data-src="./images/gcs/AtoZ.webp" src="./images/gcs/AtoZ.webp" alt="Finance Management" class="lazy" width="100%">
+                                        <img data-src="./images/gcs/AtoZ.webp" src="./images/gcs/AtoZ.webp"
+                                            alt="Finance Management" class="lazy" width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -370,7 +396,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img src="./images/gcs/learning-academy.webp" data-src="./images/gcs/learning-academy.webp" alt="Learning Academy" class="lazy">
+                                        <img src="./images/gcs/learning-academy.webp"
+                                            data-src="./images/gcs/learning-academy.webp" alt="Learning Academy"
+                                            class="lazy">
                                     </div>
                                 </a>
                             </div>
@@ -386,7 +414,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img data-src="./images/gcs/Business-Management.webp" src="./images/gcs/Business-Management.webp" alt="Business Management" class="lazy" width="100%">
+                                        <img data-src="./images/gcs/Business-Management.webp"
+                                            src="./images/gcs/Business-Management.webp" alt="Business Management"
+                                            class="lazy" width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -398,7 +428,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img src="./images/gcs/IT Services.webp" data-src="./images/gcs/IT Services.webp" alt="IT Services" class="lazy" width="100%">
+                                        <img src="./images/gcs/IT Services.webp"
+                                            data-src="./images/gcs/IT Services.webp" alt="IT Services" class="lazy"
+                                            width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -410,7 +442,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img data-src="./images/gcs/Marketing-Services.webp" src="./images/gcs/Marketing-Services.webp" alt="Marketing Services" class="lazy" width="100%" >
+                                        <img data-src="./images/gcs/Marketing-Services.webp"
+                                            src="./images/gcs/Marketing-Services.webp" alt="Marketing Services"
+                                            class="lazy" width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -422,7 +456,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img data-src="./images/gcs/digital-soultaion.png" src="./images/gcs/digital-soultaion.png" alt="Digital Marketing" class="lazy" width="100%">
+                                        <img data-src="./images/gcs/digital-soultaion.png"
+                                            src="./images/gcs/digital-soultaion.png" alt="Digital Marketing"
+                                            class="lazy" width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -434,7 +470,8 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img data-src="./images/gcs/AtoZ.webp" src="./images/gcs/AtoZ.webp" alt="Finance Management" class="lazy" width="100%">
+                                        <img data-src="./images/gcs/AtoZ.webp" src="./images/gcs/AtoZ.webp"
+                                            alt="Finance Management" class="lazy" width="100%">
                                     </div>
                                 </a>
                             </div>
@@ -446,7 +483,9 @@
                             <div class="main-round">
                                 <a href="javascript:void(0);">
                                     <div class="small-round">
-                                        <img src="./images/gcs/learning-academy.webp" data-src="./images/gcs/learning-academy.webp" alt="Learning Academy" class="lazy">
+                                        <img src="./images/gcs/learning-academy.webp"
+                                            data-src="./images/gcs/learning-academy.webp" alt="Learning Academy"
+                                            class="lazy">
                                     </div>
                                 </a>
                             </div>
@@ -463,7 +502,8 @@
         <div class="container-fluid pt-5 pt-md-0">
             <div class="container p-0">
                 <div class="title-compnay text-center mb-md-5 mb-3">
-                    <h2>How we help you to reach <span style="color: #ff7b3b;margin: 0px;"> your Business goals ?</span></h2>
+                    <h2>How we help you to reach <span style="color: #ff7b3b;margin: 0px;"> your Business goals ?</span>
+                    </h2>
                 </div>
                 <div class="main-bar">
                     <div class="proggres-holder">
@@ -473,12 +513,14 @@
                         <div class="text-start blog2 bg-dark">
                             <div class="bar-stike">
                                 <div class="forh">
-                                    <h3><img src="./images/icons/right-arrow.webp" width="25px" alt=""> Business Audits :-</h3>
+                                    <h3><img src="./images/icons/right-arrow.webp" width="25px" alt=""> Business Audits
+                                        :-</h3>
                                 </div>
                                 <div class="describe">
                                     <div class="timeline-right d-block d-md-none mt-3 mb-2">
-                                        <img src="./images/fitit/counslting.webp" data-src="./images/fitit/counslting.webp"
-                                            alt="Business audits" style="border-radius: 10px;" width="100%" class="">
+                                        <img src="./images/fitit/counslting.webp"
+                                            data-src="./images/fitit/counslting.webp" alt="Business audits"
+                                            style="border-radius: 10px;" width="100%" class="">
                                     </div>
                                     <p class="my-0 ml-0">Business audits are crucial for ensuring financial accuracy,
                                         compliance with regulations, and identifying areas for improvement. These
@@ -488,7 +530,8 @@
                                         enhance their overall performance.
                                     </p>
                                     <div class="course-price mt-md-4 mt-2">
-                                        <a href="./services/takshak-management-consultants-business-management-services.html" class="btn">Know More</a>
+                                        <a href="./services/takshak-management-consultants-business-management-services.html"
+                                            class="btn">Know More</a>
                                     </div>
                                 </div>
                             </div>
@@ -526,7 +569,8 @@
                                         achieve their objectives.
                                     </p>
                                     <div class="course-price mt-md-4 mt-2">
-                                        <a href="./services/takshak-management-consultants-business-management-services.html" class="btn">Know More</a>
+                                        <a href="./services/takshak-management-consultants-business-management-services.html"
+                                            class="btn">Know More</a>
                                     </div>
                                 </div>
                             </div>
@@ -552,8 +596,9 @@
                                 </div>
                                 <div class="describe">
                                     <div class="bar-left d-md-none d-block mt-3 mb-2">
-                                        <img src="./images/fitit/Marketing.webp" data-src="./images/fitit/Marketing.webp"
-                                            alt="Marketing" style="border-radius: 10px;" width="100%" class="">
+                                        <img src="./images/fitit/Marketing.webp"
+                                            data-src="./images/fitit/Marketing.webp" alt="Marketing"
+                                            style="border-radius: 10px;" width="100%" class="">
                                     </div>
                                     <p class="my-0 ml-0">Marketing plays a pivotal role in promoting products or
                                         services, attracting customers, and driving business growth. It involves
@@ -562,9 +607,9 @@
                                         customer relationships, marketing enables businesses to reach their target
                                         audience, increase brand awareness, and ultimately boost sales and
                                         profitability. </p>
-                                        <div class="course-price mt-md-4 mt-2">
-                                            <a href="./services/marketing-guru-services.html" class="btn">Know More</a>
-                                        </div>
+                                    <div class="course-price mt-md-4 mt-2">
+                                        <a href="./services/marketing-guru-services.html" class="btn">Know More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -636,7 +681,8 @@
                                         organizational success.
                                     </p>
                                     <div class="course-price mt-md-4 mt-2">
-                                        <a href="./services/human-resource-agency-services.html" class="btn">Know More</a>
+                                        <a href="./services/human-resource-agency-services.html" class="btn">Know
+                                            More</a>
                                     </div>
                                 </div>
                             </div>
@@ -673,7 +719,8 @@
                                         legal framework for resolving disputes or pursuing legal actions when necessary.
                                     </p>
                                     <div class="course-price mt-md-4 mt-2">
-                                        <a href="./services/takshak-management-consultants-business-management-services.html" class="btn">Know More</a>
+                                        <a href="./services/takshak-management-consultants-business-management-services.html"
+                                            class="btn">Know More</a>
                                     </div>
                                 </div>
                             </div>
@@ -748,7 +795,8 @@
                                         financial decisions and secure their financial future.
                                     </p>
                                     <div class="course-price mt-md-4 mt-2">
-                                        <a href="./services/financial-advisory-services-for-a-secure-future.html" class="btn">Know More</a>
+                                        <a href="./services/financial-advisory-services-for-a-secure-future.html"
+                                            class="btn">Know More</a>
                                     </div>
                                 </div>
                             </div>
@@ -808,7 +856,7 @@
                     <h6>Our Client Review</h6>
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
-                    <div class="main-title"> 
+                    <div class="main-title">
                         <h2>Happy Clients Review</h2>
                     </div>
                     <div class="side-title d-none d-md-block">
@@ -820,44 +868,52 @@
                         <div class="col-sm-3">
                             <div class="main-review">
                                 <div class="review-img">
-                                    <img src="./images/review/video-review.webp" alt="review" class="img-fluid" style="border-radius: 10px;">
+                                    <img src="./images/review/video-review.webp" alt="review" class="img-fluid"
+                                        style="border-radius: 10px;">
                                 </div>
                                 <div class="review-text">
                                     <p>Chirag Pandey (FGIIT Manager)</p>
-                                    <a href="https://youtu.be/dS4gYgLCaEw" data-flashy-type="video" class="custom btn-review">Watch Now</a>
+                                    <a href="https://youtu.be/dS4gYgLCaEw" data-flashy-type="video"
+                                        class="custom btn-review">Watch Now</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="main-review">
                                 <div class="review-img">
-                                    <img src="./images/review/video-review-1.webp" alt="review" class="img-fluid" style="border-radius: 10px;">
+                                    <img src="./images/review/video-review-1.webp" alt="review" class="img-fluid"
+                                        style="border-radius: 10px;">
                                 </div>
                                 <div class="review-text">
                                     <p>Pavan Rana (Stallon Manager) </p>
-                                    <a href="https://youtu.be/2-49dtoYAv8" data-flashy-type="video" class="custom btn-review">Watch Now</a>
+                                    <a href="https://youtu.be/2-49dtoYAv8" data-flashy-type="video"
+                                        class="custom btn-review">Watch Now</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="main-review">
                                 <div class="review-img">
-                                    <img src="./images/review/video-review-3.webp" alt="review" class="img-fluid" style="border-radius: 10px;">
+                                    <img src="./images/review/video-review-3.webp" alt="review" class="img-fluid"
+                                        style="border-radius: 10px;">
                                 </div>
                                 <div class="review-text">
                                     <p>Kaushik Jadhav (Personal Trainer)</p>
-                                    <a href="https://youtube.com/5krZoURCpuE" data-flashy-type="video" class="custom btn-review">Watch Now</a>
+                                    <a href="https://youtube.com/5krZoURCpuE" data-flashy-type="video"
+                                        class="custom btn-review">Watch Now</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="main-review">
                                 <div class="review-img">
-                                    <img src="./images/review/video-review-2.webp" alt="review" class="img-fluid" style="border-radius: 10px;">
+                                    <img src="./images/review/video-review-2.webp" alt="review" class="img-fluid"
+                                        style="border-radius: 10px;">
                                 </div>
                                 <div class="review-text">
                                     <p>Satish Nishad (Personal Trainer)</p>
-                                    <a href="https://youtube.com/r_AqNN4ijGI;" data-flashy-type="video" class="custom btn-review">Watch Now</a>
+                                    <a href="https://youtube.com/r_AqNN4ijGI;" data-flashy-type="video"
+                                        class="custom btn-review">Watch Now</a>
                                 </div>
                             </div>
                         </div>
@@ -868,44 +924,52 @@
                         <div class="item mx-2">
                             <div class="main-review">
                                 <div class="review-img">
-                                    <img src="./images/review/video-review.webp" alt="review" class="img-fluid"  style="border-radius: 10px;">
+                                    <img src="./images/review/video-review.webp" alt="review" class="img-fluid"
+                                        style="border-radius: 10px;">
                                 </div>
                                 <div class="review-text">
                                     <p>Chirag Pandey (FGIIT Manager)</p>
-                                    <a href="https://youtu.be/dS4gYgLCaEw" data-flashy-type="video" class="custom btn-review">Watch Now</a>
+                                    <a href="https://youtu.be/dS4gYgLCaEw" data-flashy-type="video"
+                                        class="custom btn-review">Watch Now</a>
                                 </div>
                             </div>
                         </div>
                         <div class="item mx-2">
                             <div class="main-review">
                                 <div class="review-img">
-                                    <img src="./images/review/video-review-1.webp" alt="review" class="img-fluid" style="border-radius: 10px;">
+                                    <img src="./images/review/video-review-1.webp" alt="review" class="img-fluid"
+                                        style="border-radius: 10px;">
                                 </div>
                                 <div class="review-text">
                                     <p>Pavan Rana (Stallon Manager)</p>
-                                    <a href="https://youtu.be/2-49dtoYAv8" data-flashy-type="video" class="custom btn-review">Watch Now</a>
+                                    <a href="https://youtu.be/2-49dtoYAv8" data-flashy-type="video"
+                                        class="custom btn-review">Watch Now</a>
                                 </div>
                             </div>
                         </div>
                         <div class="item mx-2">
                             <div class="main-review">
                                 <div class="review-img">
-                                    <img src="./images/review/video-review-3.webp" alt="review" class="img-fluid" style="border-radius: 10px;">
+                                    <img src="./images/review/video-review-3.webp" alt="review" class="img-fluid"
+                                        style="border-radius: 10px;">
                                 </div>
                                 <div class="review-text">
                                     <p>Kaushik Jadhav (Personal Trainer)</p>
-                                    <a href="https://youtube.com/5krZoURCpuE" data-flashy-type="video" class="custom btn-review">Watch Now</a>
+                                    <a href="https://youtube.com/5krZoURCpuE" data-flashy-type="video"
+                                        class="custom btn-review">Watch Now</a>
                                 </div>
                             </div>
                         </div>
                         <div class="item mx-2">
                             <div class="main-review">
                                 <div class="review-img">
-                                    <img src="./images/review/video-review-2.webp" alt="review" class="img-fluid" style="border-radius: 10px;">
+                                    <img src="./images/review/video-review-2.webp" alt="review" class="img-fluid"
+                                        style="border-radius: 10px;">
                                 </div>
                                 <div class="review-text">
-                                    <p>Satish  Nishad (Personal Trainer)</p>
-                                    <a href="https://youtube.com/r_AqNN4ijGI;" data-flashy-type="video" class="custom btn-review">Watch Now</a>
+                                    <p>Satish Nishad (Personal Trainer)</p>
+                                    <a href="https://youtube.com/r_AqNN4ijGI;" data-flashy-type="video"
+                                        class="custom btn-review">Watch Now</a>
                                 </div>
                             </div>
                         </div>
@@ -922,19 +986,28 @@
                     <h4 class="why-choose d-block d-md-none">Why Choose Gomzi Consulting Services (GCS)?</h4>
                     <div class="d-none d-md-flex justify-content-center mt-3">
                         <div class="left-line">
-                            <svg width="355" height="85" viewBox="0 0 355 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M354.98 6C354.98 8.94552 352.592 11.3333 349.647 11.3333C346.701 11.3333 344.313 8.94552 344.313 6C344.313 3.05448 346.701 0.666667 349.647 0.666667C352.592 0.666667 354.98 3.05448 354.98 6ZM333.593 34.8027L333.68 35.7989L333.636 35.8027H333.593V34.8027ZM11.3333 79C11.3333 81.9455 8.94553 84.3333 6 84.3333C3.05447 84.3333 0.666656 81.9455 0.666656 79C0.666656 76.0545 3.05447 73.6667 6 73.6667C8.94553 73.6667 11.3333 76.0545 11.3333 79ZM350.64 5.88422C351.147 10.2376 351.417 17.2421 349.34 23.3907C348.296 26.4785 346.647 29.3922 344.099 31.6349C341.541 33.8863 338.136 35.4097 333.68 35.7989L333.506 33.8065C337.578 33.4509 340.569 32.0775 342.777 30.1336C344.996 28.1811 346.482 25.6011 347.445 22.7504C349.381 17.0221 349.149 10.3701 348.653 6.11578L350.64 5.88422ZM333.593 35.8027H51.1505V33.8027H333.593V35.8027ZM51.1505 35.8027C42.5677 35.8027 31.5013 38.7482 22.6023 45.6253C13.74 52.474 7 63.2377 7 79H5C5 62.5827 12.0559 51.2478 21.3793 44.0428C30.6659 36.8661 42.1747 33.8027 51.1505 33.8027V35.8027Z" fill="#769CFF"/>
-                            </svg>                                                                                    
+                            <svg width="355" height="85" viewBox="0 0 355 85" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M354.98 6C354.98 8.94552 352.592 11.3333 349.647 11.3333C346.701 11.3333 344.313 8.94552 344.313 6C344.313 3.05448 346.701 0.666667 349.647 0.666667C352.592 0.666667 354.98 3.05448 354.98 6ZM333.593 34.8027L333.68 35.7989L333.636 35.8027H333.593V34.8027ZM11.3333 79C11.3333 81.9455 8.94553 84.3333 6 84.3333C3.05447 84.3333 0.666656 81.9455 0.666656 79C0.666656 76.0545 3.05447 73.6667 6 73.6667C8.94553 73.6667 11.3333 76.0545 11.3333 79ZM350.64 5.88422C351.147 10.2376 351.417 17.2421 349.34 23.3907C348.296 26.4785 346.647 29.3922 344.099 31.6349C341.541 33.8863 338.136 35.4097 333.68 35.7989L333.506 33.8065C337.578 33.4509 340.569 32.0775 342.777 30.1336C344.996 28.1811 346.482 25.6011 347.445 22.7504C349.381 17.0221 349.149 10.3701 348.653 6.11578L350.64 5.88422ZM333.593 35.8027H51.1505V33.8027H333.593V35.8027ZM51.1505 35.8027C42.5677 35.8027 31.5013 38.7482 22.6023 45.6253C13.74 52.474 7 63.2377 7 79H5C5 62.5827 12.0559 51.2478 21.3793 44.0428C30.6659 36.8661 42.1747 33.8027 51.1505 33.8027V35.8027Z"
+                                    fill="#769CFF" />
+                            </svg>
                         </div>
                         <div class="center-line ml-4">
-                            <svg width="12" height="85" viewBox="0 0 12 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.16679 5.96372C1.14675 8.90917 3.51827 11.3132 6.46372 11.3332C9.40917 11.3532 11.8132 8.98173 11.8332 6.03628C11.8532 3.09083 9.48173 0.686827 6.53628 0.66679C3.59083 0.646753 1.18683 3.01827 1.16679 5.96372ZM0.66679 79.4637C0.646753 82.4092 3.01827 84.8132 5.96372 84.8332C8.90917 84.8532 11.3132 82.4817 11.3332 79.5363C11.3532 76.5908 8.98173 74.1868 6.03628 74.1668C3.09083 74.1468 0.686827 76.5183 0.66679 79.4637ZM5.50002 5.9932L5.00002 79.4932L6.99998 79.5068L7.49998 6.0068L5.50002 5.9932Z" fill="#00A81B"/>
-                            </svg>                        
+                            <svg width="12" height="85" viewBox="0 0 12 85" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.16679 5.96372C1.14675 8.90917 3.51827 11.3132 6.46372 11.3332C9.40917 11.3532 11.8132 8.98173 11.8332 6.03628C11.8532 3.09083 9.48173 0.686827 6.53628 0.66679C3.59083 0.646753 1.18683 3.01827 1.16679 5.96372ZM0.66679 79.4637C0.646753 82.4092 3.01827 84.8132 5.96372 84.8332C8.90917 84.8532 11.3132 82.4817 11.3332 79.5363C11.3532 76.5908 8.98173 74.1868 6.03628 74.1668C3.09083 74.1468 0.686827 76.5183 0.66679 79.4637ZM5.50002 5.9932L5.00002 79.4932L6.99998 79.5068L7.49998 6.0068L5.50002 5.9932Z"
+                                    fill="#00A81B" />
+                            </svg>
                         </div>
                         <div class="right-line ml-4">
-                            <svg width="355" height="85" viewBox="0 0 355 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.0201187 6C0.0201187 8.94552 2.40793 11.3333 5.35345 11.3333C8.29897 11.3333 10.6868 8.94552 10.6868 6C10.6868 3.05448 8.29897 0.666667 5.35345 0.666667C2.40793 0.666667 0.0201187 3.05448 0.0201187 6ZM21.4071 34.8027L21.3201 35.7989L21.3635 35.8027H21.4071V34.8027ZM343.667 79C343.667 81.9455 346.054 84.3333 349 84.3333C351.946 84.3333 354.333 81.9455 354.333 79C354.333 76.0545 351.946 73.6667 349 73.6667C346.054 73.6667 343.667 76.0545 343.667 79ZM4.36018 5.88422C3.85273 10.2376 3.58259 17.2421 5.66033 23.3907C6.70377 26.4785 8.35328 29.3922 10.901 31.6349C13.4587 33.8863 16.8635 35.4097 21.3201 35.7989L21.4941 33.8065C17.4223 33.4509 14.4308 32.0775 12.2225 30.1336C10.0044 28.1811 8.51837 25.6011 7.55508 22.7504C5.61937 17.0221 5.85083 10.3701 6.34673 6.11578L4.36018 5.88422ZM21.4071 35.8027H303.849V33.8027H21.4071V35.8027ZM303.849 35.8027C312.432 35.8027 323.499 38.7482 332.398 45.6253C341.26 52.474 348 63.2377 348 79H350C350 62.5827 342.944 51.2478 333.621 44.0428C324.334 36.8661 312.825 33.8027 303.849 33.8027V35.8027Z" fill="#EBD61E"/>
-                            </svg>                        
+                            <svg width="355" height="85" viewBox="0 0 355 85" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.0201187 6C0.0201187 8.94552 2.40793 11.3333 5.35345 11.3333C8.29897 11.3333 10.6868 8.94552 10.6868 6C10.6868 3.05448 8.29897 0.666667 5.35345 0.666667C2.40793 0.666667 0.0201187 3.05448 0.0201187 6ZM21.4071 34.8027L21.3201 35.7989L21.3635 35.8027H21.4071V34.8027ZM343.667 79C343.667 81.9455 346.054 84.3333 349 84.3333C351.946 84.3333 354.333 81.9455 354.333 79C354.333 76.0545 351.946 73.6667 349 73.6667C346.054 73.6667 343.667 76.0545 343.667 79ZM4.36018 5.88422C3.85273 10.2376 3.58259 17.2421 5.66033 23.3907C6.70377 26.4785 8.35328 29.3922 10.901 31.6349C13.4587 33.8863 16.8635 35.4097 21.3201 35.7989L21.4941 33.8065C17.4223 33.4509 14.4308 32.0775 12.2225 30.1336C10.0044 28.1811 8.51837 25.6011 7.55508 22.7504C5.61937 17.0221 5.85083 10.3701 6.34673 6.11578L4.36018 5.88422ZM21.4071 35.8027H303.849V33.8027H21.4071V35.8027ZM303.849 35.8027C312.432 35.8027 323.499 38.7482 332.398 45.6253C341.26 52.474 348 63.2377 348 79H350C350 62.5827 342.944 51.2478 333.621 44.0428C324.334 36.8661 312.825 33.8027 303.849 33.8027V35.8027Z"
+                                    fill="#EBD61E" />
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -946,9 +1019,11 @@
                             </div>
                             <div class="box-text">
                                 <h4>Experience and Expertise</h4>
-                                <p class="text-dark">At GCS, we have years of experience managing businesses across diverse industries. Our team 
-                                    of experts has in-depth knowledge of market trends, consumer behavior, and industry 
-                                    best practices. We use this expertise to provide customized solutions that drive growth and 
+                                <p class="text-dark">At GCS, we have years of experience managing businesses across
+                                    diverse industries. Our team
+                                    of experts has in-depth knowledge of market trends, consumer behavior, and industry
+                                    best practices. We use this expertise to provide customized solutions that drive
+                                    growth and
                                     profitability for our clients.</p>
                             </div>
                         </div>
@@ -960,10 +1035,13 @@
                             </div>
                             <div class="box-text">
                                 <h4>Comprehensive Approach</h4>
-                                <p class="text-dark">We understand that every business is unique, and therefore, requires a customized approach. At
-                                GCS, we offer a comprehensive suite of consulting services, including strategy development, execution, 
-                                and ongoing support. Our holistic approach ensures 
-                                that our clients achieve their desired outcomes and stay ahead of the competition.</p>
+                                <p class="text-dark">We understand that every business is unique, and therefore,
+                                    requires a customized approach. At
+                                    GCS, we offer a comprehensive suite of consulting services, including strategy
+                                    development, execution,
+                                    and ongoing support. Our holistic approach ensures
+                                    that our clients achieve their desired outcomes and stay ahead of the competition.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -975,9 +1053,12 @@
                             <div class="box-text">
                                 <h4>Focus on Customer Satisfaction</h4>
                                 <p class="text-dark">
-                                    At GCS, we put our clients' needs first. We strive to provide exceptional service and support 
-                                    throughout our engagement, ensuring that our clients feel valued and supported. Our commitment 
-                                    to customer satisfaction has earned us a reputation as a trusted partner for businesses of all sizes and industries.
+                                    At GCS, we put our clients' needs first. We strive to provide exceptional service
+                                    and support
+                                    throughout our engagement, ensuring that our clients feel valued and supported. Our
+                                    commitment
+                                    to customer satisfaction has earned us a reputation as a trusted partner for
+                                    businesses of all sizes and industries.
                                 </p>
                             </div>
                         </div>
@@ -998,22 +1079,35 @@
                             <details class="compnay-selects-active" open>
                                 <summary>Business Management</summary>
                                 <div class="compnay-content content-1">
-                                    <h4>Business Management provide objective advice and expertise to solve business issues, maximize growth, and improve performance. Our services include:</h4>
+                                    <h4>Business Management provide objective advice and expertise to solve business
+                                        issues, maximize growth, and improve performance. Our services include:</h4>
                                     <div class="row pb-3">
                                         <div class="col-md-6">
                                             <ul>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Strategy consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Marketing consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Operations consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> PR consultancy</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Leadership consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Sales consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Financial consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">HR consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Legal consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Sustainability consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">IT/technology consulting</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Wellness/fitness consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Strategy consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Marketing consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Operations consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> PR consultancy</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Leadership consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Sales consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Financial consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">HR consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Legal consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Sustainability consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">IT/technology consulting</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Wellness/fitness consulting</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1027,10 +1121,14 @@
                                     <div class="row pb-3">
                                         <div class="col-md-5">
                                             <ul class="mb-0">
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Website development</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">CRM software</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Gym CRM</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Education CRM</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Website development</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">CRM software</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Gym CRM</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Education CRM</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1042,21 +1140,29 @@
                             <details>
                                 <summary>Marketing Services</summary>
                                 <div class="compnay-content content-1">
-                                    <h4>Our team of experts is dedicated to providing customized solutions to meet your unique needs and goals. </h4>
+                                    <h4>Our team of experts is dedicated to providing customized solutions to meet your
+                                        unique needs and goals. </h4>
                                     <p>We offer the following services:</p>
                                     <div class="row pb-3">
                                         <div class="col-md-12">
                                             <ul class="mb-0">
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Digital Marketing Services</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Social Media Marketing Services</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Marketing Management Services</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Marketing Consultation</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Contact us today to learn more about how we can help you achieve your marketing goals.</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Digital Marketing Services</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Social Media Marketing Services</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Marketing Management Services</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Marketing Consultation</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Contact us today to learn more about how we
+                                                    can help you achieve your marketing goals.</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div>
-                                        <p>Contact us today to learn more about how we can help you achieve your marketing goals.</p>
+                                        <p>Contact us today to learn more about how we can help you achieve your
+                                            marketing goals.</p>
                                     </div>
                                 </div>
                             </details>
@@ -1064,61 +1170,83 @@
                                 <summary>Digital Solutions</summary>
                                 <div class="compnay-content content-1">
                                     <h4>where we provide digital solutions to help your business thrive. </h4>
-                                    <p>Our team of experts offers a wide range of services to help you succeed online. We offer the following services:</p>
+                                    <p>Our team of experts offers a wide range of services to help you succeed online.
+                                        We offer the following services:</p>
                                     <div class="row pb-3">
                                         <div class="col-md-5">
                                             <ul class="mb-0">
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Website Development</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Website Design</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Video Creation, Shoot and Editing</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Social Media Account Handling</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Search Engine Optimization</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Website Development</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Website Design</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Video Creation, Shoot and Editing</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Social Media Account Handling</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Search Engine Optimization</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div>
-                                        <p>Contact us today to learn more about how we can help you achieve your digital goals.</p>
+                                        <p>Contact us today to learn more about how we can help you achieve your digital
+                                            goals.</p>
                                     </div>
                                 </div>
                             </details>
                             <details>
                                 <summary>Finance Management</summary>
                                 <div class="compnay-content content-1">
-                                    <h4>we provide comprehensive financial planning services to help you achieve your financial goals.</h4>
-                                    <p>Our team of experts offers customized solutions to help you manage your finances effectively. Our services include:</p>
+                                    <h4>we provide comprehensive financial planning services to help you achieve your
+                                        financial goals.</h4>
+                                    <p>Our team of experts offers customized solutions to help you manage your finances
+                                        effectively. Our services include:</p>
                                     <div class="row pb-3">
                                         <div class="col-md-5">
                                             <ul class="mb-0">
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Investment Planning</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Retirement Planning</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Tax Planning</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Insurance Planning</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Estate Planning</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Investment Planning</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Retirement Planning</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Tax Planning</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Insurance Planning</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid">Estate Planning</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div>
-                                        <p>Contact us today to learn more about how our financial planning services can help you secure your financial future.</p>
+                                        <p>Contact us today to learn more about how our financial planning services can
+                                            help you secure your financial future.</p>
                                     </div>
                                 </div>
                             </details>
                             <details>
                                 <summary>Learning Academy</summary>
                                 <div class="compnay-content content-1">
-                                    <h4>Welcome to our Online Learning Academy, where we offer a range of courses to help you enhance your skills and advance your career.</h4>
-                                    <p>Our courses are designed to provide you with high-quality education and flexibility to learn at your own pace. Our services include:-</p>
+                                    <h4>Welcome to our Online Learning Academy, where we offer a range of courses to
+                                        help you enhance your skills and advance your career.</h4>
+                                    <p>Our courses are designed to provide you with high-quality education and
+                                        flexibility to learn at your own pace. Our services include:-</p>
                                     <div class="row pb-3">
                                         <div class="col-md-8">
                                             <ul class="mb-0">
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Business Management Course</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Stock Market Course</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Digital Marketing Course</li>
-                                                <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Python Programming Course</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Business Management Course</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Stock Market Course</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Digital Marketing Course</li>
+                                                <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                        class="img-fluid"> Python Programming Course</li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div>
-                                        <p>Enroll today to access our expert instructors and take the first step towards achieving your career goals with our online courses.</p>
+                                        <p>Enroll today to access our expert instructors and take the first step towards
+                                            achieving your career goals with our online courses.</p>
                                     </div>
                                 </div>
                             </details>
@@ -1130,37 +1258,53 @@
                         <div class="col-md-5">
                             <div class="compnay-select">
                                 <ul>
-                                    <li class="compnay-select-active content-box-1">Business Management<i class="fa fa-chevron-right"></i></li>
+                                    <li class="compnay-select-active content-box-1">Business Management<i
+                                            class="fa fa-chevron-right"></i></li>
                                     <li class="content-box-2">IT Services <i class="fa fa-chevron-right"></i></li>
-                                    <li class="content-box-3">Marketing Services <i class="fa fa-chevron-right"></i></li>
+                                    <li class="content-box-3">Marketing Services <i class="fa fa-chevron-right"></i>
+                                    </li>
                                     <li class="content-box-4">Digital Solutions <i class="fa fa-chevron-right"></i></li>
-                                    <li class="content-box-5">Finance Management <i class="fa fa-chevron-right"></i></li>
+                                    <li class="content-box-5">Finance Management <i class="fa fa-chevron-right"></i>
+                                    </li>
                                     <li class="content-box-6">Learning Academy <i class="fa fa-chevron-right"></i></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="compnay-content pl-4 content-1">
-                                <h4>Business Management provide objective advice and expertise to solve business issues, maximize growth, and improve performance. Our services include:</h4>
+                                <h4>Business Management provide objective advice and expertise to solve business issues,
+                                    maximize growth, and improve performance. Our services include:</h4>
                                 <div class="row pb-3">
                                     <div class="col-md-6">
                                         <ul>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Strategy consulting</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Marketing consulting</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Operations consulting</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> PR consultancy</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Leadership consulting</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Sales consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Strategy consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Marketing consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Operations consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> PR consultancy</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Leadership consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Sales consulting</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <ul>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Financial consulting</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">HR consulting</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Legal consulting</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Sustainability consulting</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">IT/technology consulting</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Wellness/fitness consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Financial consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">HR consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Legal consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Sustainability consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">IT/technology consulting</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Wellness/fitness consulting</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1171,10 +1315,14 @@
                                 <div class="row pb-3">
                                     <div class="col-md-5">
                                         <ul>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Website development</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">CRM software</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Gym CRM</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Education CRM</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Website development</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">CRM software</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Gym CRM</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Education CRM</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1183,74 +1331,104 @@
                                 </div>
                             </div>
                             <div class="compnay-content pl-4 content-3">
-                                <h4>Our team of experts is dedicated to providing customized solutions to meet your unique needs and goals. </h4>
+                                <h4>Our team of experts is dedicated to providing customized solutions to meet your
+                                    unique needs and goals. </h4>
                                 <p>We offer the following services:</p>
                                 <div class="row pb-3">
                                     <div class="col-md-12">
                                         <ul>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Digital Marketing Services</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Social Media Marketing Services</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Marketing Management Services</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Marketing Consultation</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Contact us today to learn more about how we can help you achieve your marketing goals.</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Digital Marketing Services</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Social Media Marketing Services</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Marketing Management Services</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Marketing Consultation</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Contact us today to learn more about how we can
+                                                help you achieve your marketing goals.</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div>
-                                    <p>Contact us today to learn more about how we can help you achieve your marketing goals.</p>
+                                    <p>Contact us today to learn more about how we can help you achieve your marketing
+                                        goals.</p>
                                 </div>
                             </div>
                             <div class="compnay-content pl-4 content-4">
                                 <h4>where we provide digital solutions to help your business thrive. </h4>
-                                <p>Our team of experts offers a wide range of services to help you succeed online. We offer the following services:</p>
+                                <p>Our team of experts offers a wide range of services to help you succeed online. We
+                                    offer the following services:</p>
                                 <div class="row pb-3">
                                     <div class="col-md-12">
                                         <ul>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Website Development</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Website Design</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Video Creation, Shoot and Editing</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Social Media Account Handling</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Search Engine Optimization</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Website Development</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Website Design</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Video Creation, Shoot and Editing</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Social Media Account Handling</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Search Engine Optimization</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div>
-                                    <p>Contact us today to learn more about how we can help you achieve your digital goals.</p>
+                                    <p>Contact us today to learn more about how we can help you achieve your digital
+                                        goals.</p>
                                 </div>
                             </div>
                             <div class="compnay-content pl-4 content-5">
-                                <h4>we provide comprehensive financial planning services to help you achieve your financial goals.</h4>
-                                <p>Our team of experts offers customized solutions to help you manage your finances effectively. Our services include:</p>
+                                <h4>we provide comprehensive financial planning services to help you achieve your
+                                    financial goals.</h4>
+                                <p>Our team of experts offers customized solutions to help you manage your finances
+                                    effectively. Our services include:</p>
                                 <div class="row pb-3">
                                     <div class="col-md-5">
                                         <ul>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Investment Planning</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Retirement Planning</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Tax Planning</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Insurance Planning</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid">Estate Planning</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Investment Planning</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Retirement Planning</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Tax Planning</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Insurance Planning</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid">Estate Planning</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div>
-                                    <p>Contact us today to learn more about how our financial planning services can help you secure your financial future.</p>
+                                    <p>Contact us today to learn more about how our financial planning services can help
+                                        you secure your financial future.</p>
                                 </div>
                             </div>
                             <div class="compnay-content pl-4 content-6">
-                                <h4>Welcome to our Online Learning Academy, where we offer a range of courses to help you enhance your skills and advance your career.</h4>
-                                <p>Our courses are designed to provide you with high-quality education and flexibility to learn at your own pace. Our services include:-</p>
+                                <h4>Welcome to our Online Learning Academy, where we offer a range of courses to help
+                                    you enhance your skills and advance your career.</h4>
+                                <p>Our courses are designed to provide you with high-quality education and flexibility
+                                    to learn at your own pace. Our services include:-</p>
                                 <div class="row pb-3">
                                     <div class="col-md-8">
                                         <ul>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Business Management Course</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Stock Market Course</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Digital Marketing Course</li>
-                                            <li><img src="./images/icons/check.webp" alt="check" width="20px" class="img-fluid"> Python Programming Course</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Business Management Course</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Stock Market Course</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Digital Marketing Course</li>
+                                            <li><img src="./images/icons/check.webp" alt="check" width="20px"
+                                                    class="img-fluid"> Python Programming Course</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div>
-                                    <p>Enroll today to access our expert instructors and take the first step towards achieving your career goals with our online courses.</p>
+                                    <p>Enroll today to access our expert instructors and take the first step towards
+                                        achieving your career goals with our online courses.</p>
                                 </div>
                             </div>
                         </div>
@@ -1269,7 +1447,7 @@
                     <div class="row">
                         <div class="col-md-6 mt-4">
                             <div class="flip-card" tabIndex="0">
-                                <div class="flip-card-inner p-0"  style="background-color: #000;">
+                                <div class="flip-card-inner p-0" style="background-color: #000;">
                                     <div class="flip-card-front">
                                         <div class="tochange">
                                             <img src="./images/gcs/side-1.webp" alt="Vision" class="img-fluid">
@@ -1283,8 +1461,10 @@
                                             <h2 class="p-md-3 my-0">Vision</h2>
                                             <ul>
                                                 <li>
-                                                    Become the most prominent consultancies (management, Finance & IT) firm regionally and globally, as well as the trusted advisor to
-                                                    entrepreneurs and organizations that are seeking to take the next steps in their development
+                                                    Become the most prominent consultancies (management, Finance & IT)
+                                                    firm regionally and globally, as well as the trusted advisor to
+                                                    entrepreneurs and organizations that are seeking to take the next
+                                                    steps in their development
                                                 </li>
                                             </ul>
                                         </div>
@@ -1294,7 +1474,7 @@
                         </div>
                         <div class="col-md-6 mt-4">
                             <div class="flip-card" tabIndex="0">
-                                <div class="flip-card-inner p-0"  style="background-color: #000;">
+                                <div class="flip-card-inner p-0" style="background-color: #000;">
                                     <div class="flip-card-front">
                                         <div class="tochange">
                                             <img src="./images/gcs/side-2.webp" alt="Vision" class="img-fluid">
@@ -1308,8 +1488,10 @@
                                             <h2 class="p-md-3 my-0">Mission</h2>
                                             <ul>
                                                 <li>
-                                                    Provide you with realistic and executable recommendations to help you make the best 
-                                                    decisions for the successful growth of your business and its  expansion.
+                                                    Provide you with realistic and executable recommendations to help
+                                                    you make the best
+                                                    decisions for the successful growth of your business and its
+                                                    expansion.
                                                 </li>
                                             </ul>
                                         </div>
@@ -1330,8 +1512,10 @@
                                     <div class="">
                                         <h4>Mission</h4>
                                     </div>
-                                    <p>Become the most prominent consultancies (management, Finance & IT) firm regionally and globally, as well as the trusted advisor to
-                                        entrepreneurs and organizations that are seeking to take the next steps in their development</p>
+                                    <p>Become the most prominent consultancies (management, Finance & IT) firm
+                                        regionally and globally, as well as the trusted advisor to
+                                        entrepreneurs and organizations that are seeking to take the next steps in their
+                                        development</p>
                                 </div>
                             </div>
                         </div>
@@ -1344,8 +1528,9 @@
                                     <div class="">
                                         <h4>Vision</h4>
                                     </div>
-                                    <p>Provide you with realistic and executable recommendations to help you make the best 
-                                        decisions for the successful growth of your business and its  expansion.</p>
+                                    <p>Provide you with realistic and executable recommendations to help you make the
+                                        best
+                                        decisions for the successful growth of your business and its expansion.</p>
                                 </div>
                             </div>
                         </div>
@@ -1355,7 +1540,8 @@
         </div>
     </section>
     <section class="margintop">
-         <div class="bg-full-bd" style="background-image: url(./images/gcs/contact-us.webp);background-attachment: local;">
+        <div class="bg-full-bd"
+            style="background-image: url(./images/gcs/contact-us.webp);background-attachment: local;">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-5">
@@ -1371,17 +1557,21 @@
                             </div>
                             <form id="myForm">
                                 <div>
-                                    <input type="text" name="name" placeholder="Name" id="name" class="form-control in-put" required>
+                                    <input type="text" name="name" placeholder="Name" id="name"
+                                        class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <input type="email" name="email" placeholder="Email" id="email" class="form-control in-put" required>
+                                    <input type="email" name="email" placeholder="Email" id="email"
+                                        class="form-control in-put" required>
                                 </div>
                                 <input type="hidden" name="subject" id="subject" value="GCS">
                                 <div>
-                                    <input type="number" name="mobile" placeholder="Mobile" id="mobile" class="form-control in-put" required>
+                                    <input type="number" name="mobile" placeholder="Mobile" id="mobile"
+                                        class="form-control in-put" required>
                                 </div>
                                 <div>
-                                    <textarea name="messages" type="messages" placeholder="Messages" id="messages" class="in-put" required></textarea>
+                                    <textarea name="messages" type="messages" placeholder="Messages" id="messages"
+                                        class="in-put" required></textarea>
                                 </div>
                                 <button type="submit" class="submit-btn">Submit</button>
                             </form>
@@ -1389,7 +1579,7 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
     </section>
     <footer class="bg-footer">
         <div class="container">
@@ -1402,15 +1592,16 @@
                         <div class="logo d-block d-md-none">
                             <img src="./images/logos/gcs-logo-normal.png" alt="GCS" class="img-fluid">
                         </div>
-                        <p>Gomzi Consulting Services (GCS) is a leading group managing diverse businesses, 
-                        offering customized solutions for growth and profitability.</p>
+                        <p>Gomzi Consulting Services (GCS) is a leading group managing diverse businesses,
+                            offering customized solutions for growth and profitability.</p>
                         <ul class="mt-4">
                             <li><a href="tel:+919773174522"><i class="fas fa-phone-alt"></i> +91 97731 74522</a></li>
                             <li><a href="mailto:gomziconsultingservices@gmail.com"><i class="fas fa-envelope"></i>
                                     gomziconsultingservices@gmail.com</a></li>
-                            <li><a href="javascript:void(0);"><i class="fas fa-map-marker-alt"></i> G-306, Sovereign Shoppers, Anand Mahal Rd,
-                                beside Sindhu Seva Samiti School, Adajan Gam,
-                                Surat, Gujarat 395009</a></li>
+                            <li><a href="javascript:void(0);"><i class="fas fa-map-marker-alt"></i> G-306, Sovereign
+                                    Shoppers, Anand Mahal Rd,
+                                    beside Sindhu Seva Samiti School, Adajan Gam,
+                                    Surat, Gujarat 395009</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1422,7 +1613,10 @@
                             <li><a href="/digital-marketing-agency.html">FitIT</a></li>
                             <li><a href="./business-consulting-services.html">Takshak</a></li>
                             <li><a href="./financial-advisory-services.html">A to Z Finance</a></li>
-                            <li><a href="./blog/invest-with-confidence-empower-yourself-with-our-stock-market-course.html">Blog</a></li>
+                            <li><a href="./courses/affordable-flexible-courses.html">Flexible Course</a></li>
+                            <li><a
+                                    href="./blog/invest-with-confidence-empower-yourself-with-our-stock-market-course.html">Blog</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1442,9 +1636,11 @@
                     <div class="footer-test mr-md-3 ml-3 ml-md-0">
                         <p>Social Media</p>
                         <div class="f_social_icon mt-md-4 mt-3">
-                            <a href="https://www.facebook.com/profile.php?id=100090555890586" class="fab fa-facebook"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100090555890586"
+                                class="fab fa-facebook"></a>
                             <a href="https://www.instagram.com/gomziconsultingservices/" class="fab fa-instagram"></a>
-                            <a href="https://www.youtube.com/@gomziconsultingservices/featured" class="fab fa-youtube"></a>
+                            <a href="https://www.youtube.com/@gomziconsultingservices/featured"
+                                class="fab fa-youtube"></a>
                         </div>
                     </div>
                 </div>
