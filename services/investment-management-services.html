@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Financial Advisory Services for a Secure Future - A2Z Finance</title>
+    <title>Investment Management Services - A2Z Finance</title>
     <meta name="Description"
         content="Invest in your future with A2Z Finance Services. Our financial advisory services include insurance, investment, retirement, tax, and estate planning to secure your financial future.">
     <meta name="keywords"
@@ -148,8 +148,15 @@
             //Scroll event
             $(window).scroll(function () {
                 var scrolled = $(window).scrollTop();
-                if (scrolled > 200) $('.go-top, .float-button-1').fadeIn('slow');
-                if (scrolled < 200) $('.go-top, .float-button-1').fadeOut('slow');
+                if (scrolled > 200) $('.go-top').fadeIn('slow');
+                if (scrolled < 200) $('.go-top').fadeOut('slow');
+            });
+
+            //Scroll event
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop();
+                if (scrolled > 200) $('.btn-flot').fadeIn('slow');
+                if (scrolled < 200) $('.btn-flot').fadeOut('slow');
             });
 
             //Click event
@@ -188,19 +195,18 @@
     <!-- End Meta Pixel Code -->
 </head>
 <header>
-    <div class="go-top">
-        <p class="go-top-text"><i class="fas fa-arrow-up"></i></p>
-    </div>
     <a class="float-button" target="_blank"
         href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about AtoZ service">
         <i class="fab fa-whatsapp"></i>
         <span>Message<span>
     </a>
-    <!-- <a class="float-button-1"
-        href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance">
-        <i class="fas fa-phone-alt"></i>
-        <span>Contact Us Now<span>
-    </a> -->
+    <div class="d-block d-md-none">
+        <div class="btn-flot">
+            <div class="btn-for">
+                <a onclick="opneform()" class="btn mb-3 mb-md-4">Book An expert Call</a>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid main p-0 m-0">
         <div class="d-lg-block d-none log">
             <a href="/">
@@ -262,480 +268,156 @@
 </header>
 
 <body>
-    <section class="margintop">
-        <div class="container-fluid px-0">
-            <div class="">
-                <div class="background-imgs" style="background-image: url(../images/mix-img/atoz-finance.webp);">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 col-12 text-center">
-                            <div class="takshak-title">
-                                <h1><span>AtoZ Finance Service</span></h1>
-                                <h2>We Grow Together with Financial Advisory Services</h2>
-                                <a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModalCenter"
-                                    class="btn-readmore btn">Know More</a>
-                            </div>
+    <section style="margin-top: 100px; border-bottom: 2px solid #d35800;" class="pb-5">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 order-2 order-md-1">
+                        <div class="forh">
+                            <h1>Dedicated Experts To Manage Your Money</h1>
                         </div>
+                        <div class="describe">
+                            <p class="my-0 ml-0">Trust our dedicated experts to expertly manage your money and help you
+                                achieve your financial goals with confidence.
+                            </p>
+                        </div>
+                        <div class="text-center mt-4 mt-md-5 btn-for">
+                            <a onclick="opneform()" class="btn mb-3 mb-md-4">Book An expert Call</a>
+                            <a href="#profit" class="btn btn-forh" style="font-weight: 600;">Know More about
+                                Services</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 order-1 order-md-2 text-center d-none d-md-block">
+                        <img src="../images/mix-img/portfolio.png" alt="Fitness" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-dark pt-md-5 pt-4">
+    <section class="margintop" style="border-bottom: 2px solid #d35800;">
         <div class="container-fluid py-md-5">
-            <div class="container">
+            <div class="container mb-md-5">
                 <div class="row justify-content-center">
                     <div class="col-md-7 text-center">
-                        <div class="coach-box">
+                        <div class="profits-text mb-3 mb-md-0 d-block d-md-none">
+                            <h2 style="font-size: 24px; line-height: 30px; font-weight: 700;">What good portfolio
+                                management looks like
+                            </h2>
+                        </div>
+                        <div class="coach-box d-none d-md-block">
                             <div class="my-md-0 my-4">
-                                <span> AtoZ finances Services </span>
+                                <span> What good portfolio management looks like </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center mt-md-4">
-                    <div class="col-md-6">
-                        <div>
-                            <div class="video-img">
-                                <div class="ply1 black-before">
-                                    <img class="" data-src="../images/mix-img/investment-plan.webp" width="100%"
-                                        style="border-radius: 10px 10px 0px 0px;" alt="client journey"
-                                        src="../images/mix-img/investment-plan.webp">
-                                    <div class="video-btn">
-                                        <a href="https://youtube.com/qcL4lSH53uY" data-flashy-type="video"
-                                            class="custom">
-                                            <span class="newthing"><i class="fas fa-play"></i></span>
-                                        </a>
-                                    </div>
-                                </div>
+                <div class="row align-items-center mt-md-4 mb-md-0 mb-5">
+                    <div class="col-md-4 mt-4">
+                        <div class="box-atoz">
+                            <div>
+                                <img src="../images/mix-img/Professional-Advice-1.webp" class="img-fluid" alt=""
+                                    style="border-radius: 10px 10px 0px 0px;">
+                            </div>
+                            <div class="box-atoz-content pb-md-5">
+                                <h4>Dedicated human experts</h4>
+                                <p>Available on WhatsApp when you need them</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="coach-box">
-                            <h2 class="w-100">Invest in your future with our financial advisory services</h2>
+                    <div class="col-md-4 mt-4">
+                        <div class="box-atoz">
+                            <div>
+                                <img src="../images/mix-img/Effortless-transactions.webp" class="img-fluid" alt=""
+                                    style="border-radius: 10px 10px 0px 0px;">
+                            </div>
+                            <div class="box-atoz-content pb-md-5">
+                                <h4>Effortless transactions</h4>
+                                <p>Execution and rebalancing all taken care of</p>
+                            </div>
                         </div>
-                        <div class="approach">
-                            <p class="mb-0">
-                                At A2Z Finance, we understand that managing your finances can be overwhelming,
-                                especially when you're trying to plan for the future. That's why we offer a range of
-                                financial advisory services to help you achieve your financial goals and secure your
-                                financial future.
-                                We help on following services,
-                            </p>
-                            <ul class="mt-md-2 mt-3">
-                                <li>1. 3% to 4% Monthly Returns</li>
-                                <li>2. Insurance Planning</li>
-                                <li>3. Investment planning </li>
-                                <li>4. Retirement Planning</li>
-                                <li>5. Tax Planning</li>
-                                <li>6. Estate Planning</li>
-                            </ul>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="box-atoz">
+                            <div>
+                                <img src="../images/blog/Analyze_and_Utilize_Data.webp" class="img-fluid" alt=""
+                                    style="border-radius: 10px 10px 0px 0px;">
+                            </div>
+                            <div class="box-atoz-content pb-md-4">
+                                <h4>Migrate existing portfolio</h4>
+                                <p>We provide the option to manage your existing investments</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="margintop">
+    <section class="margintop" style="border-bottom: 2px solid #d35800;" id="profit">
         <div class="container-fluid">
-            <div class="container">
-                <div class="col-md-12 text-center">
-                    <div class="reasons-box">
-                        <h4><span style="color: #ff8024;">Our </span> Services</h4>
-                        <div class="gcs-line"></div>
-                    </div>
-                </div>
-                <div class="row mt-md-5 mt-4">
-                    <div class="col-md-6 order-2 order-md-1 d-none d-md-block">
-                        <div>
-                            <img src="../images/mix-img/monthly-returns.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
-                        </div>
-                    </div>
-                    <div class="col-md-6  order-md-2 order-1 d-md-block d-none">
-                        <div class="coach-box">
-                            <h2 class="w-100">Mastering Option Trading: Unlocking 3% to 4% Monthly Returns with Ease
-                            </h2>
-                        </div>
-                        <div class="d-block d-md-none">
-                            <img src="../images/mix-img/monthly-returns.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
-                        </div>
-                        <div class="approach mt-3 mt-md-0">
-                            <p class="d-md-block d-none">
-                                At our institution, we implement highly effective option trading strategies to empower
-                                our students. With our structured and reliable approach, they can effortlessly achieve
-                                consistent monthly returns of 3% to 4%. The impressive results speak for themselves,
-                                providing our students with financial confidence and success.
-                            </p>
-                            <div class="course-price mt-md-3 d-none d-md-block">
-                                <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                    class="btn">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6  order-md-2 order-1 d-lg-none">
-                        <div class="coach-box">
-                            <h2 class="w-100">Mastering Option Trading: Unlocking 3% to 4% Monthly Returns with Ease
-                            </h2>
-                        </div>
-                        <div class="d-block d-md-none">
-                            <img src="../images/mix-img/monthly-returns.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
-                        </div>
-                        <div class="approach mt-3 mt-md-0">
-                            <p class="mb-0">
-                                At our institution, we implement highly effective option trading strategies to empower
-                                our students. With our structured and reliable approach, they can effortlessly achieve
-                                consistent monthly returns of 3% to 4%. The impressive results speak for themselves,
-                                providing our students with financial confidence and success.
-                            </p>
-                            <div class="mt-3 d-block d-md-none">
-                                <div class="d-flex">
-                                    <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                        class="btn">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-items-center mt-md-5 mt-4">
-                    <div class="coach-box d-block d-md-none">
-                        <h2 class="w-100">Insurance Planning</h2>
-                    </div>
-                    <div class="col-md-6 order-lg-2">
-                        <div>
-                            <img src="../images/mix-img/insurance-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Insurance Planning">
-                        </div>
-                    </div>
-                    <div class="col-md-6 order-lg-1">
-                        <div class="coach-box d-none d-md-block">
-                            <h2 class="w-100">Insurance Planning</h2>
-                        </div>
-                        <div class="approach mt-3 mt-md-0">
-                            <p class="d-md-block d-none">
-                                At a2z finance, we understand that insurance planning is an integral part of your
-                                overall financial planning strategy.
-                                With our professional expertise and personalized
-                                approach, we help you identify the types and amounts of insurance coverage you need to
-                                protect yourself, your family, and your assets. We work closely with you to determine
-                                your unique insurance needs and help you select the right policies from our trusted
-                                partners. Our commitment to providing reliable financial planning services ensures that
-                                you have peace of mind knowing that you are adequately covered for any unexpected
-                                events. Contact us today to learn more about our insurance planning services.for
-                                Information
-                            </p>
-                            <div class="course-price mt-md-3 d-none d-md-block">
-                                <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                    class="btn">Contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 order-lg-1 d-block d-md-none">
-                            <div class="coach-box d-none d-md-block">
-                                <h2 class="w-100">Insurance Planning</h2>
-                            </div>
-                            <div class="approach mt-3 mt-md-0 ">
-                                <p class="mb-0 mt-3">
-                                    At a2z finance, we understand that insurance planning is an integral part of your
-                                    overall financial planning strategy.
-                                </p>
-                                <p class="moretext">
-                                    With our professional expertise and personalized
-                                    approach, we help you identify the types and amounts of insurance coverage you need
-                                    to
-                                    protect yourself, your family, and your assets. We work closely with you to
-                                    determine
-                                    your unique insurance needs and help you select the right policies from our trusted
-                                    partners. Our commitment to providing reliable financial planning services ensures
-                                    that
-                                    you have peace of mind knowing that you are adequately covered for any unexpected
-                                    events. Contact us today to learn more about our insurance planning services.
-                                </p>
-                                <div class="mt-3 d-block d-md-none">
-                                    <div class="d-flex">
-                                        <a class="readmore-button">Read more</a>
-                                        <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                            class="btn ml-3">Contact Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="mt-md-4 mt-4">
-        <div class="container-fluid">
-            <div class="container">
+            <div class="container py-md-5">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <div class="coach-box d-block d-md-none">
-                            <h2 class="w-100">Investment planning</h2>
-                        </div>
-                        <div>
-                            <img src="../images/mix-img/Investment-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Investment planning">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="coach-box d-none d-md-block">
-                            <h2 class="w-100">Investment planning</h2>
-                        </div>
-                        <div class="approach mt-3 d-md-block d-none mt-md-0">
-                            <p>
-                                At A2Z Finance, we understand the importance of investment planning in achieving your
-                                financial goals. Our financial planning services are designed to help you make informed
-                                investment decisions that align with your long-term financial objectives. We work with
-                                you to assess your risk tolerance, investment preferences, and financial situation to
-                                develop a personalized investment plan. Our team of experienced financial advisors
-                                provides ongoing support to help you monitor and adjust your investments as needed. With
-                                A2Z Finance, you can feel confident that your investments are well-planned and aligned
-                                with your financial goals.
-                            </p>
-                            <div class="course-price mt-md-3 d-none d-md-block">
-                                <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                    class="btn">Contact Us</a>
+                        <div class="profits-text mb-4 mb-md-0">
+                            <h2>Designed to outperform in every market</h2>
+                            <p>Unlock your true investment potential with A2Z Finance, the market leader in delivering
+                                exceptional results. Our comprehensive suite of services is designed to outperform in
+                                any market condition, ensuring maximum return on your investment. Take the first step on
+                                your journey to financial success today and join forces with A2Z Finance, your trusted
+                                partner in the stock market realm.</p>
+                            <div class="mt-4 btn-for w-50 d-none d-md-block">
+                                <a onclick="opneform()" class="btn mb-3 mb-md-4">Book An expert Call</a>
+                            </div>
+                            <div class="mt-4 btn-for d-block d-md-none">
+                                <a onclick="opneform()" class="btn mb-3 mb-md-4">Book An expert Call</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 order-lg-1 d-block d-md-none">
-                        <div class="coach-box d-none d-md-block">
-                            <h2 class="w-100">Investment Planning</h2>
-                        </div>
-                        <div class="approach mt-3 mt-md-0">
-                            <p class="mb-0 mt-3">
-                                At A2Z Finance, we understand the importance of investment planning in achieving your
-                                financial goals. Our financial planning services are designed to help you make informed
-                                investment decisions that align with your long-term financial objectives.
-                            <p class="moretext1">
-                                We work with
-                                you to assess your risk tolerance, investment preferences, and financial situation to
-                                develop a personalized investment plan. Our team of experienced financial advisors
-                                provides ongoing support to help you monitor and adjust your investments as needed. With
-                                A2Z Finance, you can feel confident that your investments are well-planned and aligned
-                                with your financial goals.
-                            </p>
-                            <div class="mt-3 d-block d-md-none">
-                                <div class="d-flex">
-                                    <a class="readmore-button1">Read more</a>
-                                    <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                        class="btn ml-3">Contact Us</a>
-                                </div>
-                            </div>
+                    <div class="col-md-6 mb-md-0 mb-5">
+                        <div class="profits-box text-center">
+                            <img src="../images/mix-img/profits-details.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="margintop">
+    <section class="margintop" style="border-bottom: 2px solid #d35800;">
         <div class="container-fluid">
-            <div class="container">
+            <div class="container pb-5">
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-2 d-none d-md-block">
-                        <div>
-                            <img src="../images/mix-img/Retirement-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Retirement Planning">
-                        </div>
-                    </div>
-                    <div class="col-md-6 order-1 d-md-block d-none">
-                        <div class="coach-box">
-                            <h2 class="w-100">Retirement Planning</h2>
-                        </div>
-                        <div class="d-block d-md-none">
-                            <img src="../images/mix-img/Retirement-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Retirement Planning">
-                        </div>
-                        <div class="approach mt-3 mt-md-0">
-                            <p class="d-md-block d-none">
-                                Retirement planning can be a daunting task, but with the right financial planning
-                                services, you can secure your financial future with ease. At a2z Finance, we offer
-                                professional retirement planning services that cater to your unique needs and goals. Our
-                                team of experienced financial planners will work with you to create a comprehensive
-                                retirement plan that maximizes your savings and minimizes your financial risks. From
-                                managing your investments to setting up a retirement account, we provide personalized
-                                solutions to ensure a comfortable retirement. With a2z Finance, you can rest assured
-                                that your retirement planning needs are in good hands.
-                            </p>
-                            <div class="course-price mt-md-3 d-none d-md-block">
-                                <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                    class="btn">Contact Us</a>
+                    <div class="col-md-4 order-2 order-md-1">
+                        <div class="boxxi">
+                            <img src="../images/mix-img/expert-call.png" class="img-fluid"
+                                style="border-radius: 10px 10px 0px 0px;" alt="">
+                            <div class="text-center px-4 pb-4">
+                                <img src="../images/atoz/yashpal-sign.png" alt="sign coach" width="60%"
+                                    class="mt-md-3 mt-2">
+                                <p class="mt-2"><b>7 years of experience</b></p>
                             </div>
                         </div>
+                        <div class="mt-4 mt-md-5 btn-for d-block d-md-none">
+                            <a onclick="opneform()" class="btn mb-3 mb-md-4">Book An expert Call</a>
+                        </div>
                     </div>
-                    <div class="col-md-6 order-lg-1 d-block d-md-none">
-                        <div class="coach-box">
-                            <h2 class="w-100">Retirement Planning</h2>
+                    <div class="col-md-1 d-none d-md-block order-2"></div>
+                    <div class="col-md-7 order-1 order-md-3">
+                        <div class="profits-text mb-4">
+                            <h2>Get a call back from our expert team</h2>
+                            <p>Take the guesswork out of your investment strategy with A2Z Finance's expert team by your
+                                side. Our knowledgeable professionals are ready to provide you with personalized
+                                guidance tailored to your unique financial goals. Experience the advantage of working
+                                with industry-leading experts and unlock your full investment potential. Request a call
+                                back from our team today and embark on a journey towards financial success.</p>
                         </div>
-                        <div class="d-block d-md-none">
-                            <img src="../images/mix-img/Retirement-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Retirement Planning">
-                        </div>
-                        <div class="approach mt-3 mt-md-0">
-                            <p class="mb-0">
-                                Retirement planning can be a daunting task, but with the right financial planning
-                                services, you can secure your financial future with ease. At a2z Finance, we offer
-                            <p class="moretext2">
-
-                                professional retirement planning services that cater to your unique needs and goals. Our
-                                team of experienced financial planners will work with you to create a comprehensive
-                                retirement plan that maximizes your savings and minimizes your financial risks. From
-                                managing your investments to setting up a retirement account, we provide personalized
-                                solutions to ensure a comfortable retirement. With a2z Finance, you can rest assured
-                                that your retirement planning needs are in good hands.
-                            </p>
-                            <div class="mt-3 d-block d-md-none">
-                                <div class="d-flex">
-                                    <a class="readmore-button2">Read more</a>
-                                    <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                        class="btn ml-3">Contact Us</a>
-                                </div>
-                            </div>
+                        <div class="mt-4 btn-for d-none d-md-block">
+                            <a onclick="opneform()" class="btn mb-3 mb-md-4 w-50">Book An expert Call</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="margintop">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-2 order-md-1 d-none d-md-block">
-                        <div>
-                            <img src="../images/mix-img/estate-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
-                        </div>
-                    </div>
-                    <div class="col-md-6  order-md-2 order-1  d-md-block d-none">
-                        <div class="coach-box">
-                            <h2 class="w-100">Estate Planning</h2>
-                        </div>
-                        <div class="d-block d-md-none">
-                            <img src="../images/mix-img/estate-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
-                        </div>
-                        <div class="approach mt-3 mt-md-0">
-                            <p class="d-md-block d-none">
-                                At a2z finance, we understand the importance of tax planning in your financial journey.
-                                Our team of experienced financial planners are here to help you navigate the complex
-                                world of tax laws and regulations, and identify opportunities to minimize your tax
-                                liability. We work closely with you to understand your financial goals and create a
-                                customized tax plan that suits your unique needs. Our services include tax preparation,
-                                tax forecasting, and strategic tax planning. With a2z finance, you can feel confident
-                                that your taxes are being handled with care and expertise, allowing you to focus on
-                                achieving your financial objectives.
-                            </p>
-                            <div class="course-price mt-md-3 d-none d-md-block">
-                                <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                    class="btn">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6  order-md-2 order-1 d-lg-none">
-                        <div class="coach-box">
-                            <h2 class="w-100">Estate Planning</h2>
-                        </div>
-                        <div class="d-block d-md-none">
-                            <img src="../images/mix-img/estate-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
-                        </div>
-                        <div class="approach mt-3 mt-md-0 ">
-                            <p class="mb-0">
-                                At a2z finance, we understand the importance of tax planning in your financial journey.
-                                Our team of experienced financial planners are here to help you navigate the
-                            </p>
-                            <p class="moretext3">
-                                At a2z finance, we understand the importance of tax planning in your financial journey.
-                                Our team of experienced financial planners are here to help you navigate the complex
-                                world of tax laws and regulations, and identify opportunities to minimize your tax
-                                liability. We work closely with you to understand your financial goals and create a
-                                customized tax plan that suits your unique needs. Our services include tax preparation,
-                                tax forecasting, and strategic tax planning. With a2z finance, you can feel confident
-                                that your taxes are being handled with care and expertise, allowing you to focus on
-                                achieving your financial objectives.
-                            </p>
-                            <div class="mt-3 d-block d-md-none">
-                                <div class="d-flex">
-                                    <a class="readmore-button3">Read more</a>
-                                    <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                        class="btn ml-3">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="mt-md-5 mt-3">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-2 order-md-2 d-none d-md-block ">
-                        <div>
-                            <img src="../images/mix-img/tax-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
-                        </div>
-                    </div>
-                    <div class="col-md-6  order-md-1 order-1 d-md-block d-none">
-                        <div class="coach-box">
-                            <h2 class="w-100">Tax Planning</h2>
-                        </div>
-                        <div class="d-block d-md-none">
-                            <img src="../images/mix-img/tax-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
-                        </div>
-                        <div class="approach mt-3 mt-md-0">
-                            <p class="d-md-block d-none">
-                                At a2z finance, we understand the importance of estate planning in managing and
-                                distributing assets according to our clients' wishes. Our team of specialists works
-                                closely with clients to assess their financial situation, identify their goals, and
-                                develop customized estate plans to meet their specific needs. We aim to provide peace of
-                                mind by minimizing taxes and maximizing wealth transfer. Trust us to help secure your
-                                financial future through effective estate planning.
-                            </p>
-                            <div class="course-price mt-md-3 d-none d-md-block">
-                                <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                    class="btn">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6  order-md-1 order-1 d-lg-none">
-                        <div class="coach-box">
-                            <h2 class="w-100">Tax Planning</h2>
-                        </div>
-                        <div class="d-block d-md-none">
-                            <img src="../images/mix-img/tax-planning.webp" style="border-radius: 10px;"
-                                class="img-fluid" alt="Our Approach">
-                        </div>
-                        <div class="approach mt-3 mt-md-0">
-                            <p class="mb-0">
-                                At a2z finance, we understand the importance of estate planning in managing and
-                                distributing assets according to our clients' wishes.
-                            </p>
-                            <p class="moretext4">
-                                Our team of specialists works
-                                closely with clients to assess their financial situation, identify their goals, and
-                                develop customized estate plans to meet their specific needs. We aim to provide peace of
-                                mind by minimizing taxes and maximizing wealth transfer. Trust us to help secure your
-                                financial future through effective estate planning.
-                            </p>
-                            <div class="mt-3 d-block d-md-none">
-                                <div class="d-flex">
-                                    <a class="readmore-button4">Read more</a>
-                                    <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about AtoZ Finance"
-                                        class="btn ml-3">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="margintop bg-dark pt-5">
+    <section class="bg-dark pt-5">
         <div class="container-fluid">
             <div class="container">
                 <div class="col-md-12 text-center">
@@ -932,6 +614,33 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-md-5 mt-4 align-items-center">
+                    <div class="col-md-6">
+                        <div class="">
+                            <img src="../images/blog/atoz/atoz-blog-thumbanail.png"
+                                alt="The Roadmap to Financial Freedom" class="img-fluid" style="border-radius: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="coach-box">
+                            <h2 class="w-100 mt-md-0">The Roadmap to Financial Freedom: Strategies That Actually Work
+                            </h2>
+                        </div>
+                        <div class="agency-design">
+                            <p>
+                                Financial freedom, a cherished aspiration for many, can seem distant and unattainable.
+                                However, by adopting the right strategies and cultivating the appropriate mindset, you
+                                can embark on a transformative journey towards financial independence. In this article,
+                                we will unveil a roadmap to help you navigate the path to financial freedom. With clear
+                                objectives,...
+                            </p>
+                        </div>
+                        <div class="mt-md-3 mt-3 carded-content">
+                            <a href="./blog/roadmap-to-financial-freedom-strategies-for-achieving-personal-prosperity.html"
+                                target="_blank" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1073,7 +782,7 @@
                     <div class="text-center">
                         <img src="../images/mix-img/inqury-photo.webp" class="img-fluid ml-2" width="40%"
                             alt="Book Free Appointment">
-                        <h4>Contact Us Today</h4>
+                        <h4>Book your call with our Experts</h4>
                     </div>
                     <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -1124,6 +833,9 @@
         form1.addEventListener('submit', submitForm);
     </script>
     <script>
+        function opneform() {
+            $('#myModal').modal('show');
+        }
         setTimeout(function () {
             $('#myModal').modal();
         }, 30000);

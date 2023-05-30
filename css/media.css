@@ -1,4 +1,15 @@
 @media (max-width: 575.98px) {
+  .profits-text h2 {
+    font-size: 34px;
+    line-height: 45px;
+  }
+  .profits-box img {
+    height: auto;
+  }
+  .profits-box {
+    width: 100%;
+    height: auto;
+  }
   .tabataa h2 {
     margin-top: 10px;
   }
