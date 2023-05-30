@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Expert Digital Marketing Agency - Fit IT </title>
+    <meta name="Description"
+        content="GCS Consultant is a top-rated digital marketing agency providing comprehensive online marketing solutions for businesses. Trust our experts to boost your online presence and drive growth today.">
+    <meta name="keywords"
+        content="digital marketing, social media marketing, website development, paid advertising, SEO, content creation, PR activity, online presence">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logos/gcs-logo-normal.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/popup-form-style.css">
+    <link rel="stylesheet" type="text/css" type="text/css" href="../plugins/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/gcs.css">
+    <link rel="stylesheet" type="text/css" href="../css/media.css">
+    <link rel="stylesheet" type="text/css" href="../css/owl-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="../css/owl.theme.css">
+    <script type="text/javascript" src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.js"></script>
+    <script type="text/javascript" src="./js/lazy-load.js"></script>
+    <script src="../plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
+    <script type="text/javascript">
+        function openside() {
+            document.getElementById('demo').style.width = '100%';
+        }
+
+        function sideclose() {
+            document.getElementById('demo').style.width = '0px';
+        }
+    </script>
+    <script type="text/javascript">
+        /*---------------------Drop down----------------------*/
+        $(document).ready(function () {
+            $('.ddmenu > a').click(function () {
+                $(this).parent().siblings().find('ul').fadeOut(500);
+                $(this).next('ul').stop(true, false, true).fadeToggle(500);
+                return false;
+            });
+        });
+
+        /*---------------------End----------------------*/
+    </script>
+</head>
+<header>
+    <div class="go-top">
+        <p class="go-top-text"><i class="fas fa-arrow-up"></i></p>
+    </div>
+    <a class="float-button" target="_blank"
+        href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about FitIT service">
+        <i class="fab fa-whatsapp"></i>
+        <span>Message<span>
+    </a>
+    <div class="container-fluid main p-0 m-0">
+        <div class="d-lg-block d-none log">
+            <a href="/">
+                <div>
+                    <img src="../images/logos/gcs-logo-white.png" width="200%" alt="GCS Logo">
+                </div>
+            </a>
+        </div>
+        <div class="d-lg-none d-sm-block t0 log1">
+            <a href="/">
+                <div>
+                    <img src="../images/logos/gcs-logo-white.png" width="160%" alt="GCS Logo">
+                </div>
+            </a>
+        </div>
+        <div class="lang">
+            <ul>
+                <li>
+                    <a href="../index.html" class="">
+                        <p class="m-0">Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../digital-marketing-agency.html">
+                        <p class="m-0 active">FitIT</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../business-consulting-services.html">
+                        <p class="m-0">Takshak</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../financial-advisory-services.html">
+                        <p class="m-0">AtoZ Finance</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="side" id="demo">
+            <span class="closebtn" onclick="sideclose()">&times</span>
+            <a href="/" style="margin-top: 50px;"><img class="lazy" data-src="../images/logos/gcs-logo-white.png"
+                    width="35%"></a>
+            <a href="../index.html">Home</a>
+            <a href="../digital-marketing-agency.html">FitIT</a>
+            <a href="../business-consulting-services.html">Takshak</a>
+            <a href="../financial-advisory-services.html">AtoZ Finance</a>
+            <ul class="mobileUserInfo aa">
+            </ul>
+        </div>
+        <span class="d-lg-none d-sm-block btnn" style="cursor: pointer; font-size: 20px; color: black;"
+            onclick="openside()">&#9776;</span>
+        <div class="login d-lg-block d-none">
+            <ul>
+                <li style="font-size: 18px;" class="ddmenu userInfo"></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<body>
+    <section style="margin-top: 100px;">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="takshak-title">
+                    <h1><span>Profile</span></h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 hd">
+                        <p class="mb-1 mt-4">User ID:</p>
+                        <input type="email" class="form-control in-put" id="txt_uid" readonly="">
+                    </div>
+                    <div class="col-md-6 hd">
+                        <p class="mb-1 mt-4">Mobile No.</p>
+                        <input type="number" class="form-control in-put" placeholder="Enter Mobile Number"
+                            id="txt_mobile" disabled="">
+                    </div>
+                    <div class="col-md-6 hd">
+                        <p class="mb-1 mt-4">First Name</p>
+                        <input type="text" class="form-control in-put" placeholder="Enter First Name"
+                            id="txt_first_name">
+                        <p id="lbl_first_name"></p>
+                    </div>
+                    <div class="col-md-6 hd">
+                        <p class="mb-1 mt-4">Last Name</p>
+                        <input type="text" class="form-control in-put" placeholder="Enter Last Name" id="txt_last_name">
+                        <p id="lbl_last_name"></p>
+                    </div>
+                    <div class="col-md-6 hd">
+                        <p class="mb-1 mt-4">Email Address</p>
+                        <input type="email" class="form-control in-put" placeholder="Enter Email Name" id="txt_email">
+                        <p id="lbl_email"></p>
+                    </div>
+                </div>
+                <div class="free d-inline-block mt-4" onclick="updateProfile()"><a href="javascript:void(0);"
+                        class="submit-btn">Update Details</a></div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-footer margintop">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-sec">
+                        <div class="logo d-none d-md-block">
+                            <img src="../images/logos/gcs-logo-normal.png" alt="GCS" class="img-fluid" width="180px">
+                        </div>
+                        <div class="logo d-block d-md-none">
+                            <img src="../images/logos/gcs-logo-normal.png" alt="GCS" class="img-fluid">
+                        </div>
+                        <p>Gomzi Consulting Services (GCS) is a leading group managing diverse businesses,
+                            offering customized solutions for growth and profitability.</p>
+                        <ul class="mt-4">
+                            <li><a href="tel:9773174522"><i class="fas fa-phone-alt"></i> +91 97731 74522</a></li>
+                            <li><a href="mailto:gomziconsultingservices@gmail.com"><i class="fas fa-envelope"></i>
+                                    gomziconsultingservices@gmail.com</a></li>
+                            <li><a href="javascript:void(0);"><i class="fas fa-map-marker-alt"></i> G-306, Sovereign
+                                    Shoppers, Anand Mahal
+                                    Rd,
+                                    beside Sindhu Seva Samiti School, Adajan Gam,
+                                    Surat, Gujarat 395009</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mt-md-5 mt-3">
+                    <div class="footer-test ml-lg-4">
+                        <p>Links</p>
+                        <ul class="mt-4">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../digital-marketing-agency.html">FitIT</a></li>
+                            <li><a href="../business-consulting-services.html">Takshak</a></li>
+                            <li><a href="../financial-advisory-services.html">A to Z Finance</a></li>
+                            <li><a
+                                    href="../blog/invest-with-confidence-empower-yourself-with-our-stock-market-course.html">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-md-5 mt-3">
+                    <div class="footer-test ml-lg-4">
+                        <p>Information</p>
+                        <ul class="mt-4">
+                            <li><a href="../term-and-conditions.html">Terms & Condition</a></li>
+                            <li><a href="../return-refund.html">Return and Refund</a></li>
+                            <li><a href="../cancellation-policy.html">Cancellation Policy</a></li>
+                            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="../about-us.html">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-md-5 mt-3 p-0">
+                    <div class="footer-test mr-md-3 ml-3 ml-md-0">
+                        <p>Social Media</p>
+                        <div class="f_social_icon mt-md-4 mt-3">
+                            <a href="https://www.facebook.com/profile.php?id=100090988021581"
+                                class="fab fa-facebook"></a>
+                            <a href="https://www.instagram.com/fititofficial/" class="fab fa-instagram"></a>
+                            <a href="https://www.youtube.com/@FitITOfficial/featured" class="fab fa-youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="col-md-12 p-0">
+        <div class="footer-copyright">
+            <p>© 2023-2024 <span class="ml-2">All Rights Reserved</span></p>
+        </div>
+    </div>
+
+    <!-- <div class="modal fade mt-4" id="myModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content black-form" style="background-color: #121212;">
+                <div class="modal-header text-center border-0">
+                    <div class="text-center">
+                        <img src="./images/mix-img/login.png" class="img-fluid ml-2" width="40%"
+                            alt="Book Free Appointment">
+                    </div>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="text-center mb-4">
+                        <h4>Login With Mobile Number</h4>
+                    </div>
+                    <form id="myForm1" class="pupop-form">
+                        <div>
+                            <input type="number" name="mobile" placeholder="Enter Mobile" id="mobile"
+                                class="form-control in-put" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="submit-btn btn">Send Otp</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="modal fade mt-4" id="myModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content black-form" style="background-color: #121212;">
+                <div class="modal-header text-center border-0">
+                    <div class="text-center">
+                        <img src="../images/mix-img/login.png" class="img-fluid ml-2" width="40%"
+                            alt="Book Free Appointment">
+                    </div>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="text-center mb-4">
+                        <h4>Send Otp in your Mobile</h4>
+                    </div>
+                    <form id="myForm1" class="pupop-form">
+                        <div>
+                            <input type="number" name="otp" placeholder="Enter OTP" id="otp" class="form-control in-put"
+                                required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="submit-btn btn">Verify</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.flashy.min.js"></script>
+    <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+    <link href="../css/effect.css" rel="stylesheet">
+    <script src="../js/main.js"></script>
+    <link href="../css/flashy.min.css" rel="stylesheet">
+    <script src="../js/sweetalert2.js"></script>
+    <script src="../js/app.js"></script>
+
+
+    <script>
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', submitForm);
+
+    </script>
+</body>
+
+</html>
