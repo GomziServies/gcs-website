@@ -1,18 +1,57 @@
 // let HOST = 'http://localhost:88';
-
+let razorpayMerchantId = 'rzp_test_F0TUZmabOwKkhe'
 if (['gcsconsultant.com', 'www.gcsconsultant.com'].includes(window.location.hostname)) {
   HOST = 'https://admin.gcsconsultant.com';
 }
 
-let USER_ROUTE = '/admin/user';
-let PUBLIC_ROUTE = '/admin/user';
+let USER_ROUTE = '/admin/pages';
+let PUBLIC_ROUTE = '/admin/pages';
 let BASE_URL = HOST + USER_ROUTE;
+
+// Set Redirect Dir
+let redirectDir = '';
+let path = window.location.pathname
+let currentSubPath = {
+  account: path.split('/account/').length,
+  blogs: path.split('/blogs/').length,
+  services: path.split('/services/').length,
+  courses: path.split('/courses/').length,
+  workshop: path.split('/workshop/').length
+}
+
+let currentSubPathName = ''
+Object.keys(currentSubPath).forEach(key => {
+  if (currentSubPath[key] > 1) {
+    currentSubPath = currentSubPath[key]
+    currentSubPathName = key
+  }
+})
+
+if (currentSubPath > 1) {
+  let dirCount = path.split(`/${currentSubPathName}/`).length - 1
+  if (dirCount > 0) {
+    for (let i = 0; i < dirCount; i++) {
+      redirectDir += '../'
+    }
+  }
+}
+
+
+let profilePage = redirectDir + 'profile.html'
+
+// Sent Header default in all API Request
+$.ajaxSetup({
+  headers: { 'authorization': localStorage.getItem("GCS_user_authorization") || null },
+  cache: false,
+});
+
 
 function submitForm(event) {
   event.preventDefault();
   const formData = new FormData(event.target);
+  URL_FORM = BASE_URL + '/user/'
 
-  fetch(BASE_URL, {
+  fetch(URL_FORM, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
@@ -45,239 +84,168 @@ function submitForm(event) {
     });
 }
 
+// Get Profile
+async function http_getProfile(option = {}) {
+  try {
+    let userResult = await $.get({
+      url: HOST + '/pages/gcs/view/',
+      headers: { 'authorization': option.authorization || localStorage.getItem("GCS_user_authorization") }
+    }).then(result => result)
+    isUserLoggedIn = true;
+    let userData = userResult.data
+    localStorage.setItem('user_info', JSON.stringify({ ...userData.user }))
+    return userResult;
+  } catch (error) {
+    error = error.responseJSON
+    if (option.login == undefined) {
+      return modalLogin()
+    }
+  }
+}
 
-// function modalLogin() {
-//   const modalHTML = `<div class="modal fade mt-4" id="myModal">
-//   <div class="modal-dialog modal-dialog-centered" role="document">
-//       <div class="modal-content black-form" style="background-color: #121212;">
-//           <div class="modal-header text-center border-0">
-//               <div class="text-center">
-//                   <img src="./images/mix-img/login.png" class="img-fluid ml-2" width="40%"
-//                       alt="Book Free Appointment">
-//               </div>
-//               <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-//                   <span aria-hidden="true">&times;</span>
-//               </button>
-//           </div>
-//           <div class="modal-body pt-0">
-//               <div class="text-center mb-4">
-//                   <h4 id="lbl_modal_login">Login With Mobile Number</h4>
-//               </div>
-//               <form id="loginMobile" class="pupop-form">
-//                   <div>
-//                       <input type="number" name="mobile" placeholder="Enter Mobile" id="mobile"
-//                           class="form-control in-put" required>
-//                   </div>
-//                   <div class="text-center">
-//                       <button type="submit" class="submit-btn btn">Send Otp</button>
-//                   </div>
-//               </form>
-//           </div>
-//       </div>
-//   </div>
-// </div>`;
+function _getUserInfo() {
+  try {
+    return JSON.parse(localStorage.getItem("user_info"))
+  } catch (error) {
+    modalLogin()
+    return null;
+  }
+}
 
-//   // Append the modal HTML to the document body
-//   const modalElement = document.getElementById('modalLogin');
-//   modalElement.innerHTML = modalHTML;
-//   document.body.appendChild(modalElement);
-//   $('#myModal').modal();
-// }
+// Date Time
+function getDateTime(dateObject) {
+  if (dateObject && (new Date(dateObject)) != 'Invalid Date') {
+    let date = new Date(dateObject)
+    return `${('0' + date.getDate()).slice(-2)}/${('0' + (date.getMonth() + 1)).slice(-2)}/${date.getFullYear()} ${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)}:${('0' + date.getSeconds()).slice(-2)}`
+  }
+  return 'INVALID DATE'
+}
 
+// Time Convert 24 Hour to 12 Hour
+function t24to12(time) {
+  if (!time) { return }
+  // Check correct time format and split into components
+  time = time.toString().match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
 
-// function modalHide() {
-//   modelResetTextField()
-//   try { $('.modal').modal('hide') } catch (error) { console.log(error) }
-//   $('body').removeClass('modal-open');
-//   $('.modal-backdrop').remove();
-// }
+  if (time.length > 1) { // If time format correct
+    time = time.slice(1); // Remove full string match value
+    time[5] = +time[0] < 12 ? ' AM' : ' PM'; // Set AM/PM
+    time[0] = +time[0] % 12 || 12; // Adjust hours
+  }
+  return time.join(''); // return adjusted time or original string
+}
 
-// function modalShow() {
-//   modalHide()
-//   modelResetTextField()
-//   try { $('#modal').modal('show') } catch (error) { console.log(error) }
-// }
+// Append Current Query String to URL
+function redirectTo(url) {
+  let queryString = new URLSearchParams(window.location.search);
 
-// function modelResetTextField() {
-//   // Find ID starts with txt_ and in ID modal
-//   $('#modal input[id^="txt_"]').val(null)
-// }
+  let redirectURL = url + '?';
+  queryString.forEach((value, key) => {
+    redirectURL += (key + '=' + value + '&');
+  })
 
-// // LOGIN USING MOBILE OTP
+  redirectURL = redirectURL.substr(0, redirectURL.length - 1);
+  window.location.href = redirectURL
+}
 
-// function modalLogin(action) {
-//   $('#div_modal').html(`
-//   <div class="modal fade p-0" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-//       <div class="modal-dialog modal-dialog-centered" role="document">
-//           <div class="modal-content black-form" style="background-color: #121212;">
-//               <div class="modal-body">
-//                   <button type="button" class="close" style="color:#fff;" data-dismiss="modal" aria-label="Close">
-//                       <span aria-hidden="true">&times;</span>
-//                   </button>
-//                   <div class="text-center">
-//                       <img src="../images/mix-img/login.png" class="img-fluid ml-2" width="40%"
-//                         alt="Book Free Appointment">
-//                   </div>
-//                   <form onsubmit="return false">
-//                       <div class="page_modal slide-page_modal" style="width:100%!important;">
-//                           <div class="">
-//                               <h4><div class="label_modal text-center mb-3" id="lbl_modal_login">OTP Verification</div></h4>
-//                               <input type="mobile" id="txt_modal_user_name" placeholder="Enter mobile number" class="in-put" style="height: 80%; background-color: white;">
-//                           </div>
-//                           <div class="mb-3 mt-md-3">
-//                               <button type="button" class="submit-btn btn" style="width:100%; margin: 0;" id="btn_modal_login" onclick="modalLoginRequest(this,'${action}')">Log In</button>
-//                           </div>
-//                           <div class="d-none" style="margin-top: 0px;">
-//                               <button type="button" class="submit-btn btn" style="width:100%; margin: 0;">Continue With <i class="mx-1 fab fa-google"></i><i class="mx-1 fab fa-facebook-square"></i><i class="mx-1 fas fa-envelope"></i></button>
-//                           </div>
-//                       </div>
-//                   </form>
-//               </div>
-//           </div>
-//       </div>
-//   </div>
-//   `);
-
-//   modalShow()
-
-//   $('#div_modal').on('keypress', function (e) {
-//     if (((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) && !swal.isVisible()) {
-//       $('#btn_modal_login').click();
-//     }
-//   });
-// }
+function logout() {
+  // clear local storage
+  localStorage.removeItem('GCS_user_authorization')
+  localStorage.removeItem('user_info')
+  window.location.reload()
+}
 
 
-// function modalLoginRequest(element, action) {
-//   let user_name = $('#txt_modal_user_name').val().trim()
-
-//   if (!user_name) {
-//     return Swal.fire({
-//       title: 'Mobile number is missing',
-//       icon: 'error'
-//     })
-//   }
-//   value = String(user_name)
-//   let payload = {}
-
-//   let mobileRegex = /^[6-9][0-9]{9}$/
-//   if (value.match(mobileRegex) && value.match(mobileRegex)[0] == value) {
-//     payload.mobile = user_name
-//   }
-
-//   $.post({
-//     url: HOST + '/pages/gcs/login',
-//     contentType: 'application/json',
-//     data: JSON.stringify(payload),
-//     success: (result) => {
-//       const user = result.user;
-//       console.log(user);
+// Check Login
+function signInRequired() {
+  if (localStorage.getItem("GCS_user_authorization") == null || localStorage.getItem("user_info") == null) {
+    localStorage.removeItem('GCS_user_authorization')
+    localStorage.removeItem('user_info')
+    return modalLogin()
+  }
+}
+userInfoCheck()
 
 
-//       $('#btn_modal_login').attr('onclick', `verifyOTP(this,'mobile','${Object.values(payload)[0]}','${action}')`).html('Verify OTP')
-//       $('#btn_modal_login').html('Verify OTP')
-//       $('#lbl_modal_login').html('Enter OTP here')
+// Check + HTML Append
+let isUserLoggedIn = false;
+function userInfoCheck() {
+  if (!document.getElementsByClassName('userInfo')[0]) {
+    return;
+  }
+  http_getProfile({ login: true })
 
-//       // OTP for Testing Environment
-//       let OTP = (result.data && result.data.OTP) ? result.data.OTP : undefined;
+  if (localStorage.getItem("GCS_user_authorization") == null || localStorage.getItem("user_info") == null) {
+    document.getElementsByClassName('userInfo')[0].classList.remove('ddmenu')
+    document.getElementsByClassName('userInfo')[0].innerHTML = `
+        <li class="mr-0"></li>
+        <a href="javascript:void(0);" onclick="modalLogin()">Login&nbsp;<i class="far fa-user"></i></a>`
+    document.getElementsByClassName('mobileUserInfo')[0].innerHTML = `
+        <ul>
+        <li><a href="javascript:void(0);" onclick="modalLogin()">Log in</a></li>
+        </ul>
+       `
 
-//       (result.data && result.data.OTP != undefined) ? toastr.warning('You can see OTP only because you are using test version.') : null;
+    return
+  }
 
-//       $('#txt_modal_user_name').attr('placeholder', `Enter OTP here`).val(OTP || '')
-//     },
-//     error: (error) => {
-//       error = error.responseJSON
-//       try {
-//         return Swal.fire({
-//           title: 'Error',
-//           text: error.message,
-//           icon: 'error',
-//         })
-//       } catch (error) {
-//         return Swal.fire({
-//           title: 'Error',
-//           text: 'Something went wrong!',
-//           icon: 'error',
-//         })
-//       }
-//     },
-//     complete: () => {
-//       $(element).removeAttr('disabled')
-//     },
-//     beforeSend: () => {
-//       $(element).attr('disabled', 'disabled')
-//     }
-//   })
-// }
+  if (localStorage.getItem("user_info") != null) {
+    let userInfo;
+    let user_name = '';
+    document.getElementsByClassName('userInfo')[0].innerHTML = '';
 
+    userInfo = JSON.parse(localStorage.getItem("user_info"))
+    try {
+      user_name = userInfo.first_name
 
-// function verifyOTP(element, type, data, action) {
+      let options = ` <ul>
+            <li class="mr-0"><a href="${redirectDir}account/profile.html"><i class="far fa-user mr-3" style="font-size: 18px;"></i>Profile</a></li>
+        `
 
-//   let otp_code = $('#txt_modal_user_name').val().trim()
+      options += `<li class="mr-0" onclick="logout()"><a href="javascript:void(0);"><i class="fas fa-sign-out-alt mr-3" style="font-size: 18px;"></i>Log Out</a></li>
+            </ul>`
 
-//   if (!otp_code) {
-//     return Swal.fire({
-//       title: 'Error',
-//       text: 'OTP is required',
-//       icon: 'error',
-//     })
-//   }
+      document.getElementsByClassName('userInfo')[0].innerHTML += `
+                    <li class="mr-0">Hi, ${user_name}&nbsp;&nbsp;</li>
+                    <a href="javascript:void(0);"><i class="far fa-user" style="color:#000;"></i></a>
+                    ${options} 
+                   `
+    } catch (error) {
+      // When no user info
+      document.getElementsByClassName('userInfo')[0].innerHTML = `
+            <a href="javascript:void(0);"><i class="far fa-user"></i></a>
+            <ul>
+                <li class="mr-0"><a href="${redirectDir}account/profile.html"><i class="far fa-user mr-3" style="font-size: 18px;"></i>Profile</a></li>
+                <li class="mr-0" onclick="logout()"><a href="javascript:void(0);"><i class="fas fa-sign-out-alt mr-3" style="font-size: 18px;"></i>Log Out</a></li>
+            </ul>`
+    }
 
-//   $.post({
-//     url: HOST + '/pages/gcs/verifyotp',
-//     contentType: 'application/json',
-//     data: JSON.stringify({
-//       mobile: data,
-//       otp: otp_code
-//     }),
-//     success: async (result) => {
+    // Mobile View
+    try {
 
-//       // localStorage.setItem('fg_group_user_authorization', result.data.authorization)
-//       // await http_getProfile({ authorization: result.data.authorization })
+      user_name = userInfo.first_name
 
-//       // $.ajaxSetup({
-//       //   headers: { 'authorization': localStorage.getItem("fg_group_user_authorization") || alert("header not setup yet") }
-//       // })
+      let options = ` 
+            <ul>
+            <hr>
+            <li class="mr-0 p-2" style="font-size: 18px;">Hi, ${user_name}</li>
+            <li class="mr-0 p-0"><a href="${redirectDir}account/profile.html" class="p-2"><i class="far fa-user mr-3" style="font-size: 18px;"></i>Profile</a></li>
+        `
 
-//       modalHide(result)
+      options += `
+            <li class="mr-0 p-0"><a href="javascript:void(0);" onclick="logout()" class="p-2"><i class="fas fa-sign-out-alt mr-3" style="font-size: 18px;"></i>Log out</a></li>
+            </ul>`
 
-//       // Reload page without action=Login parameter
-//       let urlParams = new URLSearchParams(window.location.search);
-//       if (urlParams.has('action') && urlParams.get('action') == 'Login') {
-//         urlParams.delete('action')
-//       }
+      document.getElementsByClassName('mobileUserInfo')[0].innerHTML = options;
+    } catch (error) {
+      document.getElementsByClassName('mobileUserInfo')[0].innerHTML = `
+            <ul>
+                <li class="mr-0"><a href="${redirectDir}account/profile.html"><i class="far fa-user mr-3" style="font-size: 18px;"></i>Profile</a></li>
+                <li class="mr-0" onclick="logout()"><a href="javascript:void(0);"><i class="fas fa-sign-out-alt mr-3" style="font-size: 18px;"></i>Log Out</a></li>
+            </ul>`
+    }
+  } else {
 
-//       if (String(action) != "undefined") {
-//         urlParams.set('action', String(action))
-//       } else {
-//         urlParams.delete('action')
-//       }
+  }
 
-//       window.location.href = window.location.href.split('?')[0] + (urlParams.toString() != "" ? '?' + urlParams.toString() : '')
-//       userInfoCheck()
-//       return toastr.success(result.message)
-//     },
-//     error: (error) => {
-//       error = error.responseJSON
-//       try {
-//         return Swal.fire({
-//           title: 'Error',
-//           text: error.message,
-//           icon: 'error',
-//         })
-//       } catch (error) {
-//         return Swal.fire({
-//           title: 'Error',
-//           text: 'Something went wrong!',
-//           icon: 'error',
-//         })
-//       }
-//     },
-//     complete: () => {
-//       $(element).removeAttr('disabled')
-//     },
-//     beforeSend: () => {
-//       $(element).attr('disabled', 'disabled')
-//     }
-//   })
-// }
+}
