@@ -31,7 +31,8 @@
     <script type="text/javascript" src="../js/owl.carousel.js"></script>
     <script type="text/javascript" src="../js/lazy-load.js"></script>
     <script src="../plugins/sweetalert2/sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="../plugins/toastr/toastr.min.css">
+    <script src="../plugins/toastr/toastr.min.js"></script>
 
 
     <script type="text/javascript">
@@ -89,7 +90,7 @@
                 </li>
                 <li>
                     <a href="../digital-marketing-agency.html">
-                        <p class="m-0 active">FitIT</p>
+                        <p class="m-0">FitIT</p>
                     </a>
                 </li>
                 <li>
@@ -235,75 +236,144 @@
         </div>
     </div>
     <div id="div_modal"></div>
-    <!-- <div class="modal fade mt-4" id="myModal">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content black-form" style="background-color: #121212;">
-                <div class="modal-header text-center border-0">
-                    <div class="text-center">
-                        <img src="./images/mix-img/login.png" class="img-fluid ml-2" width="40%"
-                            alt="Book Free Appointment">
-                    </div>
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body pt-0">
-                    <div class="text-center mb-4">
-                        <h4>Login With Mobile Number</h4>
-                    </div>
-                    <form id="myForm1" class="pupop-form">
-                        <div>
-                            <input type="number" name="mobile" placeholder="Enter Mobile" id="mobile"
-                                class="form-control in-put" required>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="submit-btn btn">Send Otp</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="modal fade mt-4" id="myModal">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content black-form" style="background-color: #121212;">
-                <div class="modal-header text-center border-0">
-                    <div class="text-center">
-                        <img src="../images/mix-img/login.png" class="img-fluid ml-2" width="40%"
-                            alt="Book Free Appointment">
-                    </div>
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body pt-0">
-                    <div class="text-center mb-4">
-                        <h4>Send Otp in your Mobile</h4>
-                    </div>
-                    <form id="myForm1" class="pupop-form">
-                        <div>
-                            <input type="number" name="otp" placeholder="Enter OTP" id="otp" class="form-control in-put"
-                                required>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="submit-btn btn">Verify</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
+
     <script src="../js/jquery.flashy.min.js"></script>
     <script src="../plugins/bootstrap/bootstrap.min.js"></script>
-    <link href="../css/effect.css" rel="stylesheet">
-    <script src="../js/main.js"></script>
-    <link href="../css/flashy.min.css" rel="stylesheet">
-    <script scr="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
-    <script src="../js/sweetalert2.js"></script>
+
     <script src="../js/app.js"></script>
+    <script src="../js/modal/modal.js"></script>
+    <script src="../js/sweetalert2.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/api/all-course.js"></script>
+    <script src="../js/constant/course.js"></script>
+    <link href="../css/effect.css" rel="stylesheet">
+    <link href="../css/flashy.min.css" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script>
+
+        function setValue() {
+            // Retrieve data from localStorage
+            let userInfo = localStorage.getItem('user_info');
+
+            // Parse the stored JSON data
+            let userData = JSON.parse(userInfo);
+
+            document.getElementById('txt_first_name').value = userData.first_name;
+            document.getElementById('txt_last_name').value = userData.lastName;
+            document.getElementById('txt_mobile').value = userData.mobile || '';
+            document.getElementById('txt_email').value = userData.email;
+            document.getElementById('txt_uid').value = userData._id;
+
+            document.getElementById('lbl_first_name').textContent = '';
+            document.getElementById('lbl_last_name').textContent = '';
+
+            if (String(userData.first_name).toUpperCase().trim() == 'GCS') {
+                let lblFirstName = document.getElementById('lbl_first_name');
+                lblFirstName.textContent = 'Set your first name';
+                lblFirstName.style.color = 'red';
+                lblFirstName.style.fontSize = '12px';
+
+                toastr.warning('Please Update Your Profile', 'Missing information');
+            }
+
+            if (!userData.email) {
+                let lblEmail = document.getElementById('lbl_email');
+                lblEmail.textContent = 'Set your email';
+                lblEmail.style.color = 'red';
+                lblEmail.style.fontSize = '12px';
+
+                toastr.warning('Please Update Your Email', 'Missing information');
+            }
+
+            if (String(userData.lastName).toUpperCase().trim() == 'GCS') {
+                let lblLastName = document.getElementById('lbl_last_name');
+                lblLastName.textContent = 'Set your last name';
+                lblLastName.style.color = 'red';
+                lblLastName.style.fontSize = '12px';
+
+                toastr.warning('Please Update Your Profile', 'Missing information');
+            }
+        }
+
+        async function updateProfile(element) {
+            // Retrieve data from localStorage
+            let userInfo = localStorage.getItem('user_info');
+
+            // Parse the stored JSON data
+            let userData = JSON.parse(userInfo);
+
+            let first_name = $('#txt_first_name').val()
+            let lastName = $('#txt_last_name').val()
+            let email = $('#txt_email').val()
+
+            console.log(userData._id);
+            if (!first_name || !lastName) {
+                return toastr.error('First Name and Last name is required')
+            }
+
+
+            $.post({
+                url: HOST + '/pages/gcs/update?id=' + userData._id,
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    first_name,
+                    lastName,
+                    email
+                }),
+                success: result => {
+                    console.log(result.user)
+                    let userInfo = result.user
+                    updateLocalStorage({ ...userInfo })
+                    setValue(userInfo)
+                    userInfoCheck()
+                    Swal.fire({
+                        title: 'Success',
+                        text: 'We have updated your details',
+                        icon: 'success'
+                    }).then(() => (modalHide(), window.history.back()))
+                },
+                error: error => {
+                    error = error.responseJSON
+
+                    try {
+                        return Swal.fire({
+                            title: 'Error',
+                            text: error.message,
+                            icon: 'error',
+                        })
+                    } catch (error) {
+                        return Swal.fire({
+                            title: 'Error',
+                            text: 'Something went wrong!',
+                            icon: 'error',
+                        })
+                    }
+                },
+                beforeSend: () => {
+                    $(element).attr("disabled", true)
+                },
+                complete: () => {
+                    $(element).attr("disabled", false)
+                }
+            })
+
+        }
+
+        function updateLocalStorage(data) {
+            try {
+                let userInfo = JSON.parse(localStorage.getItem('user_info'))
+                userInfo.first_name = data.first_name
+                userInfo.lastName = data.lastName
+                userInfo.mobile = data.mobile
+                userInfo.email = data.email
+                localStorage.setItem('user_info', JSON.stringify(userInfo))
+            } catch (error) { }
+
+        }
+        setValue();
+    </script>
 </body>
-<script>
-    modalLogin();
-</script>
 
 </html>

@@ -11,7 +11,8 @@
     <link rel="icon" type="image/png" href="./images/logos/gcs-logo-normal.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Roboto&family=Ubuntu&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/@tabler/core@1.0.0-beta10/dist/css/tabler-flags.min.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/popup-form-style.css">
@@ -41,7 +42,7 @@
             document.getElementById('demo').style.width = '0px';
         }
 
-        $(document).ready(function(){
+        $(document).ready(function () {
             $("#owl-insta").owlCarousel({
                 autoPlay: 5000, //Set AutoPlay to 5 seconds
                 navigation: true,
@@ -70,7 +71,7 @@
                 dots: false,
             });
         })
-    </script>   
+    </script>
     <script type="text/javascript">
         /*---------------------Drop down----------------------*/
         $(document).ready(function () {
@@ -99,51 +100,51 @@
         });
     </script>
 
-<script>
-    $(document).ready(function(){
-      var owl = $('#owl-demon');
-      owl.owlCarousel({
-          loop: true,
-          autoplay: true,
-          items: 1,
-          dots: false,
-          autoplaySpeed: 1000,
-          autoplayTimeout: 3000,
-          animateOut: 'fadeOut',
-          nav: true,
-          autoplayHoverPause:true
-      });
-  
-      owl.trigger('refresh.owl.carousel');
-      
-      $('.showhide').click(function() {
-
-            $(this).toggleClass('fa-pause',
-            function(){
-                owl.trigger('stop.owl.autoplay',[2000]);
+    <script>
+        $(document).ready(function () {
+            var owl = $('#owl-demon');
+            owl.owlCarousel({
+                loop: true,
+                autoplay: true,
+                items: 1,
+                dots: false,
+                autoplaySpeed: 1000,
+                autoplayTimeout: 3000,
+                animateOut: 'fadeOut',
+                nav: true,
+                autoplayHoverPause: true
             });
 
-            $(this).toggleClass('fa-play',
-            function(){
-                owl.trigger('play.owl.autoplay',[2000]);
+            owl.trigger('refresh.owl.carousel');
+
+            $('.showhide').click(function () {
+
+                $(this).toggleClass('fa-pause',
+                    function () {
+                        owl.trigger('stop.owl.autoplay', [2000]);
+                    });
+
+                $(this).toggleClass('fa-play',
+                    function () {
+                        owl.trigger('play.owl.autoplay', [2000]);
+                    });
             });
         });
-    }); 
-    $(document).ready(function () {
-        $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
-        $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
-    });
+        $(document).ready(function () {
+            $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
+            $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+        });
 
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WX8P2R5E4Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX8P2R5E4Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-WX8P2R5E4Y');
-</script>
+        gtag('config', 'G-WX8P2R5E4Y');
+    </script>
 </head>
 <header>
     <div class="go-top">
@@ -165,7 +166,7 @@
             </a>
         </div>
         <div class="lang">
-            
+
         </div>
         <div class="side" id="demo">
             <span class="closebtn" onclick="sideclose()">&times</span>
@@ -196,40 +197,65 @@
                     <h1>Terms and Conditions</h1>
                     <div class="inprivacy">
                         <p>
-                            Welcome to GCS Consultant's website <a href="https://gcsconsultant.com/">https://gcsconsultant.com/</a>. By accessing or using the Site, you agree to comply with and be bound by the following terms and conditions of use (the "Terms"). If you do not agree to the Terms, you should not use or access the Site. GCS Consultant reserves the right to modify or update the Terms at any time without notice. Your continued use of the Site following any changes to the Terms constitutes your acceptance of those changes.
+                            Welcome to GCS Consultant's website <a
+                                href="https://gcsconsultant.com/">https://gcsconsultant.com/</a>. By accessing or using
+                            the Site, you agree to comply with and be bound by the following terms and conditions of use
+                            (the "Terms"). If you do not agree to the Terms, you should not use or access the Site. GCS
+                            Consultant reserves the right to modify or update the Terms at any time without notice. Your
+                            continued use of the Site following any changes to the Terms constitutes your acceptance of
+                            those changes.
                         </p>
                     </div>
                     <div class="inprivacy">
                         <h4>Use of the Site</h4>
-                        <p>The content of the Site is for your general information and use only. It is subject to change without notice. You may use the Site only for lawful purposes and in accordance with the Terms.</p>
+                        <p>The content of the Site is for your general information and use only. It is subject to change
+                            without notice. You may use the Site only for lawful purposes and in accordance with the
+                            Terms.</p>
                     </div>
                     <div class="inprivacy">
                         <h4>Intellectual Property</h4>
-                        <p>All content on the Site, including but not limited to text, graphics, logos, images, and software, is the property of GCS Consultant or its content suppliers and is protected by copyright and other intellectual property laws. You may not use any content from the Site without the prior written consent of GCS Consultant.</p>
+                        <p>All content on the Site, including but not limited to text, graphics, logos, images, and
+                            software, is the property of GCS Consultant or its content suppliers and is protected by
+                            copyright and other intellectual property laws. You may not use any content from the Site
+                            without the prior written consent of GCS Consultant.</p>
                     </div>
                     <div class="inprivacy">
                         <h4>Disclaimer of Warranties</h4>
-                        <p>The Site and its content are provided on an "as is" and "as available" basis. GCS Consultant makes no representations or warranties of any kind, express or implied, as to the operation of the Site or the information, content, materials, or products included on the Site.</p>
+                        <p>The Site and its content are provided on an "as is" and "as available" basis. GCS Consultant
+                            makes no representations or warranties of any kind, express or implied, as to the operation
+                            of the Site or the information, content, materials, or products included on the Site.</p>
                     </div>
                     <div class="inprivacy">
                         <h4>Limitation of Liability</h4>
-                        <p>In no event shall GCS Consultant be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the Site or its content, even if GCS Consultant has been notified orally or in writing of the possibility of such damage.</p>
+                        <p>In no event shall GCS Consultant be liable for any damages (including, without limitation,
+                            damages for loss of data or profit, or due to business interruption) arising out of the use
+                            or inability to use the Site or its content, even if GCS Consultant has been notified orally
+                            or in writing of the possibility of such damage.</p>
                     </div>
                     <div class="inprivacy">
                         <h4>Indemnification</h4>
-                        <p>You agree to indemnify and hold GCS Consultant and its affiliates, officers, agents, and employees harmless from any claim or demand, including reasonable attorneys' fees, made by any third-party due to or arising out of your use of the Site, your violation of the Terms, or your violation of any rights of another.</p>
+                        <p>You agree to indemnify and hold GCS Consultant and its affiliates, officers, agents, and
+                            employees harmless from any claim or demand, including reasonable attorneys' fees, made by
+                            any third-party due to or arising out of your use of the Site, your violation of the Terms,
+                            or your violation of any rights of another.</p>
                     </div>
                     <div class="inprivacy">
                         <h4>Governing Law and Jurisdiction</h4>
-                        <p>The Terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions. You agree that any dispute arising out of or relating to the Terms or your use of the Site shall be brought in the courts located in India.</p>
+                        <p>The Terms shall be governed by and construed in accordance with the laws of India, without
+                            regard to its conflict of law provisions. You agree that any dispute arising out of or
+                            relating to the Terms or your use of the Site shall be brought in the courts located in
+                            India.</p>
                     </div>
                     <div class="inprivacy">
                         <h4>Termination</h4>
-                        <p>GCS Consultant reserves the right to terminate your access to the Site or any portion thereof, at any time, without notice.</p>
+                        <p>GCS Consultant reserves the right to terminate your access to the Site or any portion
+                            thereof, at any time, without notice.</p>
                     </div>
                     <div class="inprivacy">
                         <h4>Entire Agreement</h4>
-                        <p>The Terms constitute the entire agreement between you and GCS Consultant with respect to the use of the Site and supersede all prior or contemporaneous communications and proposals, whether oral or written, between you and GCS Consultant.</p>
+                        <p>The Terms constitute the entire agreement between you and GCS Consultant with respect to the
+                            use of the Site and supersede all prior or contemporaneous communications and proposals,
+                            whether oral or written, between you and GCS Consultant.</p>
                     </div>
                 </div>
             </div>
@@ -246,15 +272,16 @@
                         <div class="logo d-block d-md-none">
                             <img src="./images/logos/gcs-logo-normal.png" alt="GCS" class="img-fluid">
                         </div>
-                        <p>Gomzi Consulting Services (GCS) is a leading group managing diverse businesses, 
-                        offering customized solutions for growth and profitability.</p>
+                        <p>Gomzi Consulting Services (GCS) is a leading group managing diverse businesses,
+                            offering customized solutions for growth and profitability.</p>
                         <ul class="mt-4">
                             <li><a href="tel:9773174522"><i class="fas fa-phone-alt"></i> +91 97731 74522</a></li>
                             <li><a href="mailto:gomziconsultingservices@gmail.com"><i class="fas fa-envelope"></i>
                                     gomziconsultingservices@gmail.com</a></li>
-                            <li><a href="javascript:void(0);"><i class="fas fa-map-marker-alt"></i> G-306, Sovereign Shoppers, Anand Mahal Rd,
-                                beside Sindhu Seva Samiti School, Adajan Gam,
-                                Surat, Gujarat 395009</a></li>
+                            <li><a href="javascript:void(0);"><i class="fas fa-map-marker-alt"></i> G-306, Sovereign
+                                    Shoppers, Anand Mahal Rd,
+                                    beside Sindhu Seva Samiti School, Adajan Gam,
+                                    Surat, Gujarat 395009</a></li>
                         </ul>
                     </div>
                 </div>
@@ -266,7 +293,9 @@
                             <li><a href="/digital-marketing-agency.html">FitIT</a></li>
                             <li><a href="./business-consulting-services.html">Takshak</a></li>
                             <li><a href="./financial-advisory-services.html">A to Z Finance</a></li>
-                            <li><a href="./blog/invest-with-confidence-empower-yourself-with-our-stock-market-course.html">Blog</a></li>
+                            <li><a
+                                    href="./blog/invest-with-confidence-empower-yourself-with-our-stock-market-course.html">Blog</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -286,9 +315,11 @@
                     <div class="footer-test mr-md-3 ml-3 ml-md-0">
                         <p>Social Media</p>
                         <div class="f_social_icon mt-md-4 mt-3">
-                            <a href="https://www.facebook.com/profile.php?id=100090555890586" class="fab fa-facebook"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100090555890586"
+                                class="fab fa-facebook"></a>
                             <a href="https://www.instagram.com/gomziconsultingservices/" class="fab fa-instagram"></a>
-                            <a href="https://www.youtube.com/@gomziconsultingservices/featured" class="fab fa-youtube"></a>
+                            <a href="https://www.youtube.com/@gomziconsultingservices/featured"
+                                class="fab fa-youtube"></a>
                         </div>
                     </div>
                 </div>
@@ -301,17 +332,17 @@
         </div>
     </div>
 
-    <script src="./js/owl.carousel.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./plugins/bootstrap/bootstrap.min.js"></script>
-    <link href="./css/effect.css" rel="stylesheet">
-    <script src="./js/main.js"></script>
-    <link href="./css/flashy.min.css" rel="stylesheet">
     <script src="./js/jquery.flashy.min.js"></script>
+    <script src="./plugins/bootstrap/bootstrap.min.js"></script>
 
-    <script>
-        AOS.init()
-    </script>
+    <script src="./js/app.js"></script>
+    <script src="./js/modal/modal.js"></script>
+    <script src="./js/sweetalert2.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/api/all-course.js"></script>
+    <script src="./js/constant/course.js"></script>
+    <link href="./css/effect.css" rel="stylesheet">
+    <link href="./css/flashy.min.css" rel="stylesheet">
 </body>
 
 </html>

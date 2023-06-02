@@ -126,7 +126,7 @@ details[open] summary ~ * {
   width: 100%;
   position: absolute;
   z-index: 99;
-  left: 75%;
+  left: 68%;
   top: 60%;
   transform: translate(-50%, -50%);
 }
@@ -142,7 +142,7 @@ details[open] summary ~ * {
 
 .lang ul li {
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 40px;
   position: relative;
 }
 
@@ -209,7 +209,7 @@ details[open] summary ~ * {
 }
 
 .login ul li a {
-  color: #000;
+  color: #ffffff;
   transition: 0.3s;
   font-family: Nunito, sans-serif;
 }
@@ -224,7 +224,7 @@ details[open] summary ~ * {
   text-align: left;
   border-radius: 5px;
   width: 165px;
-  background-color: #fff;
+  background-color: #000000;
   display: none;
   position: absolute;
   top: 57px;
@@ -235,7 +235,12 @@ details[open] summary ~ * {
 
 .login ul li a:hover {
   text-decoration: none;
-  color: #00afef !important;
+  color: #ff6b27 !important;
+}
+.userInfo li {
+  color: #000;
+  font-weight: 700;
+  margin-left: 5px;
 }
 
 .btnn {

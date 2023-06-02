@@ -160,7 +160,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -252,7 +252,9 @@
                     <div class="col-lg-7">
                         <div class="video-img">
                             <div class="ply1 black-before">
-                                <img class="" data-src="../images/takshak/mgt-course.webp" width="100%" style="border-radius: 10px;" alt="client journey" src="../images/takshak/mgt-course.webp">
+                                <img class="" data-src="../images/takshak/mgt-course.webp" width="100%"
+                                    style="border-radius: 10px;" alt="client journey"
+                                    src="../images/takshak/mgt-course.webp">
                                 <div class="video-btn">
                                     <a href="https://youtube.com/445FSt6uMmE" data-flashy-type="video" class="custom">
                                         <span class="newthing"><i class="fas fa-play"></i></span>
@@ -291,8 +293,7 @@
                             <!-- <span>GST Included</span> -->
                         </div>
                         <div class="meal mt-3 d-flex">
-                            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_LqhEmrvuEKyoZZ" async> </script> </form>
-                            <!-- <a href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to Know more about Online Diploma in Business Management Course" class="btn ml-3">Whatsapp Us</a> -->
+                            <a onclick="payment()" id="rzp-button1" class="btn ml-3">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -307,15 +308,20 @@
                         <h2 class="new-h2">Course Info</h2>
                     </div>
                     <div class="course-p">
-                        <p>If Businesses Or Individuals Want Greater Success, Then The Answer Resides Within The Ability To Improve Motivation, Improve The Use Of Energy And To Improve Talent. Yet, Almost Every Time, The Emphasis Is On Talent Or The Hard Skills With Little Or No Focus On Developing One's Own Personality.</p>
-                        <p>GYM MANAGEMENT COURSE That Is Designed To Help Emerging Leaders Create A More Dynamic, Loyal And Energized Personality And Replicate It In Their Workplace.</p>
+                        <p>If Businesses Or Individuals Want Greater Success, Then The Answer Resides Within The Ability
+                            To Improve Motivation, Improve The Use Of Energy And To Improve Talent. Yet, Almost Every
+                            Time, The Emphasis Is On Talent Or The Hard Skills With Little Or No Focus On Developing
+                            One's Own Personality.</p>
+                        <p>GYM MANAGEMENT COURSE That Is Designed To Help Emerging Leaders Create A More Dynamic, Loyal
+                            And Energized Personality And Replicate It In Their Workplace.</p>
                         <div class="mt-md-3">
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul class="p-0 course-li">
                                         <li><i class="fas fa-check-circle"></i> Introduction Of Management</li>
                                         <li><i class="fas fa-check-circle"></i> Management Skills</li>
-                                        <li><i class="fas fa-check-circle"></i> Introduction Of Marketing Management</li>
+                                        <li><i class="fas fa-check-circle"></i> Introduction Of Marketing Management
+                                        </li>
                                         <li><i class="fas fa-check-circle"></i> Introduction Of Finance Management</li>
                                         <li><i class="fas fa-check-circle"></i> Human Resource Management</li>
                                         <li><i class="fas fa-check-circle"></i> Organization Behavior</li>
@@ -357,37 +363,43 @@
                     <div class="row mt-md-4">
                         <div class="col-lg-4 col-md-6 mt-3">
                             <div class="blog2 py-3 imgty text-center">
-                                <img class="" data-src="../images/icons/social-media.webp" alt="" width="20%" src="../images/icons/social-media.webp">
+                                <img class="" data-src="../images/icons/social-media.webp" alt="" width="20%"
+                                    src="../images/icons/social-media.webp">
                                 <h5 class="mt-3"> 1.5 Month</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mt-3 position-relative">
                             <div class="blog2 py-3 imgty text-center">
-                                <img class="" data-src="../images/icons/book-material.webp" alt="" width="20%" src="../images/icons/book-material.webp">
+                                <img class="" data-src="../images/icons/book-material.webp" alt="" width="20%"
+                                    src="../images/icons/book-material.webp">
                                 <h5 class="mt-3"> Enjoy Book Material</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mt-3 position-relative">
                             <div class="blog2 py-3 imgty text-center">
-                                <img class="" data-src="../images/icons/online-class.webp" alt="" width="20%" src="../images/icons/online-class.webp">
+                                <img class="" data-src="../images/icons/online-class.webp" alt="" width="20%"
+                                    src="../images/icons/online-class.webp">
                                 <h5 class="mt-3"> Zoom Classes</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mt-3 position-relative">
                             <div class="blog2 py-3 imgty text-center">
-                                <img class="" data-src="../images/icons/study-project.webp" alt="" width="20%" src="../images/icons/study-project.webp">
+                                <img class="" data-src="../images/icons/study-project.webp" alt="" width="20%"
+                                    src="../images/icons/study-project.webp">
                                 <h5 class="mt-3"> Case Study Based Project</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mt-3 position-relative">
                             <div class="blog2 pt-2 pb-1 imgty text-center">
-                                <img class="" data-src="../images/icons/recorded-videos.webp" alt="" width="20%" src="../images/icons/recorded-videos.webp">
+                                <img class="" data-src="../images/icons/recorded-videos.webp" alt="" width="20%"
+                                    src="../images/icons/recorded-videos.webp">
                                 <h5 class="mt-3">Recorded Sessions Are Included</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 mt-3 position-relative">
                             <div class="blog2 py-3 imgty text-center">
-                                <img class="" data-src="../images/icons/certified.webp" alt="" width="20%" src="../images/icons/certified.webp">
+                                <img class="" data-src="../images/icons/certified.webp" alt="" width="20%"
+                                    src="../images/icons/certified.webp">
                                 <h5 class="mt-3">Certificate</h5>
                             </div>
                         </div>
@@ -672,12 +684,96 @@
         </div>
     </div>
 
+    <div id="div_modal"></div>
     <script src="../js/jquery.flashy.min.js"></script>
     <script src="../plugins/bootstrap/bootstrap.min.js"></script>
-    <link href="../css/effect.css" rel="stylesheet">
-    <script src="../js/main.js"></script>
-    <link href="../css/flashy.min.css" rel="stylesheet">
 
+    <script src="../js/app.js"></script>
+    <script src="../js/modal/modal.js"></script>
+    <script src="../js/sweetalert2.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/api/all-course.js"></script>
+    <script src="../js/constant/course.js"></script>
+    <link href="../css/effect.css" rel="stylesheet">
+    <link href="../css/flashy.min.css" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+    <script>
+        function payment() {
+            if (localStorage.getItem("GCS_user_authorization") == null || localStorage.getItem("user_info") == null) {
+                modalLogin()
+            } else {
+                var orderId;
+
+                $(document).ready(function () {
+                    var settings = {
+                        url: HOST + "/create/orderId",
+                        method: "POST",
+                        timeout: 0,
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        data: JSON.stringify({
+                            amount: "4999"
+                        }),
+                    };
+
+                    // Create new orderId
+                    $.ajax(settings).done(function (response) {
+                        orderId = response.orderId;
+                        $("#rzp-button1").show();
+                    });
+                });
+
+                document.getElementById('rzp-button1').onclick = function (e) {
+                    var options = {
+                        key: razorpayMerchantId, // Enter the Key ID generated from the Dashboard
+                        amount: "4999" * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                        currency: "INR",
+                        name: "GCS Services",
+                        description: "Find one",
+                        image: "https://gcsconsultant.com/images/logos/gcs-logo-normal.png",
+                        order_id: orderId, // Pass the orderId obtained in the response
+                        handler: function (response) {
+                            var verifySettings = {
+                                url: HOST + "/verifyPayment",
+                                method: "POST",
+                                timeout: 0,
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                data: JSON.stringify({ response }),
+                            };
+
+                            // Verify payment
+                            $.ajax(verifySettings).done(function (response) {
+                                alert(JSON.stringify(response));
+                                if (response.signatureIsValid) {
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Payment verified successfully',
+                                    })
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Payment verification failed',
+                                    })
+                                }
+                            });
+                        },
+                        theme: {
+                            color: "#ff8024"
+                        },
+                    };
+
+                    var rzp1 = new Razorpay(options);
+                    rzp1.open();
+                    e.preventDefault();
+                };
+            }
+        }
+    </script>
     <script>;
         $(document).ready(function () {
             $("#online-btn").click(function () {

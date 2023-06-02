@@ -302,8 +302,7 @@
                             <!-- <span>GST Included</span> -->
                         </div>
                         <div class="meal">
-                            <a href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to Join Offline Diploma in Business Management Course"
-                                class="btn mt-3">Enroll Now</a>
+                            <a onclick="payment()" id="rzp-button1" class="btn mt-3">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -694,11 +693,95 @@
         </div>
     </div>
 
+    <div id="div_modal"></div>
     <script src="../js/jquery.flashy.min.js"></script>
     <script src="../plugins/bootstrap/bootstrap.min.js"></script>
-    <link href="../css/effect.css" rel="stylesheet">
+
+    <script src="../js/app.js"></script>
+    <script src="../js/modal/modal.js"></script>
+    <script src="../js/sweetalert2.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/api/all-course.js"></script>
+    <script src="../js/constant/course.js"></script>
+    <link href="../css/effect.css" rel="stylesheet">
     <link href="../css/flashy.min.css" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script>
+        function payment() {
+            if (localStorage.getItem("GCS_user_authorization") == null || localStorage.getItem("user_info") == null) {
+                modalLogin()
+            } else {
+                var orderId;
+
+                $(document).ready(function () {
+                    var settings = {
+                        url: HOST + "/create/orderId",
+                        method: "POST",
+                        timeout: 0,
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        data: JSON.stringify({
+                            amount: "14999"
+                        }),
+                    };
+
+                    // Create new orderId
+                    $.ajax(settings).done(function (response) {
+                        orderId = response.orderId;
+                        $("#rzp-button1").show();
+                    });
+                });
+
+                document.getElementById('rzp-button1').onclick = function (e) {
+                    var options = {
+                        key: razorpayMerchantId, // Enter the Key ID generated from the Dashboard
+                        amount: "14999" * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                        currency: "INR",
+                        name: "GCS Services",
+                        description: "Find one",
+                        image: "https://gcsconsultant.com/images/logos/gcs-logo-normal.png",
+                        order_id: orderId, // Pass the orderId obtained in the response
+                        handler: function (response) {
+                            var verifySettings = {
+                                url: HOST + "/verifyPayment",
+                                method: "POST",
+                                timeout: 0,
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                data: JSON.stringify({ response }),
+                            };
+
+                            // Verify payment
+                            $.ajax(verifySettings).done(function (response) {
+                                alert(JSON.stringify(response));
+                                if (response.signatureIsValid) {
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Payment verified successfully',
+                                    })
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Payment verification failed',
+                                    })
+                                }
+                            });
+                        },
+                        theme: {
+                            color: "#ff8024"
+                        },
+                    };
+
+                    var rzp1 = new Razorpay(options);
+                    rzp1.open();
+                    e.preventDefault();
+                };
+            }
+        }
+    </script>
 
     <script>;
         $(document).ready(function () {

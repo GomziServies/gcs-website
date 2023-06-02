@@ -164,13 +164,13 @@
 
         gtag('config', 'G-WX8P2R5E4Y');
     </script>
-    
+
     <!-- Meta Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -303,8 +303,7 @@
                             <!-- <span>GST Included</span> -->
                         </div>
                         <div class="meal d-flex mt-3">
-                            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Lqi2n2uhUOiulU" async> </script> </form>
-                            <!-- <a href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to Know More About Online Digital Marketing Course" class="btn ml-3">Enroll Now</a> -->
+                            <a onclick="payment()" id="rzp-button1" class="btn ml-3">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -319,12 +318,17 @@
                         <h2 class="new-h2">Course Info</h2>
                     </div>
                     <div class="course-p">
-                        <p>Digital Marketing Is The Process Of Promoting Products Or Services Using Digital Channels, Such As The Internet, Social Media, Search Engines, Mobile Devices, And Email. The Goal Of Digital Marketing Is To Reach And Engage Customers Where They Spend Most Of Their Time, Which Is Increasingly Online.Some Of The Key Concepts And Techniques Covered In A Digital Marketing Course.</p>
+                        <p>Digital Marketing Is The Process Of Promoting Products Or Services Using Digital Channels,
+                            Such As The Internet, Social Media, Search Engines, Mobile Devices, And Email. The Goal Of
+                            Digital Marketing Is To Reach And Engage Customers Where They Spend Most Of Their Time,
+                            Which Is Increasingly Online.Some Of The Key Concepts And Techniques Covered In A Digital
+                            Marketing Course.</p>
                         <div class="mt-md-3">
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul class="p-0 course-li">
-                                        <li><i class="fas fa-check-circle"></i> Best Graphic Designing Tool- Canva Tutorial</li>
+                                        <li><i class="fas fa-check-circle"></i> Best Graphic Designing Tool- Canva
+                                            Tutorial</li>
                                         <li><i class="fas fa-check-circle"></i> 360 Degree Marketing</li>
                                         <li><i class="fas fa-check-circle"></i> Guerila Marketing</li>
                                         <li><i class="fas fa-check-circle"></i> Facebook Marketing</li>
@@ -348,11 +352,14 @@
                                         <li><i class="fas fa-check-circle"></i> Create Logo For Frees</li>
                                         <li><i class="fas fa-check-circle"></i> Google Analytics</li>
                                         <li><i class="fas fa-check-circle"></i> SEO(Search Engine Optimization)</li>
-                                        <li><i class="fas fa-check-circle"></i> How To Develop Funnel Increase Revenue</li>
+                                        <li><i class="fas fa-check-circle"></i> How To Develop Funnel Increase Revenue
+                                        </li>
                                         <li><i class="fas fa-check-circle"></i> Email/WhatsApp/SMS Marketing</li>
                                         <li><i class="fas fa-check-circle"></i> Market Research & Analysis</li>
-                                        <li><i class="fas fa-check-circle"></i> Blog Vs Vlog - Points & Clear Differnces</li>
-                                        <li><i class="fas fa-check-circle"></i> Influencer Marketing & Affiliate Marketing</li>
+                                        <li><i class="fas fa-check-circle"></i> Blog Vs Vlog - Points & Clear Differnces
+                                        </li>
+                                        <li><i class="fas fa-check-circle"></i> Influencer Marketing & Affiliate
+                                            Marketing</li>
                                     </ul>
                                 </div>
                             </div>
@@ -743,12 +750,95 @@
         </div>
     </div>
 
+    <div id="div_modal"></div>
     <script src="../js/jquery.flashy.min.js"></script>
     <script src="../plugins/bootstrap/bootstrap.min.js"></script>
-    <link href="../css/effect.css" rel="stylesheet">
-    <script src="../js/main.js"></script>
-    <link href="../css/flashy.min.css" rel="stylesheet">
 
+    <script src="../js/app.js"></script>
+    <script src="../js/modal/modal.js"></script>
+    <script src="../js/sweetalert2.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/api/all-course.js"></script>
+    <script src="../js/constant/course.js"></script>
+    <link href="../css/effect.css" rel="stylesheet">
+    <link href="../css/flashy.min.css" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <script>
+        function payment() {
+            if (localStorage.getItem("GCS_user_authorization") == null || localStorage.getItem("user_info") == null) {
+                modalLogin()
+            } else {
+                var orderId;
+
+                $(document).ready(function () {
+                    var settings = {
+                        url: HOST + "/create/orderId",
+                        method: "POST",
+                        timeout: 0,
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        data: JSON.stringify({
+                            amount: "4999"
+                        }),
+                    };
+
+                    // Create new orderId
+                    $.ajax(settings).done(function (response) {
+                        orderId = response.orderId;
+                        $("#rzp-button1").show();
+                    });
+                });
+
+                document.getElementById('rzp-button1').onclick = function (e) {
+                    var options = {
+                        key: razorpayMerchantId, // Enter the Key ID generated from the Dashboard
+                        amount: "4999" * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                        currency: "INR",
+                        name: "GCS Services",
+                        description: "Find one",
+                        image: "https://gcsconsultant.com/images/logos/gcs-logo-normal.png",
+                        order_id: orderId, // Pass the orderId obtained in the response
+                        handler: function (response) {
+                            var verifySettings = {
+                                url: HOST + "/verifyPayment",
+                                method: "POST",
+                                timeout: 0,
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                data: JSON.stringify({ response }),
+                            };
+
+                            // Verify payment
+                            $.ajax(verifySettings).done(function (response) {
+                                alert(JSON.stringify(response));
+                                if (response.signatureIsValid) {
+                                    Swal.fire({
+                                        icon: 'success',
+                                        title: 'Payment verified successfully',
+                                    })
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Payment verification failed',
+                                    })
+                                }
+                            });
+                        },
+                        theme: {
+                            color: "#ff8024"
+                        },
+                    };
+
+                    var rzp1 = new Razorpay(options);
+                    rzp1.open();
+                    e.preventDefault();
+                };
+            }
+        }
+    </script>
     <script>;
         $(document).ready(function () {
             $("#online-btn").click(function () {

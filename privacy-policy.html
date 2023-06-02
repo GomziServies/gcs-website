@@ -139,11 +139,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX8P2R5E4Y"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-WX8P2R5E4Y');
+    gtag('config', 'G-WX8P2R5E4Y');
 </script>
 <header>
     <div class="go-top">
@@ -312,7 +312,9 @@
                             <li><a href="./cancellation-policy.html">Cancellation Policy</a></li>
                             <li><a href="./privacy-policy.html">Privacy Policy</a></li>
                             <li><a href="./about-us.html">About us</a></li>
-                            <li><a href="./blog/invest-with-confidence-empower-yourself-with-our-stock-market-course.html">Blog</a></li>
+                            <li><a
+                                    href="./blog/invest-with-confidence-empower-yourself-with-our-stock-market-course.html">Blog</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -336,18 +338,18 @@
             <p>© 2023-2024 <span class="ml-2">All Rights Reserved</span></p>
         </div>
     </div>
-
-    <script src="./js/owl.carousel.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./plugins/bootstrap/bootstrap.min.js"></script>
-    <link href="./css/effect.css" rel="stylesheet">
-    <script src="./js/main.js"></script>
-    <link href="./css/flashy.min.css" rel="stylesheet">
+    <div id="div_modal"></div>
     <script src="./js/jquery.flashy.min.js"></script>
+    <script src="./plugins/bootstrap/bootstrap.min.js"></script>
 
-    <script>
-        AOS.init()
-    </script>
+    <script src="./js/app.js"></script>
+    <script src="./js/modal/modal.js"></script>
+    <script src="./js/sweetalert2.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/api/all-course.js"></script>
+    <script src="./js/constant/course.js"></script>
+    <link href="./css/effect.css" rel="stylesheet">
+    <link href="./css/flashy.min.css" rel="stylesheet">
 </body>
 
 </html>
