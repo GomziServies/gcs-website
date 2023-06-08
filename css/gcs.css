@@ -3682,7 +3682,6 @@ figure.effect-oscar:hover img {
 .bar-arrow {
   position: -webkit-sticky;
   position: sticky;
-  transform: rotate(90deg);
   top: 50vh;
   margin: auto;
   background-size: cover;
