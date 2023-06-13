@@ -317,7 +317,7 @@
                                     style="border-radius: 10px 10px 0px 0px;" alt="client journey"
                                     src="../images/mix-img/mangment-services.webp">
                                 <div class="video-btn">
-                                    <a href="https://www.youtube.com/watch?v=JsaDQYa9_hY" data-flashy-type="video"
+                                    <a href="https://www.youtube.com/watch?v=JsaDQYa9_hY" id="video-btn" data-flashy-type="video"
                                         class="custom">
                                         <span class="newthing"><i class="fas fa-play"></i></span>
                                     </a>
@@ -1820,10 +1820,29 @@
         form1.addEventListener('submit', submitForm);
     </script>
 
-    <script>
+    <!-- <script>
         setTimeout(function () {
             $('#myModal').modal();
         }, 30000);
+    </script> -->
+     <script>
+        var timeoutID;
+
+        function showModal() {
+            $('#myModal').modal();
+        }
+
+        timeoutID = setTimeout(showModal, 2000);
+
+        $('#video-btn').on('click', function () {
+            clearTimeout(timeoutID);
+        });
+
+        $('.flashy-close').on('click', function () {
+            setTimeout(function () {
+                $('#myModal').modal();
+            }, 30000);
+        });
     </script>
 
     <script>;

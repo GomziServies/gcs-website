@@ -299,7 +299,8 @@
                                     style="border-radius: 10px 10px 0px 0px;" alt="client journey"
                                     src="../images/mix-img/marketing-services.webp">
                                 <div class="video-btn">
-                                    <a href="https://youtu.be/BU3lgLNt-cA" data-flashy-type="video" class="custom">
+                                    <a href="https://youtu.be/A_3hGSPVKXA" data-flashy-type="video" id="video-btn"
+                                        class="custom">
                                         <span class="newthing"><i class="fas fa-play"></i></span>
                                     </a>
                                 </div>
@@ -2081,11 +2082,24 @@
 
     </script>
     <script>
-        setTimeout(function () {
-            $('#myModal').modal();
-        }, 22000);
-    </script>
+        var timeoutID;
 
+        function showModal() {
+            $('#myModal').modal();
+        }
+
+        timeoutID = setTimeout(showModal, 2000);
+
+        $('#video-btn').on('click', function () {
+            clearTimeout(timeoutID);
+        });
+
+        $('.flashy-close').on('click', function () {
+            setTimeout(function () {
+                $('#myModal').modal();
+            }, 30000);
+        });
+    </script>
     <script>;
         $(document).ready(function () {
             $("#online-btn").click(function () {
