@@ -18,10 +18,10 @@ jobs:
           npm install --global minify
 
           # Minify CSS files
-          minify --extension .css /css
+          minify --extension .css ../css
 
           # Minify JS files
-          minify --extension .js /js
+          minify --extension .js ../js
 
       - name: Commit and push changes
         run: |
