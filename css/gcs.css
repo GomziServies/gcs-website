@@ -3951,3 +3951,116 @@ html {
 .btn-flot a {
   border-radius: 10px 10px 0px 0px;
 }
+
+.sip-calculator {
+  cursor: auto;
+}
+
+.sip-calculator h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.range-side {
+  width: 124px;
+  position: relative;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  margin-top: 16px;
+  height: 8px;
+  background: #ffd4b4;
+  border-radius: 20px;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ff8024;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.sip-calculator:hover {
+  background-color: #000;
+}
+
+.sip-calculator input {
+  padding: 5px 18px;
+  font-weight: 600;
+}
+
+.range-side span {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.range-side-1 span {
+  left: 95px;
+}
+
+.range-side-2 span {
+  left: 80px;
+}
+
+.how-to-use:hover {
+  background-color: #000;
+}
+
+.how-to-use li {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.how-to-use li i {
+  color: rgba(255, 128, 11, 1);
+}
+
+#chart-container {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.result h5 {
+  font-size: 18px;
+}
+
+.invest-btn {
+  font-size: 18px;
+  background: #ff8024;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 700;
+  transition: 0.4s;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+}
+
+.invest-btn:hover {
+  background: transparent;
+  border: 2px solid #ff8024;
+  color: #fff;
+}
