@@ -25,8 +25,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name GomziServies
-          git config --global user.email gomziconsultingservices@gmail.com
+          git config --global user.name "GomziServies"
+          git config --global user.email "gomziconsultingservices@gmail.com"
 
           git add .
           git commit -m "Minify CSS and JS files"
