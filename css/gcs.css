@@ -3751,3 +3751,124 @@ html {
   border: 2px solid #ff8024;
   color: #fff
 }
+
+
+.personal-information {
+  border: 1px solid #4d516e;
+  max-width: 90%;
+  margin: 0 auto 20px;
+  padding: 15px;
+  background-color: #282b3c;
+}
+
+.card-profile-image {
+  position: relative;
+  text-align: center;
+}
+
+.card-profile-stats>div .name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+.card-profile-stats {
+  padding: 10px 0;
+}
+
+.heading {
+  font-size: .95rem;
+  font-weight: 500;
+  letter-spacing: .025em;
+}
+
+.contact-details li {
+  flex: 0 0 33.33%;
+  width: 100%;
+  max-width: 33.33%;
+}
+
+.contact-details-item {
+  padding: 0.4rem 0rem;
+  display: flex;
+  overflow: hidden;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+}
+
+.contact-details-item {
+  -webkit-justify-content: center;
+  margin-bottom: 15px;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  list-style-type: none;
+  font-size: 1rem;
+  text-transform: inherit;
+  font-weight: 400;
+  letter-spacing: 1em;
+}
+
+.box-coach-1 {
+  border-radius: 30px;
+  background: #000;
+  text-align: center;
+}
+
+.card-container {
+  width: 320px;
+  background-color: #000;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-image img {
+  height: 220px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  background-size: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 16px;
+  min-height: 200px;
+}
+
+.card-badge {
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #fff;
+  padding: 9px 15px;
+  border-radius: 6px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.card-badge-blue {
+  background-color: #ff8024;
+}
+
+
+.card-body h2 {
+  font-size: 18px;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+.card-body p {
+  font-size: 14px;
+  margin: 8px 0 16px 0;
+}
