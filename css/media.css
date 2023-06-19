@@ -1248,6 +1248,25 @@
 }
 
 @media (max-width: 575px) {
+  .sip-h5 h5 {
+    font-size: 16px;
+  }
+  .sip-calculator h4 {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .range-side {
+    width: 50%;
+  }
+  .range-side-1 {
+    width: 70%;
+  }
+  .range-side-2 span {
+    left: 68px;
+  }
+  .range-side-1 span {
+    left: 80px;
+  }
   .pupop-form select {
     height: 35px !important;
     font-weight: 500 !important;
