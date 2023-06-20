@@ -3773,10 +3773,6 @@ html {
   text-transform: uppercase;
 }
 
-.card-profile-stats {
-  padding: 10px 0;
-}
-
 .heading {
   font-size: .95rem;
   font-weight: 500;
@@ -3871,4 +3867,23 @@ html {
 .card-body p {
   font-size: 14px;
   margin: 8px 0 16px 0;
+}
+
+
+.bar-arrow-1 {
+  margin-left: -6px;
+}
+
+.card-badge-1 {
+  text-transform: uppercase;
+  color: #000000;
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.card-badge-1:hover {
+  background-color: #000;
+  border: 2px solid #ff8024;
+  color: #fff;
 }
