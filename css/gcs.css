@@ -3944,6 +3944,22 @@ html {
   background-color: #ff8024;
 }
 
+.card-badge-1 {
+  text-transform: uppercase;
+  background-color: #ff8024;
+  color: #000000;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.card-badge-1:hover {
+  background-color: #000;
+  border: 3px solid #ff8024;
+  color: #fff;
+}
+
 .card-body h2 {
   font-size: 18px;
   margin: 8px 0;
