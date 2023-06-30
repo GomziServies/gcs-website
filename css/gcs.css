@@ -3913,10 +3913,10 @@ html {
   margin: auto;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .card-image img {
-  height: 220px;
   width: 100%;
   border-radius: 8px 8px 0 0;
   background-size: cover;
@@ -3928,6 +3928,10 @@ html {
   align-items: start;
   padding: 16px;
   min-height: 200px;
+}
+
+.card-body small{
+  margin-left: 5px;
 }
 
 .card-badge {
