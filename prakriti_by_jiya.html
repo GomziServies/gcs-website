@@ -21,23 +21,35 @@
 
     <link rel="stylesheet" href="/css/prakriti_by_jiya/owl-style.css">
 
+    <link rel="stylesheet" href="/css/prakriti_by_jiya/effect.css">
+
+    <link rel="stylesheet" href="/css/prakriti_by_jiya/wow.css">
+
     <link href="/css/prakriti_by_jiya/style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body id="section_1">
-
-    <header class="site-header">
+    <div class="go-top">
+        <p class="go-top-text"><i class="fa fa-angle-double-up" aria-hidden="true"></i></p>
+    </div>
+    <a class="float-button" target="_blank"
+        href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more about Prakriti By Jiya">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <span>Message<span>
+    </a>
+    <header class="site-header wow animate__animated  animate__fadeInDownBig">
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-8 col-12 d-flex flex-wrap">
                     <p class="d-flex mb-0">
                         <i class="fa fa-envelope-o mt-1" aria-hidden="true"></i>&nbsp;&nbsp;
-                        <a href="mailto:drjaynaupadhyay@gmail.com">
-                            drjaynaupadhyay@gmail.com
+                        <a href="mailto:infoprakritibyjiya@gmail.com">
+                            infoprakritibyjiya@gmail.com
                         </a>
                     </p>
                 </div>
@@ -70,7 +82,7 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg  wow animate__animated  animate__fadeInDownBig">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="/images/prakriti_by_jiya/prakriti-by-jiya.png" class="logo img-fluid"
@@ -111,7 +123,8 @@
 
     <main>
 
-        <section class="hero-section hero-section-full-height">
+        <section class="hero-section hero-section-full-height  wow animate__animated  animate__fadeIn"
+            data-wow-delay="300ms">
             <div class="container-fluid">
                 <div class="row">
 
@@ -119,18 +132,17 @@
                         <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="/images/prakriti_by_jiya/heal-with-ayurvada.png"
-                                        class="carousel-image img-fluid" alt="...">
-
-                                    <!-- <div class="carousel-caption d-flex flex-column justify-content-end">
-                                        <h1>be a Kind Heart</h1>
-
-                                        <p>Professional charity theme based on Bootstrap 5.2.2</p>
-                                    </div> -->
+                                    <div class="d-none d-md-block">
+                                        <img src="/images/prakriti_by_jiya/heal-with-ayurvada.png"
+                                            class="carousel-image img-fluid" alt="...">
+                                    </div>
+                                    <div class="d-block d-md-none">
+                                        <img src="/images/prakriti_by_jiya/heal-with-ayurvada-3.png"
+                                            class="carousel-image img-fluid" alt="...">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide"
+                                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
@@ -141,46 +153,13 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button> -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- <section class="volunteer-section section-padding" id="section_4">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-12">
-
-                        <form class="custom-form volunteer-form mb-5 mb-lg-0" action="#" method="post" role="form">
-                            <h3 class="mb-4">Book Your Appointment For Online Consultation</h3>
-
-                            <div class="row">
-                                <div class="col-lg-3 col-12">
-                                    <input type="text" name="volunteer-name" id="volunteer-name" class="form-control"
-                                        placeholder="Name" required>
-                                </div>
-
-                                <div class="col-lg-3 col-12">
-                                    <input type="text" name="volunteer-email" id="volunteer-email" class="form-control"
-                                        placeholder="City" required>
-                                </div>
-                                <div class="col-lg-3 col-12">
-                                    <input type="number" name="volunteer-email" id="volunteer-email"
-                                        pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Mobile No." required>
-                                </div>
-                                <div class="col-lg-2">
-                                    <button type="submit" class="form-control">Submit</button>
-                                </div>
                             </div>
-                        </form>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-        </section> -->
-
-        <section class="section-padding">
+        </section>
+        <section class="section-padding ">
             <div class="container">
                 <div class="row">
 
@@ -188,19 +167,26 @@
                         <h2 class="mb-5">Welcome to Prakriti By Jiya</h2>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 wow animate__animated  animate__fadeInUp"
+                        data-wow-delay="300ms">
                         <div class="featured-block d-flex justify-content-center align-items-center">
                             <a href="#" class="d-block">
                                 <img src="/images/prakriti_by_jiya/icons/panchakarma-icon.png"
                                     class="featured-block-image img-fluid" alt="">
 
-                                <p class="featured-block-text"><strong>Panchakarma </strong><br> ( Purification
+                                <p class="featured-block-text mb-0"><strong>Panchakarma </strong><br> ( Purification
                                     Therapies : Healing methods )</p>
+                                <p style="font-size: 15px;" class=" m-0">Panchakarma ( Purification
+                                    Therapies :PanchakarmaPanchakarmaPanchakarma Panchakarma Panchakarma Panchakarma</p>
+                                <!-- <div>
+                                            <button type="" style="width: 120px;"  class="form-control">Know more</button>
+                                        </div> -->
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4 wow animate__animated  animate__fadeInUp"
+                        data-wow-delay="500ms">
                         <div class="featured-block d-flex justify-content-center align-items-center">
                             <a href="#" class="d-block">
                                 <img src="/images/prakriti_by_jiya/icons/garbhsanskar-icon.png"
@@ -208,11 +194,15 @@
 
                                 <p class="featured-block-text"><strong>Garbhsanskar </strong> <br> ( Educating unborn
                                     child & motherhood ) </p>
+                                <div>
+                                    <button type="" style="width: 120px;" class="form-control">Know more</button>
+                                </div>
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4 wow animate__animated  animate__fadeInUp"
+                        data-wow-delay="700ms">
                         <div class="featured-block d-flex justify-content-center align-items-center">
                             <a href="#" class="d-block">
                                 <img src="/images/prakriti_by_jiya/icons/receive.png"
@@ -220,11 +210,15 @@
 
                                 <p class="featured-block-text"> Seasonal lifestyle guidance to <strong> improve Health
                                     </strong></p>
+                                <div>
+                                    <button type="" style="width: 120px;" class="form-control">Know more</button>
+                                </div>
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 wow animate__animated  animate__fadeInUp"
+                        data-wow-delay="900ms">
                         <div class="featured-block d-flex justify-content-center align-items-center">
                             <a href="#" class="d-block">
                                 <img src="/images/prakriti_by_jiya/icons/metabolic-disorders-icon.png"
@@ -232,6 +226,9 @@
 
                                 <p class="featured-block-text"><strong>Targeted treatments related to</strong> metabolic
                                     disorders</p>
+                                <div>
+                                    <button type="" style="width: 120px;" class="form-control">Know more</button>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -316,12 +313,12 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-6 col-md-5 col-12">
+                    <div class="col-lg-6 col-md-5 col-12 wow animate__animated  animate__fadeInLeft">
                         <img src="/images/prakriti_by_jiya/dr_jayna.png"
                             class="about-image ms-lg-auto bg-light shadow-lg img-fluid" alt="">
                     </div>
 
-                    <div class="col-lg-5 col-md-7 col-12">
+                    <div class="col-lg-5 col-md-7 col-12 wow animate__animated  animate__fadeInRight">
                         <div class="custom-text-block">
                             <h2 class="mb-0">Dr Jayna Upadhyay</h2>
 
@@ -332,17 +329,20 @@
                                 Ayurveda clinical settings. I strive to find the most effective treatment options,
                                 ensuring the highest quality of care for every individual I serve.</p>
                             <ul class="social-icon mt-4">
-                                <li class="social-icon-item">
+                                <li class="social-icon-item wow animate__animated  animate__fadeInUp"
+                                    data-wow-delay="500ms">
                                     <a href="#" class="social-icon-link "><i class="fa fa-twitter"
                                             aria-hidden="true"></i></a>
                                 </li>
 
-                                <li class="social-icon-item">
+                                <li class="social-icon-item wow animate__animated  animate__fadeInUp"
+                                    data-wow-delay="600ms">
                                     <a href="#" class="social-icon-link "><i class="fa fa-facebook-square"
                                             aria-hidden="true"></i></a>
                                 </li>
 
-                                <li class="social-icon-item">
+                                <li class="social-icon-item wow animate__animated  animate__fadeInUp"
+                                    data-wow-delay="700ms">
                                     <a href="https://instagram.com/prakritibyjiya?igshid=NTc4MTIwNjQ2YQ=="
                                         target="_blank" class="social-icon-link "><i class="fa fa-instagram"
                                             aria-hidden="true"></i></a>
@@ -366,62 +366,14 @@
                     <div class="col-lg-5 col-12">
                         <!-- <a href="#" class="me-4">Make a donation</a> -->
 
-                        <a href="https://forms.gle/13aksXnyK3gxAQqu8" class="custom-btn btn smoothscroll">Get an
+                        <a href="https://forms.gle/13aksXnyK3gxAQqu8"
+                            class="custom-btn btn smoothscroll wow animate__animated  animate__bounceIn">Get an
                             Appointment</a>
                     </div>
 
                 </div>
             </div>
         </section>
-
-        <!-- <section style="margin-top: 100px;">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="ply1 black-before">
-                                <img class=""
-                                    data-src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/detox-diets-101-1296x728-feature.jpg?w=1155&h=1528"
-                                    width="100%" style="border-radius: 10px;"
-                                    src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/detox-diets-101-1296x728-feature.jpg?w=1155&h=1528">
-                                <div class="video-btn play-btn">
-                                    <a href="https://www.youtube.com/watch?v=9GGEtqc0FX4" data-flashy-type="video"
-                                        class="custom clickof"><span class="newthing"><i
-                                                class="fas fa-play"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="">
-                                <div class="new-h3">
-                                    <h2 class="ml-0">Seasonal Detox Plan</h2>
-                                </div>
-                                <ul class=" new-li">
-                                    <li><i class="fas fa-clock"></i> Aahar ( Diet Changes ) & Detox </li>
-                                    <li><i class="fas fa-video"></i> Vihar ( Activity ) & Pranayamd & Yoga Accorgingly
-                                    </li>
-                                    <li><i class="fas fa-credit-card"></i> Lifestyle Changes ( Sleep Pattern , Food
-                                        Eating Way )</li>
-                                </ul>
-                                <h5>7 TO 10 Days Detox Plan :-</h5>
-                                <ul class=" new-li">
-                                    <li><i class="fas fa-clock"></i> Dite, Medicine, Yoga, Virechara & After Detox Dite
-                                        Plan</li>
-                                    <li><i class="fas fa-video"></i> A Detox Drink Prep ( Seasonal )</li>
-                                </ul>
-                                <div class="">
-                                    <div class="custom-form">
-                                        <button type="submit" class="form-control" style="width: 150px;">Know
-                                            more</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
         <section class="section-padding" id="section_3">
             <div class="container">
                 <div class="row">
@@ -429,476 +381,142 @@
                     <div class="col-lg-12 col-12 text-center mb-4">
                         <h2>Our Services</h2>
                     </div>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class=" mb-4 mb-lg-0">
-                                <div class="custom-block-wrap">
-                                    <img src="/images/prakriti_by_jiya/detox.png" class="custom-block-image img-fluid"
-                                        alt="">
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-4 wow animate__animated  animate__fadeInRight">
+                        <div class="custom-block-wrap">
+                            <img src="/images/prakriti_by_jiya/detox.png" class="custom-block-image img-fluid" alt="">
 
-                                    <div class="custom-block">
-                                        <div class="custom-block-body">
-                                            <h5 class="mb-3">Normal Detox Plan</h5>
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+                                    <h5 class="mb-3">Normal Detox Plan</h5>
 
-                                            <p>» Zoom Consultation</p>
-                                            <p>» Prakriti Analysis & Brief History taking </p>
-                                            <p>» Understandin Detox </p>
-                                            <p>» Costomised Detox Plan </p>
-                                            <p>» Follow up Via Zoom Every 3 Days </p>
+                                    <p>» Zoom Consultation</p>
+                                    <p>» Prakriti Analysis & Brief History taking </p>
+                                    <p>» Understandin Detox </p>
+                                    <p>» Costomised Detox Plan </p>
+                                    <p>» Follow up Via Zoom Every 3 Days </p>
 
-                                        </div>
-
-                                        <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Normal Detox Plan"
-                                            target="_blank" target="_blank" class="custom-btn btn">Inquiry now</a>
-                                    </div>
                                 </div>
+
+                                <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Normal Detox Plan"
+                                    target="_blank" target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class=" mb-4 mb-lg-0">
-                                <div class="custom-block-wrap">
-                                    <img src="/images/prakriti_by_jiya/diseased-plan.png"
-                                        class="custom-block-image img-fluid pb-4" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-4 wow animate__animated  animate__fadeIn">
+                        <div class="custom-block-wrap">
+                            <img src="/images/prakriti_by_jiya/diseased-plan.png"
+                                class="custom-block-image img-fluid pb-3" alt="">
 
-                                    <div class="custom-block">
-                                        <div class="custom-block-body" style="padding-bottom: 60px;">
-                                            <h5 class="mb-3">Diseased Plan</h5>
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+                                    <h5 class="mb-3">Diseased Plan</h5>
 
-                                            <p>» Zoom consultation </p>
-                                            <p>» H/O & Prakriti , Medicinal Plan </p>
-                                            <p>» Detox Castanixd Plan, Follow Up Every 3 Day </p>
-                                            <p>» Post Treatment Diet & Lifestyle Plan </p>
+                                    <p>» Zoom consultation </p>
+                                    <p>» H/O & Prakriti , Medicinal Plan </p>
+                                    <p>» Detox Castanixd Plan, Follow Up Every 3 Day </p>
+                                    <p>» Post Treatment Diet & Lifestyle Plan </p>
 
-                                        </div>
-
-                                        <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Diseased Plan"
-                                            target="_blank" class="custom-btn btn">Inquiry now</a>
-                                    </div>
                                 </div>
+
+                                <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Diseased Plan"
+                                    target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="">
-                                <div class="custom-block-wrap">
-                                    <img src="/images/prakriti_by_jiya/anual-detox-plan.png"
-                                        class="custom-block-image img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-4 wow animate__animated  animate__fadeInLeft">
+                        <div class="custom-block-wrap">
+                            <img src="/images/prakriti_by_jiya/anual-detox-plan.png"
+                                class="custom-block-image img-fluid" alt="">
 
-                                    <div class="custom-block">
-                                        <div class="custom-block-body">
-                                            <h5 class="mb-3">Anual Detox Plan </h5>
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+                                    <h5 class="mb-3">Anual Detox Plan </h5>
 
-                                            <p>» Monthly Dite & Exercise Plan </p>
-                                            <p>» Medicinal Guidance Throogh Out Of Year </p>
-                                            <p>» Seasonal Dos & Don'ts </p>
-                                            <p>» Yoga & Exercise </p>
-                                            <p>» Weekly Zoom</p>
+                                    <p>» Monthly Dite & Exercise Plan </p>
+                                    <p>» Medicinal Guidance Throogh Out Of Year </p>
+                                    <p>» Seasonal Dos & Don'ts </p>
+                                    <p>» Yoga & Exercise </p>
+                                    <p>» Weekly Zoom</p>
 
 
-                                        </div>
-
-                                        <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Anual Detox Plan "
-                                            target="_blank" class="custom-btn btn">Inquiry now</a>
-                                    </div>
                                 </div>
+
+                                <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Anual Detox Plan "
+                                    target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="">
-                                <div class="custom-block-wrap">
-                                    <img src="/images/prakriti_by_jiya/seasonal-detox.png"
-                                        class="custom-block-image img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 wow animate__animated  animate__fadeInRight">
+                        <div class="custom-block-wrap">
+                            <img src="/images/prakriti_by_jiya/seasonal-detox.png" class="custom-block-image img-fluid"
+                                alt="">
 
-                                    <div class="custom-block">
-                                        <div class="custom-block-body">
-                                            <h5 class="mb-3">Seasonal Detox Plan ( 3 Month )</h5>
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+                                    <h5 class="mb-3">Seasonal Detox Plan ( 3 Month )</h5>
 
-                                            <p>» Consulting Zoom</p>
-                                            <p>» Prakriti Analysis & H/O </p>
-                                            <p>» Seasonal Dite & Exercise & Detox Drink </p>
-                                            <p>» Every is Days Follow Up </p>
-                                            <p>» Medicinal Guidance If Required</p>
+                                    <p>» Consulting Zoom</p>
+                                    <p>» Prakriti Analysis & H/O </p>
+                                    <p>» Seasonal Dite & Exercise & Detox Drink </p>
+                                    <p>» Every is Days Follow Up </p>
+                                    <p>» Medicinal Guidance If Required</p>
 
 
-                                        </div>
-
-                                        <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Seasonal Detox Plan ( 3 Month )"
-                                            target="_blank" class="custom-btn btn">Inquiry now</a>
-                                    </div>
                                 </div>
+
+                                <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Seasonal Detox Plan ( 3 Month )"
+                                    target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="">
-                                <div class="custom-block-wrap">
-                                    <img src="/images/prakriti_by_jiya/Garbhsanskar-monthly.png"
-                                        class="custom-block-image img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 wow animate__animated  animate__fadeIn">
+                        <div class="custom-block-wrap">
+                            <img src="/images/prakriti_by_jiya/Garbhsanskar-monthly.png"
+                                class="custom-block-image img-fluid" alt="">
 
-                                    <div class="custom-block">
-                                        <div class="custom-block-body" style="padding: 9px;">
-                                            <h5 class="mb-3">Garbhsanskar ( Monthly ) Plan</h5>
+                            <div class="custom-block">
+                                <div class="custom-block-body" style="padding: 9px;">
+                                    <h5 class="mb-3">Garbhsanskar ( Monthly ) Plan</h5>
 
-                                            <p>» Zoom Consolting</p>
-                                            <p>» Mothly Diet , Exercise & Yoga Plan ( Video ) , Meditation Session</p>
-                                            <p>» If any Co-Morbidity Then Medicinal Plan. </p>
-                                            <p>» Whatsapp Activity Every 3 Days ( Memory Game, Music Session ,
-                                                Accordingly ). </p>
-                                            <p>» Once a Week Follow Op. </p>
+                                    <p>» Zoom Consolting</p>
+                                    <p>» Mothly Diet , Exercise & Yoga Plan ( Video ) , Meditation Session</p>
+                                    <p>» If any Co-Morbidity Then Medicinal Plan. </p>
+                                    <p>» Whatsapp Activity Every 3 Days ( Memory Game, Music Session ,
+                                        Accordingly ). </p>
+                                    <p>» Once a Week Follow Op. </p>
 
 
-                                        </div>
-
-                                        <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Garbhsanskar ( Monthly ) Plan"
-                                            target="_blank" class="custom-btn btn">Inquiry now</a>
-                                    </div>
                                 </div>
+
+                                <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Garbhsanskar ( Monthly ) Plan"
+                                    target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="">
-                                <div class="custom-block-wrap">
-                                    <img src="/images/prakriti_by_jiya/garbhsanskar-anual-plan.png"
-                                        class="custom-block-image img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 wow animate__animated  animate__fadeInLeft">
+                        <div class="custom-block-wrap">
+                            <img src="/images/prakriti_by_jiya/garbhsanskar-anual-plan.png"
+                                class="custom-block-image img-fluid" alt="">
 
-                                    <div class="custom-block">
-                                        <div class="custom-block-body" style="padding-bottom: 17px;">
-                                            <h5 class="mb-3">Garbh Sanskar ( 9 Month ) Plan</h5>
+                            <div class="custom-block">
+                                <div class="custom-block-body" style="padding-bottom: 17px;">
+                                    <h5 class="mb-3">Garbh Sanskar ( 9 Month ) Plan</h5>
 
-                                            <p>» Zoom Consolting , Mothly Diet</p>
-                                            <p>» Exercise & Yoga Plan & Meditation Session</p>
-                                            <p>» Medicinal Plan , Activity Every 3 Day , Every Week Follow Up</p>
-                                            <p>» Post Pregnancy Lifestyle & Care Guide </p>
-                                            <p>» Complimentary Guidence Any Time </p>
-                                        </div>
-
-                                        <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Garbh Sanskar ( 9 Month ) Plan"
-                                            target="_blank" class="custom-btn btn">Inquiry now</a>
-                                    </div>
+                                    <p>» Zoom Consolting , Mothly Diet</p>
+                                    <p>» Exercise & Yoga Plan & Meditation Session</p>
+                                    <p>» Medicinal Plan , Activity Every 3 Day , Every Week Follow Up</p>
+                                    <p>» Post Pregnancy Lifestyle & Care Guide </p>
+                                    <p>» Complimentary Guidence Any Time </p>
                                 </div>
+
+                                <a href="https://api.whatsapp.com/send?phone=7600091041&text=Hello I want to know more Garbh Sanskar ( 9 Month ) Plan"
+                                    target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- <section class="volunteer-section section-padding" id="section_4">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12">
-                        <h2 class="text-white mb-4">Volunteer</h2>
-
-                        <form class="custom-form volunteer-form mb-5 mb-lg-0" action="#" method="post" role="form">
-                            <h3 class="mb-4">Become a volunteer today</h3>
-
-                            <div class="row">
-                                <div class="col-lg-6 col-12">
-                                    <input type="text" name="volunteer-name" id="volunteer-name" class="form-control"
-                                        placeholder="Jack Doe" required>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <input type="email" name="volunteer-email" id="volunteer-email"
-                                        pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com"
-                                        required>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <input type="text" name="volunteer-subject" id="volunteer-subject"
-                                        class="form-control" placeholder="Subject" required>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <div class="input-group input-group-file">
-                                        <input type="file" class="form-control" id="inputGroupFile02">
-
-                                        <label class="input-group-text" for="inputGroupFile02">Upload your CV</label>
-
-                                        <i class="bi-cloud-arrow-up ms-auto"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <textarea name="volunteer-message" rows="3" class="form-control" id="volunteer-message"
-                                placeholder="Comment (Optional)"></textarea>
-
-                            <button type="submit" class="form-control">Submit</button>
-                        </form>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-                        <img src="images/smiling-casual-woman-dressed-volunteer-t-shirt-with-badge.jpg"
-                            class="volunteer-image img-fluid" alt="">
-
-                        <div class="custom-block-body text-center">
-                            <h4 class="text-white mt-lg-3 mb-lg-3">About Volunteering</h4>
-
-                            <p class="text-white">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm
-                                tokito Professional charity theme based</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-
-        <!-- <section class="news-section section-padding" id="section_5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 mb-5">
-                        <h2>Latest News</h2>
-                    </div>
-
-                    <div class="col-lg-7 col-12">
-                        <div class="news-block">
-                            <div class="news-block-top">
-                                <a href="news-detail.html">
-                                    <img src="images/news/medium-shot-volunteers-with-clothing-donations.jpg"
-                                        class="news-image img-fluid" alt="">
-                                </a>
-
-                                <div class="news-category-block">
-                                    <a href="#" class="category-block-link">
-                                        Lifestyle,
-                                    </a>
-
-                                    <a href="#" class="category-block-link">
-                                        Clothing Donation
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="news-block-info">
-                                <div class="d-flex mt-2">
-                                    <div class="news-block-date">
-                                        <p>
-                                            <i class="bi-calendar4 custom-icon me-1"></i>
-                                            October 12, 2036
-                                        </p>
-                                    </div>
-
-                                    <div class="news-block-author mx-5">
-                                        <p>
-                                            <i class="bi-person custom-icon me-1"></i>
-                                            By Admin
-                                        </p>
-                                    </div>
-
-                                    <div class="news-block-comment">
-                                        <p>
-                                            <i class="bi-chat-left custom-icon me-1"></i>
-                                            32 Comments
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="news-block-title mb-2">
-                                    <h4><a href="news-detail.html" class="news-block-title-link">Clothing donation to
-                                            urban area</a></h4>
-                                </div>
-
-                                <div class="news-block-body">
-                                    <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito
-                                        Professional charity theme based on Bootstrap</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="news-block mt-3">
-                            <div class="news-block-top">
-                                <a href="news-detail.html">
-                                    <img src="images/news/medium-shot-people-collecting-foodstuff.jpg"
-                                        class="news-image img-fluid" alt="">
-                                </a>
-
-                                <div class="news-category-block">
-                                    <a href="#" class="category-block-link">
-                                        Food,
-                                    </a>
-
-                                    <a href="#" class="category-block-link">
-                                        Donation,
-                                    </a>
-
-                                    <a href="#" class="category-block-link">
-                                        Caring
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="news-block-info">
-                                <div class="d-flex mt-2">
-                                    <div class="news-block-date">
-                                        <p>
-                                            <i class="bi-calendar4 custom-icon me-1"></i>
-                                            October 20, 2036
-                                        </p>
-                                    </div>
-
-                                    <div class="news-block-author mx-5">
-                                        <p>
-                                            <i class="bi-person custom-icon me-1"></i>
-                                            By Admin
-                                        </p>
-                                    </div>
-
-                                    <div class="news-block-comment">
-                                        <p>
-                                            <i class="bi-chat-left custom-icon me-1"></i>
-                                            35 Comments
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="news-block-title mb-2">
-                                    <h4><a href="news-detail.html" class="news-block-title-link">Food donation area</a>
-                                    </h4>
-                                </div>
-
-                                <div class="news-block-body">
-                                    <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus
-                                        elementum, tempor risus vel, condimentum orci</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-12 mx-auto">
-                        <form class="custom-form search-form" action="#" method="post" role="form">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-
-                            <button type="submit" class="form-control">
-                                <i class="bi-search"></i>
-                            </button>
-                        </form>
-
-                        <h5 class="mt-5 mb-3">Recent news</h5>
-
-                        <div class="news-block news-block-two-col d-flex mt-4">
-                            <div class="news-block-two-col-image-wrap">
-                                <a href="news-detail.html">
-                                    <img src="images/news/africa-humanitarian-aid-doctor.jpg"
-                                        class="news-image img-fluid" alt="">
-                                </a>
-                            </div>
-
-                            <div class="news-block-two-col-info">
-                                <div class="news-block-title mb-2">
-                                    <h6><a href="news-detail.html" class="news-block-title-link">Food donation area</a>
-                                    </h6>
-                                </div>
-
-                                <div class="news-block-date">
-                                    <p>
-                                        <i class="bi-calendar4 custom-icon me-1"></i>
-                                        October 16, 2036
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="news-block news-block-two-col d-flex mt-4">
-                            <div class="news-block-two-col-image-wrap">
-                                <a href="news-detail.html">
-                                    <img src="images/news/close-up-happy-people-working-together.jpg"
-                                        class="news-image img-fluid" alt="">
-                                </a>
-                            </div>
-
-                            <div class="news-block-two-col-info">
-                                <div class="news-block-title mb-2">
-                                    <h6><a href="news-detail.html" class="news-block-title-link">Volunteering Clean</a>
-                                    </h6>
-                                </div>
-
-                                <div class="news-block-date">
-                                    <p>
-                                        <i class="bi-calendar4 custom-icon me-1"></i>
-                                        October 24, 2036
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="category-block d-flex flex-column">
-                            <h5 class="mb-3">Categories</h5>
-
-                            <a href="#" class="category-block-link">
-                                Drinking water
-                                <span class="badge">20</span>
-                            </a>
-
-                            <a href="#" class="category-block-link">
-                                Food Donation
-                                <span class="badge">30</span>
-                            </a>
-
-                            <a href="#" class="category-block-link">
-                                Children Education
-                                <span class="badge">10</span>
-                            </a>
-
-                            <a href="#" class="category-block-link">
-                                Poverty Development
-                                <span class="badge">15</span>
-                            </a>
-
-                            <a href="#" class="category-block-link">
-                                Clothing Donation
-                                <span class="badge">20</span>
-                            </a>
-                        </div>
-
-                        <div class="tags-block">
-                            <h5 class="mb-3">Tags</h5>
-
-                            <a href="#" class="tags-block-link">
-                                Donation
-                            </a>
-
-                            <a href="#" class="tags-block-link">
-                                Clothing
-                            </a>
-
-                            <a href="#" class="tags-block-link">
-                                Food
-                            </a>
-
-                            <a href="#" class="tags-block-link">
-                                Children
-                            </a>
-
-                            <a href="#" class="tags-block-link">
-                                Education
-                            </a>
-
-                            <a href="#" class="tags-block-link">
-                                Poverty
-                            </a>
-
-                            <a href="#" class="tags-block-link">
-                                Clean Water
-                            </a>
-                        </div>
-
-                        <form class="custom-form subscribe-form" action="#" method="post" role="form">
-                            <h5 class="mb-4">Newsletter Form</h5>
-
-                            <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
-                                class="form-control" placeholder="Email Address" required>
-
-                            <div class="col-lg-12 col-12">
-                                <button type="submit" class="form-control">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-
-
         <section class="testimonial-section section-padding section-bg">
             <div class="container">
                 <div class="row">
@@ -985,87 +603,6 @@
                 </div>
             </div>
         </section>
-
-
-        <!-- <section class="contact-section section-padding" id="section_6">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 col-12 ms-auto mb-5 mb-lg-0">
-                        <div class="contact-info-wrap">
-                            <h2>Get in touch</h2>
-
-                            <div class="contact-image-wrap d-flex flex-wrap">
-                                <img src="images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg"
-                                    class="img-fluid avatar-image" alt="">
-
-                                <div class="d-flex flex-column justify-content-center ms-3">
-                                    <p class="mb-0">Clara Barton</p>
-                                    <p class="mb-0"><strong>HR & Office Manager</strong></p>
-                                </div>
-                            </div>
-
-                            <div class="contact-info">
-                                <h5 class="mb-3">Contact Infomation</h5>
-
-                                <p class="d-flex mb-2">
-                                    <i class="bi-geo-alt me-2"></i>
-                                    Akershusstranda 20, 0150 Oslo, Norway
-                                </p>
-
-                                <p class="d-flex mb-2">
-                                    <i class="bi-telephone me-2"></i>
-
-                                    <a href="tel: 305-240-9671">
-                                        305-240-9671
-                                    </a>
-                                </p>
-
-                                <p class="d-flex">
-                                    <i class="bi-envelope me-2"></i>
-
-                                    <a href="mailto:info@yourgmail.com">
-                                        donate@charity.org
-                                    </a>
-                                </p>
-
-                                <a href="#" class="custom-btn btn mt-3">Get Direction</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 col-12 mx-auto">
-                        <form class="custom-form contact-form" action="#" method="post" role="form">
-                            <h2>Contact form</h2>
-
-                            <p class="mb-4">Or, you can just send an email:
-                                <a href="#">info@charity.org</a>
-                            </p>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="first-name" id="first-name" class="form-control"
-                                        placeholder="Jack" required>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="last-name" id="last-name" class="form-control"
-                                        placeholder="Doe" required>
-                                </div>
-                            </div>
-
-                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-                                placeholder="Jackdoe@gmail.com" required>
-
-                            <textarea name="message" rows="5" class="form-control" id="message"
-                                placeholder="What can we help you?"></textarea>
-
-                            <button type="submit" class="form-control">Send Message</button>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
     </main>
 
     <footer id="contact" class="site-footer">
@@ -1127,8 +664,8 @@
                     <p class="text-white d-flex">
                         <i class="fa fa-envelope-o mt-1" aria-hidden="true"></i>&nbsp;&nbsp;
 
-                        <a href="mailto:drjaynaupadhyay@gmail.com" class="site-footer-link">
-                            drjaynaupadhyay@gmail.com
+                        <a href="mailto:infoprakritibyjiya@gmail.com" class="site-footer-link">
+                            infoprakritibyjiya@gmail.com
                         </a>
                     </p>
 
@@ -1167,7 +704,36 @@
     <script src="/js/prakriti_by jiya/carousel.js"></script>
     <script src="/js/prakriti_by jiya/slider.js"></script>
     <script src="/js/prakriti_by jiya/owl.carousel.js"></script>
+    <script src="./js/wow.min.js"></script>
 
+    <script>
+        new WOW().init();
+    </script>
+    <script> $(document).ready(function () {
+            $('.moreless-button').click(function () {
+                $('.moretext').slideToggle();
+                if ($('.moreless-button').text() == "Read more") {
+                    $(this).text("Read less");
+                } else {
+                    $(this).text("Read more");
+                }
+            });
+        });</script>
+    <script>
+        $(function () {
+            //Scroll event
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop();
+                if (scrolled > 200) $('.go-top').fadeIn('slow');
+                if (scrolled < 200) $('.go-top').fadeOut('slow');
+            });
+
+            //Click event
+            $('.go-top').click(function () {
+                $("html, body").animate({ scrollTop: "0" }, 500);
+            });
+        });
+    </script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
