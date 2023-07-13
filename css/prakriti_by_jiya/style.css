@@ -196,12 +196,11 @@ strong {
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   transition: all 0.5s;
 }
 
-.custom-block-wrap:hover {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
-}
+.custom-block-wrap:hover {}
 
 .custom-block-body {
   padding: 30px;
@@ -695,7 +694,7 @@ strong {
 }
 
 .custom-text-block {
-  padding: 60px 40px;
+  padding: 30px 40px;
 }
 
 
@@ -1731,6 +1730,16 @@ blockquote::before {
   .fa-whatsapp {
     padding: 0;
   }
+
+  .go-top i {
+    padding: 9px 10px;
+    bottom: 6px;
+    font-size: 18px;
+  }
+
+  .go-top {
+    right: 8%;
+  }
 }
 
 .float-button-1 {
@@ -1753,4 +1762,28 @@ blockquote::before {
 .float-button-1:hover {
   background-color: var(--primary-color);
   color: #000;
+}
+
+
+
+/* .service-count {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 5px 2px rgba(30, 30, 30, 0.3);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-left: 160px;
+} */
+
+
+
+.detox-1{
+  display: none;
+}
+
+
+.garbhsanskar-1{
+  display: none;
 }
