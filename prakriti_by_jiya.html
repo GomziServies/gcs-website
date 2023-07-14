@@ -352,8 +352,8 @@
                                         <p>Being an Ayurveda doctor, my goal is to maintain the health of an individual
                                             via a holistic approach and to treat the diseased with the essence of
                                             Ayurveda.</p>
-                                        <a href="https://forms.gle/SwQ4AjGZiU6kwbkP9" class="custom-btn btn smoothscroll p-3"
-                                            style="width: 150px; border-radius: 30px; font-size: 15px; margin-left: 40px;">Know
+                                        <a href="https://forms.gle/SwQ4AjGZiU6kwbkP9"
+                                            class="custom-btn know-btn btn smoothscroll p-3">Know
                                             more</a>
                                     </div>
                                 </div>
@@ -370,13 +370,13 @@
                                         <p>Detox plan is made to rejuvenate each and every microcell and to clear out
                                             toxins from the body. This cleansing process of the body is called
                                             "Panchakarma".</p>
-                                        <button id="detox" class="custom-btn btn smoothscroll p-3"
-                                            style="width: 150px; border-radius: 30px; font-size: 15px; margin-left: 40px;">Know
+                                        <button id="detox" class="custom-btn know-btn btn smoothscroll p-3">Know
                                             more</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div id="detox-responsive"></div>
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-4 wow animate__animated animate__fadeInLeft">
                             <div class="custom-block-wrap text-center pt-3">
                                 <div class="custom-block">
@@ -388,8 +388,7 @@
                                         <p>Garbhsanskar nurtures the unborn. Simple activities for social, physical,
                                             spiritual, and mental well-being of mother & child. Sanskar/knowledge for
                                             the unborn.</p>
-                                        <a id="garbhsanskar" class="custom-btn btn smoothscroll p-3"
-                                            style="width: 150px; border-radius: 30px; font-size: 15px; margin-left: 40px;">Know
+                                        <a id="garbhsanskar" class="custom-btn btn know-btn smoothscroll p-3">Know
                                             more</a>
                                     </div>
                                 </div>
@@ -554,7 +553,7 @@
                                             and balanced.</h4>
 
                                         <small class="carousel-name"><span
-                                                class="carousel-name-title">Michael</span></small>
+                                                class="carousel-name-title">Raj</span></small>
                                     </div>
                                 </div>
 
@@ -720,14 +719,40 @@
     </script>
     <script>
         $(document).ready(function () {
+            // Function to check if the viewport width is below a certain threshold
+            function isMobileView() {
+                return $(window).width() <= 767; // Adjust the threshold value as needed
+            }
+
+            // Update the position of detox-1 section on page load and window resize
+            function updateDetoxPosition() {
+                if (isMobileView()) {
+                    $('#detox-1').insertBefore('#detox-responsive');
+                } else {
+                    $('#detox-1').insertBefore('#garbhsanskar-1');
+                }
+            }
+
+            // Attach the updateDetoxPosition function to window resize event
+            $(window).on('resize', updateDetoxPosition);
+
+            // Initially update the position of detox-1 section
+            updateDetoxPosition();
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
             $("#detox").click(function () {
                 $("#detox-1").show();
                 $("#garbhsanskar-1").hide();
+                $("#detox-1")[0].scrollIntoView({ behavior: 'smooth' }); // Scroll to detox-1 section
             });
 
             $("#garbhsanskar").click(function () {
                 $("#garbhsanskar-1").show();
                 $("#detox-1").hide();
+                $("#garbhsanskar-1")[0].scrollIntoView({ behavior: 'smooth' }); // Scroll to garbhsanskar-1 section
             });
 
             // Initially hide the detox-1 and garbhsanskar-1 sections
@@ -738,13 +763,16 @@
             $("#detox-1 .custom-btn").click(function () {
                 $("#detox-1").hide();
                 $("#garbhsanskar-1").show();
+                $("#garbhsanskar-1")[0].scrollIntoView({ behavior: 'smooth' }); // Scroll to garbhsanskar-1 section
             });
 
             $("#garbhsanskar-1 .custom-btn").click(function () {
                 $("#garbhsanskar-1").hide();
                 $("#detox-1").show();
+                $("#detox-1")[0].scrollIntoView({ behavior: 'smooth' }); // Scroll to detox-1 section
             });
         });
+
     </script>
     <script>
         $(function () {
