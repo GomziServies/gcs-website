@@ -662,6 +662,8 @@ strong {
   display: block;
   margin: auto;
   transition: all 0.5s;
+  border-radius: 50%;
+  width: 120px;
 }
 
 .featured-block:hover .featured-block-text {
@@ -1803,5 +1805,3 @@ blockquote::before {
 .garbhsanskar-1 {
   display: none;
 }
-
-
