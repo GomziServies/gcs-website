@@ -1720,7 +1720,7 @@ blockquote::before {
   color: #fff;
 }
 
-@media screen and (max-width: 545px) {
+@media (max-width: 545px) {
   .float-button {
     left: -33px;
     font-size: 12px;
@@ -1740,6 +1740,22 @@ blockquote::before {
   .go-top {
     right: 8%;
   }
+
+  .know-btn {
+    width: 130px ;
+    border-radius: 30px ;
+    font-size: 12px ;
+    margin-left: 61px !important;
+    margin: auto;
+  }
+
+}
+
+.know-btn {
+  width: 150px !important;
+  border-radius: 30px !important;
+  font-size: 15px !important;
+  margin-left: 40px ;
 }
 
 .float-button-1 {
@@ -1779,11 +1795,13 @@ blockquote::before {
 
 
 
-.detox-1{
+.detox-1 {
   display: none;
 }
 
 
-.garbhsanskar-1{
+.garbhsanskar-1 {
   display: none;
 }
+
+
