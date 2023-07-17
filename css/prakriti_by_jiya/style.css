@@ -1898,7 +1898,7 @@ blockquote::before {
 .newthing i {
   font-size: 20px;
   margin-left: 3px;
-  color:  var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
 
 .newthing {
@@ -1925,10 +1925,20 @@ blockquote::before {
   left: 52%;
 }
 
-.video-btn a{
+.video-btn a {
   text-align: center;
 }
 
-.ply1{
+.ply1 {
   position: relative;
+}
+
+
+.video-card {
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.video-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
