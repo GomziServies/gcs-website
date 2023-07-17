@@ -1808,6 +1808,10 @@ blockquote::before {
     padding: 20px;
   }
 
+  .about-image-2{
+    height: 200px;
+  }
+
 }
 
 .know-btn {
