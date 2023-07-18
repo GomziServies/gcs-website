@@ -1096,7 +1096,7 @@ blockquote::before {
 .contact-form {
   background: var(--section-bg-color);
   border-radius: var(--border-radius-small);
-  padding: 40px;
+  padding: 18px;
 }
 
 .contact-info-wrap {
