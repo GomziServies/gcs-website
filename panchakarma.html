@@ -10,26 +10,17 @@
 
     <title>Prakriti By Jiya</title>
     <link href="/css/prakriti_by_jiya/bootstrap.min.css" rel="stylesheet">
-
     <link href="/css/prakriti_by_jiya/bootstrap-icons.css" rel="stylesheet">
-
     <link rel="stylesheet" href="/css/prakriti_by_jiya/owl.carousel.css">
-
     <link rel="stylesheet" href="/css/prakriti_by_jiya/owl.carousel.min.css">
-
     <link rel="stylesheet" href="/css/prakriti_by_jiya/owl.theme.css">
-
     <link rel="stylesheet" href="/css/prakriti_by_jiya/owl-style.css">
-
     <link rel="stylesheet" href="/css/prakriti_by_jiya/effect.css">
-
     <link rel="stylesheet" href="/css/prakriti_by_jiya/wow.css">
-
     <link href="/css/prakriti_by_jiya/style.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="../plugins/sweetalert2/sweetalert2.all.min.js"></script>
 
 </head>
 
@@ -117,9 +108,7 @@
             </div>
         </div>
     </nav>
-
     <main>
-
         <section class="section-padding">
             <div class="container">
                 <div class="row">
@@ -138,8 +127,7 @@
                                     <p>» Customized Detox Plan</p>
                                     <p>» Follow up Via Zoom Every 3 Days</p>
                                 </div>
-                                <a href="#contact"
-                                    target="_blank" class="custom-btn btn">Inquiry now</a>
+                                <a href="#contact" target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
                     </div>
@@ -156,8 +144,7 @@
                                     <p>» Yoga & Exercise</p>
                                     <p>» Weekly Zoom</p>
                                 </div>
-                                <a href="#contact"
-                                    target="_blank" class="custom-btn btn">Inquiry now</a>
+                                <a href="#contact" target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
                     </div>
@@ -174,8 +161,7 @@
                                     <p>» Every 3 Days Follow Up</p>
                                     <p>» Medicinal Guidance If Required</p>
                                 </div>
-                                <a href="#contact"
-                                    target="_blank" class="custom-btn btn">Inquiry now</a>
+                                <a href="#contact" target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
                     </div>
@@ -191,8 +177,7 @@
                                     <p>» Detox Customised Plan, Follow Up Every 3 Days</p>
                                     <p>» Post Treatment Diet & Lifestyle Plan</p>
                                 </div>
-                                <a href="#contact"
-                                    target="_blank" class="custom-btn btn">Inquiry now</a>
+                                <a href="#contact" target="_blank" class="custom-btn btn">Inquiry now</a>
                             </div>
                         </div>
                     </div>
@@ -383,7 +368,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-12 mx-auto">
-                        <form class="custom-form contact-form" action="#" method="post" role="form">
+                        <form class="custom-form contact-form" id="myForm">
                             <h2>Contact form</h2>
 
                             <p class="mb-4 ml-2"><b>Email:
@@ -391,26 +376,25 @@
                             </p>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="first-name" id="first-name" class="form-control"
-                                        placeholder="Name" required>
+                                    <input type="text" name="name" placeholder="Name" id="name"
+                                        class="form-control in-put" required>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="last-name" id="last-name" class="form-control"
-                                        placeholder="Mobile No." required>
+                                    <input type="number" name="mobile" placeholder="Mobile" id="mobile"
+                                        class="form-control in-put" required>
                                 </div>
                             </div>
+                            <input type="hidden" name="subject" id="subject" value="Garbhsanskar">
+                            <input type="email" name="email" placeholder="Email" id="email" class="form-control in-put"
+                                required>
 
-                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
-                                placeholder="Email ID" required>
-
-                            <textarea name="message" rows="5" class="form-control" id="message"
+                            <textarea name="messages" rows="5" class="form-control" id="messages" type="messages"
                                 placeholder="What can we help you?"></textarea>
 
-                            <button type="submit" class="form-control">Send Message</button>
+                            <button type="submit" class="submit-btn">Send Message</button>
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -506,11 +490,17 @@
     <script src="/js/prakriti_by jiya/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/sweetalert2.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', submitForm); 
+    </script>
 
     <script>
         new WOW().init();
     </script>
-       <script>
+    <script>
         // JavaScript to handle smooth scrolling
         const smoothScroll = (target) => {
             const element = document.querySelector(target);
