@@ -510,6 +510,32 @@
     <script>
         new WOW().init();
     </script>
+       <script>
+        // JavaScript to handle smooth scrolling
+        const smoothScroll = (target) => {
+            const element = document.querySelector(target);
+            if (element) {
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition - 20;
+
+                window.scrollBy({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // Add click event listeners to all "Inquiry now" buttons
+            const inquiryButtons = document.querySelectorAll(".custom-btn.btn");
+            inquiryButtons.forEach(button => {
+                button.addEventListener("click", (event) => {
+                    event.preventDefault(); // Prevent the default anchor link behavior
+                    smoothScroll("#contact"); // Scroll to the contact section
+                });
+            });
+        });
+    </script>
     <script>
         $(document).ready(function () {
             $("#detox").click(function () {
