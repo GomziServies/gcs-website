@@ -15,23 +15,23 @@
 
     <link rel="stylesheet" href="/css/prakriti_by_jiya/wow.css">
 
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="/css/animate.css" />
-    
-    
-    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">
-    
-    <link rel="stylesheet" type="text/css" href="/css/owl.theme.css">
-    
-    <link rel="stylesheet" type="text/css" href="./css/owl-style.css">
-    
+
+    <link rel="stylesheet" type="text/css" href="/css/prakriti_by_jiya/owl.carousel.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/prakriti_by_jiya/owl.carousel.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/prakriti_by_jiya/owl.theme.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/prakriti_by_jiya/owl-style.css">
+
     <link href="./css/flashy.min.css" rel="stylesheet">
-    
-    <link href="./css/effect.css" rel="stylesheet">
+
+    <link href="./css/prakriti_by_jiya/effect.css" rel="stylesheet">
     <link href="/css/prakriti_by_jiya/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/all.min.css">
 </head>
@@ -166,36 +166,22 @@
                 <div class="row">
 
                     <div class="col-lg-12 col-12 p-0">
-                        <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="d-none d-md-block">
-                                        <img src="/images/prakriti_by_jiya/heal-with-ayurvada.png"
-                                            class="carousel-image img-fluid" alt="...">
-                                    </div>
-                                    <div class="d-block d-md-none">
-                                        <img src="/images/prakriti_by_jiya/heal-with-ayurvada-3.png"
-                                            class="carousel-image img-fluid" alt="...">
-                                    </div>
+                        <div id="hero-slide" class="owl-carousel owl-theme ">
+                            <div class="item">
+                                <div class="d-none d-md-block">
+                                    <img src="/images/prakriti_by_jiya/heal-with-ayurvada.png"
+                                        class="carousel-image img-fluid" alt="...">
                                 </div>
-
-                                <div class="carousel-item">
-                                    <img src="images/prakriti_by_jiya/home-slide.JPG" class="carousel-image img-fluid"
-                                        alt="...">
-
+                                <div class="d-block d-md-none">
+                                    <img src="/images/prakriti_by_jiya/heal-with-ayurvada-3.png"
+                                        class="carousel-image img-fluid" alt="...">
                                 </div>
+                            </div>
 
-                                <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
+                            <div class="item">
+                                <img src="images/prakriti_by_jiya/home-slide.JPG" class="carousel-image img-fluid"
+                                    alt="...">
 
-                                <button class="carousel-control-next" type="button" data-bs-target="#hero-slide"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
                             </div>
                         </div>
 
@@ -388,7 +374,7 @@
                                 </div>
                             </div>
                             <div class="custom-text-block">
-                                <h2 class="mb-0 p-3 pb-0">Ayurveda for Allergies</h2>
+                                <h2 class="mb-0 p-3 pb-0">Ayurveda for Allergies Diseases</h2>
 
                                 <p class="p-3"> Ayurveda plays a vital role in managing seasonal allergies, as explained
                                     by Dr.
@@ -450,7 +436,7 @@
                     <div class="col-lg-5 col-md-7 col-12 wow animate__animated animate__fadeInRight d-none
                         d-md-block">
                         <div class="custom-text-block">
-                            <h2 class="mb-0">Ayurveda for Allergies</h2>
+                            <h2 class="mb-0">Ayurveda for Allergies Diseases</h2>
 
                             <p class="text-muted mb-lg-4 mb-md-4"></p>
 
@@ -939,6 +925,7 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="./js/wow.min.js"></script>
     <script src="/js/owl.carousel.js"></script>
+    <script src="/js/prakriti_by jiya/slider.js"></script>
 
 
 
@@ -1023,6 +1010,20 @@
                     sliderAutoPlay = true;
                     $('#slider-1').trigger('play.owl.autoplay', [1000]);
                 }
+            });
+        });
+    </script>
+    <script>
+        var sliderAutoPlay = true;
+
+        $(document).ready(function () {
+
+            $('#hero-slide').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: sliderAutoPlay,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
             });
         });
     </script>
