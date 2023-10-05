@@ -1003,6 +1003,7 @@ blockquote::before {
   background: var(--section-bg-color);
   line-height: normal;
   margin-bottom: 30px;
+  color: #000;
 }
 
 #testimonial-carousel .carousel-title::before {
@@ -1055,10 +1056,10 @@ blockquote::before {
 
 #testimonial-carousel .carousel-indicators {
   position: relative;
-  top: 150px;
+  top: 221px;
   bottom: auto;
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 233px;
 }
 
 #testimonial-carousel .carousel-indicators li {
@@ -1581,7 +1582,7 @@ blockquote::before {
 
   .about-image {
     width: inherit;
-    height: 450px;
+    height: 450px !important;
   }
 
   .volunteer-image {
@@ -1648,6 +1649,7 @@ blockquote::before {
     min-width: inherit;
     min-height: inherit;
   }
+
 }
 
 @media screen and (max-width: 480px) {

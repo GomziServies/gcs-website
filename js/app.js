@@ -1,4 +1,4 @@
-// let HOST = 'http://localhost:88';
+let HOST = 'http://localhost:88';
 // let razorpayMerchantId = 'rzp_test_F0TUZmabOwKkhe'
 let razorpayMerchantId = 'rzp_live_tdfTCMm8C9gJNN'
 if (['gcsconsultant.com', 'www.gcsconsultant.com'].includes(window.location.hostname)) {
