@@ -1,0 +1,315 @@
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-head h1 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.landing-btn {
+  font-size: 24px;
+  font-weight: 700;
+  background: #6cef00;
+  color: #000;
+  box-shadow: 0px 0px 6px 1px #469b00;
+}
+
+.landing-video .newthing i {
+  color: #6df100 !important;
+}
+
+.landing-video .newthing::before,
+.landing-video .newthing::after {
+  background-color: #6cef00;
+}
+
+.landing-ul {
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px #222222;
+  padding: 15px;
+}
+
+.landing-ul li {
+  font-size: 18px !important;
+  padding: 3px;
+}
+
+.landing-coach .reviews {
+  background-color: #252525;
+}
+
+.landing-coach .reviews p {
+  color: #d3d3d3;
+}
+
+.landing-testimonial-video .review-box {
+  width: 100%;
+  height: auto;
+  background-image: none;
+}
+
+.landing-testimonial-video .play-btn a {
+  top: 45%;
+}
+
+.landing-testimonial-video .newthing i {
+  color: #6df100 !important;
+}
+
+.landing-testimonial-video .newthing::before,
+.landing-testimonial-video .newthing::after {
+  background-color: #6cef00;
+}
+
+.google-card {
+  background-color: #ffffff;
+  color: #000;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.google-profile img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.google-head p {
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+.google-head i {
+  font-size: 12px;
+  color: #efcb00;
+}
+
+.google-icon {
+  height: 30px;
+  width: 30px;
+  margin-top: 3px;
+}
+
+.google-info p {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.landing-form .fr {
+  background-color: #252525;
+  color: #fff;
+  height: 40px;
+}
+
+.landing-form .landing-btn {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.landing-a a {
+  padding: 5px;
+  margin-left: 10px;
+  background-color: #000;
+  color: #74ff00;
+}
+
+.go-top i {
+  background-color: #74ff00;
+  padding: 14px 16px;
+  border-radius: 50%;
+  color: #000;
+  position: absolute;
+  bottom: 10px;
+  font-size: 24px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.go-top {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  padding: 20px;
+  display: none;
+  z-index: 999;
+  -webkit-font-smoothing: antialiased;
+}
+
+.landing-testimonial-fwg .review-box {
+  width: 100%;
+  height: auto;
+  background-image: none;
+}
+
+.landing-testimonial-fwg .play-btn a {
+  top: 45%;
+}
+
+.landing-testimonial-fwg .newthing i {
+  color: #0051ef !important;
+}
+
+.landing-testimonial-fwg .newthing::before,
+.landing-testimonial-fwg .newthing::after {
+  background-color: #74a3ff;
+}
+
+.floating-container {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+}
+.floating-container:hover {
+  height: 200px;
+}
+.floating-container:hover .floating-button {
+  -webkit-transform: translatey(5px);
+  transform: translatey(5px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container:hover .element-container .float-element:nth-child(1) {
+  -webkit-animation: come-in 0.4s forwards 0.2s;
+  animation: come-in 0.4s forwards 0.2s;
+}
+.floating-container:hover .element-container .float-element:nth-child(2) {
+  -webkit-animation: come-in 0.4s forwards 0.4s;
+  animation: come-in 0.4s forwards 0.4s;
+}
+.floating-container:hover .element-container .float-element:nth-child(3) {
+  -webkit-animation: come-in 0.4s forwards 0.6s;
+  animation: come-in 0.4s forwards 0.6s;
+}
+.floating-container .floating-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #1d1d1d;
+  border: 2px solid #74ff00;
+  bottom: 0;
+  border-radius: 50%;
+  right: 0;
+  color: #74ff00;
+  line-height: 40px;
+  text-align: center;
+  font-size: 35px;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container .float-element {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  z-index: 0;
+  right: -30px;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
+  bottom: -25px;
+}
+.floating-container .float-element .material-icons {
+  vertical-align: middle;
+  font-size: 16px;
+}
+.floating-container .float-element {
+  background: #5442f5;
+}
+
+@-webkit-keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+    transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+    transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+    transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+    transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+    transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+    transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+    transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+    transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+
+.floting-btn {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 9999;
+  display: none;
+}
+
+.floting-btn a {
+  font-size: 22px;
+  font-weight: 600;
+  background: #0e0e0e;
+  border: 2px solid #9aff48;
+  color: #9aff48;
+  box-shadow: 0px 0px 6px 1px #469b00;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.floting-w-btn {
+  position: fixed;
+  bottom: 13%;
+  left: 10px;
+  width: 100%;
+  z-index: 9999;
+  display: none;
+}
+
+.floting-w-btn a {
+  font-size: 24px;
+  border-radius: 50%;
+  color: #000;
+  background-color: #00bd6e;
+}
+.include {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: auto;
+}
