@@ -187,6 +187,9 @@ strong {
   position: relative;
 }
 
+.margintop{
+  margin-top: 100px;
+}
 
 /*---------------------------------------
   CUSTOM BLOCK               
@@ -194,6 +197,15 @@ strong {
 .custom-block-wrap {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+  transition: all 0.5s;
+}
+
+.custom-block-wrap2 {
+  background: var(--white-color);
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
@@ -711,6 +723,10 @@ strong {
 
 .custom-text-block {
   padding: 30px 40px;
+}
+
+.custom-text-block2{
+  padding: 0px 0px;
 }
 
 
