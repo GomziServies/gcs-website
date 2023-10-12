@@ -388,7 +388,7 @@
                         <input type="email" name="email" placeholder="Email" id="email" class="form-control in-put"
                             required>
                     </div>
-                    <input type="hidden" name="subject" id="subject" value="AtoZ Webinar">
+                    <input type="hidden" name="subject" id="subject" value="Takshak Webinar">
                     <div>
                         <input type="number" name="mobile" placeholder="Mobile" id="mobile" class="form-control in-put"
                             required>
@@ -446,7 +446,7 @@
                     </button>
                 </div>
                 <div class="modal-body pt-0">
-                    <form id="myForm1" class="pupop-form" onsubmit="submitFormWebinar(event, 'myForm1')">
+                    <form id="myForm1" class="pupop-form">
                         <div>
                             <input type="text" name="name" placeholder="Name" id="name" class="form-control in-put"
                                 required>
@@ -455,7 +455,7 @@
                             <input type="email" name="email" placeholder="Email" id="email" class="form-control in-put"
                                 required>
                         </div>
-                        <input type="hidden" name="subject" id="subject" value="AtoZ Webinar">
+                        <input type="hidden" name="subject" id="subject" value="Takshak Webinar">
                         <div>
                             <input type="number" name="mobile" placeholder="Mobile" id="mobile"
                                 class="form-control in-put" required>
@@ -473,7 +473,8 @@
                                 class="in-put" required></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="submit-btn btn">Submit</button>
+                            <button type="button" class="submit-btn btn" id="rzp-button1"
+                                onclick="initiatePayment('myForm1')">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -493,6 +494,7 @@
     <script src="../js/constant/course.js"></script>
     <link href="../css/effect.css" rel="stylesheet">
     <link href="../css/flashy.min.css" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         function opneform() {
             $('#myModal').modal('show');
@@ -510,7 +512,6 @@
             formData.set("messages", `${messages}\nBusiness Type: ${businessType}\nBusiness Problem: ${businessProblem}`);
 
             URL_FORM = BASE_URL + '/user';
-            console.log(URL_FORM);
 
             fetch(URL_FORM, {
                 method: 'POST',
@@ -526,17 +527,16 @@
                             Swal.fire({
                                 icon: 'success',
                                 title: 'Your booking successful',
-                                text: 'Click On Ok And you Have your Group WhatsApp Link'
+                                text: 'Click On Ok And you will receive your Group WhatsApp Link'
                             }).then(() => {
-                                // Redirect to fwg-thank-you.html after showing the success message
                                 window.location.href = './takshak-thank-you.html';
                             });
                         } else {
                             Swal.fire({
                                 icon: 'success',
-                                title: 'Thanks you for contact us',
+                                title: 'Thanks you for contacting us',
                                 text: 'We Will Contact you Soon.'
-                            })
+                            });
                         }
                         form.reset(); // Use form.reset() to reset the form
                     } else {
@@ -555,6 +555,80 @@
                     console.error(error);
                 });
         }
+
+        function initiatePayment(formId) {
+            var orderId;
+
+            $(document).ready(function () {
+                var settings = {
+                    url: HOST + "/create/orderId",
+                    method: "POST",
+                    timeout: 0,
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    data: JSON.stringify({
+                        amount: "49"
+                    })
+                };
+
+                // Create new orderId
+                $.ajax(settings).done(function (response) {
+                    orderId = response.orderId;
+                    var options = {
+                        key: razorpayMerchantId,
+                        amount: 4900,
+                        currency: 'INR',
+                        name: 'Book Takshak Webinar',
+                        description: 'Takshak Webinar',
+                        image: 'https://gcsconsultant.com/images/logos/gcs-logo-normal.png',
+                        order_id: orderId,
+                        handler: function (response) {
+                            var verifySettings = {
+                                url: HOST + "/verifyPayment",
+                                method: "POST",
+                                timeout: 0,
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                data: JSON.stringify({ response })
+                            };
+                            $.ajax(verifySettings).done(function (verifyResponse) {
+                                if (verifyResponse.signatureIsValid) {
+                                    console.log('Successfully Payment Done')
+                                    const form = document.getElementById(formId);
+                                    const formData = new FormData(form);
+                                    submitFormWebinar(event, formId);
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Payment verification failed'
+                                    });
+                                }
+                            });
+                        },
+                        theme: {
+                            color: "#ff8024"
+                        },
+                        notes: {
+                            item_name: "Takshak Webinar",
+                            payment_via: "GCS Company"
+                        }
+                    };
+
+                    var rzp1 = new Razorpay(options);
+                    rzp1.open();
+                });
+            });
+        }
+
+        document.getElementById('rzp-button1').addEventListener('click', function () {
+            initiatePayment('myForm1');
+        });
+
+        document.getElementById('myForm2').addEventListener('submit', function (event) {
+            submitFormWebinar(event, 'myForm2');
+        });
     </script>
 </body>
 

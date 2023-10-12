@@ -683,7 +683,7 @@
                     </button>
                 </div>
                 <div class="modal-body pt-0">
-                    <form id="myForm1" class="pupop-form" onsubmit="submitFormWebinar(event, 'myForm1')">
+                    <form id="myForm1" class="pupop-form">
                         <div>
                             <input type="text" name="name" placeholder="Name" id="name" class="form-control in-put"
                                 required>
@@ -710,7 +710,8 @@
                                 class="in-put" required></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="submit-btn btn">Submit</button>
+                            <button type="button" class="submit-btn btn" id="rzp-button1"
+                                onclick="initiatePayment('myForm1')">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -730,6 +731,7 @@
     <script src="../js/constant/course.js"></script>
     <link href="../css/effect.css" rel="stylesheet">
     <link href="../css/flashy.min.css" rel="stylesheet">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         function opneform() {
             $('#myModal').modal('show');
@@ -739,15 +741,13 @@
             event.preventDefault();
             const form = document.getElementById(formId);
             const formData = new FormData(form);
-            const marketingGoal = document.getElementById("txt_marketing_goal_" + formId).value;
+            const businessGoal = document.getElementById("txt_marketing_goal_" + formId).value;
             const businessInterest = document.getElementById("txt_business_interest_" + formId).value;
 
-            // Append the additional fields to the 'messages' field
             const messages = formData.get("messages");
-            formData.set("messages", `${messages}\nMarketing Goal: ${marketingGoal}\nBusiness Interest: ${businessInterest}`);
+            formData.set("messages", `${messages}\nBusiness Goal: ${businessGoal}\nBusiness Interest: ${businessInterest}`);
 
             URL_FORM = BASE_URL + '/user';
-            console.log(URL_FORM);
 
             fetch(URL_FORM, {
                 method: 'POST',
@@ -763,16 +763,16 @@
                             Swal.fire({
                                 icon: 'success',
                                 title: 'Your booking successful',
-                                text: 'Click On Ok And you Have your Group WhatsApp Link'
+                                text: 'Click On Ok And you will receive your Group WhatsApp Link'
                             }).then(() => {
                                 window.location.href = './fitit-thank-you.html';
                             });
                         } else {
                             Swal.fire({
                                 icon: 'success',
-                                title: 'Thanks you for contact us',
+                                title: 'Thanks you for contacting us',
                                 text: 'We Will Contact you Soon.'
-                            })
+                            });
                         }
                         form.reset(); // Use form.reset() to reset the form
                     } else {
@@ -792,6 +792,79 @@
                 });
         }
 
+        function initiatePayment(formId) {
+            var orderId;
+
+            $(document).ready(function () {
+                var settings = {
+                    url: HOST + "/create/orderId",
+                    method: "POST",
+                    timeout: 0,
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    data: JSON.stringify({
+                        amount: "49"
+                    })
+                };
+
+                // Create new orderId
+                $.ajax(settings).done(function (response) {
+                    orderId = response.orderId;
+                    var options = {
+                        key: razorpayMerchantId,
+                        amount: 4900,
+                        currency: 'INR',
+                        name: 'Book FitIT Webinar',
+                        description: 'FitIT Webinar',
+                        image: 'https://gcsconsultant.com/images/logos/gcs-logo-normal.png',
+                        order_id: orderId,
+                        handler: function (response) {
+                            var verifySettings = {
+                                url: HOST + "/verifyPayment",
+                                method: "POST",
+                                timeout: 0,
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                data: JSON.stringify({ response })
+                            };
+                            $.ajax(verifySettings).done(function (verifyResponse) {
+                                if (verifyResponse.signatureIsValid) {
+                                    console.log('Successfully Payment Done')
+                                    const form = document.getElementById(formId);
+                                    const formData = new FormData(form);
+                                    submitFormWebinar(event, formId);
+                                } else {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Payment verification failed'
+                                    });
+                                }
+                            });
+                        },
+                        theme: {
+                            color: "#ff8024"
+                        },
+                        notes: {
+                            item_name: "FitIT Webinar",
+                            payment_via: "GCS Company"
+                        }
+                    };
+
+                    var rzp1 = new Razorpay(options);
+                    rzp1.open();
+                });
+            });
+        }
+
+        document.getElementById('rzp-button1').addEventListener('click', function () {
+            initiatePayment('myForm1');
+        });
+
+        document.getElementById('myForm2').addEventListener('submit', function (event) {
+            submitFormWebinar(event, 'myForm2');
+        });
     </script>
 </body>
 
