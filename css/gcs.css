@@ -1894,9 +1894,8 @@ figure.effect-oscar figcaption::before {
   content: "";
 }
 
-.review-box::before,
 .video-card {
-  border-radius: 10px;
+  border-radius: 20% !important;
   background-color: #000;
 }
 
@@ -2002,6 +2001,8 @@ figure.effect-oscar:hover figcaption {
 
 .video-card {
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  height: 446px !important;
+  border-radius: 20px !important;
 }
 
 .card__content,
