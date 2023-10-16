@@ -1,9 +1,16 @@
-let HOST = 'https://admin.gcsconsultant.com';
+let HOST = 'http://localhost';
 // let razorpayMerchantId = 'rzp_test_F0TUZmabOwKkhe'
 let razorpayMerchantId = 'rzp_live_tdfTCMm8C9gJNN'
 if (['gcsconsultant.com', 'www.gcsconsultant.com'].includes(window.location.hostname)) {
   HOST = 'https://admin.gcsconsultant.com';
+  razorpayMerchantId = 'rzp_live_tdfTCMm8C9gJNN'
+} else if (window.location.hostname == 'test.gcsconsultant.com') {
+  HOST = 'https://admin.gcsconsultant.com'
+  razorpayMerchantId = 'rzp_live_tdfTCMm8C9gJNN'
+} else {
+  HOST = 'http://localhost';
 }
+
 
 let USER_ROUTE = '/admin/pages';
 let PUBLIC_ROUTE = '/admin/pages';
