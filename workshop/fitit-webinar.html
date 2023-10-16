@@ -101,8 +101,6 @@
                             </div>
                             <div class="d-none d-md-block mt-3">
                                 <div class="ply1">
-                                    <img src="../images/fwg/start-mian.webp" data-src="../images/fwg/start-mian.webp"
-                                        width="100%" class="" style="border-radius: 10px;">
                                     <div class="video-btn">
                                         <a href="https://youtu.be/5nUPXVuJtFg?si=TxMB442ELPmFfseC"
                                             data-flashy-type="video" class="custom"><span class="newthing"><i
@@ -774,61 +772,6 @@
             $('#myModal').modal('show');
         }
 
-        function submitFormWebinar(event, formId) {
-            event.preventDefault();
-            const form = document.getElementById(formId);
-            const formData = new FormData(form);
-            const businessGoal = document.getElementById("txt_marketing_goal_" + formId).value;
-            const businessInterest = document.getElementById("txt_business_interest_" + formId).value;
-
-            const messages = formData.get("messages");
-            formData.set("messages", `${messages}\nBusiness Goal: ${businessGoal}\nBusiness Interest: ${businessInterest}`);
-
-            URL_FORM = BASE_URL + '/user';
-
-            fetch(URL_FORM, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: new URLSearchParams(formData).toString()
-            })
-                .then(response => {
-                    if (response.ok) {
-                        $('#myModal').modal('hide');
-                        if (formId === 'myForm1') {
-                            Swal.fire({
-                                icon: 'success',
-                                title: 'Your booking successful',
-                                text: 'Click On Ok And you will receive your Group WhatsApp Link'
-                            }).then(() => {
-                                window.location.href = './fitit-thank-you.html';
-                            });
-                        } else {
-                            Swal.fire({
-                                icon: 'success',
-                                title: 'Thanks you for contacting us',
-                                text: 'We Will Contact you Soon.'
-                            });
-                        }
-                        form.reset(); // Use form.reset() to reset the form
-                    } else {
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Invalid Details',
-                            text: 'Please enter valid Details'
-                        });
-                    }
-                })
-                .catch(error => {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'An error occurred while sending your message',
-                    });
-                    console.error(error);
-                });
-        }
-
         function initiatePayment(formId) {
             var orderId;
 
@@ -848,6 +791,7 @@
                 // Create new orderId
                 $.ajax(settings).done(function (response) {
                     orderId = response.orderId;
+                    console.log(orderId)
                     $("#rzp-button1").show();
                     var options = {
                         key: razorpayMerchantId,
@@ -903,6 +847,61 @@
         document.getElementById('myForm2').addEventListener('submit', function (event) {
             submitFormWebinar(event, 'myForm2');
         });
+
+        function submitFormWebinar(event, formId) {
+            event.preventDefault();
+            const form = document.getElementById(formId);
+            const formData = new FormData(form);
+            const businessGoal = document.getElementById("txt_marketing_goal_" + formId).value;
+            const businessInterest = document.getElementById("txt_business_interest_" + formId).value;
+
+            const messages = formData.get("messages");
+            formData.set("messages", `${messages}\nBusiness Goal: ${businessGoal}\nBusiness Interest: ${businessInterest}`);
+
+            URL_FORM = BASE_URL + '/user';
+
+            fetch(URL_FORM, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(formData).toString()
+            })
+                .then(response => {
+                    if (response.ok) {
+                        $('#myModal').modal('hide');
+                        if (formId === 'myForm1') {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Your booking successful',
+                                text: 'Click On Ok And you will receive your Group WhatsApp Link'
+                            }).then(() => {
+                                window.location.href = './fitit-thank-you.html';
+                            });
+                        } else {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Thanks you for contacting us',
+                                text: 'We Will Contact you Soon.'
+                            });
+                        }
+                        form.reset(); // Use form.reset() to reset the form
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Invalid Details',
+                            text: 'Please enter valid Details'
+                        });
+                    }
+                })
+                .catch(error => {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'An error occurred while sending your message',
+                    });
+                    console.error(error);
+                });
+        }
     </script>
 </body>
 
