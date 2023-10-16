@@ -848,6 +848,7 @@
                 // Create new orderId
                 $.ajax(settings).done(function (response) {
                     orderId = response.orderId;
+                    $("#rzp-button1").show();
                     var options = {
                         key: razorpayMerchantId,
                         amount: 4900,
