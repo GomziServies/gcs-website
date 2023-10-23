@@ -81,6 +81,13 @@
                                     allowfullscreen></iframe>
                             </div>
                             <div class="d-none d-md-block mt-3">
+                                <iframe width="100%" height="100%"
+                                    src="https://www.youtube.com/embed/H9UJFZxCMB4?si=KwBsnNBUKDYj2ptu"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <!-- <div class="d-none d-md-block mt-3">
                                 <div class="ply1">
                                     <img src="../images/fwg/start-mian.webp" data-src="../images/fwg/start-mian.webp"
                                         width="100%" class="" style="border-radius: 10px;">
@@ -90,7 +97,7 @@
                                                     class="fas fa-play"></i></span></a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <p class="mt-2">Join us for an enlightening webinar where Yashpal Chavada, a renowned
                                 financial
                                 expert, will guide you on your journey to financial independence. In this exclusive
@@ -382,7 +389,7 @@
                         <p class="mb-0" style="font-weight: 600; color: #44ef00;">Contact Us</p> For More Details
                     </h2>
                 </div>
-                <form id="myForm2" class="mt-3" onsubmit="submitFormWebinar(event, 'myForm2')">
+                <form id="myForm2" class="mt-3">
                     <div>
                         <input type="text" name="name" placeholder="Name" id="name" class="form-control in-put"
                             required>
@@ -413,7 +420,8 @@
                         <textarea name="messages" type="messages" placeholder="Messages" id="messages" class="in-put"
                             required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn" style="background-color: #44ef00;">Submit</button>
+                    <button type="button" class="submit-btn" style="background-color: #44ef00;"
+                        onclick="submitFormWebinar('myForm2')">Submit</button>
                 </form>
             </div>
         </div>
@@ -500,8 +508,8 @@
                                 class="in-put" required></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="button" class="submit-btn btn" id="rzp-button1"
-                                onclick="initiatePayment('myForm1')">Submit</button>
+                            <button type="button" class="submit-btn btn"
+                                onclick="submitFormWebinar('myForm1')">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -527,8 +535,7 @@
             $('#myModal').modal('show');
         }
 
-        function submitFormWebinar(event, formId) {
-            event.preventDefault();
+        function submitFormWebinar(formId) {
             const form = document.getElementById(formId);
             const formData = new FormData(form);
             const financialGoal = document.getElementById("txt_financial_goal_" + formId).value;
