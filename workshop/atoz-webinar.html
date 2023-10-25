@@ -490,8 +490,20 @@
                                 class="form-control in-put" required>
                         </div>
                         <div>
-                            <input type="text" name="goal" placeholder="Enter Financial Goal"
-                                id="txt_financial_goal_myForm1" class="form-control in-put" required>
+                            <select type="text" name="goal" id="txt_financial_goal_myForm1" class="form-control in-put"
+                                required>
+                                <option hidden>Select Financial Goal</option>
+                                <option value="Wealth Creation">Wealth Creation</option>
+                                <option value="Stock Market Investment">Stock Market Investment</option>
+                                <option value="Mutual Fund Investment">Mutual Fund Investment</option>
+                                <option value="SIP Investment">SIP Investment</option>
+                                <option value="Gold Investment">Gold Investment</option>
+                                <option value="Bond Investment">Bond Investment</option>
+                                <option value="Intraday Trading">Intraday Trading</option>
+                                <option value="Options Trading">Options Trading</option>
+                                <option value="Stock Market Knowledge">Stock Market Knowledge</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </div>
                         <div>
                             <select name="per_annum" class="form-control in-put" required

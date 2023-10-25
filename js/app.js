@@ -5,10 +5,11 @@ if (['gcsconsultant.com', 'www.gcsconsultant.com'].includes(window.location.host
   HOST = 'https://admin.gcsconsultant.com';
   razorpayMerchantId = 'rzp_live_tdfTCMm8C9gJNN'
 } else if (window.location.hostname == 'test.gcsconsultant.com') {
-  HOST = 'https://admin.gcsconsultant.com'
-  razorpayMerchantId = 'rzp_live_tdfTCMm8C9gJNN'
+  HOST = 'https://dev-admin.gcsconsultant.com'
+  razorpayMerchantId = 'rzp_test_F0TUZmabOwKkhe'
 } else {
   HOST = 'http://localhost';
+  let razorpayMerchantId = 'rzp_test_F0TUZmabOwKkhe'
 }
 
 

@@ -731,8 +731,15 @@
                                 class="form-control in-put" required>
                         </div>
                         <div>
-                            <input type="text" name="business" placeholder="Enter Your Digital Marketing Goal"
-                                id="txt_marketing_goal_myForm1" class="form-control in-put" required>
+                            <select name="business" class="form-control in-put" required
+                                id="txt_marketing_goal_myForm1">
+                                <option hidden>Select Your Digital Marketing Goal</option>
+                                <option value="To increase revenue">To increase revenue</option>
+                                <option value="To increase visibility">To increase visibility</option>
+                                <option value="To increase followers">To increase followers</option>
+                                <option value="To generate more inquiries">To generate more inquiries</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </div>
                         <div>
                             <input type="text" name="business_interest" placeholder="Enter Current Business or Interest"
@@ -743,7 +750,7 @@
                                 class="in-put" required></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="button" class="submit-btn btn"
+                            <button type="button" class="submit-btn btn" id="rzp-button1"
                                 onclick="initiatePayment('myForm1')">Submit</button>
                         </div>
                     </form>
@@ -788,12 +795,10 @@
 
                 // Create new orderId
                 $.ajax(settings).done(function (response) {
-                    console.log(response)
                     orderId = response.orderId;
-                    console.log(orderId)
                     var options = {
                         key: razorpayMerchantId,
-                        amount: 4900,
+                        amount: "499" * 100,
                         currency: 'INR',
                         name: 'Book FitIT Webinar',
                         description: 'FitIT Webinar',
@@ -838,9 +843,9 @@
             });
         }
 
-        // document.getElementById('rzp-button1').addEventListener('click', function () {
-        //     initiatePayment('myForm1');
-        // });
+        document.getElementById('rzp-button1').addEventListener('click', function () {
+            initiatePayment('myForm1');
+        });
 
         document.getElementById('myForm2').addEventListener('submit', function (event) {
             submitFormWebinar(event, 'myForm2');
