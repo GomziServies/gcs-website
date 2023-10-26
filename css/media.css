@@ -962,7 +962,6 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-
   #owl-review .owl-prev,
   #owl-instas .owl-prev,
   #owl-review-2 .owl-prev,
@@ -1151,7 +1150,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
   #owl-review .owl-prev,
   #owl-instas .owl-prev,
   #owl-review-2 .owl-prev,
@@ -1406,8 +1404,13 @@
   #owl-review .owl-prev,
   #owl-instas .owl-prev,
   #owl-review-2 .owl-prev,
-  #owl-placement-1 .owl-prev {
+  #owl-placement-1 .owl-prev,
+  #owl-demo2 .owl-prev,
+  #owl-active-1 .owl-prev {
     left: 37%;
+    padding: 2px 8px !important;
+    font-size: 14px;
+    bottom: -40px;
   }
 
   .owl-dots {
@@ -1419,8 +1422,13 @@
   #owl-review .owl-next,
   #owl-instas .owl-next,
   #owl-review-2 .owl-next,
-  #owl-placement-1 .owl-next {
+  #owl-placement-1 .owl-next,
+  #owl-demo2 .owl-next,
+  #owl-active-1 .owl-next {
     left: 52%;
+    padding: 2px 8px !important;
+    font-size: 14px;
+    bottom: -40px;
   }
 
   .new-h2 {

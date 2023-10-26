@@ -190,7 +190,7 @@
         <p class="go-top-text"><i class="fas fa-arrow-up"></i></p>
     </div>
     <a class="float-button" target="_blank"
-        href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about FitIT service">
+        href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about FitIT service">
         <i class="fab fa-whatsapp"></i>
         <span>Message<span>
     </a>
@@ -1716,7 +1716,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-5">
                         <div class="contact-us">
-                            <h2>Contact Us For <br> More Details</h2>
+                            <h2>Get A <br> Free Quote</h2>
                         </div>
                     </div>
                     <div class="col-md-1"></div>
@@ -1725,7 +1725,7 @@
                             <div class="mb-4">
                                 <h4 class="fill">Fill The Form :-</h4>
                             </div>
-                            <form id="myForm">
+                            <form id="myForm2" class="mt-3" onsubmit="submitFormWebinar(event, 'myForm2')">
                                 <div>
                                     <input type="text" name="name" placeholder="Name" id="name"
                                         class="form-control in-put" required>
@@ -1734,10 +1734,19 @@
                                     <input type="email" name="email" placeholder="Email" id="email"
                                         class="form-control in-put" required>
                                 </div>
-                                <input type="hidden" name="subject" id="subject" value="fitit">
+                                <input type="hidden" name="subject" id="subject" value="FitIT Webinar">
                                 <div>
                                     <input type="number" name="mobile" placeholder="Mobile" id="mobile"
                                         class="form-control in-put" required>
+                                </div>
+                                <div>
+                                    <input type="text" name="business" placeholder="Enter Your Digital Marketing Goal"
+                                        id="txt_marketing_goal_myForm2" class="form-control in-put" required>
+                                </div>
+                                <div>
+                                    <input type="text" name="business_interest"
+                                        placeholder="Enter Current Business or Interest"
+                                        id="txt_business_interest_myForm2" class="form-control in-put" required>
                                 </div>
                                 <div>
                                     <textarea name="messages" type="messages" placeholder="Messages" id="messages"
@@ -1765,7 +1774,7 @@
                         <p>Gomzi Consulting Services (GCS) is a leading group managing diverse businesses,
                             offering customized solutions for growth and profitability.</p>
                         <ul class="mt-4">
-                            <li><a href="tel:9773174522"><i class="fas fa-phone-alt"></i> +91 97731 74522</a></li>
+                            <li><a href="tel:6354051487"><i class="fas fa-phone-alt"></i> +91 97731 74522</a></li>
                             <li><a href="mailto:gomziconsultingservices@gmail.com"><i class="fas fa-envelope"></i>
                                     gomziconsultingservices@gmail.com</a></li>
                             <li><a href="https://maps.app.goo.gl/gbNQ2vQHy8qEcGAp6" target="_blank"><i
@@ -1831,10 +1840,10 @@
                     <h2>coming soon<span class="dot">.</span></h2>
                     <p style="word-spacing: normal;">Call Us Now</p>
                     <div class="icons-thing">
-                        <a href="tel:9773174522" class="text-dark"><i class="fas fa-phone-alt"></i> <span
+                        <a href="tel:6354051487" class="text-dark"><i class="fas fa-phone-alt"></i> <span
                                 class="d-none d-md-block">+91 97731 74522</span></a>
                         <a class="text-dark" target="_blank"
-                            href="https://api.whatsapp.com/send?phone=9773174522&text=Hello I want to know more about FitIT"><i
+                            href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about FitIT"><i
                                 class="fab fa-whatsapp"></i><span class="d-none d-md-block">Message<span></a>
                     </div>
                 </div>
@@ -1896,8 +1905,52 @@
 
 
     <script>
-        const form = document.getElementById('myForm');
-        form.addEventListener('submit', submitForm);
+        // const form = document.getElementById('myForm');
+        // form.addEventListener('submit', submitForm);
+
+        function submitFormWebinar(event, formId) {
+            event.preventDefault();
+            const form = document.getElementById(formId);
+            const formData = new FormData(form);
+            const businessGoal = document.getElementById("txt_marketing_goal_" + formId).value;
+            const businessInterest = document.getElementById("txt_business_interest_" + formId).value;
+
+            const messages = formData.get("messages");
+            formData.set("messages", `${messages}\nBusiness Goal: ${businessGoal}\nBusiness Interest: ${businessInterest}`);
+
+            URL_FORM = BASE_URL + '/user';
+
+            fetch(URL_FORM, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(formData).toString()
+            })
+                .then(response => {
+                    if (response.ok) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Thanks you for contacting us',
+                            text: 'We Will Contact you Soon.'
+                        });
+                        form.reset(); // Use form.reset() to reset the form
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Invalid Details',
+                            text: 'Please enter valid Details'
+                        });
+                    }
+                })
+                .catch(error => {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'An error occurred while sending your message',
+                    });
+                    console.error(error);
+                });
+        }
 
     </script>
     <!-- <script>
