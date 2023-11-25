@@ -146,6 +146,24 @@
                 itemsDesktopSmall: [576, 1],
                 dots: true,
             });
+            $("#owl-review-3").owlCarousel({
+                autoPlay: 5000,
+                nav: false,
+                loop: true,
+                items: 4,
+                itemsDesktop: [1199, 4],
+                itemsDesktopSmall: [576, 4],
+                dots: false,
+            });
+            $("#owl-review-4").owlCarousel({
+                autoPlay: 5000,
+                nav: true,
+                loop: true,
+                items: 1,
+                itemsDesktop: [1199, 1],
+                itemsDesktopSmall: [576, 1],
+                dots: false,
+            });
         })
         $(document).ready(function () {
             $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
@@ -271,7 +289,21 @@
 </header>
 
 <body>
-    <section class="margintop">
+    <section style="margin-top: 70px;">
+        <div class="container-fluid px-0">
+            <div class="d-none d-md-block">
+                <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to book Free Consulting">
+                    <img src="/images/gcs/new-offer.png" class="img-fluid" alt="offer">
+                </a>
+            </div>
+            <div class="d-block d-md-none">
+                <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to book Free Consulting">
+                    <img src="/images/gcs/new-mobile-offer.jpg" class="img-fluid" alt="offer">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="margintop">
         <div class="container-fluid px-0">
             <div class="">
                 <div class="background-imgs" style="background-image: url(../images/fitit/marketing-guru.webp);">
@@ -290,7 +322,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="bg-dark pt-md-5 pt-4">
         <div class="container-fluid py-md-5">
             <div class="container">
@@ -309,10 +341,10 @@
                 <div class="row align-items-center mt-md-5 mt-4">
                     <div class="col-md-6">
                         <div class="video-img">
-                            <div class="ply1 black-before">
-                                <img class="lazy" data-src="../images/mix-img/marketing-services.webp" width="100%"
-                                    style="border-radius: 10px 10px 0px 0px;" alt="client journey"
-                                    src="../images/mix-img/marketing-services.webp">
+                            <div class="ply1">
+                                <img class="lazy" data-src="../images/fitit/marketing-black.jpg" width="100%"
+                                    style="border-radius: 10px 10px 10px 10px;" alt="client journey"
+                                    src="../images/fitit/marketing-black.jpg">
                                 <div class="video-btn">
                                     <a href="https://youtu.be/A_3hGSPVKXA" data-flashy-type="video" id="video-btn"
                                         class="custom">
@@ -621,6 +653,116 @@
                                     <h5>Yearly :- ₹2,49,000</h5>
                                 </div>
                             </details> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark">
+        <div class="container-fluid">
+            <div class="container pb-5">
+                <div class="title-small">
+                    <h6>Our Client Review</h6>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="main-title">
+                        <h2>Happy Clients Review</h2>
+                    </div>
+                </div>
+                <div class="d-none d-sm-block">
+                    <div id="owl-review-3" class="owl-carousel owl-theme mt-4">
+                        <div class="item mx-2">
+                            <div class="main-review">
+                                <div id="video1">
+                                    <iframe width="100%" height="465"
+                                        src="https://www.youtube.com/embed/g2wzrJRz7ec?si=5Jeg0RdrJgNjI4cb"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="main-review">
+                                <div id="video1">
+                                    <iframe width="100%" height="465"
+                                        src="https://www.youtube.com/embed/fDjDB87BhR0?si=KxMrji5M4GphfBZh"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="main-review">
+                                <div id="video1">
+                                    <iframe width="100%" height="465"
+                                        src="https://www.youtube.com/embed/AljwdDjKUw0?si=ADwERvxxAicqFg6c"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="main-review">
+                                <div id="video1">
+                                    <iframe width="100%" height="465"
+                                        src="https://www.youtube.com/embed/m_GpoDeW1QU?si=TV3VShkcNJBHu3P8"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-sm-none">
+                    <div id="owl-review-4" class="owl-carousel owl-theme mt-4">
+                        <div class="item mx-2">
+                            <div class="main-review">
+                                <div id="video1">
+                                    <iframe width="100%" height="531"
+                                        src="https://www.youtube.com/embed/g2wzrJRz7ec?si=5Jeg0RdrJgNjI4cb"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="main-review">
+                                <div id="video1">
+                                    <iframe width="100%" height="531"
+                                        src="https://www.youtube.com/embed/fDjDB87BhR0?si=KxMrji5M4GphfBZh"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="main-review">
+                                <div id="video1">
+                                    <iframe width="100%" height="531"
+                                        src="https://www.youtube.com/embed/AljwdDjKUw0?si=ADwERvxxAicqFg6c"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item mx-2">
+                            <div class="main-review">
+                                <div id="video1">
+                                    <iframe width="100%" height="531"
+                                        src="https://www.youtube.com/embed/m_GpoDeW1QU?si=TV3VShkcNJBHu3P8"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

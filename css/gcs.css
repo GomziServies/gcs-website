@@ -1144,7 +1144,9 @@ figure.effect-oscar:hover img {
 #owl-demo2 .owl-next,
 #owl-demo2 .owl-prev,
 #owl-active-1 .owl-next,
-#owl-active-1 .owl-prev {
+#owl-active-1 .owl-prev,
+#owl-review-4 .owl-next,
+#owl-review-4 .owl-prev {
   font-size: 18px;
   color: #fff;
   position: absolute;

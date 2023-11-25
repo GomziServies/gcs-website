@@ -1406,7 +1406,8 @@
   #owl-review-2 .owl-prev,
   #owl-placement-1 .owl-prev,
   #owl-demo2 .owl-prev,
-  #owl-active-1 .owl-prev {
+  #owl-active-1 .owl-prev,
+  #owl-review-4 .owl-prev {
     left: 37%;
     padding: 5px 8px !important;
     font-size: 14px;
@@ -1424,7 +1425,8 @@
   #owl-review-2 .owl-next,
   #owl-placement-1 .owl-next,
   #owl-demo2 .owl-next,
-  #owl-active-1 .owl-next {
+  #owl-active-1 .owl-next,
+  #owl-review-4 .owl-next {
     left: 52%;
     padding: 5px 8px !important;
     font-size: 14px;
