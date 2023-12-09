@@ -29,7 +29,7 @@
                 formData.append('machineNumber', machineNumber);
 
                 // Make the POST request
-                const response = await fetch('https://erp-server-lo08.onrender.com/attendance/add-attendance?machineNumber=' + machineNumber, {
+                const response = await fetch('https://erp-server-lo08.onrender.com/admin/v1/attendance/add-attendance?machineNumber=' + machineNumber, {
                     method: 'POST',
                     body: formData
                 });
