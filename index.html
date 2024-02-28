@@ -160,7 +160,23 @@
             $(".owl-next").html('<i class="fa fa-chevron-right"></i>');
             $(".owl-prev").html('<i class="fa fa-chevron-left"></i>');
         });
+        $(function () {
+            // Scroll event
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop();
+                if (scrolled > 100) {
+                    $('.floting-btn, .floting-w-btn').fadeIn('slow');
+                }
+                if (scrolled < 100) {
+                    $('.floting-btn, .floting-w-btn').fadeOut('slow');
+                }
+            });
 
+            // Click event
+            $('.floting-btn, .floting-w-btn').click(function () {
+                $("html, body").animate({ scrollTop: "0" }, 100);
+            });
+        });
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16470782246"></script>
@@ -193,9 +209,9 @@
     <!-- End Meta Pixel Code -->
 </head>
 <header>
-    <div class="go-top">
+    <!-- <div class="go-top">
         <p class="go-top-text"><i class="fas fa-arrow-up"></i></p>
-    </div>
+    </div> -->
     <a class="float-button" target="_blank"
         href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about GCS Consulting service">
         <i class="fab fa-whatsapp"></i>
@@ -273,6 +289,11 @@
                 <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to book Free Consulting">
                     <img src="/images/gcs/new-mobile-offer.jpg" class="img-fluid" alt="offer">
                 </a>
+            </div>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about GCS Consulting service"
+                    style="background-color: #ff8024; color: #ffffff; font-size: 20px; font-weight: 700; box-shadow: 0px 0px 6px 1px #ff7b3b;"
+                    class="btn landing-btn mt-1 w-100">Book Your Strategy Call!</a>
             </div>
         </div>
     </section>
@@ -654,6 +675,14 @@
         </div>
     </section>
     <section class="margintop">
+        <div class="container">
+            <a href=" https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about GCS
+        Consulting service"
+                style="background-color: #ff8024; color: #ffffff; font-size: 20px; font-weight: 700; box-shadow: 0px 0px 6px 1px #ff7b3b;"
+                class="btn landing-btn mt-1 w-100">Get Free 1:1 Consultation</a>
+        </div>
+    </section>
+    <section class="margintop">
         <div class="container-fluid pt-5 pt-md-0">
             <div class="container p-0">
                 <div class="title-compnay text-center mb-md-5 mb-3">
@@ -1003,6 +1032,14 @@
         </div>
     </section>
     <section class="margintop">
+        <div class="container">
+            <a href=" https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about GCS
+        Consulting service"
+                style="background-color: #ff8024; color: #ffffff; font-size: 20px; font-weight: 700; box-shadow: 0px 0px 6px 1px #ff7b3b;"
+                class="btn landing-btn mt-1 w-100">Book Your Strategy Call</a>
+        </div>
+    </section>
+    <section class="margintop">
         <div class="container-fluid" style="background-color: #000000;">
             <div class="container py-5">
                 <div class="text-center">
@@ -1087,6 +1124,12 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="mt-3">
+                    <a href=" https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about GCS
+        Consulting service"
+                        style="background-color: #ff8024; color: #ffffff; font-size: 20px; font-weight: 700; box-shadow: 0px 0px 6px 1px #ff7b3b;"
+                        class="btn landing-btn mt-1 w-100">Get Free 1:1 Consultation</a>
                 </div>
             </div>
         </div>
@@ -1461,6 +1504,14 @@
             </div>
         </div>
     </section>
+    <section class="">
+        <div class="container">
+            <a href=" https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about GCS
+        Consulting service"
+                style="background-color: #ff8024; color: #ffffff; font-size: 20px; font-weight: 700; box-shadow: 0px 0px 6px 1px #ff7b3b;"
+                class="btn landing-btn mt-1 w-100">Book Your Strategy Call</a>
+        </div>
+    </section>
     <section class="margintop">
         <div class="container-fluid py-5" style="background-color: #000000;">
             <div class="container">
@@ -1561,6 +1612,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="container">
+            <a href=" https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to know more about GCS
+        Consulting service"
+                style="background-color: #ff8024; color: #ffffff; font-size: 20px; font-weight: 700; box-shadow: 0px 0px 6px 1px #ff7b3b;"
+                class="btn landing-btn mt-1 w-100">Get Free 1:1 Consultation</a>
         </div>
     </section>
     <section class="margintop">
@@ -1804,6 +1863,13 @@
     <div class="col-md-12 p-0">
         <div class="footer-copyright">
             <p>© 2023-2024 <span class="ml-2">All Rights Reserved</span></p>
+        </div>
+    </div>
+    <div class="floting-btn">
+        <div class="col-md-12 px-0 text-center">
+            <a href="https://api.whatsapp.com/send?phone=6354051487&text=Hello I want to Book Business Consulting"
+                style="border: 3px solid #ff8024; color: #ff8024;box-shadow:0px 0px 6px 1px #ff7b3b" class="btn w-100">
+                Book Your Strategy Call!</a>
         </div>
     </div>
     <div id="div_modal"></div>
